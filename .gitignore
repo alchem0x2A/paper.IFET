@@ -247,4 +247,7 @@ TSWLatexianTemp*
 *#*
 *_minted*
 *tximg*
-./build
+build/
+paper.tex
+paperNotes.bib
+img/

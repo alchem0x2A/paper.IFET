@@ -1,0 +1,80 @@
+#+LATEX_CLASS: revtex4-1
+#+LATEX_CLASS_OPTIONS: [prb, onecolumn, linenumbers, hyperref superscriptaddress, preprint, amsmath, amssymb, noshowpacs]
+#+LATEX_HEADER: \usepackage{graphicx}
+#+LATEX_HEADER: \usepackage{float}
+#+LATEX_HEADER: \usepackage{xcolor}
+#+LATEX_HEADER: \usepackage{hyperref}
+
+#+OPTIONS: tex:t toc:nil todo:t author:nil date:nil title:nil ^:t tags:nil
+#+DESCRIPTION:
+
+#+NAME: latex-author-list
+#+BEGIN_EXPORT latex
+% The author list
+\title{A superhydrophobicity-enabled interfacial transistor}
+\author{Tian Tian}
+\affiliation{Institute for Chemical and Bioengineering, ETH Z{\"{u}}rich,  Vladimir-Prelog Weg 1, CH-8093 Z{\"{u}}rich, Switzerland}
+\author{Chander Shekhar Sharma}
+\affiliation{Institut of Energy Technology, ETH Z{\"{u}}rich, Sonneggstrasse 3, CH-8092 Z{\"{u}}rich, Switzerland}
+\author{Navanshu Ahuja}
+\affiliation{Institute for Chemical and Bioengineering, ETH Z{\"{u}}rich,  Vladimir-Prelog Weg 1, CH-8093 Z{\"{u}}rich, Switzerland}
+\author{Matija Varga}
+\affiliation{Electronics Laboratory, ETH Z{\"{u}}rich,  Gloriastrasse 35,  CH-8092 Z{\"{u}}rich, Switzerland}
+\author{Raja Selvakumar}
+\affiliation{Institute for Chemical and Bioengineering, ETH Z{\"{u}}rich,  Vladimir-Prelog Weg 1, CH-8093 Z{\"{u}}rich, Switzerland}
+\author{Dimos Poulikakos}
+\affiliation{Institut of Energy Technology, ETH Z{\"{u}}rich, Sonneggstrasse 3, CH-8092 Z{\"{u}}rich, Switzerland}
+\author{Gerhard Tr\"{o}ster}
+\affiliation{Electronics Laboratory, ETH Z{\"{u}}rich,  Gloriastrasse 35,  CH-8092 Z{\"{u}}rich, Switzerland}
+\author{Chih-Jen Shih}
+\email{chih-jen.shih@chem.ethz.ch}
+\affiliation{Institute for Chemical and Bioengineering, ETH Z{\"{u}}rich,  Vladimir-Prelog Weg 1, CH-8093 Z{\"{u}}rich, Switzerland}
+#+END_EXPORT
+
+#+NAME: latex-abstract
+#+BEGIN_EXPORT latex
+\begin{abstract}
+  Pellentesque dapibus suscipit ligula.  Donec posuere augue in quam.
+  Etiam vel tortor sodales tellus ultricies commodo.  Suspendisse
+  potenti.  Aenean in sem ac leo mollis blandit.  Donec neque quam,
+  dignissim in, mollis nec, sagittis eu, wisi.  Phasellus lacus.
+  Etiam laoreet quam sed arcu.  Phasellus at dui in ligula mollis
+  ultricies.  Integer placerat tristique nisl.  Praesent augue.  Fusce
+  commodo.  Vestibulum convallis, lorem a tempus semper, dui dui
+  euismod elit, vitae placerat urna tortor vitae lacus.  Nullam libero
+  mauris, consequat quis, varius et, dictum id, arcu.  Mauris mollis
+  tincidunt felis.  Aliquam feugiat tellus ut neque.  Nulla facilisis,
+  risus a rhoncus fermentum, tellus tellus lacinia purus, et dictum
+  nunc justo sit amet elit.
+\end{abstract}
+#+END_EXPORT
+
+#+LaTeX: \maketitle
+
+* Introduction
+Test this cite:Bar2010Roll,Yu2009Tuning,Sze2006Mosfets.
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit.  Donec hendrerit tempor tellus.  Donec pretium posuere tellus.  Proin quam nisl, tincidunt et, mattis eget, convallis nec, purus.  Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.  Nulla posuere.  Donec vitae dolor.  Nullam tristique diam non turpis.  Cras placerat accumsan nulla.  Nullam rutrum.  Nam vestibulum accumsan nisl. [[ref:eq:2]]
+
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit.  Donec hendrerit tempor tellus.  Donec pretium posuere tellus.  Proin quam nisl, tincidunt et, mattis eget, convallis nec, purus.  Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.  Nulla posuere.  Donec vitae dolor.  Nullam tristique diam non turpis.  Cras placerat accumsan nulla.  Nullam rutrum.  Nam vestibulum accumsan nisl.
+
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit.  Donec hendrerit tempor tellus.  Donec pretium posuere tellus.  Proin quam nisl, tincidunt et, mattis eget, convallis nec, purus.  Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.  Nulla posuere.  Donec vitae dolor.  Nullam tristique diam non turpis.  Cras placerat accumsan nulla.  Nullam rutrum.  Nam vestibulum accumsan nisl.
+
+I want to cite eq [[ref:eq:1]]. 
+
+\begin{equation}
+\label{eq:1}
+\begin{aligned}
+a + b &= 1\\
+b + c &= 3
+\end{aligned}
+\end{equation}
+
+\begin{equation}
+\label{eq:2}
+e^{i \pi} + 1 = 0
+\end{equation}
+
+
+* 
+
+[[bibliography:ref.bib]]
