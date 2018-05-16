@@ -10,11 +10,17 @@ VERBOSE = --verbose
 LATEXMKFLAGS = -f -pdf -quiet
 LATEXMKFLAGS += -pdflatex="pdflatex -interaction=nonstopmode"
 
-all: post-process pandoc-to-word latex-to-pdf
+all: build post-process pandoc-to-word latex-to-pdf
+
+build: | $(BUILD_PATH) $(IMG_PATH)
+
+$(BUILD_PATH):
+	mkdir -p $@
+
+$(IMG_PATH):
+	mkdir -p $@
 
 post-process: post_process.py
-	test ! -d $(BUILD_PATH) && mkdir $(BUILD_PATH)
-	test ! -d $(IMG_PATH) && mkdir $(IMG_PATH)
 	python post_process.py
 
 pandoc-to-word:
