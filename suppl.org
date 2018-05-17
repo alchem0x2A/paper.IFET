@@ -192,7 +192,126 @@ $^{\circ} \mathrm{C}$ and 100 $^{\circ} \mathrm{C}$ at 30 $^{\circ}
 LN95 liquid nitrogen flowmeter (Linkam UK).
 
 
-* 
+* Nanoscale characterizations
+
+#+CAPTION: Characterization of single layer graphene transferred onto SiO_{2} substrate. (a) Atomic force microscopy (AFM) morphology of transferred graphene, showing a small rooted mean squared (RMS) roughness of 0.54 nm. (b) Optical images of transferred single layer graphene on SiO_{2} wafer. Very minor multilayer islands with diameter less than 2.5 $\mu \mathrm{m}$ indicates uniform single layer property. (c) Raman spectrum of single layer graphene. The high ratio between the 2D and G peaks indicates single layer graphene, with suppressed defects shown by the G' peak.
+#+ATTR_LATEX: :width 0.8\linewidth
+[[file:img/SI-single-layer.pdf]]
+
+Since the thickness of F_{16}CuPc films on graphene and SiO_{2}
+surfaces differs a lot, we use the quantity $\Delta f_{\mathrm{QCM}}$
+for the amount of deposited F_{16}CuPc. We examined the thickness of
+the films $t_{F_{16}}$ using cross-sectional SEM imaged in both cases
+(Figure [[ref:fig:sem-side-gr]] and [[ref:fig:sem-side-sio2]]). We measured
+the thickness of the SiO_{2} shown in the image $\hat{t}_{SiO_{2}}$
+for each image, and calibrated the thickness using the measured film
+thickness $\hat{t}_{F_{16}}$ using:
+\begin{equation}
+\label{eq:2}
+t_{F_{16}} = \frac{285\ \mathrm{nm}}{\hat{t}_{SiO_{2}}} \hat{t}_{F_{16}}
+\end{equation}
+
+#+CAPTION: Cross-sectional SEM images of F_{16}CuPc on graphene on SiO_{2} wafer with different values of $\Delta f_{\mathrm{QCM}}$.
+#+ATTR_LATEX: :width 0.95\linewidth :placement [!H]
+#+NAME: fig:sem-side-gr
+[[file:img/SI-thickness-f-side-gr.pdf]]
+
+#+CAPTION: Cross-sectional SEM images of F_{16}CuPc on  SiO_{2} wafer with different values of $\Delta f_{\mathrm{QCM}}$. Scale bars are 200 nm.
+#+ATTR_LATEX: :width 0.6\linewidth :placement [!H]
+#+NAME: fig:sem-side-sio2
+[[file:img/SI-thickness-f-side-sio2.pdf]]
+
+The relation between $t_{F_{16}}$ as a function of $\Delta
+f_{\mathrm{QCM}}$ is calculated using linear regression in Figure
+[[ref:fig:thickness-f-relation]]. It can be seen that for the same amount
+of F_{16}CuPc deposited, the film thickness on graphene is roughly 5
+times that on the SiO_{2} surface, due to the formation of NWs.
+
+#+CAPTION: Linear regression of the thickness of F_{16}CuPc films on graphene and SiO_{2} as functions of $\Delta f_{\mathrm{QCM}}$
+#+ATTR_LATEX: :width 0.5\linewidth 
+#+NAME: fig:thickness-f-relation 
+[[file:raw_img/SI-thickness-f-relation.pdf]]
+
+
+#+CAPTION: Top SEM images of F_{16}CuPc on graphene on SiO_{2} wafer with different values of film thickness.
+#+ATTR_LATEX: :width 0.8\linewidth 
+[[file:img/SI-thickness-top-gr.pdf]]
+
+
+#+CAPTION: Top SEM images of F_{16}CuPc on SiO_{2} wafer with different values of film thickness.
+#+ATTR_LATEX: :width 0.6\linewidth 
+[[file:img/SI-thickness-top-sio2.pdf]]
+
+
+#+CAPTION: Atomic force microscopy (AFM) images of F_{16}CuPc on graphene and SiO_{2} surfaces with different values of $\Delta f_{\mathrm{QCM}}$
+#+ATTR_LATEX: :width 0.85\linewidth
+[[file:img/SI-AFM-thickness.pdf]]
+
+
+#+CAPTION: X-ray diffraction (XRD) of F_{16}CuPc in various forms. The F_{16}CuPc on graphene and SiO_{2} were deposited using $\Delta f_{\mathrm{QCM}} = 600$ Hz.
+#+ATTR_LATEX: :width 0.65\linewidth
+#+NAME: fig:XRD
+[[file:img/SI-XRD.pdf]]
+
+
+#+CAPTION: Analysis of the XRD of F_{16}CuPc in various forms using the Debye-Scherrer equation
+|----------------------+------------+------------+------------|
+| <l25>                |      <r16> |      <r16> |      <r16> |
+| Sample               | $2\theta$ ($^{\circ}$) |  $B$ (rad) |   $L$ (nm) |
+|----------------------+------------+------------+------------|
+| F_{16}CuPc Powder    |       6.28 |    0.00264 |      54.99 |
+| F_{16}CuPc on SiO_{2} |       6.53 |    0.00297 |      48.85 |
+| F_{16}CuPc on graphene |      28.69 |     0.0160 |       9.05 |
+|----------------------+------------+------------+------------|
+
+
+* Superhydrophobicity of F_{16}CuPc NWs
+
+#+CAPTION: Dynamic and equilibrium contact angles on F_{16}CuPc nanostructures as a functions of film thickness.
+#+ATTR_LATEX: :width 0.8\linewidth
+[[file:img/SI-thickness-CA.pdf]]
+
+#+CAPTION: SEM images of Al (50 nm) deposited on different F_{16}CuPc nanostructures.
+#+ATTR_LATEX: :width 0.8\linewidth
+[[file:img/SI_compasion_Al_depo.pdf]]
+
+#+CAPTION: F_{16}CuPc nanostructures on other materials. (a) F_{16}CuPc deposited on Cu and Cu with CVD-grown graphene. (b) F_{16}CuPc deposited on wood slice and graphene-covered wood slice.
+#+ATTR_LATEX: :width 0.8\linewidth
+[[file:img/SI-other-materials.pdf]]
+
+* Electronic properties
+
+#+CAPTION: Characterization of pure graphene-based field effect transistor. (a) Change of the CNP point ($V_{\mathrm{CNP}}$) before and after deposition of F_{16}CuPc in glovebox.  (b) Forward and backward scan of a graphene transistor on OTS-treated SiO_{2} in air. (c) Drift of $V_{\mathrm{CNP}}$ of a graphene transistor on OTS-treated SiO_{2} in air over 8 hours.
+#+ATTR_LATEX: :width 0.9\linewidth
+[[file:img/SI-gr-transistor.pdf]]
+
+#+CAPTION: $J_{\mathrm{DS}}-V_{\mathrm{G}}$ characterization of graphene-F_{16}CuPc VFET with thinner film thicknesses: (a) 100 nm and (b) 200 nm. In the case of 100 nm F_{16}CuPc, the $J_{\mathrm{DS}}$ is greatly influenced by the current density in graphene and the device brokedown at higher current densities. 
+#+ATTR_LATEX: :width 0.9\linewidth
+[[file:img/SI-thinner-transistor.pdf]]
+
+#+CAPTION: Breakdown of F_{16}CuPc NWs. (a) Detaching process of LM droplet from normal  F_{16}CuPc NWs. No adhesion is observed. (b) Detaching process of LM droplet from brokendown  F_{16}CuPc NWs. A "neck" of LM adhered to the surface can be observed. (c) Micro-nanoscale examination of  F_{16}CuPc NW breakdown. i: optical image and ii: low magnification SEM image of the spot where breakdown took place. iii-vi zoomed-in SEM images of different locations near the breakdown spot. Exfoliation of graphene could be seen around the edge of the spot, as well as merging of  F_{16}CuPc NWs.
+#+ATTR_LATEX: :width 0.8\linewidth
+[[file:img/SI-breakdown-NW.pdf]]
+
+
+* Temperature sensing
+
+#+CAPTION: Morphology change of F_{16}CuPc NWs upon heating. No obvious change of morphology was observed under 200 $^{\circ} \mathrm{C}$, while the NWs became thicker and straighter above 250 $^{\circ} \mathrm{C}$, indicating phase transition.
+#+ATTR_LATEX: :width 0.8\linewidth
+[[file:img/SI-morphology-NW-T.pdf]]
+
+
+#+CAPTION: Additional temperature-dependent characterizations of the graphene-F_{16}CuPc transistor. (a) Ration between the drain-source current at certain $T$ and $T=20\ ^{\circ} \mathrm{C}$ during various heating-cooling cycles between 20 $^{\circ} \mathrm{C}$ and 60 $^{\circ} \mathrm{C}$. $V_{\mathrm{G}}$ was kept 0 V during the process. (b) Theoretical gain in the drain-source current compared with $T=20\ ^{\circ} \mathrm{C}$ as a function of $T$ with different Schottky barrier height.
+#+ATTR_LATEX: :width 0.9\linewidth
+[[file:img/SI-T-fig.pdf]]
+
+
+* Analytical calculation of droplet pressure
+
+*************** TODO 
+*************** END
+
+
 
 * References
 
