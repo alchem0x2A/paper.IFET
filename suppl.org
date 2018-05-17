@@ -212,12 +212,12 @@ t_{F_{16}} = \frac{285\ \mathrm{nm}}{\hat{t}_{SiO_{2}}} \hat{t}_{F_{16}}
 \end{equation}
 
 #+CAPTION: Cross-sectional SEM images of F_{16}CuPc on graphene on SiO_{2} wafer with different values of $\Delta f_{\mathrm{QCM}}$.
-#+ATTR_LATEX: :width 0.95\linewidth :placement [!H]
+#+ATTR_LATEX: :width 0.95\linewidth
 #+NAME: fig:sem-side-gr
 [[file:img/SI-thickness-f-side-gr.pdf]]
 
 #+CAPTION: Cross-sectional SEM images of F_{16}CuPc on  SiO_{2} wafer with different values of $\Delta f_{\mathrm{QCM}}$. Scale bars are 200 nm.
-#+ATTR_LATEX: :width 0.6\linewidth :placement [!H]
+#+ATTR_LATEX: :width 0.6\linewidth
 #+NAME: fig:sem-side-sio2
 [[file:img/SI-thickness-f-side-sio2.pdf]]
 
@@ -230,7 +230,7 @@ times that on the SiO_{2} surface, due to the formation of NWs.
 #+CAPTION: Linear regression of the thickness of F_{16}CuPc films on graphene and SiO_{2} as functions of $\Delta f_{\mathrm{QCM}}$
 #+ATTR_LATEX: :width 0.5\linewidth 
 #+NAME: fig:thickness-f-relation 
-[[file:raw_img/SI-thickness-f-relation.pdf]]
+[[file:img/SI-thickness-f-relation.pdf]]
 
 
 #+CAPTION: Top SEM images of F_{16}CuPc on graphene on SiO_{2} wafer with different values of film thickness.
@@ -292,6 +292,11 @@ times that on the SiO_{2} surface, due to the formation of NWs.
 #+CAPTION: Breakdown of F_{16}CuPc NWs. (a) Detaching process of LM droplet from normal  F_{16}CuPc NWs. No adhesion is observed. (b) Detaching process of LM droplet from brokendown  F_{16}CuPc NWs. A "neck" of LM adhered to the surface can be observed. (c) Micro-nanoscale examination of  F_{16}CuPc NW breakdown. i: optical image and ii: low magnification SEM image of the spot where breakdown took place. iii-vi zoomed-in SEM images of different locations near the breakdown spot. Exfoliation of graphene could be seen around the edge of the spot, as well as merging of  F_{16}CuPc NWs.
 #+ATTR_LATEX: :width 0.8\linewidth
 [[file:img/SI-breakdown-NW.pdf]]
+
+
+#+CAPTION: Characterizations of graphene-F_{16}CuPc transistor using EGaIn as elastic liquid metal.
+#+ATTR_LATEX: :width 0.9\linewidth
+[[file:img/SI-EGaIn.pdf]]
 
 
 * Temperature sensing

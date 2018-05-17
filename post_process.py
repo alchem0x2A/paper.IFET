@@ -21,23 +21,24 @@ class TColors:
     UNDERLINE = '\033[4m'
 
 
-tex_file = "paper.tex"
+# tex_file = "paper.tex"
 # tex_tmp = "tmp.tex"
 
 # Delete the leading date and title
-contents = []
-with open(tex_file, "r") as fo:
-    contents = fo.readlines()
-    for i, line in enumerate(contents):
-        if re.search("\\\\begin{document}", line) is not None:
-            break               # find the main document
-        if (re.search("title\\{\\}", line) is not None) \
-           or (re.search("date\\{\\}", line) is not None) \
-           or (re.search("minted", line) is not None):
-            contents[i] = "%" + line
+def tex_process(tex_file):
+    contents = []
+    with open(tex_file, "r") as fo:
+        contents = fo.readlines()
+        for i, line in enumerate(contents):
+            if re.search("\\\\begin{document}", line) is not None:
+                break               # find the main document
+            if (re.search("title\\{\\}", line) is not None) \
+               or (re.search("date\\{\\}", line) is not None) \
+               or (re.search("minted", line) is not None):
+                contents[i] = "%" + line
 
-with open(tex_file, "w") as fw:
-    fw.writelines(contents)
+    with open(tex_file, "w") as fw:
+        fw.writelines(contents)
 
 # Convert the pdfs
 
@@ -68,6 +69,12 @@ if __name__ == "__main__":
     except IndexError:
         img_path = None
     file_list = []
+    # TeX process
+    for ifile in glob.glob("*.tex"):
+        tex_process(ifile)
+        print(TColors.OKBLUE + "Converted TeX file: {}".format(ifile) + TColors.ENDC)
+
+    # PDF Process 
     for ifile in glob.glob(os.path.join(RAW_PATH, "*.pdf")):
         if img_path is None:
             file_list.append((ifile))

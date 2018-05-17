@@ -5,12 +5,14 @@ BIB_FILE = ./ref.bib
 CSL_FILE = ./utils/aps.csl
 DOCX_NAME = ./build/paper.docx
 TEX_FILE = ./paper.tex
+SUPPL_TEX_FILE = ./suppl.tex
 PDF_M = paper.pdf
+PDF_SI = suppl.pdf
 VERBOSE = --verbose
 LATEXMKFLAGS = -f -pdf -quiet
 LATEXMKFLAGS += -pdflatex="pdflatex -interaction=nonstopmode"
 
-all: build post-process pandoc-to-word latex-to-pdf
+all: build post-process pandoc-to-word latex-to-pdf SI-latex-to-pdf
 
 build: | $(BUILD_PATH) $(IMG_PATH)
 
@@ -33,6 +35,11 @@ pandoc-to-word:
 latex-to-pdf: $(TEX_FILE) $(BIB_FILE)
 	latexmk $(LATEXMKFLAGS) $<
 	mv $(PDF_M) $(BUILD_PATH)
+	latexmk -c
+
+SI-latex-to-pdf: $(SUPPL_TEX_FILE) $(BIB_FILE)
+	latexmk $(LATEXMKFLAGS) $<
+	mv $(PDF_SI) $(BUILD_PATH)
 	latexmk -c
 
 clean:
