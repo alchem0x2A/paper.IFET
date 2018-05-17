@@ -1,0 +1,199 @@
+#+LATEX_CLASS: revtex4-1
+#+LATEX_CLASS_OPTIONS: [prb, onecolumn, linenumbers, hyperref, superscriptaddress, preprint, amsmath, amssymb, noshowpacs]
+#+LATEX_HEADER: \usepackage{graphicx}
+#+LATEX_HEADER: \usepackage{float}
+#+LATEX_HEADER: \usepackage{xcolor}
+#+LATEX_HEADER: \usepackage{hyperref}
+#+LATEX_HEADER: \renewcommand{\thepage}{S\arabic{page}}
+#+LATEX_HEADER: \renewcommand{\theequation}{S\arabic{equation}}
+#+LATEX_HEADER: \renewcommand{\thefigure}{S\arabic{figure}}
+#+LATEX_HEADER: \renewcommand{\bibnumfmt}[1]{S#1}
+#+LATEX_HEADER: \renewcommand{\citenumfont}[1]{S#1}
+
+
+
+
+#+OPTIONS: tex:t toc:nil todo:t author:nil date:nil title:nil ^:t tags:nil
+#+DESCRIPTION:
+
+#+NAME: latex-author-list
+#+BEGIN_EXPORT latex
+% The author list
+\title{Supporting Information for: \\ An Elastic Interfacial Transistor Enabled by Superhydrophobicity}
+\author{Tian Tian}
+\affiliation{Institute for Chemical and Bioengineering, ETH Z{\"{u}}rich,  Vladimir-Prelog Weg 1, CH-8093 Z{\"{u}}rich, Switzerland}
+\author{Chander Shekhar Sharma}
+\affiliation{Institut of Energy Technology, ETH Z{\"{u}}rich, Sonneggstrasse 3, CH-8092 Z{\"{u}}rich, Switzerland}
+\author{Navanshu Ahuja}
+\affiliation{Institute for Chemical and Bioengineering, ETH Z{\"{u}}rich,  Vladimir-Prelog Weg 1, CH-8093 Z{\"{u}}rich, Switzerland}
+\author{Matija Varga}
+\affiliation{Electronics Laboratory, ETH Z{\"{u}}rich,  Gloriastrasse 35,  CH-8092 Z{\"{u}}rich, Switzerland}
+\author{Raja Selvakumar}
+\affiliation{Institute for Chemical and Bioengineering, ETH Z{\"{u}}rich,  Vladimir-Prelog Weg 1, CH-8093 Z{\"{u}}rich, Switzerland}
+\author{Dimos Poulikakos}
+\affiliation{Institut of Energy Technology, ETH Z{\"{u}}rich, Sonneggstrasse 3, CH-8092 Z{\"{u}}rich, Switzerland}
+\author{Gerhard Tr\"{o}ster}
+\affiliation{Electronics Laboratory, ETH Z{\"{u}}rich,  Gloriastrasse 35,  CH-8092 Z{\"{u}}rich, Switzerland}
+\author{Chih-Jen Shih}
+\email{chih-jen.shih@chem.ethz.ch}
+\affiliation{Institute for Chemical and Bioengineering, ETH Z{\"{u}}rich,  Vladimir-Prelog Weg 1, CH-8093 Z{\"{u}}rich, Switzerland}
+#+END_EXPORT
+
+
+#+LaTeX: \maketitle
+
+* Methods
+
+** Materials
+Copper foil (20 $\mu \mathrm{m}$ thickness, 99.999%, Alfa Aesar),
+F_{16}CuPc (99%, sublimed, TCI Chemical), Hydrochloric acid (HCl,
+Sigma-Aldrich), Nitric acid (Sigma-Aldrich), Methane (99.9%, PanGas),
+Hydrogen (99.9%, PanGas), SiO_{2}/Si^{++} wafer (285 nm thermal
+oxide), Al pellet, PMMA, FeCl_{3}, Isopropanol (IPA), Acetone, OTS,
+chlorobenzene.
+*************** TODO Complete the material list
+*************** END
+
+** CVD synthesis of graphene
+
+Copper foil was cut into 2.5 cm $\times$ 3.5 cm piece, cleaned in 1M
+HCl solution to remove native oxide, rinsed in DI water and dried in
+Argon flow. The Cu foil was placed into a quartz boat which was
+cleaned by oxygen plasma in advance. The quartz boat was then loaded
+into a quartz tube with diameter of 2.5 inch. The quart tube was
+mounted onto a home-made CVD system. The quartz boat was placed in the
+center of the heating zone and kept at 30~35 cm from the position of
+the pump valve. The tube was purged and refilled with H_{2} 3 times
+and subsequently heated up to 1000 $^\circ \mathrm{C}$ with a ramp
+rate of 20 $^{\circ}\mathrm{C} \cdot \mathrm{min}^{-1}$. The copper
+foil was annealed at 1000 $^\circ \mathrm{C}$ for 30 min under 15 sccm
+H_{2} flow, with the pressure kept at 150 mTorr. 40 sccm CH_{4} was
+then added into the CVD system and the pressure was kept at 5 Torr for
+30 min to grow graphene onto the Cu foil. After the graphene growth
+was finished, the CH_{4} flow and heating were stopped, and the quartz
+boat was moved out of the heating zone for a fast cooling at rate of
+200 $^{\circ}\mathrm{C} \cdot \mathrm{min}^{-1}$. When the temperature
+of the system cooled under 100 $^{\circ}\mathrm{C}$, the quartz tube
+was refilled with Argon and the Cu foil was taken out.
+
+** Transfer process of graphene
+:PROPERTIES:
+:CUSTOM_ID: sec:gr-transfer
+:END:
+
+
+The graphene grown on the backside (near the quartz boat) was used for
+all processes involved here. 4% PMMA solution in aniline was
+spin-coated onto the desired side of Cu foil at 2000 rpm for 40 s. The
+PMMA-coated Cu foil was then annealed on a hot plate at 200
+$^{\circ}\mathrm{C}$ for 1 min. The graphene on the non-coated side
+was removed by 400 W O_{2} plasma for 1 min. The Cu foil was then cut
+into desired size and placed onto the surface of FeCl_{3} solution in
+a petri dish for 1.5 h until all the Cu was etched. The floating
+PMMA-graphene membranes were subsequently transferred onto DI water
+(3X), HCl (30 min) and DI water (5X) for further cleaning, and
+transferred onto the desired substrate. For substrates that were
+highly hydrophobic, the PMMA-graphene membrane was transferred onto
+5:1 mixture of water-isoprapanol at the last step before transferring
+onto the substrate. The substrate was kept in a closed petri dish
+until all the water was drained, and then heated at 150
+$^{\circ}\mathrm{C}$ for 2 min to remove residual water. The substrate
+with transferred PMMA-graphene was cooled to root temperature and
+dipped into a bath of acetone for 30 s to 2 min to remove the
+PMMA. The substrate was rinsed repeatedly in acetone and IPA, and
+dried in Argon flow.
+
+The transfer method can be used on surfaces substrates like metal, Si, SiO_{2}
+(including chemically-modified SiO_{2}), glass and even textured
+materials like wood.
+
+** Deposition of F_{16}CuPc
+
+The desired substrate was mounted onto a glass of 3 cm $\times$ 3 cm
+and loaded into a mBraun high vacuum thermal evaporation system. The
+surface to be deposited was placed facing the crucible. 3~10 mg of
+F_{16}CuPc powder was added into a quartz crucible and placed into the
+heating zone. The evaporation system was then purged under 10^{-6}
+mBar. F_{16}CuPc was deposited at 300 ~ 360 $^{\circ}\mathrm{C}$ with
+a deposition rate of 0.2 ~ 0.8 \AA/s indicated by the quartz crystal
+microabalance (QCM). Since the thickness of F_{16}CuPc film on
+different substrates differs a lot, the change of QCM oscillation
+frequency $\Delta f_{\mathrm{QCM}}$ during the deposition process was
+used as the measurement of amount of F_{16}CuPc deposited. $\Delta
+f_{\mathrm{QCM}}$ is related to the change of mass $\Delta m$ by the
+Sauerbrey equation:
+*************** TODO cite
+*************** END
+
+
+\begin{equation}
+\label{eq:1}
+\Delta f_{\mathrm{QCM}} = -\frac{2 f_{0}^{2}}{A \sqrt{\rho_{\mathrm{Q}} \mu_{\mathrm{Q}}}} \Delta m
+\end{equation}
+where the parameters $A$, $\rho_{\mathrm{Q}}$ and $\mu_{\mathrm{Q}}$
+are quartz-related properties. Since $\Delta f_{\mathrm{QCM}}$ is very
+small compared with the resonance frequency $f_{0}$, we can assume
+$f_{0}$ as constant. Therefore $\Delta f_{\mathrm{QCM}}$ is
+proportional to the mass change, which is directly related to the
+amount of F_{16}CuPc deposited.
+
+** Fabrication of graphene-F_{16}CuPc interfacial transistor
+
+SiO2/Si wafer was cut to 2 cm $\times$ 2 cm pieces and subsequently
+cleaned by sonication in DI water, acetone, IPA. The wafers were dried
+and further cleaned in 400 W O_{2} plasma for 10 min. The wafers were
+immersed in 20 mL solution of 0.1 mM OTS in dry chlorobenzene for 2
+h. The wafers were then rinsed by dry chlorobenzene and heated in
+nitrogen atmosphere at 200 $^{\circ}\mathrm{C}$ for 5 min. Graphene
+(1.0 cm $\times$ 1.0 cm) was transferred onto the OTS-treated wafers
+using the steps described in [[ref:sec:gr-transfer]].
+
+Source electrodes (100 nm Al) were deposited onto graphene using
+shadow masks at deposition rate of 1~3 \AA/s. F_{16}CuPc were further
+deposited by changing the mask onto graphene. The thickness of
+F_{16}CuPc were controlled by $\Delta f_{\mathrm{QCM}}$ and checked by
+SEM. After the deposition, all F_{16}CuPc deposited outside the
+graphene region were removed by scratching using the cone of an
+Eppendorf tip. A contact to the doped Si at backside was made for the
+gate electrode. A liquid metal droplet (Mercury or EGaIn) were used as
+the drain electrode.
+
+** Measurements involving the elastic liquid metal interfacial transistor
+
+The graphene-F_{16}CuPc interfacial transistors were mounted onto an
+insulating block of a modified MCA-3 surface tensiometer. The gate and
+source terminals were connected using micropositioners (Linkam UK). A
+home-made Ag-coated Cu probe with a plate (fabricated by mechanical
+stamping) at the head were used as the drain electrode. The plate was
+adjusted parallel to the SiO{2} wafer. A LM droplet with volume ~0.1
+$\mu \mathrm{L}$ was dispenced and attached to the bottom side of the
+plate. The droplet was monitored using a Mitutoyo 2X long working
+distance lens, and caredfully contacted with the surface of the
+surface of F_{16}CuPc. Electronic measurements were performed using an
+Agilent 1500B semiconductor analyzer. 
+
+The sudden change of electric field when applying the potential across
+F_{16}CuPc-LM interface may cause undesired breakdown of the
+F_{16}CuPc NWs. In tests involving gate-control, the potential were
+first added onto the terminals without the LM droplet contacting
+F_{16}CuPc NWs. The potential was maintained until the droplet was in
+contact with F_{16}CuPc NWs and a valid current between the
+drain-source was established.
+
+For pressure tests, the LM droplet was pressed against the F_{16}CuPc
+NWs surface using a manual pneumatic valve. The moving distance of the
+droplet was controlled within 200 $\mu \mathrm{m}$ to avoid mechanical
+deformation of F_{16}CuPc NWs
+
+For temperature tests, the mounted block was replaced by a LT-600
+heating unit (Linkam UK). The temperature was ramped between 20
+$^{\circ} \mathrm{C}$ and 100 $^{\circ} \mathrm{C}$ at 30 $^{\circ}
+\mathrm{C} \cdot \mathrm{min}^{-1}$. The cooling is controlled by a
+LN95 liquid nitrogen flowmeter (Linkam UK).
+
+
+* 
+
+* References
+
+[[bibliography:ref.bib]]

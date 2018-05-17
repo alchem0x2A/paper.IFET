@@ -250,4 +250,8 @@ TSWLatexianTemp*
 build/
 paper.tex
 paperNotes.bib
+paper.pdf
+suppl.tex
+supplNotes.bib
+suppl.pdf
 img/
