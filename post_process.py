@@ -3,7 +3,10 @@ import os, os.path
 import shutil
 import glob
 import subprocess
+import multiprocessing
+from multiprocessing import Pool
 import warnings
+
 
 
 # color definition
@@ -52,10 +55,25 @@ def convert_pdf(infile, outdir="./img"):
         warnings.warn(TColors.FAIL + "File {} cannot be converted!".format(infile) + TColors.ENDC)
     else:
         print(TColors.OKGREEN +
-              "File {} converted successfully.".format(infile)
+              "File {} converted successfully on thread {}.".format(infile, multiprocessing.current_process())
               +TColors.ENDC)
 
 # Convert all the pdf files
 RAW_PATH = "./raw_img"
-for ifile in glob.glob(os.path.join(RAW_PATH, "*.pdf")):
-    convert_pdf(ifile)
+
+if __name__ == "__main__":
+    import sys
+    try:
+        img_path = sys.argv[1]
+    except IndexError:
+        img_path = None
+    file_list = []
+    for ifile in glob.glob(os.path.join(RAW_PATH, "*.pdf")):
+        if img_path is None:
+            file_list.append((ifile))
+        else:
+            file_list.append((ifile, img_path))
+    N_cores = multiprocessing.cpu_count()
+    # multicore
+    with Pool(N_cores) as p:
+        p.map(convert_pdf, file_list)
