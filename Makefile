@@ -7,6 +7,7 @@ DOCX_NAME = ./build/paper.docx
 TEX_FILE = ./paper.tex
 SUPPL_TEX_FILE = ./suppl.tex
 PDF_M = paper.pdf
+PDF_CHANG = paper_change.pdf
 PDF_SI = suppl.pdf
 VERBOSE = --verbose
 LATEXMKFLAGS = -f -pdf -quiet

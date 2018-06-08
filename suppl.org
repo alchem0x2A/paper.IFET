@@ -311,11 +311,121 @@ times that on the SiO_{2} surface, due to the formation of NWs.
 [[file:img/SI-T-fig.pdf]]
 
 
-* Analytical calculation of droplet pressure
+* Analytical calculation of droplet tension between parallel plates
 
-*************** TODO 
-*************** END
+The capillary pressure at the boundary of a droplet which is sit
+between two parallel plates can be modeled by the Young-Laplace
+equation:
+\begin{equation}
+\label{eq:3}
+\Delta p = \gamma (R_{1}^{-1} + R_{2}^{-1})
+\end{equation}
 
+where $R_{1}$ and $R_{2}$ are the two principle radii of the
+droplet. Within the low Bond number regime (\(Bo = \Delta p g R^{2} /
+\gamma < 1 \)), the effect of gravity can be ignored, and the shape of
+the droplet between two parallel horizontal plates can be modeled by
+an analytical model. In the simplest case where the contact angle
+between a convex droplet and both plates are the same, the
+characteristic geometric parameters of the droplet are the principle
+radii $R_{1}$ and $R_{2}$, the (half) height $\delta$ and contact
+angle $\theta$ of the droplet cite:berthier_2012_microdroplet. As
+shown in Figure [[ref:fig-SI-drop-model]](a), the droplet is axial
+symmetric and $R_{1}$ is the maximum radius of horizontal cross
+sections, while $R_{2}$ is the radius of the smaller arc of the
+vertical cross section, when gravity an be ignored.
+
+The volume of the droplet is then expressed as:
+
+\begin{equation}
+\label{eq:8}
+\begin{aligned}
+V &= 2 \pi \int_{0}^{\delta} \left[ (R_{1} - R_{2}) + \sqrt{R_{2}^{2} - z^{2}}\right]^{2} \mathrm{d}z \\
+  &= 2\pi \left\{ \left[(R_{1} - R_{2})^{2} + R_{2}^{2} \right] z 
+- \frac{z^{3}}{3} \right\} \Bigg|_{0}^{\delta}
+ + 2 \pi \left\{(R_{1} - R_{2}) R_{2}^{2} (\theta' + \sin \theta' \cos \theta')
+\right\} \Bigg |_{0}^{\theta - \pi/2} \\
+&= 2 \pi \left \{ [(R_{1} - R_{2})^{2} + R_{2}^{2}]\delta - \frac{\delta^{3}}{3} + (R_{1} - R_{2}) R_{2}^{2} (\theta - \pi/2 -\sin \theta \cos \theta)\right\} \\
+&= f(R_{1}, R_{2}, \delta, \theta)
+\end{aligned}
+\end{equation}
+
+the volume of an asymmetric droplet can be derived in a similar
+approach: a droplet with contact angles at the top and bottom plates
+as $\theta_{\mathrm{t}}$ and $\theta_{\mathrm{b}}$ can be divided into
+two parts with heights $\delta_{\mathrm{t}}$ and $\delta_{\mathrm{b}}$
+(Figure [[ref:fig-SI-drop-model]](b)), of which the volume is given by
+half the value of a corresponding symmetric droplet: 
+
+\begin{equation}
+\label{eq:9}
+V = \frac{f(R_{1}, R_{2}, \delta_{\mathrm{t}}, \theta_{\mathrm{t}}) + f(R_{1}, R_{2}, \delta_{\mathrm{b}}, \theta_{\mathrm{b}})}{2}
+\end{equation}
+
+#+CAPTION: Analytical model of droplet geometry between two horizontal parallel plates, the droplets have a convex shape in both cases. (a) symmetrical case, the volume of droplet is described by a function $f(R_{1}, R_{2}, \delta, \theta)$ as a function of principle radii $R_{1}$ and $R_{2}$, the helf height of the droplet $\delta$ and contact angle $\theta$. (b) asymmetrical case where top and bottom contact angles $\theta_{\mathrm{t}}$ and $\theta_{\mathrm{b}}$ are different. The volume of droplet is given by: $V = [f(R_{1}, R_{2}, \delta_{\mathrm{t}}, \theta_{\mathrm{t}}) + f(R_{1}, R_{2}, \delta_{\mathrm{b}}, \theta_{\mathrm{b}})]/2$.
+#+NAME: fig-SI-drop-model
+#+ATTR_LATEX: :width 0.8\linewidth
+[[file:img/SI-droplet-model.pdf]]
+
+
+Note that the radius $R_{\mathrm{t}}$ and $R_{\mathrm{b}}$ need to be
+calculated by fitting the curvature of droplet. Alternatively we can
+express the principle radii using the half height $\delta$ and contact
+radius $r$:
+
+\begin{eqnarray}
+\label{eq:10}
+&R_{1} &= {\displaystyle r + \delta \frac{\cos \theta - 1}{ \sin \theta}}  \\
+&R_{2} &= -{\displaystyle \frac{\delta}{\cos \theta}}
+\end{eqnarray}
+
+We can now replace the volume of symmetric droplet as 
+\begin{equation}
+\label{eq:11}
+V = f'(r, \delta, \theta)
+\end{equation}
+and asymmetric droplet:
+\begin{equation}
+\label{eq:12}
+V = \frac{f'(r_{\mathrm{t}}, \delta_{\mathrm{t}}, \theta_{\mathrm{t}}) 
++ f'(r_{\mathrm{b}}, \delta_{\mathrm{b}}, \theta_{\mathrm{b}})}{2}
+\end{equation}
+
+In the case of calculating droplet stress as a function of strain, we
+assume that the contact angle and volume of the droplet remain
+constant during the droplet deformation process. The contact radius is
+then calculated by solving eq [[ref:eq:9]] given the contact angle
+$\theta_{\mathrm{t}}$, $\theta_{\mathrm{b}}$ and volume of droplet
+$V_{0}$. Given the fact that $R_{2} = -\delta_{\mathrm{t}}/\cos
+\theta_{\mathrm{t}} = -\delta_{\mathrm{b}}/\cos \theta_{\mathrm{b}}$
+and $\delta_{\mathrm{t}} + \delta_{\mathrm{b}} = 2\delta$, where
+$2\delta$ is the full height of the droplet, we get:
+
+\begin{eqnarray}
+\label{eq:deltas-1}
+\delta_{\mathrm{t}} &= {\displaystyle \frac{2\delta \cos \theta_{\mathrm{t}}}{\cos \theta_{\mathrm{t}} 
+                  + \cos \theta_{\mathrm{b}}}} \\
+\label{eq:deltas-2}
+\delta_{\mathrm{b}} &= {\displaystyle \frac{2\delta \cos \theta_{\mathrm{b}}}{\cos \theta_{\mathrm{t}} 
+                  + \cos \theta_{\mathrm{b}}}}
+\end{eqnarray}
+the contact radius $r_{\mathrm{t}}$ and $r_{\mathrm{b}}$ follow:
+\begin{eqnarray}
+\label{eq:t-1}
+r_{\mathrm{t}} &= R_{1} + {\displaystyle \frac{2\delta \cos \theta_{\mathrm{t}}}{\cos \theta_{\mathrm{t}} 
+                                + \cos \theta_{\mathrm{b}}}
+                          \frac{\cos \theta_{\mathrm{t}} - 1}{\sin \theta_{\mathrm{t}}}}\\
+\label{eq:t-2}
+r_{\mathrm{b}} &= R_{1} + {\displaystyle \frac{2\delta \cos \theta_{\mathrm{b}}}{\cos \theta_{\mathrm{t}} 
+                                + \cos \theta_{\mathrm{b}}}
+                          \frac{\cos \theta_{\mathrm{b}} - 1}{\sin \theta_{\mathrm{b}}}}
+\end{eqnarray}
+
+Solving the equation $V_{0} = [f'(r_{\mathrm{t}}, \delta_{\mathrm{t}},
+\theta_{\mathrm{t}}) + f'(r_{\mathrm{b}}, \delta_{\mathrm{b}},
+\theta_{\mathrm{b}})]/2$, combined with eqs [[ref:eq:deltas-1]] -
+[[ref:eq:t-2]], is equivalent to solve the sole parameter $R_{1}$, and
+back-converted to $r_{\mathrm{t}}$, $r_{\mathrm{b}}$.
 
 
 * References
