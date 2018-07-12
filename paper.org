@@ -46,245 +46,244 @@
 
 * Introduction
 
-Field-effect transistor (FET), used to amplify or switch electronic
-signals by an electric field, has been the fundamental building block
-of modern microelectronic systems for decades
-cite:Torsi_2013_rev,Ben_Sasson_2014. Recent advances in semiconductor
-materials and physics have further driven the development of
-functional transistors for a variety of technological
-applications. Typical strategies to enable new functionalities, such
-as elasticity and stimuli responsiveness, in a FET rely on coupling of
-another passive component, which considerably increase design
-complexity and power consumption.
+Recent advances in semiconductor materials and physics have driven the
+development of field-effect transistors (FETs) for a variety of
+applications  cite:Torsi_2013_rev,Ben_Sasson_2014.
 *************** TODO Examples
 *************** END
- It is desirable to intrinsically incorporate the functionalities in
- semiconductors but often compromises the device characteristics and
- processability.
+Enabling mechanical durability and responsiveness in FETs offers new
+ technological opportunities beyond the reach of existing platforms.
 *************** TODO Examples
+*************** END
+Typical strategy for creating mechanically responsive FETs relies on
+ coupling of another passive component, which often limits sensitivity
+ and increases power consumption.
+*************** TODO Refs
+*************** END
+It is desirable to intrinsically incorporate the durability in
+semiconductor materials but often compromises the device performance
+and processability.
+*************** TODO Refs
 *************** END
 For example, the elasticity, the ability of a material to return to
-its original shape when the deforming force is released, requires an
-entropic force acting within the material, fundamentally hindering
-carrier transport cite:OConnor_2011_strain_P3HT. Here we demonstrate a
-concept to a new class of transistor components, in which the
-functionalities are enabled via multi-scale engineering of the
-interfacial properties. By tailoring a superhydrophobic surface
-comprised of semiconductor nanowires, we report a large elastic strain
-up to 12.5% vertical to the substrate plane, following the reversible
-motion of a liquid metal droplet up mechanical stress, with an
-excellent pressure sensitivity down to 1 Pa. The carrier density in
-nanowires is modulated by the partial penetration of an electric field
-through a layer of two-dimensional electron gas (2DEG), showing an
-on/off current ratio exceeding 10^{5}. This study establishes a
-versatile design concept that bridges macroscopic interfacial
-phenomena with nanoelectronic responses.
+its original shape when the deforming stress is released, requires an
+entropic force acting within the material, fundamentally impeding
+carrier transport cite:OConnor_2011_strain_P3HT.  Here we demonstrate
+a conceptually different approach concept to to address the challenge,
+inspired by the liquid-repellent behavior of a sessile droplet
+interacting with a superhydrophobic surface. We design an interfacial
+transistor made by superhydrophobic semiconductor nanowires (NWs)
+sandwiched between a layer of two-dimensional electron gas (2DEG) and
+a conductive Cassie-Baxter (CB) sessile droplet. Following the
+reversible motion of the CB droplet upon mechanical stress, we report
+a large vertical elastic displacement up to 12.5% together with an
+excellent stress sensitivity down to 1 pascal. Our analysis shows that
+the stress-current response is mainly contributed by the reversible
+change of contact area at the superhydrophobic liquid-NW
+interface. The carrier density in NWs is modulated by the partial
+penetration of an electrostatic field through 2DEG, showing an on/off
+current ratio exceeding $3 \time 10^{4}$. The interfacial current
+density can be further modulated by varing the temperature, due to the
+existence of gate-tunable Schottkey barrier at the liquid-NW
+interface, adding further controllability in addition to elastic
+stress and gate voltage. Here we refer to such device architecture as the
+"elastic interfacial transistor", which demonstrates a versatile
+platform that bridges multiple macroscopic interfacial phenomena with
+nanoelectronic responses
 
-To fully integrate the stress sensing into the field effect
-transistor, here we propose a new concept of "interfacial field effect
-transistor", which incorporates the stress sensing using repeatable
-strain of liquid metal droplets on superhydrophobic semiconducting
-nanowires (NWs). The scheme for an interfacial transistor is shown in
-Figure [[ref:fig:main-1]](a) and (b). The basic components of an
-interfacial transistor include liquid metal droplet as the drain
-terminal, superhydrophobic semiconducting NWs as the carrier
-transporting layer, a 2DEG layer serves as a source terminal, a
-dielectric layer and a gate terminal underneath the 2DEG. The
-interfacial transistor is also an example of the integration and
-interplay of multiscale physical phenomena into one single electronic
-component. At the macroscopic level (> 1 $\mathrm{\mu m}$), the
-formation of NWs creates a superhydrophobic interface. When a
-conducting liquid, such as the liquid metal is used, the current
-change due to elasticity of the liquid droplet, can be harnessed at
-the NW-droplet interface. The common issue of droplet pinning in
-liquid-metal-based electronic devices,
-*************** TODO reference
-*************** END
-is overcome by the superhydrophobicity at the NW-droplet interface. As
-a result, reversible pressure sensing with relatively large droplet
-strain in feasible. The idea behind the droplet-based stress sensing
-comes from the surface tension of the droplet (Figure
-[[ref:fig:main-1]](c)). Up the vertical strain of the droplet, the stress
-in the droplet also increases as a result of the reduced mean
-curvature. On the other hand, the contact radius expands with vertical
-strain, which in turn changes the current that passes through the
-NW-semiconductor interface. Combining these two factors, the stress
-signal is translated into the change of current in the interfacial
-transistor. Zoom into the nanoscale level, we use a 2D material, an
-intrinsic 2DEG, as both the template layer for the epitaxial growth of
-semiconducting NWs, and the gate-tunable transporting
-interface. Unlike the quasi 2D electron gas (2DEG) in a
-metal-oxide-semiconductor (MOS) capacitor, a 2D material have an
-atomically sharp interface lack of dangling bonds, which makes the van
-der Waals epitaxy (vdWE) of highly crystalline semiconducting layer
-feasible
-cite:Tian_2017,Ojeda_Aristizabal_2017_C60,Lee_2014_rubrene,Kim_2017_remote. Moreover,
-the well-known templating effect of 2D materials introduces unique
-molecular packing and facilitates the formation of crystalline NWs
-cite:Zheng_2016_NW_gr,Wang_2015_solution_NW,Kim_2016_DBTTC. Finally at
-the quantum level, the low quantum capacitance (QC) of 2D materials
-enable the tuning of interfacial carrier distribution by the field
-effect, while maintaining the intrinsic conductivity cite:Tian_2016,
-leading to the feasibility of high performance 2DEG-based vertical
-field effect transistors (VFETs)
-cite:Yang2012Barristor,Shih2015Partially,Sun_2017_COF_VFET.
 
- In this paper, we demonstrate an example of the interfacial
-transistor employing graphene as the 2DEG and Copper(II)
-hexadecafluorophthalocyanine (F_{16}CuPc) as the semiconducting
-material.  We find that F_{16}CuPc forms NWs during the vdWE process on chemical
-vapor deposition (CVD) graphene surface. The nanostructured NW
-surface, together with the fluorine-rich nature of F_{16}CuPc lead to
-superhydrophobicity at the semiconductor-liquid interface at
-macroscale level. We further discover that the unique morphology is
-attributed to the template effect on graphene by vdW interactions at
-nanoscale. The graphene-induced orientation of F_{16}CuPc molecules at
-the F_{16}CuPc-graphene interface further enables energy level
-alignment at atomic scale, and carrier transport through the NWs. We
-demonstrate an interfacial vertical transistor by combing these
-multiscale phenomena, which can respond to multiple external stimuli,
-such as electrostatic gating, pressure and heat. The concept of the
-interfacial transistor might open a new category of inexpensive,
-reversible, and responsive transistors and circuits that can interact
-with environmental stimuli.
-
-* Results and discussions
-
-We choose F_{16}CuPc as a representative molecule to demonstrate the
-concept of interfacial transistor based graphene, due to its planar
-molecular structure, high carrier mobility and fluorine-rich chemical
-nature which enables its extensive application in applications such as
-field effect transistor and photovoltaic electronics cite:Bao_1998.
-*************** TODO 
+Figure [[ref:fig:main-1]] presents the device architecture of the proposed
+interfacial transistor. We consider a quantum capacitor device
+cite:Luryi_1988, in which a semiconductor layer is sandwiched between
+a conductive drain (D) and a 2DEG source (S) electrodes. The ultrathin
+and low-quantum-capacitance (low $C_{\mathrm{Q}}$) nature of 2DEG
+allows partial penetration of an electrostatic field exerted by the
+underlying gate (G) electrode cite:Shih2015Partially,Tian_2016,
+modulating the carrier density in semiconductor that controls
+drain-to-source current (\(I_{\mathrm{DS}}\)) (Figure
+[[ref:fig:main-1]](a)).
+*************** TODO change 
 *************** END
 
+The fact that $I_{\mathrm{DS}}$ passes through two
+semiconductor-electrode (semicondutor-S and semiconductor-D)
+interfaces maximizes the response to the interfacial properties. In
+addition, the design allows a thin semiconductor layer with the
+thickness smaller than the Debye screening length (due to the low
+relative permittivity $\epsilon_{\mathrm{r}}$ and charge density of
+semiconductor), offering a high current responsiveness.
 
- We accidentally discovered that, when deposited on single layer
-graphene by vdWE at room temperature (Figure [[ref:fig:main-2]](a)),
-F_{16}CuPc forms uniform NWs, greatly distinct to the thin-film
-morphology when deposited on silicon oxide (SiO_{2}), as revealed by
-the top-view and cross-sectional SEM images in Figure
-[[ref:fig:main-2]](b). The F_{16}CuPc NWs have high aspect ratio, with
-30~60 nm diameter and height up several hundreds of nm. The morphology
-of the F_{16}CuPc NWs is similar to thosed NWs formed on
-perylene-3,4,9,10-tetracarboxylic- 3,4,9,10-dianhydride (PTCDA) thin
-film cite:Yang_2009_F16_PTCDA or gold nanoparticles
-cite:Mbenkum_2006_F16_1D as templates, indicating the possibility of
-using graphene as an versatile molecular template. To investigate the
-origin of the graphene-assisted morphology transition of F_{16}CuPc
-that leads to the superhydrophobicity, we zoom into the
-F_{16}CuPc-substrate interface. We performed grazing incidence X-ray
-diffraction (GIXD) on both the SiO_{2}-F_{16}CuPc and Gr-F_{16}CuPc
-samples. The SiO_{2}-F_{16}CuPc sample as a dominating peak with
-interplanar distance $d=1.470\ \mathrm{nm}$ (labeled as $\alpha$)
-along the $q_{\mathrm{z}}$ axis (Figure [[ref:fig:main-2]](c)). This
-corresponds to the (002) plane in a F_{16}CuPc single crystal
-cite:Yang_2009_F16_PTCDA. The pure $q_{\mathrm{z}}$ dominance of the
-wave vector $\alpha$ indicates that the (002) plane is parallel to the
-SiO_{2} substrate, and the F_{16}CuPc molecules adopt an "edge-on"
-orientation. Another weak peak near the $q_{\mathrm{xy}}$ axis with
-$d=0.305\ \mathrm{nm}$ ($\beta$) further proves the nearly-vertical
-alignment of the F_{16}CuPc molecules. On the other hand, the
-intensity of the (002) peak greatly attenuates in the Gr-F_{16}CuPc
-sample, with emergence of several new peaks. Among them we select two representative peaks
-(labeled as $\gamma$ and $\delta$) to demonstrate the transition of
-F_{16}CuPc orientation. $\gamma$ has a similar interplanar distance
-$d=1.440\ \mathrm{nm}$ compared with $\alpha$, while the wave vector
-rotates ~76 $^{\circ}$ from the $q_{\mathrm{z}}$ axis. This indicates
-that the (002) plane is now aligned vertically to the substrate
-plane. The existence of a broad peak $\delta$ further supports this
-conclusion. With an identical $d=0,305\ \mathrm{nm}$ to the
-face-to-face distance of F_{16}CuPc molecules while the wave vector
-mostly located near the $q_{\mathrm{z}}$ axis. Both peaks indicate
-that the F_{16}CuPc plane (assigned as (1\(\bar{2}\)2)) is parallel to
-the graphene surface, adopting a "face-on" orientation, while the
-F_{16}CuPc molecules forms tilted stacks. The graphene-assisted
-orientation transition of F_{16}CuPc can be further proved by Raman
-spectroscopy. We measured the confocal Raman spectra on both
-SiO_{2}-F_{16}CuPc and Gr-F_{16}CuPc samples with 532 nm excitation as
-shown in Figure [[ref:fig:main-2]](d). A noticeable different between the
-ratio of peak intensity at 1315 cm^{-1} and 1380 cm^{-1} can be
-observed. Previous studies indicates that the different between the
-Raman peak intensities of F_{16}CuPc is a result of angle-dependent
-scattering of the Davydov multiplets cite:Cerdeira_2013_RamanF16. The
-higher intensity of the 1315 cm^{-1} peak in SiO_{2}-F_{16}CuPc is
-related to the herringbone structure vertically aligned on the
-surface, while the higher intensity of the peak at 1380 cm^{-1} in
-Gr-F_{16}CuPc is attributed to the molecular orientation parallel to
-the substrate. In our case, these two peaks can be regarded as
-representations of the two distinct orientations of F_{16}CuPc. We
-further studies the locality of the orientation and morphology of
-F_{16}CuPc, by combing the SEM and Raman chemical mapping of
-F_{16}CuPc deposited over a graphene sample with micrometer-scale
-hole. The fingerprint that Raman
-mapping used is the intensity ratio between the peaks at 1315 cm^{-1}
-and 1380 cm^{-1}, $I(1380)/I(1315)$. Both images show a
-nearly-identical overlapping between the NWs on graphene and the
-face-on orientation, indicating that the transition of orientation is
-purely graphene-assisted. Such findings may lead to more precise
-control over the spatial distribution of F_{16}CuPc NWs on patterned
-graphene surface.
 
-It is
-straightforward to assume the existence superhydrophobicity at the
-F_{16}CuPc-liquid interface, as enabled by both the fluorine-rich
-nature of F_{16}CuPc, and the Cassie-Baxter wetting phenomenon on the
-high aspect-ratio NWs. We validate our hypothesis by examining the
-water wettability on the SiO_{2}-F_{16}CuPc and
-graphene(Gr)-F_{16}CuPc surfaces (Figure [[ref:fig:main-2]](e)). The
-thin-film F_{16}CuPc surface is found to be hydrophobic with a sessile
-droplet contact angle of 103.0 $\pm$ 5.4 $^{\circ}$, which is not
-surprising for such non-structured fluorine-rich molecules. On the
-other hand, the Gr-F_{16}CuPc NW surface shows a much higher contact
-angle of 152.8 $\pm$ 3.9 $^{\circ}$. The great distinction between the
+Next, we sought to grow semiconductor NWs directly on the 2DEG,
+forming a superhydrophobic surface at the Cassie-Baxter (CB) state
+cite:Cassie_1944. A conductive sessile droplet is then placed on top
+of the NWs, acting as the D electrode, with the radius
+$R$. Accordingly, applying a compressive pressure $\Delta p$ on top of
+the sessile leads to an horizontal elastic displacement $\Delta x$
+that advances the contact line, with an apparent contact angle
+$\theta_{\mathrm{adv}}^{*}$ (Figure [[ref:fig:main-1]](b) left). When the
+pressure is released, the contact line moves back towards its
+equilibrium shape, with an apparent contact angel of
+$\theta_{\mathrm{rec}}^{*}$ (Figure [[ref:fig:main-1]](b) right), enabling
+the reversibility. We hypothesized that the electrical response during
+the process results from: (i) an increase of the droplet contact area
+$\Delta A \approx 2 \pi R \Delta x$ at the macroscopic level and (ii)
+an increase of capillary length $\Delta l \approx \Delta p
+r^{2}/2\gamma$ that effectively reduces the semiconductor channel
+length in the NWs, where $\gamma$ is the surface tension of liquid and
+$r$ is the average radius between NWs.
+
+*************** TODO Modify Figure 1
+*************** END
+In order to realize the concept, monolayer graphene (Gr), a 2DEG material
+with the smallest quantum capacitance near the Dirac point
+cite:Tian_2016, is used. As for the semiconductor material, it is
+well-known that the covalently bonded semiconductors generally possess
+a high surface energy, since the bandgap is proportional to the bond
+strength that separates the highest-occupied and lowest-unoccupied
+molecular orbitals cite:Azimi_2013_wetting_RO, and dangling bonds
+exists at the surface cite:Zhang_2004_dangling, both presumably
+leading to the Wenzel state. To this end, the organic semiconductor
+solids containing the \(\pi\)-conjugated molecules, with the molecular
+polarizability considerably reduced by perfluoration, were
+considered. We have managed to grow the Copper(II)
+hexadecafluorophthalocyanine (F_{16}CuPc) NWs on a sheet of monolayer
+graphene transferred on a SiO2/Si substrate (details see Supplementary
+materials), as shown in Figure [[ref:fig:main-2]](a). 
+
+The F16CuPc NWs have high aspect ratios, with diameters and heights of
+~ 30-60 and several hundred nanometers, respectively. We note that the
+NW morphology is similar to that of F_{16}CuPc templated by
+perylene-3,4,9,10-tetracarboxylic- 3,4,9,10-dianhydride (PTCDA)
+cite:Yang_2009_F16_PTCDA or gold nanoparticles
+cite:Mbenkum_2006_F16_1D, presumably sharing the same growth
+mechanism. Indeed, the strong $\pi-\pi$ interactions between graphene
+and F16CuPc basal planes lower the critical free energy of
+heterogeneous nucleation; in combination with the weak van der Waals
+(vdW) interactions between the perfluorinated molecular edges that
+limit the lateral growth, it explains why the NW structure is
+thermodynamically favored. The structural driving force resulting from
+the subtle asymmetry between in-plane and out-of-plane interactions,
+however, disappears when the substrate-molecule interactions are not
+sufficiently strong cite:Tian_2017, as observed in the thin-film
+structure grown on bare SiO2/Si (Figure [[ref:fig:main-2]](a)). 
+
+Figure [[ref:fig:main-2]](b) shows the grazing incidence X-ray diffraction
+(GIXD) patterns for the F_{16}CuPc/Gr and F_{16}CuPc/SiO_{2}/Si
+samples. The F16CuPc/SiO2/Si sample has an intense peak along the
+$q_{\mathrm{z}}$ axis, labeled as $\alpha$ (/d/-spacing = 1.470
+nm). It corresponds to the (002) plane in the F16CuPc single crystal
+cite:Yang_2009_F16_PTCDA that is perpendicular to the substrate normal
+vector, suggesting a dominant “edge-on” orientation
+(Fig. [[ref:fig:main-2]](b) top). It is also endorsed by the position of
+the (\(\bar{1}22\)) plane peak near the $q_{\mathrm{xy}}$ axis
+(\(\beta\)) cite:Pandey_2012_F16CuPc_GO,Yoon_2010_crystal_F16, with a
+/d/-spacing of 0.305 nm. On the other hand, for the F_{16}CuPc/Gr NW
+sample, we observe additional peaks corresponding to the (002) plane
+(labelled as $\gamma$) (Figure [[ref:fig:main-2]](b) bottom), with its
+wave vector rotated by $\sim 76^{\circ}$ with respect to the
+$q_{\mathrm{z}}$ axis, with a /d/-spacing of 1.440 nm, slightly
+smaller than that in the edge-on orientation. Together with the
+(\(\bar{1}22\)) peak located at the $q_{\mathrm{z}}$ axis, we point
+out the emergence of the “face-on” phase in the NWs. The predominant
+face-on orientation in the n-type NWs facilitates electron transport
+perpendicular to the substrate, through the intermolecular $\pi-\pi$
+interactions. The substrate-induced orientation transition also
+results in the angle-dependent scattering of the Davydov multiplets
+that alters the Raman characteristics (details see Supplementary
+information ). Figure [[ref:fig:main-2]](c) presents both the scanning
+electron micrograph (SEM) and Raman map for the intensity ratio of the
+peak at 1380 cm^{-1} to that at 1315 cm^{-1}, I(1380)/I(1315), on the
+F16CuPc film deposited on a sheet of SiO2-supported graphene with a
+break. The NW region, with a higher I(1380)/I(1315) ratio, is clearly
+identified.
+*************** TODO Which Figure??
+*************** END
+
+*************** TODO Hysteresis?
+*************** END
+
+
+It is straightforward to assume the existence superhydrophobicity at
+the NW-liquid interface, as enabled by both the fluorine-rich nature
+of F_{16}CuPc, and the Cassie-Baxter wetting phenomenon on the high
+aspect-ratio NWs. We validate our hypothesis by examining the water
+wettability on the F_{16}CuPc/Gr and F_{16}CuPc/SiO_{2} surfaces
+(Figure [[ref:fig:main-2]](d)), using both sessile droplet and
+environmental scanning electron microscope (ESEM) techniques. The
+thin-film F_{16}CuPc surface is found to be hydrophobic with a
+equilibrium sessile droplet contact angle of $103.0 \pm 5.4 ^{\circ}$
+and ESEM contact angle of $107.0 \pm 3.9 ^{\circ}$, as normally
+observed for such non-structured fluorine-rich molecules. On the other
+hand, the F_{16}CuPc/Gr NWs surface shows much higher equilibirum
+sessile and ESEM contact angles of $152.8 \pm 3.9 ^{\circ}$ and $149.8
+\pm 3.4 ^{\circ}$, respectively. The great distinction between the
 wettability can be briefly explained by the different between the
-Wenzel wetting mode on rough planar surface (SiO_{2}-F_{16}CuPc) and
+Wenzel wetting mode on rough planar surface (F_{16}CuPc/SiO_{2}) and
 the Cassie-Baxter wetting mode on high aspect ratio surface
-(Gr-F_{16}CuPc). The contact angles of the two wetting modes are given
-by:
+(F_{16}CuPc/Gr). The equilibrium contact angles of the two wetting
+modes ($\theta^{*}_{\mathrm{W}}$ and $\theta^{*}_{\mathrm{CB}}$) are
+given by cite:Cassie_1944,Wenzel_1936:
 
 \begin{eqnarray}
 \label{eq:2}
-&\cos \theta_{\mathrm{W}} =& r_{\mathrm{W}} \cos \theta_{\mathrm{Y}} \\
-&\cos \theta_{\mathrm{CB}} =& r_{\mathrm{CB}} f \cos \theta_{\mathrm{Y}} + f - 1
+&\cos \theta^{*}_{\mathrm{W}} =& r_{\mathrm{W}} \cos \theta_{\mathrm{Y}} \\
+&\cos \theta^{*}_{\mathrm{CB}} =& r_{\mathrm{CB}} f \cos \theta_{\mathrm{Y}} + f - 1
 \end{eqnarray}
 
- where $\theta_{\mathrm{W}}$ and $\theta_{\mathrm{CB}}$ are the
- contact angles in the Wenzel and Cassie-Baxter modes, respectively,
- $r_{\mathrm{W}}$ and $\theta_{\mathrm{CB}}$ are the surface roughness
- in both modes, $\theta_{\mathrm{Y}}$ is the hypothetical contact on an
- ideal smooth surface and $f$ is the fraction of the wetted solid
- surface in the Cassie-Baxter model. We assume that $r_{\mathrm{W}}
- \approx r_{\mathrm{CB}}$ due to the intrinsically identical chemical
- nature of the two surfaces. By plugging in the contact angles on
- SiO_{2}-F_{16}CuPc and Gr-F_{16}CuPc surfaces, we get that $f=0.093$,
- which indicates a minor liquid-semiconductor contact at the
- interface. More interestingly, the superphobocity on the F_{16}CuPc
- NWs remains even during the condensation process as revealed by
- environmental scanning electron microscopy (ESEM). The equilibrium
- contact angle of a newly formed droplet before merging slighted
- decreases to 149.8 $\pm$ 3.4 $^{\circ}$, indicating that condensation
- is unfavorable between the fluorine-rich walls of NWs, which is not
- always achieved on normal nanostructures.
-*************** TODO Give more specific examples
+ where $r_{\mathrm{W}}$ and $\theta_{\mathrm{CB}}$ are the surface
+ roughness in both modes, $\theta_{\mathrm{Y}}$ is the hypothetical
+ contact angle on an ideally smooth surface form the Young's equation
+ and $f$ is the solid fraction in the Cassie-Baxter model. We assume
+ that $r_{\mathrm{W}} \approx r_{\mathrm{CB}}$ due to the
+ intrinsically identical chemical nature of the two surfaces. By
+ plugging in the contact angles on F_{16}CuPc/SiO_{2} and
+ F_{16}CuPc/Gr surfaces, we get that $f=0.093$, which indicates a
+ minor liquid-semiconductor contact at the interface. By studying the
+ dynamic contact angle on F_{16}CuPc with various thickness, we
+ confirm the existence of both modes in the two distinct morphologies
+ (details see Supporting Information).
+*************** TODO Add more details
 *************** END
-The superhydrophobicity of the F_{16}CuPc NWs can be further applied
-to other liquids other than water. Liquid metal (LM) has recently
-emerged as a key component in versatile and flexible electronic
-components. One key issue hinders the development of LM-based devices
-is the undesired adhesion of LM to the device surface, in particular
-the notorious omni-philic eutectic gallium indium (EGaIn) alloy due to
-the existence of a surface gallium oxide layer. By employing the
-superhydrophobicity of the F_{16}CuPc NWs, it is possible to operate
-the LM droplets at the semiconductor-liquid interface with minimal
-adhesion. As shown in Figure [[ref:fig:main-2]](f), the contact angle of
-mercury increases by ~10 $^{\circ}$ from thin-film SiO_{2}-F_{16}CuPc
-to Gr-F_{16}CuPc NWs. The comparison is even more striking with EGaIn
-droplets. The EGaIn droplet can still strongly adhere to the
-hydrophobic SiO_{2}-F_{16}CuPc surface, with a large sliding angle of
-56.1 $\pm$ 13.2 $^{\circ}$. On the other hand, free manipulation of
-EGaIn droplet on F_{16}CuPc NWs is feasible, with a relatively low
-sliding angle of 14.6 $\pm$ 2.6 $^{\circ}$. 
+ The high equilibrium ESEM contact of the F_{16}CuPc/Gr surface
+ indicates that condensation is unfavorable between the fluorine-rich
+ walls of NWs, which is not always achieved on normal nanostructures
+ cite:Sharma_2017.
+ 
+ We next examine the wettability of liquid metals (LM) on the
+ F_{16}CuPc NWs. It is noteworthy that the key challenge hindering the
+ development of LM-based devices is the undesirable adhesion of LM to
+ the device surface, in particular about the eutectic gallium indium
+ (EGaIn), in which the formation of gallium oxide layer effectively
+ reduces the interfacial tension
+ cite:Dickey_2008,Doudrick_2014_oxide. Indeed, mercury sessile
+ droplets sitting on F_{16}CuPc/Gr NW and F_{16}CuPc/SiO_{2} surfaces
+ shows static contact angles of $147.7 \pm 2.5 ^{\circ}$ and $157.1
+ \pm 3.8 ^{\circ}$, respectively ([[ref:fig:main-2]] XXX).
+
+*************** TODO Which figure??
+*************** END
+ The increase of contact angle is caused by a smaller solid fraction
+ of NWs compared with F_{16}CuPc/SiO2 surfaces, since CB mode is
+ expected to be seen on both surfaces at such large contact
+ angle. More interesting, we found that the NWs can effectively reduce
+ the adhesion of EGaIn. We performed the attach-detach cycle test
+ cite:Ilyas_2017_EGaIn_review,Jiang_2017_EGaIn_adhesion using a EGaIn
+ droplet suspended on a glass microcapillary onto these surfaces. The
+ EGaIn droplet adheres onto the F_{16}CuPc/SiO_{2} surface and
+ separates from the microcapillary up detaching, while on the NW
+ surface neglible adhesion is observed, with the EGaIn droplet
+ constantly sticking to the capillary (Figure [[ref:fig:main-2]] XXX). The
+ distinguished adhesion properties are also revealed via the sliding
+ angle $\theta_{\mathrm{sl}}^{*}$ (equivalent to the contact angle
+ hysteresis on the surface) of EGaIn. The F_{16}CuPc/SiO_{2} surface
+ has a relatively large $\theta_{\mathrm{sl}}^{*}$ of $56.1 \pm 13.2
+ ^{\circ}$, while the NW surface exhibits a much smaller
+ $\theta_{\mathrm{sl}}^{*}$ $14.6 \pm 2.6 ^{\circ}$. The superior
+ wetting properties of LM on the superhydrophobic NW surfaces
+ indicates that the our concept of interfacial transistor is feasible
+ through actuation of LM droplets on superhydrophobic semiconducting
+ NWs.
 
 
 The combination between macroscopic superhydrophobicity at the
