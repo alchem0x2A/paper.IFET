@@ -285,6 +285,80 @@ given by cite:Cassie_1944,Wenzel_1936:
  through actuation of LM droplets on superhydrophobic semiconducting
  NWs.
 
+ Figure [[ref:fig:main-3]](a) presents the schematic of the proposed
+ elastic interfacial transistor. A sheet of monolayer graphene grown
+ by chemical vapor deposition (CVD) was transferred onto a 300 nm
+ SiO2/Si substrate functionalized by octadecyltrichrolosilane
+ self-assembled monolayer (OTS SAM) cite:Yan_2011, in order to
+ minimize the substrate-induced traps cite:Chen_2012 (Figs. SXXX).
+*************** TODO Which SI figure?
+*************** END
+  The graphene FET shows an on/off current ratio of ~10 and the
+  field-effect mobility (\(\mu_{\mathrm{FE}}\)) of ~ 2000
+  cm^{2}V^{-1}s{-1} at room temperature, with the charge neutrality
+  point (CNP) at the gate voltage of ~0V (Fig. SXX).
+*************** TODO Which Figure???
+*************** END
+  Subsequently, a layer of ~300 nm-high F16CuPc NWs were deposited on
+  graphene, followed by placing a cantilever-attached LM (Hg or EGaIn)
+  droplet on top as the D electrode (details see Supplementary
+  Information).
+*************** TODO Add a scheme in SI
+*************** END
+  The current density $J_{\mathrm{DS}}$ from the LM (D) to graphene
+  (S) in the interfacial transistor was then quantified by normalizing
+  the drain current by the contact area of the sessile droplet with
+  the NW layer, as a function of drain and gate voltages
+  ($V_{\mathrm{D}}$ and $V_{\mathrm{G}}$, respectively). Note that
+  since the NWs are only partially wetted, the actual current density
+  passing through individual NWs is estimated to be
+  $J_{\mathrm{DS}}/f$. Accordingly, the carrier density in F_{16}CuPc
+  molecules adjacent to the NW/graphene interface can be modulated by
+  the partially penetrated field effect through monolayer graphene
+  cite:Tian_2016,Shih2015Partially, tuning the Schottcky barrier
+  height at the interface cite:Yang2012Barristor. Note that the
+  orientation of F_{16}CuPc molecules on graphene plays an important
+  role in the performance of the interfacial transistor: the face-on
+  orientation not only faciliates carrier transport along the NW, but
+  also makes the intrinsic Fermi level of F_{16}CuPc matching that of
+  graphene cite:Mao_2010_F16_level_orien,Ren_2011_F16Gr_Elevel, which
+  is crucial for a vertical FET (details see Supporting
+  Information). The transfer curve for a representative interfacial
+  transistor at $V_{\mathrm{D}}$ = 1 V demonstrates an on/off current
+  ratio of $3.9 \time 10^{4}$ (Figure [[ref:fig:main-3]](b)), in line with
+  the state-of-the-art vertical field-effect transistor (VFET)
+  technology
+  cite:Yang2012Barristor,Shih2015Partially,Sun_2017_COF_VFET,Ben_Sasson_2011. Clearly,
+  the fact that the present interfacial transistor is well-functional
+  at a low VD reflects it potential towards the low-power electronics
+  design, which remains challenging for most resistive force-sensing
+  components.
+*************** TODO Refs to find!
+*************** END
+
+  A number of interfacial transistor samples were characterized,
+  showing an average on/off current ratio of $5 \times 10^{3}$ (Figure
+  [[ref:fig:main-3]](b) inset). The transfer curves at different
+  $V_{\mathrm{D}}$ are shown in Figure [[ref:fig:main-3]](c). The on/off
+  current ratio gradually decreases with $V_{\mathrm{D}}$, owing to a
+  mechanism analogous to the drain-induced barrier lowering (DIBL)
+  effect in the short-channel FETs
+  cite:Packan_1999,Lundstrom_2003. More discussions about the
+  transport mechanisms, together with the band diagrams, are stated in
+  Supplementary information. We further demonstrate an application
+  concerning the gate-tunability of the F_{16}CuPc/Gr interfacial
+  transistor, by switching an commercial green LED (Figure
+  [[ref:fig:main-3]](d)). The interfacial transistor is connected to a
+  home-made bipolar junction transistor (BJT) amplifier circuit, where
+  the ratio between current through the interfacial transistor and
+  through the LED is ~ 100 times.  We demonstrate that over 10 cycles
+  of on-off switching cycles by tuning the $V_{\mathrm{G}}$ from -75 V
+  to 100 V, the total current through the circuit can be tuned by 250
+  folds with appreciable stability, showing good and reliable gate
+  tunability.
+
+
+
 
 The combination between macroscopic superhydrophobicity at the
 semiconductor-liquid interface and the face-on orientation at the
