@@ -356,102 +356,160 @@ given by cite:Cassie_1944,Wenzel_1936:
   to 100 V, the total current through the circuit can be tuned by 250
   folds with appreciable stability, showing good and reliable gate
   tunability.
+  
+  The elasticity of liquid enables response to pressure stimuli at the
+  NW/LM interface, with relatively large displacement compared with
+  conventional piezoelectric devices. The principle behind the elastic pressure sensing using
+  droplets is the curvature-induced pressure described by the
+  Young-Laplace equation:
+
+  \begin{equation}
+  \label{eq:1}
+	p = \gamma_{\mathrm{L}} (R_{1}^{-1} + R_{2}^{-1})
+  \end{equation}
+
+  where $R_{1}$ and $R_{2}$ are the principle radii of the LM droplet,
+  and $\gamma_{\mathrm{L}}$ is the surface tension of the liquid. In
+  the setup of the interfacial transistor, the LM droplet is placed
+  between a conducting cantilever and the NW surface. When no external
+  pressure is applied, the height of a droplet $H_{0}$ is determined
+  by volume $V_{\mathrm{drop}}$, contact angles with the cantilever
+  $\theta_{\mathrm{t}}$ and NW $\theta_{\mathrm{b}}$. A vertical
+  stress of the droplet $\sigma = \Delta H / H_{0}$, where $\Delta H$
+  is the change of droplet height corresponds to an external stress of
+  $\Delta p(\sigma) = p(H_{0} - \Delta H) - p(H_{0})$. Since the
+  gravitational effect can be ignored in the LM droplets (Bond number
+  much less than 1), the boundaries of the droplet is spherical and an
+  analytical model is used to solve the principle radii $R_{1}$ and
+  $R_{2}$ using $V_{\mathrm{drop}}$, $H$, $\theta_{\mathrm{t}}$ and
+  $\theta_{\mathrm{b}}$ as input parameters (details see Supporting
+  Information). The stress induced by the strain of droplet is then
+  calculated by Eq. [[ref:eq:1]]. Figure [[ref:fig:main-4]](b) shows the cross
+  sectional images of a LM droplet under different strains and the
+  corresponding stress calculated by the analytical model. To validate
+  our analytical model, we further perform a finite element method
+  (FEM) analysis to calculate the spatial distribution of surface
+  stress on the LM droplet, with the boundary shape of the droplet
+  extracted from optical images. The $\Delta p$ values calculated by
+  both models are close, indicating the possibility of using the
+  analytical model to calculate the elastic stress. The stress-strain
+  response of a LM droplet is shown in Figure [[ref:fig:main-4]](c). A
+  strain of 12.5% corresponds to a stress of ~125 Pa. 
+*************** TODO Theoretical??
+*************** END
+  The drain-source current $I_{\mathrm{DS}}$ also upon pressing the
+  droplet, with an amplification of over 5 times under 12.5%
+  strain. The sensing at such low pressure range while maintaining a
+  relative large displacement behaves among the most sensitive
+  approaches.
+*************** TODO Examples?
+*************** END
+
+
+  As we hypothesized in the introduction part, two mechanism may be
+  responsible for the current increase upon elastic stimuli, i.e. the
+  change of LM/NW contact area, and increase of LM capillary
+  length. When the LM droplets are operated under the CB mode, with a
+  $\Delta p$ of ~ 100 Pa and average spacing between the NWs of ~ 50
+  nm, the change of capillary length is negligible. Indeed the
+  $I_{\mathrm{DS}}$ amplification ratio predicted from our theoretical
+  model is close to the experimental values, indicating that the
+  change of contact area is the main cause of the current response. We
+  ascribe the discrepancy between the experimental data and our model
+  to the possible penetration of LM into microscale defects on the
+  graphene sheet, where wetting state at the NW/LM interface turns
+  from CB state to Wenzel state, which is known to occur at a pressure
+  > 250 Pa on a superhydrophobic surface cite:Lafuma_2003. The
+  pressure response can be further coupled with the gate control of
+  $I_{\mathrm{DS}}$, as shown in Figure [[ref:fig:main-4]](d). The curves
+  are nearly linear proportional to each other under pressure stimuli,
+  indicating that the pressure sensing does not interfere with the
+  gate control, and can serve as an additional dimension of control
+  for the interface transistor. Finally, we examine the reversibility
+  of the pressure sensing using elastic LM droplets. We monitored the
+  change of the drain-source current as a function of time during more
+  than 10 cycles of pressing-releasing of the LM droplet (Figure
+  [[ref:fig:main-4]](e)). At average pressure change of $204.2 \pm 12.3$
+  Pa, the current can be tuned over 12 to 14 folds. Moreover the low
+  pressure current $I_{0}$ is maintained closed to the initial value ,
+  indicating the superhydrophobic-enabled elastic pressure sensing is
+  reversible.
 
 
 
 
-The combination between macroscopic superhydrophobicity at the
-semiconductor-liquid interface and the face-on orientation at the
-graphene-molecule interface of Gr-F_{16}CuPc nanostructures is a
-promising platform for building an interfacial transistor. The
-superhydrophobicity ensures free manipulation of droplets (in
-particular, LM droplets) at the semiconductor-liquid
-interface. Electric current that can be passed from the
-semiconductor-liquid interface to graphene through the NWs, due to the
-high carrier mobility along the \pi-\pi stacking direction. The close
-match between the Fermi energy levels of graphene and face-on
-F_{16}CuPc molecules is the key to successful gate-tunable current
-modulation at the graphene-semiconductor interface. Finally, by
-engineering the substrate-graphene interface, we could fine-tune the
-doping states in graphene and optimize the performance of the
-interfacial transistor. Based on these multiscale phenomena, we
-fabricate a graphene-F_{16}CuPc interfacial transistor. As shown in
-Figure [[ref:fig:main-3]](a), the interfacial transistor has a vertical
-configuration, with the graphene layer serves as the source terminal,
-and the Si layer serves as the gate terminal. We use a LM droplet as
-the drain terminal on top of the F_{16}CuPc NWs, which is further
-attached to a metal plate. The elasticity of liquid and the
-superhydrophobicity of F_{16}CuPc NWs ensures reversible pressure
-stimuli that can be coupled with the gate-tunable current
-modulation. First we look into the gate tunable current at the
-graphene-semiconductor interface. Since the droplet-based interfacial
-transistor needs to be operated in air, the adsorption and traps at
-the substrate-graphene interface needs to be suppressed. This is
-achieved by transferring graphene onto SiO_{2} surface with
-octadecyltrichlorosilane (OTS) self-assembled monolayer (SAM). The
-OTS-supported SiO_{2} exhibits gate-tunable sheet resistance up to 10
-folds and nearly symmetric response with gate voltage (Supporting
-Information Figure S12). The interfacial transistor benefits from the
-highly tunable electronic states in the graphene sheet. Figure
-[[ref:fig:main-3]](a) shows the drain-source current density
-$J_{\mathrm{DS}}$ of a interfacial transistor with 300 nm high
-F_{16}CuPc NWs and use mercury droplet, as a function of the gate
-voltage $V_{\mathrm{G}}$. At a drain voltage $V_{\mathrm{D}}=1$ V, the
-tuning the gate voltage from -100 V to 100 V changes the
-$J_{\mathrm{DS}}$ by $3.9 \times 10^{4}$ times, a value that is
-competitive with the best state-of-art VFETs
-cite:Shih2015Partially,Sun_2017_COF_VFET. We tested multiple
-interfacial transistor samples and found that the average on-off ratio
-is around $5 \times 10^{3}$ times (inset histogram of Figure
-[[ref:fig:main-3]](b)). The $J_{\mathrm{DS}}$ shows similar shape respect
-to $V_{\mathrm{G}}$ for higher $V_{\mathrm{D}}$ levels, while the
-on-off ratio slightly decreases (Figure [[ref:fig:main-3]](c)), which is a
-ubiquitous feature of 2D material-based VFETs as the field effect
-transparency becomes less at higher drain-source bias
-cite:Tian_2016. At $V_{\mathrm{D}}=5$ V, the F_{16}CuPc NWs can
-sustain current density as large as $9\times10^{2}$ $\mathrm{mA}\cdot
-\mathrm{cm^{-2}}$, which is practical for modulation of power devices
-thanks to the high carrier mobility of F_{16}CuPc. Consider the fact
-that the areas of the NWs in contact with the LM droplet is only a
-small proportion compared with the whole contact area of the
-droplet-semiconductor interface, the actual current density in the NWs
-can be even higher. We also found that the gate-tunability if unipolar
-regarding $V_{\mathrm{D}}$. At positive $V_{\mathrm{D}}$ (reverse
-bias), tuning $V_{\mathrm{G}}$ from -100 V to 100 V can modulate
-$|J_{\mathrm{DS}}|$ over 3 order of magnitudes, while at negative
-$V_{\mathrm{D}}$ (forward bias), changing $V_{\mathrm{G}}$ only
-modulates $|J_{\mathrm{DS}}|$ by a factor of ~5 times (Figure
-[[ref:fig:main-3]](d)). The highly gate-tunable current and unipolar
-response to $V_{\mathrm{D}}$ can be explained by the energy level
-alignment at the graphene-semiconductor interface, as shown in Figure
-[[ref:fig:main-3]](e). The Fermi level of face-on F_{16}CuPc on graphene
-is found around -4.5~-4.7 eV
-cite:Mao_2010_F16_level_orien,Ren_2011_F16Gr_Elevel,Zhong_2012_gr_CuPc,
-matching the Fermi level of graphene (-4.6 eV), and is greatly
-different from that of edge-on F_{16}CuPc
-(cite:Mao_2010_F16_level_orien). As a result, at open circuit, the
-graphene layer is only slightly p-doped (Supporting Information Figure
-S12), which is crucial to the wide range of gate tunability. At
-reverse bias, the drain-source current is dominated by the Schottky
-barrier height (\(\Phi_{\mathrm{SB}}\)) at the graphene-semiconductor
-interface. When $V_{\mathrm{G}}$ is larger than the charge neutral
-point (CNP) voltage ($V_{\mathrm{CNP}}$, when the graphene layer has
-minimal doping), the the Fermi level of graphene shifts down compared
-with its Dirac point, giving rise to an elevated $\Phi_{\mathrm{SB}}$,
-which suppresses the $J_{\mathrm{DS}}$. On the other hand, when
-$V_{\mathrm{G}} < V_{\mathrm{CNP}}$, $\Phi_{\mathrm{SB}}$ is reduced,
-which increases the $J_{\mathrm{DS}}$. At forward bias, the current
-density in the NW is dominated by the semiconductor-LM interface
-cite:Shih2015Partially. Since the work function of mercury (4.5 eV)
-matches with F_{16}CuPc, there is negligible transport barrier at the
-semiconductor-LM interface, resulting in a almost constant
-$I_{\mathrm{DS}}$ regardless of $V_{\mathrm{G}}$. We further
-demonstrate an application concerning the gate-tunability of the
-graphene-F_{16}CuPc interfacial transistor, by switching an commercial
-LED ([[ref:fig:main-3]](f)). Over 10 cycles of on-off switching cycles by
-tuning the $V_{\mathrm{G}}$ from -75 V to 100 V, the total current
-through the circuit $I_{\mathrm{tot}}$ can be tuned by 250 folds with
-appreciable stability.
+#   An external stress of $\Delta p$ changes the principle radii of the
+#   droplet and deforms the droplet with vertical strain $\sigma =
+#   \Delta H / H_{0}$, where $H_{0}$ is the height of the droplet
+#   between the NW and cantilever surfaces when no external stress is
+#   applied. Note that the gravitational effect can be ignored for the
+#   LM droplets due to the small volume (\(<1\ \mu \mathrm{L}\)), the
+#   value of $H_{0}$ can be calculated using an geometric model, which
+#   depends on the contact angles of the droplet with the cantilever
+#   $\theta_{\mathrm{t}}$ and NW $\theta_{\mathrm{b}}$, as well as the
+#   volume of the droplet $V$ (details see Supporting Information).
+# *************** TODO Add SI comments
+# *************** END
+  
+
+
+
+
+
+
+
+# We tested multiple
+# interfacial transistor samples and found that the average on-off ratio
+# is around $5 \times 10^{3}$ times (inset histogram of Figure
+# [[ref:fig:main-3]](b)). The $J_{\mathrm{DS}}$ shows similar shape respect
+# to $V_{\mathrm{G}}$ for higher $V_{\mathrm{D}}$ levels, while the
+# on-off ratio slightly decreases (Figure [[ref:fig:main-3]](c)), which is a
+# ubiquitous feature of 2D material-based VFETs as the field effect
+# transparency becomes less at higher drain-source bias
+# cite:Tian_2016. At $V_{\mathrm{D}}=5$ V, the F_{16}CuPc NWs can
+# sustain current density as large as $9\times10^{2}$ $\mathrm{mA}\cdot
+# \mathrm{cm^{-2}}$, which is practical for modulation of power devices
+# thanks to the high carrier mobility of F_{16}CuPc. Consider the fact
+# that the areas of the NWs in contact with the LM droplet is only a
+# small proportion compared with the whole contact area of the
+# droplet-semiconductor interface, the actual current density in the NWs
+# can be even higher. We also found that the gate-tunability if unipolar
+# regarding $V_{\mathrm{D}}$. At positive $V_{\mathrm{D}}$ (reverse
+# bias), tuning $V_{\mathrm{G}}$ from -100 V to 100 V can modulate
+# $|J_{\mathrm{DS}}|$ over 3 order of magnitudes, while at negative
+# $V_{\mathrm{D}}$ (forward bias), changing $V_{\mathrm{G}}$ only
+# modulates $|J_{\mathrm{DS}}|$ by a factor of ~5 times (Figure
+# [[ref:fig:main-3]](d)). The highly gate-tunable current and unipolar
+# response to $V_{\mathrm{D}}$ can be explained by the energy level
+# alignment at the graphene-semiconductor interface, as shown in Figure
+# [[ref:fig:main-3]](e). The Fermi level of face-on F_{16}CuPc on graphene
+# is found around -4.5~-4.7 eV
+# cite:Mao_2010_F16_level_orien,Ren_2011_F16Gr_Elevel,Zhong_2012_gr_CuPc,
+# matching the Fermi level of graphene (-4.6 eV), and is greatly
+# different from that of edge-on F_{16}CuPc
+# (cite:Mao_2010_F16_level_orien). As a result, at open circuit, the
+# graphene layer is only slightly p-doped (Supporting Information Figure
+# S12), which is crucial to the wide range of gate tunability. At
+# reverse bias, the drain-source current is dominated by the Schottky
+# barrier height (\(\Phi_{\mathrm{SB}}\)) at the graphene-semiconductor
+# interface. When $V_{\mathrm{G}}$ is larger than the charge neutral
+# point (CNP) voltage ($V_{\mathrm{CNP}}$, when the graphene layer has
+# minimal doping), the the Fermi level of graphene shifts down compared
+# with its Dirac point, giving rise to an elevated $\Phi_{\mathrm{SB}}$,
+# which suppresses the $J_{\mathrm{DS}}$. On the other hand, when
+# $V_{\mathrm{G}} < V_{\mathrm{CNP}}$, $\Phi_{\mathrm{SB}}$ is reduced,
+# which increases the $J_{\mathrm{DS}}$. At forward bias, the current
+# density in the NW is dominated by the semiconductor-LM interface
+# cite:Shih2015Partially. Since the work function of mercury (4.5 eV)
+# matches with F_{16}CuPc, there is negligible transport barrier at the
+# semiconductor-LM interface, resulting in a almost constant
+# $I_{\mathrm{DS}}$ regardless of $V_{\mathrm{G}}$. We further
+# demonstrate an application concerning the gate-tunability of the
+# graphene-F_{16}CuPc interfacial transistor, by switching an commercial
+# LED ([[ref:fig:main-3]](f)). Over 10 cycles of on-off switching cycles by
+# tuning the $V_{\mathrm{G}}$ from -75 V to 100 V, the total current
+# through the circuit $I_{\mathrm{tot}}$ can be tuned by 250 folds with
+# appreciable stability.
 
 The elasticity of liquid enables response to pressure stimuli at the
 NW-LM interface, with relatively large displacement compared with
