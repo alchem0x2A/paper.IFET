@@ -435,6 +435,100 @@ given by cite:Cassie_1944,Wenzel_1936:
   indicating the superhydrophobic-enabled elastic pressure sensing is
   reversible.
 
+  The Schottkey transport barrier at the NW/Gr interface also
+  incorporates thermal response into the interfacial transistor. Since
+  the gate-tunable current modulation is related to the Schottky
+  barrier height $\Phi_{\mathrm{SB}}$, the current density flowing
+  through the interface can be described by the thermionic emission
+  equation cite:Sze2006Mosfets:
+
+  \begin{equation}
+  \label{eq:4}
+  J_{\mathrm{DS}} = A^{**} T^{2} \exp(- \frac{e \Phi_{\mathrm{SB}}}{kT}) 
+		  \left[ \exp(\frac{e V_{\mathrm{D}}}{kT}) - 1\right]
+  \end{equation}
+  where $T$ is the temperature, $A^{**}$ is the reduced effective
+  Richardson constant, $e$ is the unit charge and $k$ is the Boltzmann
+  constant. At same $V_{\mathrm{D}}$ and $\Phi_{\mathrm{SB}}$, the
+  $J_{\mathrm{DS}}$ is solely controlled by $T$. Within the reverse
+  bias regime, where Schottky barrier dominates the current, the
+  higher $\Phi_{\mathrm{SB}}$ is, the greater $J_{\mathrm{DS}}$ can be
+  tuned by temperature ([[ref:fig:main-5]](a)).
+
+*************** TODO No figure here
+*************** END
+
+  Note that since the thermal expansion of LM is relatively small (~
+  1% total volume change from 20 $^{\circ} \mathrm{C}$ to 100
+  $^{\circ} \mathrm{C}), the thermal induced change of contact area
+  and capillary length can be ignored. We tested the gated-tuned
+  $J$_{\mathrm{DS}}$ with the temperature ranging from 20 $^{\circ}
+  \mathrm{C}$ to 100 $^{\circ} \mathrm{C}$, as shown in Figure
+  [[ref:fig:main-5]](a). As expected, $J_{\mathrm{DS}}$ increases with the
+  rise of temperature, due to the dominance of $T^{2}$ in
+  Eq. [[ref:eq:4]]. The current on-off modulation by $V_{\mathrm{G}}$ is
+  not affected, confirming that temperature and gate control are
+  independent. To further investigate the influence of temperature on
+  the current, we measured the gain of current
+  $G(T)=J_{\mathrm{DS}}(T)/J_{\mathrm{DS}}(T=20\ ^{\circ} \mathrm{C})$
+  at different $V_{\mathrm{G}}$ levels ([[ref:fig:main-5]](c)). We observe
+  a higher current gain at more negative $V_{\mathrm{G}}$, indicating
+  the increase of Schottkey barrier. To estimate the
+  $\Phi_{\mathrm{SB}}$ at each $V_{\mathrm{G}}$ level, we fitted the
+  $G(T)$ curves using least square regression by equation [[ref:eq:4]]. The
+  fitted $G(T)$ curves show close
+  resemblance to the experimental data, proving the therionic emissive
+  nature of the temperature-dependent current gain in our interfacial
+  transistor. We further plot the extracted $\Phi_{\mathrm{SB}}$
+  values as a function of $V_{\mathrm{G}}$ in Figure
+  [[ref:fig:main-5]](d). The Schottky barrier height reduces from 0.46 V
+  at $V_{\mathrm{G}}=-100$ V to 0.16 V at $V_{\mathrm{G}} = 100$
+  V. 
+*************** TODO Theoretical values?
+*************** END
+
+
+  The tuning range of Schottky barrier height (0.30 V) is
+  consistent with other reports of graphene-based VFETs
+  cite:Yang2012Barristor,Dankert_2017_graphene_spin_SB, and is smaller
+  than the theoretical value (0.59 V), which is not surprising since
+  it is widely known that the Fermi level of graphene can be pinned by
+  surface-bound charge traps.
+
+
+* Conclusions
+
+In this paper, we introduce a new electronic platform -- the
+interfacial transistor as an extension to conventional field effect
+transistors, by combining multiscale phenomena at different interfaces
+to the semiconductor material. As we demonstration example we show the
+design and working principle of a graphene-F_{16}CuPc interfacial
+transistor. Nanowires of F_{16}CuPc are formed on graphene surface due
+to graphene-assisted template effect, giving rise to macroscopic
+superhydrophobicity at the NW-liquid interface. The
+superhydrophobicity enables versatile operation of droplets on the NW
+interface. Owing to the elasticity of liquid droplets, it is feasible
+to introduce pressure sensing capability at the semiconductor-liquid
+interface, which further enables detection with large displacement. At
+the graphene-semiconductor interface, due to the Fermi level match and
+field effect transparency, the drain-source current can be tuned over
+a large range by gate voltage modulation in a vertical field effect
+transistor. Moreover, an additional interface to the semiconductor is
+easily introduced involving the thermal carrier emission at the
+graphene-semiconductor junction. All the interfaces to semiconductor
+can be operated without interference, which facilitates
+multi-dimensional operations of the interfacial transistor. Our
+concept of interfacial transistors can be extended to a wide variety
+of electronic devices, where multiscale phenomena at the
+2D-material-semiconductor interfaces are involved. Stimuli responses
+involving interfacial physics such as motion of liquid enabled by
+superhydrophobic semiconductor nanostructure, light switching due to
+optical transparency of 2D materials and charge transfer with
+environmental molecules owing to the long Debye length of organic
+semiconductors can all be integrated into single interfacial
+transistor, which opens a broad future for next-generation versatile,
+multifunctional and inexpensive electronics.
+
 
 
 
@@ -511,156 +605,80 @@ given by cite:Cassie_1944,Wenzel_1936:
 # through the circuit $I_{\mathrm{tot}}$ can be tuned by 250 folds with
 # appreciable stability.
 
-The elasticity of liquid enables response to pressure stimuli at the
-NW-LM interface, with relatively large displacement compared with
-conventional piezoelectric devices. We employ this phenomenon in our
-interfacial transistor as an additional interface to external
-stimuli. The principle behind the elastic pressure sensing using
-droplets is the curvature-induced pressure described by the
-Young-Laplace equation:
+# The elasticity of liquid enables response to pressure stimuli at the
+# NW-LM interface, with relatively large displacement compared with
+# conventional piezoelectric devices. We employ this phenomenon in our
+# interfacial transistor as an additional interface to external
+# stimuli. The principle behind the elastic pressure sensing using
+# droplets is the curvature-induced pressure described by the
+# Young-Laplace equation:
 
-\begin{equation}
-\label{eq:3}
-\Delta p = \gamma (R_{1}^{-1} + R_{2}^{-1})
-\end{equation}
-where $\Delta p$ is the stress of droplet at the interface, $R_{1}$
-and $R_{2}$ are the principle radii of a droplet, and $\gamma$ is the
-surface tension of the liquid. The pressure change when deforming a
-droplet on a surface gives rise to the change of $R_{1}$ and $R_{2}$
-(Figure [[ref:fig:main-4]](a)). The change in $R_{1}$ causes the expansion
-of contacting are at the semiconductor-LM interface, and change in
-$R_{2}$ enables large displacement. To analyze the degree of droplet
-deformation, we introduce the droplet strain as the ratio between
-vertical displacement and the original height of the droplet $\sigma =
-\Delta H / H_{0}$. The strain can be obtained extracting the change of
-droplet height between the parallel plates in the microscope
-image. The droplet strain can either be calculated from the fitted
-principle radii from experimental images using eq [[ref:eq:3]], or using
-an analytical model which considers the liquid contact angle on both
-plates (see Supporting Information). The values of experimental and
-modeled stress as a function of the droplet strain are close to each
-other (Figure [[ref:fig:main-4]](b), top), with a maximum stress of ~125
-Pa at vertical strain up 12.5%. The stress also leads to an increase
-of source-to-drain current in the interfacial transistor. From the
-schematic drawing in Figure [[ref:fig:main-1]](c), the change of current
-may be due to the increase of contact radius. To verify this
-hypothesis, we calculated the current ratio at certain pressure
-compared with the reference point ($\Delta p=0$), using both the
-experimental value and the simplified model: $I/I_{0} \propto
-(r/r_{0})^{2}$, where $r$ is the contact radius (Figure
-[[ref:fig:main-4]](b), bottom). Both methods show the same trend,
-indicating the stress-responsive current change is mainly due to the
-change of contact radius. We note that the ratio calculated from the
-simplified analytical model is slightly smaller than the experimental
-value, which may be caused by the non-uniform height of the NWs, and
-penetration of LM into the voids between the NWs. We further a finite
-element model (FEM) to calculate the droplet stress due to the
-strain of the LM droplet. We extracted the boundary of the
-droplet from the optical images at different displacements and plug
-into the analytical and FEM models (Figure [[ref:fig:main-4]](c)). The
-pressure values calculated by both models are close, and the maximum
-pressure that can be applied before the mechanical failure of the
-F_{16}CuPc NWs is between 100 - 200 Pa. The detection at such low
-pressure range is already among the most sensitive approaches, while a
-relative large displacement can still be assured, benefited from the
-elasticity of LM droplet and superhydrophobicity of F_{16}CuPc
-NWs. The pressure response can be further coupled with the gate
-control of drain-source current, as shown in Figure
-[[ref:fig:main-4]](d). The $I_{\mathrm{DS}}-V_{\mathrm{G}}$ curves are
-nearly linear proportional to each other under pressure stimuli,
-indicating that the pressure sensing does not interfere with the gate
-control, and can serve as an additional dimension of control for the
-interface transistor. Finally, we examine the reversibility of the
-pressure sensing using elastic LM droplets. We monitored the change of
-the drain-source current $I_{\mathrm{DS}}$ as a function of time $t$
-during more than 10 cycles of pressing-releasing of the LM droplet
-([[ref:fig:main-4]](d)).  At average pressure change of 204.2 $\pm$ 12.3
-Pa, the current $I_{\mathrm{DS}}$ can be tuned over 12~14
-folds. Moreover the low pressure current is maintained closed to the
-initial value $I_{0}$, indicating the superhydrophobic-enabled elastic
-pressure sensing is reversible.
+# \begin{equation}
+# \label{eq:3}
+# \Delta p = \gamma (R_{1}^{-1} + R_{2}^{-1})
+# \end{equation}
+# where $\Delta p$ is the stress of droplet at the interface, $R_{1}$
+# and $R_{2}$ are the principle radii of a droplet, and $\gamma$ is the
+# surface tension of the liquid. The pressure change when deforming a
+# droplet on a surface gives rise to the change of $R_{1}$ and $R_{2}$
+# (Figure [[ref:fig:main-4]](a)). The change in $R_{1}$ causes the expansion
+# of contacting are at the semiconductor-LM interface, and change in
+# $R_{2}$ enables large displacement. To analyze the degree of droplet
+# deformation, we introduce the droplet strain as the ratio between
+# vertical displacement and the original height of the droplet $\sigma =
+# \Delta H / H_{0}$. The strain can be obtained extracting the change of
+# droplet height between the parallel plates in the microscope
+# image. The droplet strain can either be calculated from the fitted
+# principle radii from experimental images using eq [[ref:eq:3]], or using
+# an analytical model which considers the liquid contact angle on both
+# plates (see Supporting Information). The values of experimental and
+# modeled stress as a function of the droplet strain are close to each
+# other (Figure [[ref:fig:main-4]](b), top), with a maximum stress of ~125
+# Pa at vertical strain up 12.5%. The stress also leads to an increase
+# of source-to-drain current in the interfacial transistor. From the
+# schematic drawing in Figure [[ref:fig:main-1]](c), the change of current
+# may be due to the increase of contact radius. To verify this
+# hypothesis, we calculated the current ratio at certain pressure
+# compared with the reference point ($\Delta p=0$), using both the
+# experimental value and the simplified model: $I/I_{0} \propto
+# (r/r_{0})^{2}$, where $r$ is the contact radius (Figure
+# [[ref:fig:main-4]](b), bottom). Both methods show the same trend,
+# indicating the stress-responsive current change is mainly due to the
+# change of contact radius. We note that the ratio calculated from the
+# simplified analytical model is slightly smaller than the experimental
+# value, which may be caused by the non-uniform height of the NWs, and
+# penetration of LM into the voids between the NWs. We further a finite
+# element model (FEM) to calculate the droplet stress due to the
+# strain of the LM droplet. We extracted the boundary of the
+# droplet from the optical images at different displacements and plug
+# into the analytical and FEM models (Figure [[ref:fig:main-4]](c)). The
+# pressure values calculated by both models are close, and the maximum
+# pressure that can be applied before the mechanical failure of the
+# F_{16}CuPc NWs is between 100 - 200 Pa. The detection at such low
+# pressure range is already among the most sensitive approaches, while a
+# relative large displacement can still be assured, benefited from the
+# elasticity of LM droplet and superhydrophobicity of F_{16}CuPc
+# NWs. The pressure response can be further coupled with the gate
+# control of drain-source current, as shown in Figure
+# [[ref:fig:main-4]](d). The $I_{\mathrm{DS}}-V_{\mathrm{G}}$ curves are
+# nearly linear proportional to each other under pressure stimuli,
+# indicating that the pressure sensing does not interfere with the gate
+# control, and can serve as an additional dimension of control for the
+# interface transistor. Finally, we examine the reversibility of the
+# pressure sensing using elastic LM droplets. We monitored the change of
+# the drain-source current $I_{\mathrm{DS}}$ as a function of time $t$
+# during more than 10 cycles of pressing-releasing of the LM droplet
+# ([[ref:fig:main-4]](d)).  At average pressure change of 204.2 $\pm$ 12.3
+# Pa, the current $I_{\mathrm{DS}}$ can be tuned over 12~14
+# folds. Moreover the low pressure current is maintained closed to the
+# initial value $I_{0}$, indicating the superhydrophobic-enabled elastic
+# pressure sensing is reversible.
 
-We can even add an additional interface to the transistor taking
-advantage of the thermal response of the graphene-semiconductor
-interface. Since the gate-tunable current modulation is related to the
-Schottky barrier height $\Phi_{\mathrm{SB}}$, the current density
-flowing through the interface can be described by the thermal emission
-equation cite:Sze2006Mosfets:
-
-\begin{equation}
-\label{eq:4}
-J_{\mathrm{DS}} = A^{**} T^{2} \exp(- \frac{e \Phi_{\mathrm{SB}}}{kT}) 
-                \left[ \exp(\frac{e V_{\mathrm{D}}}{kT}) - 1\right]
-\end{equation}
-where $T$ is the temperature, $A**$ is the reduced effective
-Richardson constant, $e$ is the unit charge, $k$ is the Boltzmann
-constant. At same $V_{\mathrm{D}}$ and $\Phi_{\mathrm{SB}}$, the
-$J_{\mathrm{DS}}$ is solely controlled by temperature. Within the
-reverse bias regime, where Schottky barrier dominates the current, the
-higher Schottky barrier is, the larger one can tune the
-$J_{\mathrm{DS}}$ by temperature ([[ref:fig:main-5]](a)). Note that since
-the thermal expansion of liquid metal is relatively small, the change
-of contact area at different temperature levels can be ignored. As a
-result, thermal control of the semiconductor serves as an individual
-interface to control the transistor. To validate this point, we tested
-the gated-tuned current at different temperature levels ranging from
-20 $^{\circ} \mathrm{C}$ to 100 $^{\circ} \mathrm{C}$, as shown in
-Figure [[ref:fig:main-5]](b). As expected, the current density increases
-with the rise of temperature, while the current on-off tuning is not
-affected. To further investigate the influence of temperature on the
-current, we measured the gain of current $G(T)$ (defined as the ratio
-between $I_{\mathrm{DS}}(T)$ and $I_{\mathrm{DS}}(T=20\ ^{\circ}
-\mathrm{C})$) at different $V_{\mathrm{G}}$ levels
-([[ref:fig:main-5]](c)). The factor $A^{**}$ and $\exp(e V_{\mathrm{D}} /
-kT)$ are eliminated when calculate the current gain, therefore it is
-possible fit the curve of $G(T)$ by equation [[ref:eq:4]] to extract the
-value of $\Phi_{\mathrm{SB}}$. The fitted $G(T)$ curves by
-least-square regression show close resemblance to the experimental
-data, proving the thermal emission nature of the temperature-dependent
-current gain in our interfacial transistor. We further plot the
-extracted $\Phi_{\mathrm{SB}}$ values as a function of
-$V_{\mathrm{G}}$ in Figure [[ref:fig:main-5]](d). The Schottky barrier
-height reduces from 0.46 V at $V_{\mathrm{G}}=-100$ V to 0.16 V at
-$V_{\mathrm{G}} = 100$ V. The tuning range of Schottky barrier height
-(0.30 V) is consistent with other reports of graphene-based VFETs
-cite:Yang2012Barristor,Dankert_2017_graphene_spin_SB, and is smaller than
-the theoretical value (0.59 V), which is not surprising since it is
-widely known that the Fermi level of graphene can be pinned by
-surface-bound charge traps.
+# We can even add an additional interface to the transistor taking
+# advantage of the thermal response of the graphene-semiconductor
+# interface. 
 
 
-* Conclusions
-
-In this paper, we introduce a new electronic platform -- the
-interfacial transistor as an extension to conventional field effect
-transistors, by combining multiscale phenomena at different interfaces
-to the semiconductor material. As we demonstration example we show the
-design and working principle of a graphene-F_{16}CuPc interfacial
-transistor. Nanowires of F_{16}CuPc are formed on graphene surface due
-to graphene-assisted template effect, giving rise to macroscopic
-superhydrophobicity at the NW-liquid interface. The
-superhydrophobicity enables versatile operation of droplets on the NW
-interface. Owing to the elasticity of liquid droplets, it is feasible
-to introduce pressure sensing capability at the semiconductor-liquid
-interface, which further enables detection with large displacement. At
-the graphene-semiconductor interface, due to the Fermi level match and
-field effect transparency, the drain-source current can be tuned over
-a large range by gate voltage modulation in a vertical field effect
-transistor. Moreover, an additional interface to the semiconductor is
-easily introduced involving the thermal carrier emission at the
-graphene-semiconductor junction. All the interfaces to semiconductor
-can be operated without interference, which facilitates
-multi-dimensional operations of the interfacial transistor. Our
-concept of interfacial transistors can be extended to a wide variety
-of electronic devices, where multiscale phenomena at the
-2D-material-semiconductor interfaces are involved. Stimuli responses
-involving interfacial physics such as motion of liquid enabled by
-superhydrophobic semiconductor nanostructure, light switching due to
-optical transparency of 2D materials and charge transfer with
-environmental molecules owing to the long Debye length of organic
-semiconductors can all be integrated into single interfacial
-transistor, which opens a broad future for next-generation versatile,
-multifunctional and inexpensive electronics.
 
 
 * References
