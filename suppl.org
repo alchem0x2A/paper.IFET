@@ -4,6 +4,7 @@
 #+LATEX_HEADER: \usepackage{float}
 #+LATEX_HEADER: \usepackage{xcolor}
 #+LATEX_HEADER: \usepackage{hyperref}
+#+LATEX_HEADER: \usepackage{placeins}
 #+LATEX_HEADER: \renewcommand{\thepage}{S\arabic{page}}
 #+LATEX_HEADER: \renewcommand{\theequation}{S\arabic{equation}}
 #+LATEX_HEADER: \renewcommand{\thefigure}{S\arabic{figure}}
@@ -19,7 +20,7 @@
 #+NAME: latex-author-list
 #+BEGIN_EXPORT latex
 % The author list
-\title{Supporting Information for: \\ An Elastic Interfacial Transistor Enabled by Superhydrophobicity}
+\title{Supporting Information for: \\ An elastic interfacial transistor enabled by superhydrophobicity}
 \author{Tian Tian}
 \affiliation{Institute for Chemical and Bioengineering, ETH Z{\"{u}}rich,  Vladimir-Prelog Weg 1, CH-8093 Z{\"{u}}rich, Switzerland}
 \author{Chander Shekhar Sharma}
@@ -29,11 +30,17 @@
 \author{Matija Varga}
 \affiliation{Electronics Laboratory, ETH Z{\"{u}}rich,  Gloriastrasse 35,  CH-8092 Z{\"{u}}rich, Switzerland}
 \author{Raja Selvakumar}
-\affiliation{Institute for Chemical and Bioengineering, ETH Z{\"{u}}rich,  Vladimir-Prelog Weg 1, CH-8093 Z{\"{u}}rich, Switzerland}
-\author{Dimos Poulikakos}
-\affiliation{Institut of Energy Technology, ETH Z{\"{u}}rich, Sonneggstrasse 3, CH-8092 Z{\"{u}}rich, Switzerland}
-\author{Gerhard Tr\"{o}ster}
-\affiliation{Electronics Laboratory, ETH Z{\"{u}}rich,  Gloriastrasse 35,  CH-8092 Z{\"{u}}rich, Switzerland}
+\affiliation{Department of Chemical and Biomolecular Engineering, University of California, Berkeley, CA 94720, USA}
+% \affiliation{Institute for Chemical and Bioengineering, ETH Z{\"{u}}rich,  Vladimir-Prelog Weg 1, CH-8093 Z{\"{u}}rich, Switzerland}
+\author{Yen-Ting Lee}
+\affiliation{Department of Chemical Engineering, National Taiwan University of Science and Technology, Taipei 10607, Taiwan.}
+\affiliation{National Synchrotron Radiation Research Center, Hsinchu 30076, Taiwan.}
+\author{Yu-Cheng Chiu}
+\affiliation{Department of Chemical Engineering, National Taiwan University of Science and Technology, Taipei 10607, Taiwan.}
+% \author{Gerhard Tr\"{o}ster}
+% \affiliation{Electronics Laboratory, ETH Z{\"{u}}rich,  Gloriastrasse 35,  CH-8092 Z{\"{u}}rich, Switzerland}
+% \author{Dimos Poulikakos}
+% \affiliation{Institut of Energy Technology, ETH Z{\"{u}}rich, Sonneggstrasse 3, CH-8092 Z{\"{u}}rich, Switzerland}
 \author{Chih-Jen Shih}
 \email{chih-jen.shih@chem.ethz.ch}
 \affiliation{Institute for Chemical and Bioengineering, ETH Z{\"{u}}rich,  Vladimir-Prelog Weg 1, CH-8093 Z{\"{u}}rich, Switzerland}
@@ -45,20 +52,24 @@
 * Methods
 
 ** Materials
-Copper foil (20 $\mu \mathrm{m}$ thickness, 99.999%, Alfa Aesar),
-F_{16}CuPc (99%, sublimed, TCI Chemical), Hydrochloric acid (HCl,
-Sigma-Aldrich), Nitric acid (Sigma-Aldrich), Methane (99.9%, PanGas),
-Hydrogen (99.9%, PanGas), SiO_{2}/Si^{++} wafer (285 nm thermal
-oxide), Al pellet, PMMA, FeCl_{3}, Isopropanol (IPA), Acetone, OTS,
-chlorobenzene.
-*************** TODO Complete the material list
-*************** END
+Copper foil (Cu, 20 $\mu \mathrm{m}$ thickness, 99.999%, Alfa Aesar),
+F_{16}CuPc (99%, sublimed, TCI Chemical), Hydrochloric acid (37%,
+Sigma-Aldrich), Nitric acid (65%, Sigma-Aldrich), Methane (99.9%,
+PanGas Schweiz), Hydrogen (99.9%, PanGas Schweiz), SiO_{2}/Si^{++}
+wafer (285 nm thermal oxide, Si-Mat -Silicon Materials e.K.), Aluminum
+pellets (99.99%, Sigma Aldrich), Poly methylmethacrylate (PMMA, 950
+kDa, 4% solution in anisole, MicroChem), Iron chloride (FeCl_{3}, 99%,
+Sigma-Aldrich), Isopropanol (IPA, 99%, Thommen-Furler AG), Acetone
+(99%, Thommen-Furler AG), Trichloro(octadecyl)silane (OTS, 90%,
+Sigma-Aldrich), Chlorobenzene (99%, Sigma-Aldrich) .
+# *************** TODO Complete the material list
+# *************** END
 
 ** CVD synthesis of graphene
 
-Copper foil was cut into 2.5 cm $\times$ 3.5 cm piece, cleaned in 1M
+The Cu foil was cut into pieces of 2.5 cm $\times$ 3.5 cm, cleaned in 1M
 HCl solution to remove native oxide, rinsed in DI water and dried in
-Argon flow. The Cu foil was placed into a quartz boat which was
+argon flow. The Cu foil was placed into a quartz boat which was
 cleaned by oxygen plasma in advance. The quartz boat was then loaded
 into a quartz tube with diameter of 2.5 inch. The quart tube was
 mounted onto a home-made CVD system. The quartz boat was placed in the
@@ -69,12 +80,12 @@ rate of 20 $^{\circ}\mathrm{C} \cdot \mathrm{min}^{-1}$. The copper
 foil was annealed at 1000 $^\circ \mathrm{C}$ for 30 min under 15 sccm
 H_{2} flow, with the pressure kept at 150 mTorr. 40 sccm CH_{4} was
 then added into the CVD system and the pressure was kept at 5 Torr for
-30 min to grow graphene onto the Cu foil. After the graphene growth
-was finished, the CH_{4} flow and heating were stopped, and the quartz
-boat was moved out of the heating zone for a fast cooling at rate of
+30 min to grow graphene on the Cu foil. After the graphene growth
+was completed, the CH_{4} flow and heating were stopped, and the quartz
+boat was moved out of the heating zone for a fast cooling at a rate of
 200 $^{\circ}\mathrm{C} \cdot \mathrm{min}^{-1}$. When the temperature
-of the system cooled under 100 $^{\circ}\mathrm{C}$, the quartz tube
-was refilled with Argon and the Cu foil was taken out.
+of the CVD system cooled under 100 $^{\circ}\mathrm{C}$, the quartz tube
+was refilled with argon and the Cu foil was taken out.
 
 ** Transfer process of graphene
 :PROPERTIES:
@@ -83,29 +94,27 @@ was refilled with Argon and the Cu foil was taken out.
 
 
 The graphene grown on the backside (near the quartz boat) was used for
-all processes involved here. 4% PMMA solution in aniline was
-spin-coated onto the desired side of Cu foil at 2000 rpm for 40 s. The
-PMMA-coated Cu foil was then annealed on a hot plate at 200
-$^{\circ}\mathrm{C}$ for 1 min. The graphene on the non-coated side
-was removed by 400 W O_{2} plasma for 1 min. The Cu foil was then cut
-into desired size and placed onto the surface of FeCl_{3} solution in
-a petri dish for 1.5 h until all the Cu was etched. The floating
-PMMA-graphene membranes were subsequently transferred onto DI water
-(3X), HCl (30 min) and DI water (5X) for further cleaning, and
-transferred onto the desired substrate. For substrates that were
-highly hydrophobic, the PMMA-graphene membrane was transferred onto
-5:1 mixture of water-isoprapanol at the last step before transferring
-onto the substrate. The substrate was kept in a closed petri dish
-until all the water was drained, and then heated at 150
-$^{\circ}\mathrm{C}$ for 2 min to remove residual water. The substrate
-with transferred PMMA-graphene was cooled to root temperature and
-dipped into a bath of acetone for 30 s to 2 min to remove the
-PMMA. The substrate was rinsed repeatedly in acetone and IPA, and
-dried in Argon flow.
+all processes involved. 4% PMMA solution in anisole was spin-coated
+onto the desired side of Cu foil at 2000 rpm for 40 s. The PMMA-coated
+Cu foil was then annealed on a hot plate at 200 $^{\circ}\mathrm{C}$
+for 1 min. The graphene on the non-coated side was removed by 400 W
+O_{2} plasma for 1 min. The Cu foil was then cut into desired size and
+placed onto the surface of FeCl_{3} solution in a petri dish for 1.5 h
+until all the Cu was etched. The floating PMMA/graphene membranes were
+subsequently transferred onto DI water (3X), HCl (30 min) and DI water
+(5X) for further cleaning, and transferred onto the desired
+substrates. For substrates that were highly hydrophobic
+(e.g. OTS-treated SiO_{2}/Si substrates), the PMMA/graphene membrane
+was transferred onto a 5:1 mixture of water-isoprapanol at the last
+transfer step. The substrates were kept in ambient for 1 h, and then heated at 150 $^{\circ}\mathrm{C}$ for
+2 min to remove residual water. The substrates with transferred
+PMMA-graphene were cooled to room temperature and dipped into a bath of
+acetone for 30 s to 2 min to remove the PMMA. The substrate was rinsed
+repeatedly in acetone and IPA, and dried in argon flow.
 
-The transfer method can be used on surfaces substrates like metal, Si, SiO_{2}
-(including chemically-modified SiO_{2}), glass and even textured
-materials like wood.
+The transfer method can be used on surfaces substrates like metal, Si,
+SiO_{2} (including chemically-modified SiO_{2}), glass and even
+textured materials like wood. 
 
 ** Deposition of F_{16}CuPc
 
@@ -118,29 +127,28 @@ mBar. F_{16}CuPc was deposited at 300 ~ 360 $^{\circ}\mathrm{C}$ with
 a deposition rate of 0.2 ~ 0.8 \AA/s indicated by the quartz crystal
 microabalance (QCM). Since the thickness of F_{16}CuPc film on
 different substrates differs a lot, the change of QCM oscillation
-frequency $\Delta f_{\mathrm{QCM}}$ during the deposition process was
+frequency $\Delta \nu_{\mathrm{QCM}}$ during the deposition process was
 used as the measurement of amount of F_{16}CuPc deposited. $\Delta
-f_{\mathrm{QCM}}$ is related to the change of mass $\Delta m$ by the
-Sauerbrey equation:
-*************** TODO cite
-*************** END
-
+\nu_{\mathrm{QCM}}$ is related to the change of mass $\Delta m$ by the
+Sauerbrey equation cite:Sauerbrey_1959:
+# *************** TODO cite
+# *************** END
 
 \begin{equation}
 \label{eq:1}
-\Delta f_{\mathrm{QCM}} = -\frac{2 f_{0}^{2}}{A \sqrt{\rho_{\mathrm{Q}} \mu_{\mathrm{Q}}}} \Delta m
+\Delta \nu_{\mathrm{QCM}} = -\frac{2 f_{0}^{2}}{A \sqrt{\rho_{\mathrm{Q}} \mu_{\mathrm{Q}}}} \Delta m
 \end{equation}
 where the parameters $A$, $\rho_{\mathrm{Q}}$ and $\mu_{\mathrm{Q}}$
-are quartz-related properties. Since $\Delta f_{\mathrm{QCM}}$ is very
+are quartz-related properties. Since $\Delta \nu_{\mathrm{QCM}}$ is very
 small compared with the resonance frequency $f_{0}$, we can assume
-$f_{0}$ as constant. Therefore $\Delta f_{\mathrm{QCM}}$ is
+$f_{0}$ as constant. Therefore $\Delta \nu_{\mathrm{QCM}}$ is
 proportional to the mass change, which is directly related to the
 amount of F_{16}CuPc deposited.
 
-** Fabrication of graphene-F_{16}CuPc interfacial transistor
+** Fabrication of F_{16}CuPc/Gr interfacial transistor
 
-SiO2/Si wafer was cut to 2 cm $\times$ 2 cm pieces and subsequently
-cleaned by sonication in DI water, acetone, IPA. The wafers were dried
+A 4-inch SiO2/Si wafer was cut to 2 cm $\times$ 2 cm pieces and subsequently
+cleaned by sonication in DI water, acetone, IPA. The wafer slices were dried
 and further cleaned in 400 W O_{2} plasma for 10 min. The wafers were
 immersed in 20 mL solution of 0.1 mM OTS in dry chlorobenzene for 2
 h. The wafers were then rinsed by dry chlorobenzene and heated in
@@ -151,19 +159,19 @@ using the steps described in [[ref:sec:gr-transfer]].
 Source electrodes (100 nm Al) were deposited onto graphene using
 shadow masks at deposition rate of 1~3 \AA/s. F_{16}CuPc were further
 deposited by changing the mask onto graphene. The thickness of
-F_{16}CuPc were controlled by $\Delta f_{\mathrm{QCM}}$ and checked by
+F_{16}CuPc were controlled by $\Delta \nu_{\mathrm{QCM}}$ and checked by
 SEM. After the deposition, all F_{16}CuPc deposited outside the
 graphene region were removed by scratching using the cone of an
 Eppendorf tip. A contact to the doped Si at backside was made for the
-gate electrode. A liquid metal droplet (Mercury or EGaIn) were used as
+gate electrode. A liquid metal droplet (mercury or EGaIn) were used as
 the drain electrode.
 
 ** Measurements involving the elastic liquid metal interfacial transistor
 
-The graphene-F_{16}CuPc interfacial transistors were mounted onto an
-insulating block of a modified MCA-3 surface tensiometer. The gate and
+The F_{16}CuPc/Gr interfacial transistors were mounted onto an
+insulating probing block of a modified MCA-3 surface tensiometer. The gate and
 source terminals were connected using micropositioners (Linkam UK). A
-home-made Ag-coated Cu probe with a plate (fabricated by mechanical
+home-made Ag-coated Cu cantilever with a plate (fabricated by mechanical
 stamping) at the head were used as the drain electrode. The plate was
 adjusted parallel to the SiO{2} wafer. A LM droplet with volume ~0.1
 $\mu \mathrm{L}$ was dispenced and attached to the bottom side of the
@@ -174,18 +182,22 @@ Agilent 1500B semiconductor analyzer.
 
 The sudden change of electric field when applying the potential across
 F_{16}CuPc-LM interface may cause undesired breakdown of the
-F_{16}CuPc NWs. In tests involving gate-control, the potential were
-first added onto the terminals without the LM droplet contacting
-F_{16}CuPc NWs. The potential was maintained until the droplet was in
-contact with F_{16}CuPc NWs and a valid current between the
-drain-source was established.
+F_{16}CuPc NWs.
+*************** TODO Ref to SI figure
+*************** END
+
+ In tests involving gate modulation, the potentials were first added
+onto the terminals without the LM droplet contacting F_{16}CuPc NWs.
+$V_{\mathrm{D}}$ was maintained until the droplet was in contact with
+F_{16}CuPc NWs and a valid current between the drain-source was
+established.
 
 For pressure tests, the LM droplet was pressed against the F_{16}CuPc
 NWs surface using a manual pneumatic valve. The moving distance of the
 droplet was controlled within 200 $\mu \mathrm{m}$ to avoid mechanical
 deformation of F_{16}CuPc NWs
 
-For temperature tests, the mounted block was replaced by a LT-600
+For thermal response tests, the probing block was replaced by a LT-600
 heating unit (Linkam UK). The temperature was ramped between 20
 $^{\circ} \mathrm{C}$ and 100 $^{\circ} \mathrm{C}$ at 30 $^{\circ}
 \mathrm{C} \cdot \mathrm{min}^{-1}$. The cooling is controlled by a
@@ -194,14 +206,14 @@ LN95 liquid nitrogen flowmeter (Linkam UK).
 
 * Nanoscale characterizations
 
-#+CAPTION: Characterization of single layer graphene transferred onto SiO_{2} substrate. (a) Atomic force microscopy (AFM) morphology of transferred graphene, showing a small rooted mean squared (RMS) roughness of 0.54 nm. (b) Optical images of transferred single layer graphene on SiO_{2} wafer. Very minor multilayer islands with diameter less than 2.5 $\mu \mathrm{m}$ indicates uniform single layer property. (c) Raman spectrum of single layer graphene. The high ratio between the 2D and G peaks indicates single layer graphene, with suppressed defects shown by the G' peak.
-#+ATTR_LATEX: :width 0.8\linewidth
-[[file:img/SI-single-layer.pdf]]
 
-Since the thickness of F_{16}CuPc films on graphene and SiO_{2}
-surfaces differs a lot, we use the quantity $\Delta f_{\mathrm{QCM}}$
-for the amount of deposited F_{16}CuPc. We examined the thickness of
-the films $t_{F_{16}}$ using cross-sectional SEM imaged in both cases
+At the same F_{16}CuPc deposition rate, the thickness of
+F_{16}CuPc/SiO_{2} thin film and the height of F_{16}CuPc/Gr NWs
+differ a lot, due to the distinct morphologies between these two kinds
+of films. Here we use the deviation of QCM frequency $\Delta
+\nu_{\mathrm{QCM}}$ as the unified charaterization of the amount of
+deposited F_{16}CuPc. The nomial thickness of F_{16}CuPc (thin-film or
+NWs) samples, $t_{F_{16}}$, were examined using cross-sectional SEM imaged in both cases
 (Figure [[ref:fig:sem-side-gr]] and [[ref:fig:sem-side-sio2]]). We measured
 the thickness of the SiO_{2} shown in the image $\hat{t}_{SiO_{2}}$
 for each image, and calibrated the thickness using the measured film
@@ -211,50 +223,530 @@ thickness $\hat{t}_{F_{16}}$ using:
 t_{F_{16}} = \frac{285\ \mathrm{nm}}{\hat{t}_{SiO_{2}}} \hat{t}_{F_{16}}
 \end{equation}
 
-#+CAPTION: Cross-sectional SEM images of F_{16}CuPc on graphene on SiO_{2} wafer with different values of $\Delta f_{\mathrm{QCM}}$.
+
+The relation between $t_{F_{16}}$ as a function of $\Delta
+\nu_{\mathrm{QCM}}$ is calculated using linear regression in Figure
+[[ref:fig:thickness-f-relation]]. It can be seen that for the same amount
+of F_{16}CuPc deposited, the film thickness (NW height) on graphene is
+roughly 5 times that on the SiO_{2} surface. The
+$t_{\mathrm{F_{16}}-\Delta \nu_{\mathrm{QCM}}$ relation is used for the
+determination of film thickness in further cases.
+
+The morphologies of the F_{16}CuPc/Gr and F_{16}CuPc/SiO_{2} samples
+as a function of film thickness from the top-view SEM images can be
+seen in Figure [[ref:fig:sem-gr-top]] and [[ref:fig:sem-sio2-top]],
+respectively. With film thickness increasing, the solid fraction of
+the F_{16}CuPc/Gr increases and saturates after 200 nm, while the
+roughness of F_{16}CuPc/SiO_{2} continuously increases, as small
+portion of NW growth can be found also on F_{16}CuPc/SiO_{2} films
+thicker than 100 nm. The distinction between the morphologies of
+F_{16}CuPc/Gr and F_{16}CuPc/SiO_{2} samples at same amount of
+deposition can also be validated using atomic force microscope (AFM)
+meaasured by an Asylum Cyber ES AFM, as shown in Figure
+[[ref:fig:afm-both]]. Note that due to the limited space between the NWs
+(tens of nm), the AFM tip is incapable of probing heigher NWs (height
+> 50 nm), while SEM shows reliable morphology.
+
+In addition to the GIXD data, we also performed 1D X-ray
+diffractometry (XRD) with sample F_{16}CuPc, F_{16}CuPc/Gr and
+F_{16}CuPc/SiO_{2} samples (Figure [[ref:fig:XRD]]). The strong $(002)$
+peak persists in both powder and F_{16}CuPc/SiO_{2} samples,
+corresponding to the edge-on phase. On the other hand, the $( \bar{1}
+22)$ peak, which corresponds to the face-on orientation, can only been
+in the F_{16}CuPc/Gr. We note that more peaks can be seen in GIXD at
+higher $q$ values than in XRD for F_{16}CuPc/Gr, possibly due to
+higher X-ray intensity used in GIXD measurement. We further use the
+Debye-Scherrer equation cite:Patterson_1939.
+\begin{equation}
+\label{eq:4}
+L = \frac{K \lambda}{B(\theta) \cos \theta}
+\end{equation}
+where $L$ is the size of crystalline domain, $K$ is the structure
+factor which we taken as unity, and $B(\theta)$ is the peak broadening
+at $2\Theta$ position. We analyzed the $(002)$ peak of powder and
+F_{16}CuPc/SiO_{2} samples, in comparison to the $(\bar{1}22)$ peak of
+F_{16}CuPc/Gr sample (Table [[ref:tbl:Scherrer-eqn]]). The crystalline
+domain in powder and edge-on F_{16}CuPc/SiO_{2} samples are similar
+(about 50 nm), and much larger than that of F_{16}CuPc/Gr (about 9
+nm). The broadening of the $(\bar{1}22)$ peak also clearly indicates
+the existence of NW, since the width of NWs are even smaller than the
+crystalline domain size of thin-film samples.
+
+Due to the versatility of graphene transfer, the F_{16}CuPc/Gr NWs can
+be grown at room temperature on arbitrary substrates. We validated our
+hypothesis by transferring graphene onto both copper and wood samples
+(/Picea abies/, tangential cut) and deposited F_{16}CuPc using the
+same conditions in our device fabrication (Figure
+[[ref:fig:transfer-arbitrary-subst]]). Superhydrophobicity is clearly
+discovered on the graphene-covered samples, outperforming the
+reference samples without transferred graphene.
+
+The NW formation on the F_{16}CuPc/Gr surface also poses challenge
+towards device fabrication. The metal deposited onto the NWs do not
+form continuous film (Figure [[ref:fig:deposition-Al]]). As a result
+conventional VFET, with the drain electrode made by a continuous metal
+film on the semiconductor cite:Shih2015Partially , cannot be
+constructed by simply depositing metal on F_{16}CuPc/Gr
+NWs. Therefore, using LM or conductive liquid droplet as the D
+terminal, comes naturally as an alternative approach to construct the
+interfacial field effect transistor.
+
+
+* Modeling dynamic wetting on F_{16}CuPc structures
+  In addition to the analysis of wetting states by static contact
+  angles in the main text, here we provide more evidence of the
+  Cassie-Baxter and Wenzel wetting states in F_{16}CuPc/Gr and
+  F_{16}CuPc/SiO_{2} structures, respectively. In Figure 2(e) of main
+  text, we observe that the dynamic contact angle hysteresis $\Delta
+  \theta^{*}_{\mathrm{dyn}}$, defined as $\theta^{*}_{\mathrm{adv}} -
+  \theta^{*}_{\mathrm{rec}}$, increases as a function of film
+  thickness in F_{16}CuPc/SiO_{2} sample, while slightly decreases and
+  saturates in F_{16}CuPc/Gr samples. Qualitatively, this is in good
+  agreement with the observation on pillar-like hydrophobic surfaces
+  cite:Yeh_2008: within the Wenzel state, $\Delta
+  \theta^{*}_{\mathrm{dyn}}$ becomes greater when roughness of surface
+  $r_{\mathrm{W}}$ increases. In our case the Wenzel-state
+  F_{16}CuPc/SiO_{2} surface shows clearly an increase of surface
+  roughness (Figure [[ref:fig:sem-sio2-top]]). On the other hand, within
+  the CB state, $\Delta \theta^{*}_{\mathrm{dyn}}$ becomes smaller
+  with decreasing solid volume $f$. We observed increased
+  $\theta_{\mathrm{adv}}^{*}$ and $\theta_{\mathrm{rec}}^{*}$, with
+  slightly decreased $\theta_{\mathrm{dyn}}^{*}$, possibly due to the
+  saturation of $f$ at increased NW height (Figure
+  [[ref:fig:sem-gr-top]]).
+
+  To get a unified understanding of the wetting phenomenon on these
+  surface, we propse a model to describe both the static and dynamic
+  wetting properties in CB and Wenzel model. Despite the complex
+  nature of wetting hysteresis on a real surface cite:McHale_2004,
+  some theories ascribe the wetting hysteresis to the existence of
+  surface defects cite:Joanny_1984. Under the assumption that surface
+  defects are diluted, the apparent dynamic contact angles on a
+  surface within CB state are similar to the static angle
+  cite:Patankar_2010_CBW_hys:
+
+  \begin{eqnarray}
+  \label{eq:theta-A-CB}
+	\theta_{\mathrm{adv, CB}}^{*} &= r_{\mathrm{CB}} f \cos \theta_{\mathrm{A}} + f- 1  & \\
+  \label{eq:theta-A-W}
+	\theta_{\mathrm{rec, CB}}^{*} &= r_{\mathrm{CB}} f \cos \theta_{\mathrm{R}} + f- 1  &
+  \end{eqnarray}
+  
+  where $\theta_{\mathrm{A}}$ and $\theta_{\mathrm{R}}$ are the
+  advancing and receding angles on an ideally planar surface (but with
+  defects). Similarly for a Wenzel surface we have:
+
+  \begin{eqnarray}
+  \label{eq:theta-A-W}
+	\theta_{\mathrm{adv, W}}^{*} &= r_{\mathrm{W}}} \cos \theta_{\mathrm{A}}& \\
+  \label{eq:theta-A-W}
+	\theta_{\mathrm{rec, W}}^{*} &= r_{\mathrm{W}} \cos \theta_{\mathrm{R}}&
+  \end{eqnarray}
+
+  We then use the above model to simulate the dynamic contact angles
+  we observe experimentally in main text Figure 2(e). In addition to
+  the assumption $r_{\mathrm{W}} \approx r_{\mathrm{CB}}$ in the main
+  text, we also assume that $\theta_{\mathrm{A}}$,
+  $\theta_{\mathrm{R}}$ and $\theta_{\mathrm{Y}}$, are the same for
+  both systems (chemically identical material). Further we use a
+  linear equation to model the evolution of $r$, such that $r = k_{1}
+  \nu_{\mathrm{QCM}}$. Since the solid fraction almost saturates
+  w.r.t. NW height, for the F_{16}CuPc/Gr system we use an exponential
+  decay function to model the evolution of $f$, such that $f = 1 -
+  (1 - f_{\infty})\exp(-k_{2} \nu_{\mathrm{QCM}})$, where $f_{\infty}$
+  is the saturated value for the solid fraction at sufficient NW
+  height. We performed least-square fitting of the thickness-dependent
+  wetting angles in both cases, and the best fitting results give us
+  $\theta_{\mathrm{A}}=107 ^{\circ}$, $\theta_{\mathrm{R}}=78
+  ^{\circ}$ and $\theta_{\mathrm{Y}}=94 ^{\circ}$.
+
+
+
+
+
+
+
+* Electronic properties
+
+  The quality of graphene in the interfacial FET is characterized by
+  its transport curve. We deposited the D and S terminals on
+  graphene/OTS/SiO_{2}, with a channel width $W_{\mathrm{ch}} $of 20 $\mathrm{\mu} m$,
+  and a channel length $L_{\mathrm{ch}}$ of 400 $\mathrm{\mu} m$. By applying a
+  $V_{\mathrm{D}}$ of 0.1 V, and sweeping $V_{\mathrm{G}}$ from -100 V
+  to 100 V, we measured the sheet resistance $\rho$ of the graphene
+  sheet, which is defined as:
+
+  \begin{equation}
+  \label{eq:6}
+  \rho = \frac{I_{\mathrm{DS}}}{V_{\mathrm{D}}} \frac{L_{\mathrm{ch}}}{W_{\mathrm{ch}}}
+  \end{equation}
+  
+  the sheet resistance of Gr/OTS/SiO_{2} and F_{16}/Gr/OTS/SiO_{2} in
+  glovebox environment is shown in Figure
+  [[ref:fig:graphene-property]](a). Before and after deposition of
+  F_{16}CuPc, the on/off ratio of $\rho$ remains at 10 times and
+  almost symmetric around the CNP point, indicating good quality of
+  the graphene film on OTS-treated surface. Depositing F_{16}CuPc
+  slightly p-doped the graphene sheet, shifting the $V_{\mathrm{CNP}}$
+  from near 0 V to 18 V (corresponding to a doping density of $\sim 5
+  \times 10^{12}\ e \cdot \mathrm{cm}^{-2}$). Putting the device in
+  air gradually shifts the $V_{\mathrm{CNP}}$ of graphene (Figure
+  [[ref:fig:graphene-property]](b)), and increases the sweeping hysteresis
+  between the forward and backward $V_{\mathrm{G}}$ sweeps. The slight
+  p-doping of graphene is probably due to the traps at the Gr/SiO_{2}
+  surface. 
+*************** TODO Cite??
+*************** END
+  The p-doping of graphene in air seems to be saturated after 8 hours,
+  with the $V_{\mathrm{CNP}}$ shifted to ~60 V. Due to the existence
+  of OTS, the surface trap density is reduced, which results in a
+  stable performance of the graphene device even in air.
+*************** TODO Rephrase this?
+*************** END
+
+  We also note the performance limit of our interfacial FET due to the
+  instability of F_{16}CuPc NWs. Two possible cases are the wetting
+  transition on the F_{16}CuPc NWs (Figure
+  [[ref:fig:nw-wetting-transition]]) and electric breakdown (Figure
+  [[ref:fig:electric-breakdown]]). The wetting transition from
+  Cassie-Baxter mode to Wenzel mode occurs on defect sites on the
+  F_{16}CuPc/NW surface. Compared with the defect-free NW surface
+  (Figure [[ref:fig:nw-wetting-transition]](a)) where the contact angle
+  hysteresis of LM droplet is small, the receding angle of the LM
+  droplet on a defect site dramatically decreases, forming a liquid
+  "neck" which pins the droplet to the surface (Figure
+  [[ref:fig:nw-wetting-transition]](b)). The wetting transition on NW
+  surface hinders the free elastic motion of LM droplet on the NW
+  surface. Another type of failure is caused by the electric breakdown
+  of the NWs. Figure [[ref:fig:electric-breakdown]] shows different images
+  of a typical breakdown region on the NW/Gr film. Near the edge of
+  the breakdown site, exfoliation of graphene and morphology change of
+  NWs are observed, indicating that large current density passes
+  through the edge. Far from the breakdown site, the morphology of NWs
+  remains unchanged. To avoid the failure of NWs in the interfacial
+  transistors, cycles of elastic pressing of LM droplet is performed
+  on the NW surface with a pressure less than 250 Pa to rule out the
+  wetting transition on the test site. Furthermore, when testing the
+  interfacial FET, we always apply the $V_{\mathrm{D}}$ potential on
+  LM droplet before contacting the NWs and start the desired
+  measurements, to avoid sudden passing of large current through the
+  NWs.
+
+
+  During our tests the thickness of the F_{16}CuPc layer also affects
+  the performance of the interfacial FET. Figure
+  [[ref:fig:IFET-performance-thickness]] shows the different
+  $I_{\mathrm{DS}}-V_{\mathrm{G}}$ curves under various
+  $V_{\mathrm{D}}$ between an interfacial FET with 100 nm NWs (a), and
+  with 200 nm NWs (b). In thinner IFET layers the current density is
+  also higher due to reduced film resistance. However the interfacial
+  FET with 100 nm NWs shows apparent graphene-like
+  $I_{\mathrm{DS}}-V_{\mathrm{G}}$ behavior at $V_{\mathrm{D}}>2.0$ V,
+  dramatically reducing the current on/off ratio. In transistors with
+  a thicker F_{16}CuPc film, the graphene-like behavior is rarely to
+  be observed. As a trade-off between the current density and steady
+  performance, we choose the optimal NW height as 300 nm in our
+  interfacial transistors shown in main text.
+
+  In addition to Hg, we also tested the performance of EGaIn as liquid
+  metal in our interfacial transistor. As shown in Figure
+  [[ref:fig:EGaIn-FET]], FET using EGaIn as the drain material also
+  exhibits good current on/off modulation and elastic pressure
+  sensing, owing to the reversible wetting on the hydrophobic
+  NWs. However compared with Hg-based device, EGaIn system has several
+  critical limitations: (i) It is very challenging to dispense a
+  free-standing \(\mu \mathrm{L}\)-scale EGaIn droplet on NW surface
+  due to the huge difference between the non-wetting NW surface and
+  nearly full-wetting glass capillary. As a result it is tedious to
+  further attach the EGaIn droplet to the metallic cantilever. (ii)
+  surface oxide on the EGaIn droplet accumulates with time, which
+  increases the contact resistance and rheological behavior
+  cite:Dickey_2008. Despite the technical challenges listed above, we
+  believe by proper engineering of the capillary and cantilever
+  surfaces, it is possible to achieve a interfacial FET with
+  reversible performance based EGaIn droplet.
+
+
+
+* Analytical calculation of droplet tension between parallel plates
+
+As stated in the main text, the capillary pressure at the boundary of a droplet which is sit
+between two parallel plates can be modeled by the Young-Laplace
+equation:
+\begin{equation}
+\label{eq:3}
+p = \gamma (R_{1}^{-1} + R_{2}^{-1})
+\end{equation}
+
+where $R_{1}$ and $R_{2}$ are the two principle radii of the
+droplet. Since the size of LM droplets used in the interfacial FET are
+within the low Bond number regime (\(Bo = \Delta p g R^{2} / \gamma <
+1 \)), the effect of gravity can be ignored. Under such conditions,
+the cross-sectional boundary of the droplet between two parallel
+plates (top and bottom) can be regarded as part of a sphere
+cite:berthier_2012_microdroplet, and thus possible to be modeled by an
+analytical model.
+
+** Symmetric case
+
+ First consider the simplest case where the contact angle
+ between a convex droplet and both plates are the same, the
+ characteristic geometric parameters of the droplet are the principle
+ radii $R_{1}$ and $R_{2}$, the half height $\delta=H/2$ and contact
+ angle $\theta$ of the droplet. As
+ shown in Figure [[ref:fig-SI-drop-model]](a), the droplet is axial
+ symmetric and $R_{1}$ is the maximum radius of horizontal cross
+ sections, while $R_{2}$ is the radius of the smaller arc of the
+ vertical cross section, when gravity an be ignored.
+
+ The volume of the droplet $V_{\mathrm{drop}}$ is then expressed as:
+
+ \begin{equation}
+ \label{eq:sym-1}
+ \begin{aligned}
+ V_{\mathrm{drop}} &= 2 \pi \int_{0}^{\delta} \left[ (R_{1} - R_{2}) + \sqrt{R_{2}^{2} - z^{2}}\right]^{2} \mathrm{d}z \\
+   &= 2\pi \left\{ \left[(R_{1} - R_{2})^{2} + R_{2}^{2} \right] z 
+ - \frac{z^{3}}{3} \right\} \Bigg|_{0}^{\delta}
+  + 2 \pi \left\{(R_{1} - R_{2}) R_{2}^{2} (\theta' + \sin \theta' \cos \theta')
+ \right\} \Bigg |_{0}^{\theta - \pi/2} \\
+ &= 2 \pi \left \{ [(R_{1} - R_{2})^{2} + R_{2}^{2}]\delta - \frac{\delta^{3}}{3} + (R_{1} - R_{2}) R_{2}^{2} (\theta - \pi/2 -\sin \theta \cos \theta)\right\} \\
+ &= u(R_{1}, R_{2}, \delta, \theta)
+ \end{aligned}
+ \end{equation}
+
+ Note that $R_{1}$ and $R_{2}$ are
+ related with $\delta$ and the contact radius $r$:
+
+ \begin{eqnarray}
+ \label{eq:R1}
+ &R_{1} &= {\displaystyle r + \delta \frac{\sin \theta - 1}{ \cos \theta}}  \\
+ \label{eq:R2}
+ &R_{2} &= -{\displaystyle \frac{\delta}{\cos \theta}}
+ \end{eqnarray}
+ plug Eq [[ref:eq:R2]] into Eq [[ref:eq:sym-1]], we can express
+ $V_{\mathrm{drop}}$ alternatively as:
+
+ \begin{equation}
+ \label{eq:sym-2}
+ \begin{aligned}
+ V_{\mathrm{drop}} &= u(R_{1}, -\frac{\delta}{\cos \theta}, \theta)\\
+		   &= v(R_{1}, \delta, \theta)
+ \end{aligned}
+ \end{equation}
+ 
+ $\theta$ and $\delta$ values are normally determined from the
+ experimental data, thus we can get the value of $R_{1}$ by the inverse
+ function of $u$ as $R_{1} = v^{-1}(V_{\mathrm{drop}, \delta,
+ \theta})$. The values of $r$ and $R_{2}$ are further converted
+ via Eqs ref:eq:R1 and ref:eq:R2.
+
+#+BEGIN_COMMENT
+Note that $R_{1}$ and $R_{2}$ are not independent variables, and
+ related with $\delta$ and the contact radius $r$:
+
+ \begin{eqnarray}
+ \label{eq:R1}
+ &R_{1} &= {\displaystyle r + \delta \frac{\sin \theta - 1}{ \cos \theta}}  \\
+ \label{eq:R2}
+ &R_{2} &= -{\displaystyle \frac{\delta}{\cos \theta}}
+ \end{eqnarray}
+ plug Eqs [[ref:eq:R1]] and [[ref:eq:R2]] into Eq [[ref:eq:sym-1]], we can express
+ $V_{\mathrm{drop}}$ alternatively as:
+
+ \begin{equation}
+ \label{eq:sym-2}
+ \begin{aligned}
+ V_{\mathrm{drop}} &= 2\pi \left[ \delta (r^{2} + 2r \delta \tan \theta + \delta^{2}}) +
+ 		      	   	  (r + \delta \tan \theta) \frac{\delta^{2}}{\cos^{2} \theta} 
+				  (\theta - \frac{\pi}{2} - \sin \theta \cos \theta) - \frac{\delta^{3}}{3}
+ 		      	   \right]\\
+		   &= v(r, \delta, \theta)
+ \end{aligned}
+ \end{equation}
+ 
+ $\theta$ and $\delta$ values are normally determined from the
+ experimental data, thus we can get the value of $r$ by the inverse
+ function of $u$ as $r = v^{-1}(V_{\mathrm{drop}, \delta,
+ \theta})$. The values of $R_{1}$ and $R_{2}$ are further converted
+ via Eqs ref:eq:R1 and ref:eq:R2.
+#+END_COMMENT
+
+** Asymmetric case
+ The symmetric case does not represent the real LM droplet in the
+ interfacial transistor, since the contact angles on the top plane
+ (\(\theta_{\mathrm{t}}\)) and bottom plane (\(\theta_{\mathrm{b}}\))
+ can be quite different. Therefore we need to derive the relation
+ between $V_{\mathrm{drop}}$ and $R_{1}$ $R_{2}$ of an asymmetric
+ droplet between two parallel plates. We use a similar approach:
+ divide a droplet with asymmetric contact angles into two parts with
+ heights $\delta_{\mathrm{t}}$ and $\delta_{\mathrm{b}}$ (Figure
+ [[ref:fig-SI-drop-model]](b). Each of the two individual parts
+ corresponds to half of a symmetric droplet between plates with the
+ same $R_{1}$ and $R_{2}$. $\delta_{\mathrm{t}}$ and
+ $\delta_{\mathrm{b}}$ are determined by:
+
+ \begin{eqnarray}
+ \label{eq:deltas-1}
+ \delta_{\mathrm{t}} &= {\displaystyle \frac{H \cos \theta_{\mathrm{t}}}{\cos \theta_{\mathrm{t}} 
+                   + \cos \theta_{\mathrm{b}}}} \\
+ \label{eq:deltas-2}
+ \delta_{\mathrm{b}} &= {\displaystyle \frac{H \cos \theta_{\mathrm{b}}}{\cos \theta_{\mathrm{t}} 
+                   + \cos \theta_{\mathrm{b}}}}
+ \end{eqnarray}
+ where $H$ is the height of the droplet.
+ From the calculation of droplet volume in the symmetric case, we know
+ the volume of the asymmetric droplet can be written as:
+ \begin{equation}
+ \label{eq:V-assym-1}
+ \begin{aligned}
+ V_{\mathrm{drop}} &= \frac{u(R_{1}, R_{2}, \delta_{\mathrm{t}}, \theta_{\mathrm{t}}) + u(R_{1}, R_{2}, \delta_{\mathrm{b}}, \theta_{\mathrm{b}})}{2}\\
+ 		   &= \frac{v(R_{1}, \delta_{\mathrm{t}}, \theta_{\mathrm{t}}) +
+		            v(R_{2}, \delta_{\mathrm{b}}, \theta_{\mathrm{b}})}{2} \\
+		   &= w(R_{1}, H, \theta_{\mathrm{t}}, \theta_{\mathrm{b}})
+ \end{aligned}
+ \end{equation}
+ 
+ As can be seen, when the values $\theta_{\mathrm{t}}$,
+ $\theta_{\mathrm{b}}$ and $V_{\mathrm{drop}}$ are known, we can also
+ calculate $R_{1}$ via: $R_{1} = w^{-1}(V_{\mathrm{drop}}, H,
+ \theta_{\mathrm{t}}, \theta_{\mathrm{b}})$. The value of $R_{2}$ can
+ be calculated by:
+ 
+ \begin{equation}
+ \label{eq:asym-R2}
+ R_{2} &= -{\displaystyle \frac{H}{\cos \theta_{\mathrm{t}} + \cos \theta_{\mathrm{b}}}}
+ \end{equation}
+
+ The top and bottom
+ contact radii $r_{\mathrm{t}}$ and $r_{\mathrm{b}}$ follow:
+
+ \begin{eqnarray}
+ \label{eq:t-1}
+ r_{\mathrm{t}} &= R_{1} + {\displaystyle \frac{2\delta \cos \theta_{\mathrm{t}}}{\cos \theta_{\mathrm{t}} 
+                                 + \cos \theta_{\mathrm{b}}}
+                           \frac{\cos \theta_{\mathrm{t}} - 1}{\sin \theta_{\mathrm{t}}}}\\
+ \label{eq:t-2}
+ r_{\mathrm{b}} &= R_{1} + {\displaystyle \frac{2\delta \cos \theta_{\mathrm{b}}}{\cos \theta_{\mathrm{t}} 
+                                 + \cos \theta_{\mathrm{b}}}
+                           \frac{\cos \theta_{\mathrm{b}} - 1}{\sin \theta_{\mathrm{b}}}}
+ \end{eqnarray}
+ And thus all the components needed for the asymmetric case are calculated.
+
+** Determination of pressure reference
+   Since the stress $p$ calculated by the Young-Laplace equation is
+   the stress between the LM and air across the LM boundary, we need
+   to determine the pressure reference ($p_{0} = p(H=H_{0})$) for
+   calculating the change of stress $\Delta p=p(H) - p(H=H_{0})$. The
+   physical meaning of $H_{0}$ is the maximal height of the droplet
+   between the two plates when no external stress is applied. In this
+   case the whole droplet has a shape of a sphere segment (Figure
+   [[ref:fig-SI-drop-model]](c)). Since two principle radii coincide in this
+   case, $R_{1}=R_{2}=R$, we have:
+
+   \begin{equation}
+   \label{eq:5}
+   V_{\mathrm{drop}} = \frac{4 \pi}{3} R^{3} - \frac{\pi}{3} R^{3} (1 + \cos \theta_{\mathrm{t}})^{2}(2 - \cos \theta_{\mathrm{t}})
+   		       	       	       	     - \frac{\pi}{3} R^{3} (1 + \cos \theta_{\mathrm{b}})^{2}(2 - \cos \theta_{\mathrm{b}})
+   \end{equation}
+   Further convert it back to $R$, we get:
+   
+   \begin{equation}
+   \label{eq:8}
+   R = \sqrt[3]{\frac{3 V_{\mathrm{drop}}}{4 \pi}} \sqrt[3]{\left[ 
+   1 - \left(\frac{1 + \cos \theta_{\mathrm{t}}}{2} \right)^{2} \left(2 - \cos \theta_{\mathrm{t}}\right)
+   - \left(\frac{1 + \cos \theta_{\mathrm{b}}}{2} \right)^{2} \left(2 - \cos \theta_{\mathrm{b}}\right)
+   \right]^{-1}}
+   \end{equation}
+   and
+   
+   \begin{equation}
+   \label{eq:9}
+   \begin{aligned}
+   H_{0} &= -R(\cos \theta_{\mathrm{t}} + \cos \theta_{\mathrm{b}})  \\
+   &= \sqrt[3]{\frac{3 V_{\mathrm{drop}}}{4 \pi}} \sqrt[3]{\left[ 
+  \left(\frac{1 + \cos \theta_{\mathrm{t}}}{2} \right)^{2} \left(2 - \cos \theta_{\mathrm{t}}\right) +
+   \left(\frac{1 + \cos \theta_{\mathrm{b}}}{2} \right)^{2} \left(2 - \cos \theta_{\mathrm{b}}\right) -1 
+   \right]^{-1}}  \left(\cos \theta_{\mathrm{t}} + \cos \theta_{\mathrm{b}}\right)
+   \end{aligned}
+   \end{equation}
+
+
+
+ 
+
+
+
+ \FloatBarrier
+
+* Figures and Tables
+
+
+
+#+CAPTION: Multiscale phenomena in the interfacial transistor. From left to right: macroscopic wetting at the NW/liquid interface; nanoscale molecule orientaion at the molecule/2DEG interface; atomistic scale energy level alignment at the semiconductor/2DEG interface.
 #+ATTR_LATEX: :width 0.95\linewidth
+#+ATTR_LATEX: :placement [H]
+[[file:img/SI-TOC.pdf]]
+
+
+#+CAPTION: Characterization of single layer graphene transferred onto SiO_{2} substrate. (a) Atomic force microscopy (AFM) morphology of transferred graphene, showing a small rooted mean squared (RMS) roughness of 0.54 nm. (b) Optical images of transferred single layer graphene on SiO_{2} wafer. Very minor multilayer islands with diameter less than 2.5 $\mu \mathrm{m}$ indicates uniform single layer property. (c) Raman spectrum of single layer graphene. The high ratio between the 2D and G peaks indicates single layer graphene, with suppressed defects shown by the G' peak.
+#+ATTR_LATEX: :width 0.95\linewidth
+#+ATTR_LATEX: :placement [H]
+[[file:img/SI-single-layer.pdf]]
+
+#+CAPTION: Schematic illustration of the deposition process of F_{16}CuPc on graphene and SiO_{2} substrates.
+#+ATTR_LATEX: :width 0.5\linewidth
+#+ATTR_LATEX: :placement [H]
+[[file:img/Si-illustration-deposition.pdf]]
+
+#+CAPTION: Cross-sectional SEM images of F_{16}CuPc on graphene on SiO_{2} wafer with different values of $\Delta \nu_{\mathrm{QCM}}$.
+#+ATTR_LATEX: :width 0.95\linewidth
+#+ATTR_LATEX: :placement [H]
 #+NAME: fig:sem-side-gr
 [[file:img/SI-thickness-f-side-gr.pdf]]
 
-#+CAPTION: Cross-sectional SEM images of F_{16}CuPc on  SiO_{2} wafer with different values of $\Delta f_{\mathrm{QCM}}$. Scale bars are 200 nm.
+#+CAPTION: Cross-sectional SEM images of F_{16}CuPc on  SiO_{2} wafer with different values of $\Delta \nu_{\mathrm{QCM}}$. Scale bars are 200 nm.
 #+ATTR_LATEX: :width 0.6\linewidth
+#+ATTR_LATEX: :placement [H]
 #+NAME: fig:sem-side-sio2
 [[file:img/SI-thickness-f-side-sio2.pdf]]
 
-The relation between $t_{F_{16}}$ as a function of $\Delta
-f_{\mathrm{QCM}}$ is calculated using linear regression in Figure
-[[ref:fig:thickness-f-relation]]. It can be seen that for the same amount
-of F_{16}CuPc deposited, the film thickness on graphene is roughly 5
-times that on the SiO_{2} surface, due to the formation of NWs.
-
-#+CAPTION: Linear regression of the thickness of F_{16}CuPc films on graphene and SiO_{2} as functions of $\Delta f_{\mathrm{QCM}}$
+#+CAPTION: Linear regression of the thickness of F_{16}CuPc films on graphene and SiO_{2} as functions of $\Delta \nu_{\mathrm{QCM}}$
 #+ATTR_LATEX: :width 0.5\linewidth 
-#+NAME: fig:thickness-f-relation 
+#+ATTR_LATEX: :placement [H]
+#+NAME: fig:thickness-f-relation
 [[file:img/SI-thickness-f-relation.pdf]]
 
 
 #+CAPTION: Top SEM images of F_{16}CuPc on graphene on SiO_{2} wafer with different values of film thickness.
 #+ATTR_LATEX: :width 0.8\linewidth 
+#+ATTR_LATEX: :placement [H]
+#+NAME: fig:sem-gr-top
 [[file:img/SI-thickness-top-gr.pdf]]
 
 
 #+CAPTION: Top SEM images of F_{16}CuPc on SiO_{2} wafer with different values of film thickness.
+#+NAME: fig:sem-sio2-top
 #+ATTR_LATEX: :width 0.6\linewidth 
+#+ATTR_LATEX: :placement [H]
 [[file:img/SI-thickness-top-sio2.pdf]]
 
 
-#+CAPTION: Atomic force microscopy (AFM) images of F_{16}CuPc on graphene and SiO_{2} surfaces with different values of $\Delta f_{\mathrm{QCM}}$
+#+CAPTION: Atomic force microscopy (AFM) images of F_{16}CuPc on graphene and SiO_{2} surfaces with different values of $\Delta \nu_{\mathrm{QCM}}$
 #+ATTR_LATEX: :width 0.85\linewidth
+#+ATTR_LATEX: :placement [H]
+#+NAME: fig:afm-both
 [[file:img/SI-AFM-thickness.pdf]]
 
 
-#+CAPTION: X-ray diffraction (XRD) of F_{16}CuPc in various forms. The F_{16}CuPc on graphene and SiO_{2} were deposited using $\Delta f_{\mathrm{QCM}} = 600$ Hz.
-#+ATTR_LATEX: :width 0.65\linewidth
+#+CAPTION: X-ray diffraction (XRD) of F_{16}CuPc in various forms. The F_{16}CuPc on graphene and SiO_{2} were deposited using $\Delta \nu_{\mathrm{QCM}} = 600$ Hz.
+#+ATTR_LATEX: :width 0.5\linewidth
+#+ATTR_LATEX: :placement [H]
 #+NAME: fig:XRD
 [[file:img/SI-XRD.pdf]]
 
-
 #+CAPTION: Analysis of the XRD of F_{16}CuPc in various forms using the Debye-Scherrer equation
+#+NAME: tbl:Scherrer-eqn
+#+ATTR_LATEX: :placement [H]
 |----------------------+------------+------------+------------|
 | <l25>                |      <r16> |      <r16> |      <r16> |
 | Sample               | $2\theta$ ($^{\circ}$) |  $B$ (rad) |   $L$ (nm) |
@@ -265,102 +757,76 @@ times that on the SiO_{2} surface, due to the formation of NWs.
 |----------------------+------------+------------+------------|
 
 
-* Superhydrophobicity of F_{16}CuPc NWs
+#+CAPTION: Confocal Raman spectroscopy of F_{16}CuPc/Gr and F_{16}CuPc/SiO_{2} samples using 532 nm laser. The Davydov multiplets at 1315 cm^{-1} and 1380 cm^{-1} indicates different orientation of F_{16}CuPc molecules. The ratio between the intensities of the two peaks are used to construct the Raman map in the main text.
+#+NAME: fig:SI-Raman
+#+ATTR_LATEX: :placement [H]
+#+ATTR_LATEX: :width 0.95\linewidth
+[[file:img/SI-Raman.pdf]]
 
-#+CAPTION: Dynamic and equilibrium contact angles on F_{16}CuPc nanostructures as a functions of film thickness.
-#+ATTR_LATEX: :width 0.8\linewidth
-[[file:img/SI-thickness-CA.pdf]]
 
-#+CAPTION: SEM images of Al (50 nm) deposited on different F_{16}CuPc nanostructures.
+
+#+CAPTION: SEM images of Al (50 nm) deposited on (a) F_{16}CuPc/Gr and (b) F_{16}CuPc/SiO2 surfaces. 
 #+ATTR_LATEX: :width 0.8\linewidth
+#+NAME: fig:deposition-Al
 [[file:img/SI_compasion_Al_depo.pdf]]
+
+#+CAPTION: Sliding angles $\theta_{\mathrm{sl}}^{*}$ of EGaIn on different surfaces. A sliding angle $> 90 ^{\circ}$ means the droplets almost permanantly adheres to the surface.
+#+NAME: tbl:sliding
+#+ATTR_LATEX: :placement [H]
+|---------------------------+------------------|
+| <l25>                     |            <r16> |
+| Sample                    | $\theta_{\mathrm{sl}}^{*}$) |
+|---------------------------+------------------|
+| SiO_{2}                   |    $>90^{\circ}$ |
+| Gr/SiO_{2}                |    $>90^{\circ}$ |
+| F_{16}CuPc/SiO_{2}        | $56.1 \pm 13.2 ^{\circ}$ |
+| F_{16}CuPc/Gr/SiO_{2}     | $14.6 \pm 2.6 ^{\circ}$ |
+|---------------------------+------------------|
+
 
 #+CAPTION: F_{16}CuPc nanostructures on other materials. (a) F_{16}CuPc deposited on Cu and Cu with CVD-grown graphene. (b) F_{16}CuPc deposited on wood slice and graphene-covered wood slice.
 #+ATTR_LATEX: :width 0.8\linewidth
+#+NAME: fig:transfer-arbitrary-subst
 [[file:img/SI-other-materials.pdf]]
-
-* Electronic properties
 
 #+CAPTION: Characterization of pure graphene-based field effect transistor. (a) Change of the CNP point ($V_{\mathrm{CNP}}$) before and after deposition of F_{16}CuPc in glovebox.  (b) Forward and backward scan of a graphene transistor on OTS-treated SiO_{2} in air. (c) Drift of $V_{\mathrm{CNP}}$ of a graphene transistor on OTS-treated SiO_{2} in air over 8 hours.
 #+ATTR_LATEX: :width 0.9\linewidth
+#+NAME: fig:graphene-property
 [[file:img/SI-gr-transistor.pdf]]
 
 #+CAPTION: $J_{\mathrm{DS}}-V_{\mathrm{G}}$ characterization of graphene-F_{16}CuPc VFET with thinner film thicknesses: (a) 100 nm and (b) 200 nm. In the case of 100 nm F_{16}CuPc, the $J_{\mathrm{DS}}$ is greatly influenced by the current density in graphene and the device brokedown at higher current densities. 
 #+ATTR_LATEX: :width 0.9\linewidth
+#+NAME: fig:IFET-performance-thickness
 [[file:img/SI-thinner-transistor.pdf]]
 
 #+CAPTION: Breakdown of F_{16}CuPc NWs. (a) Detaching process of LM droplet from normal  F_{16}CuPc NWs. No adhesion is observed. (b) Detaching process of LM droplet from brokendown  F_{16}CuPc NWs. A "neck" of LM adhered to the surface can be observed. (c) Micro-nanoscale examination of  F_{16}CuPc NW breakdown. i: optical image and ii: low magnification SEM image of the spot where breakdown took place. iii-vi zoomed-in SEM images of different locations near the breakdown spot. Exfoliation of graphene could be seen around the edge of the spot, as well as merging of  F_{16}CuPc NWs.
 #+ATTR_LATEX: :width 0.8\linewidth
-[[file:img/SI-breakdown-NW.pdf]]
+#+NAME: fig:nw-wetting-transition
+[[file:img/SI-NW-transition.pdf]]
+
+
+#+NAME: fig:electric-breakdown
+#+ATTR_LATEX: :width 0.8\linewidth
+[[file:img/SI-electric-breakdown.pdf]]
+
 
 
 #+CAPTION: Characterizations of graphene-F_{16}CuPc transistor using EGaIn as elastic liquid metal.
-#+ATTR_LATEX: :width 0.9\linewidth
+#+ATTR_LATEX: :width 0.95\linewidth
+#+NAME: fig:EGaIn-FET
 [[file:img/SI-EGaIn.pdf]]
 
 
-* Temperature sensing
-
 #+CAPTION: Morphology change of F_{16}CuPc NWs upon heating. No obvious change of morphology was observed under 200 $^{\circ} \mathrm{C}$, while the NWs became thicker and straighter above 250 $^{\circ} \mathrm{C}$, indicating phase transition.
 #+ATTR_LATEX: :width 0.8\linewidth
+#+NAME: fig-NW-heating
 [[file:img/SI-morphology-NW-T.pdf]]
 
 
 #+CAPTION: Additional temperature-dependent characterizations of the graphene-F_{16}CuPc transistor. (a) Ration between the drain-source current at certain $T$ and $T=20\ ^{\circ} \mathrm{C}$ during various heating-cooling cycles between 20 $^{\circ} \mathrm{C}$ and 60 $^{\circ} \mathrm{C}$. $V_{\mathrm{G}}$ was kept 0 V during the process. (b) Theoretical gain in the drain-source current compared with $T=20\ ^{\circ} \mathrm{C}$ as a function of $T$ with different Schottky barrier height.
-#+ATTR_LATEX: :width 0.9\linewidth
+#+ATTR_LATEX: :width 0.95\linewidth
+#+NAME: fig:T-measurement
 [[file:img/SI-T-fig.pdf]]
-
-
-* Analytical calculation of droplet tension between parallel plates
-
-The capillary pressure at the boundary of a droplet which is sit
-between two parallel plates can be modeled by the Young-Laplace
-equation:
-\begin{equation}
-\label{eq:3}
-\Delta p = \gamma (R_{1}^{-1} + R_{2}^{-1})
-\end{equation}
-
-where $R_{1}$ and $R_{2}$ are the two principle radii of the
-droplet. Within the low Bond number regime (\(Bo = \Delta p g R^{2} /
-\gamma < 1 \)), the effect of gravity can be ignored, and the shape of
-the droplet between two parallel horizontal plates can be modeled by
-an analytical model. In the simplest case where the contact angle
-between a convex droplet and both plates are the same, the
-characteristic geometric parameters of the droplet are the principle
-radii $R_{1}$ and $R_{2}$, the (half) height $\delta$ and contact
-angle $\theta$ of the droplet cite:berthier_2012_microdroplet. As
-shown in Figure [[ref:fig-SI-drop-model]](a), the droplet is axial
-symmetric and $R_{1}$ is the maximum radius of horizontal cross
-sections, while $R_{2}$ is the radius of the smaller arc of the
-vertical cross section, when gravity an be ignored.
-
-The volume of the droplet is then expressed as:
-
-\begin{equation}
-\label{eq:8}
-\begin{aligned}
-V &= 2 \pi \int_{0}^{\delta} \left[ (R_{1} - R_{2}) + \sqrt{R_{2}^{2} - z^{2}}\right]^{2} \mathrm{d}z \\
-  &= 2\pi \left\{ \left[(R_{1} - R_{2})^{2} + R_{2}^{2} \right] z 
-- \frac{z^{3}}{3} \right\} \Bigg|_{0}^{\delta}
- + 2 \pi \left\{(R_{1} - R_{2}) R_{2}^{2} (\theta' + \sin \theta' \cos \theta')
-\right\} \Bigg |_{0}^{\theta - \pi/2} \\
-&= 2 \pi \left \{ [(R_{1} - R_{2})^{2} + R_{2}^{2}]\delta - \frac{\delta^{3}}{3} + (R_{1} - R_{2}) R_{2}^{2} (\theta - \pi/2 -\sin \theta \cos \theta)\right\} \\
-&= f(R_{1}, R_{2}, \delta, \theta)
-\end{aligned}
-\end{equation}
-
-the volume of an asymmetric droplet can be derived in a similar
-approach: a droplet with contact angles at the top and bottom plates
-as $\theta_{\mathrm{t}}$ and $\theta_{\mathrm{b}}$ can be divided into
-two parts with heights $\delta_{\mathrm{t}}$ and $\delta_{\mathrm{b}}$
-(Figure [[ref:fig-SI-drop-model]](b)), of which the volume is given by
-half the value of a corresponding symmetric droplet: 
-
-\begin{equation}
-\label{eq:9}
-V = \frac{f(R_{1}, R_{2}, \delta_{\mathrm{t}}, \theta_{\mathrm{t}}) + f(R_{1}, R_{2}, \delta_{\mathrm{b}}, \theta_{\mathrm{b}})}{2}
-\end{equation}
 
 #+CAPTION: Analytical model of droplet geometry between two horizontal parallel plates, the droplets have a convex shape in both cases. (a) symmetrical case, the volume of droplet is described by a function $f(R_{1}, R_{2}, \delta, \theta)$ as a function of principle radii $R_{1}$ and $R_{2}$, the helf height of the droplet $\delta$ and contact angle $\theta$. (b) asymmetrical case where top and bottom contact angles $\theta_{\mathrm{t}}$ and $\theta_{\mathrm{b}}$ are different. The volume of droplet is given by: $V = [f(R_{1}, R_{2}, \delta_{\mathrm{t}}, \theta_{\mathrm{t}}) + f(R_{1}, R_{2}, \delta_{\mathrm{b}}, \theta_{\mathrm{b}})]/2$.
 #+NAME: fig-SI-drop-model
@@ -368,66 +834,8 @@ V = \frac{f(R_{1}, R_{2}, \delta_{\mathrm{t}}, \theta_{\mathrm{t}}) + f(R_{1}, R
 [[file:img/SI-droplet-model.pdf]]
 
 
-Note that the radius $R_{\mathrm{t}}$ and $R_{\mathrm{b}}$ need to be
-calculated by fitting the curvature of droplet. Alternatively we can
-express the principle radii using the half height $\delta$ and contact
-radius $r$:
-
-\begin{eqnarray}
-\label{eq:10}
-&R_{1} &= {\displaystyle r + \delta \frac{\cos \theta - 1}{ \sin \theta}}  \\
-&R_{2} &= -{\displaystyle \frac{\delta}{\cos \theta}}
-\end{eqnarray}
-
-We can now replace the volume of symmetric droplet as 
-\begin{equation}
-\label{eq:11}
-V = f'(r, \delta, \theta)
-\end{equation}
-and asymmetric droplet:
-\begin{equation}
-\label{eq:12}
-V = \frac{f'(r_{\mathrm{t}}, \delta_{\mathrm{t}}, \theta_{\mathrm{t}}) 
-+ f'(r_{\mathrm{b}}, \delta_{\mathrm{b}}, \theta_{\mathrm{b}})}{2}
-\end{equation}
-
-In the case of calculating droplet stress as a function of strain, we
-assume that the contact angle and volume of the droplet remain
-constant during the droplet deformation process. The contact radius is
-then calculated by solving eq [[ref:eq:9]] given the contact angle
-$\theta_{\mathrm{t}}$, $\theta_{\mathrm{b}}$ and volume of droplet
-$V_{0}$. Given the fact that $R_{2} = -\delta_{\mathrm{t}}/\cos
-\theta_{\mathrm{t}} = -\delta_{\mathrm{b}}/\cos \theta_{\mathrm{b}}$
-and $\delta_{\mathrm{t}} + \delta_{\mathrm{b}} = 2\delta$, where
-$2\delta$ is the full height of the droplet, we get:
-
-\begin{eqnarray}
-\label{eq:deltas-1}
-\delta_{\mathrm{t}} &= {\displaystyle \frac{2\delta \cos \theta_{\mathrm{t}}}{\cos \theta_{\mathrm{t}} 
-                  + \cos \theta_{\mathrm{b}}}} \\
-\label{eq:deltas-2}
-\delta_{\mathrm{b}} &= {\displaystyle \frac{2\delta \cos \theta_{\mathrm{b}}}{\cos \theta_{\mathrm{t}} 
-                  + \cos \theta_{\mathrm{b}}}}
-\end{eqnarray}
-the contact radius $r_{\mathrm{t}}$ and $r_{\mathrm{b}}$ follow:
-\begin{eqnarray}
-\label{eq:t-1}
-r_{\mathrm{t}} &= R_{1} + {\displaystyle \frac{2\delta \cos \theta_{\mathrm{t}}}{\cos \theta_{\mathrm{t}} 
-                                + \cos \theta_{\mathrm{b}}}
-                          \frac{\cos \theta_{\mathrm{t}} - 1}{\sin \theta_{\mathrm{t}}}}\\
-\label{eq:t-2}
-r_{\mathrm{b}} &= R_{1} + {\displaystyle \frac{2\delta \cos \theta_{\mathrm{b}}}{\cos \theta_{\mathrm{t}} 
-                                + \cos \theta_{\mathrm{b}}}
-                          \frac{\cos \theta_{\mathrm{b}} - 1}{\sin \theta_{\mathrm{b}}}}
-\end{eqnarray}
-
-Solving the equation $V_{0} = [f'(r_{\mathrm{t}}, \delta_{\mathrm{t}},
-\theta_{\mathrm{t}}) + f'(r_{\mathrm{b}}, \delta_{\mathrm{b}},
-\theta_{\mathrm{b}})]/2$, combined with eqs [[ref:eq:deltas-1]] -
-[[ref:eq:t-2]], is equivalent to solve the sole parameter $R_{1}$, and
-back-converted to $r_{\mathrm{t}}$, $r_{\mathrm{b}}$.
-
-
+\FloatBarrier
+  
 * References
 
 [[bibliography:ref.bib]]
