@@ -2,9 +2,8 @@
 #+LATEX_CLASS_OPTIONS: [prb, onecolumn, linenumbers, hyperref, superscriptaddress, preprint, amsmath, amssymb, noshowpacs]
 #+LATEX_HEADER: \usepackage{graphicx}
 #+LATEX_HEADER: \usepackage{float}
-#+LATEX_HEADER: \usepackage{xcolor}
-#+LATEX_HEADER: \usepackage{hyperref}
 #+LATEX_HEADER: \usepackage{times}
+#+LATEX_HEADER: \newenvironment{boldabstract}{\setlength{\parindent}{0in}\setlength{\parskip}{0in}\bfseries}{\par\vspace{-6pt}}
 
 #+OPTIONS: tex:t toc:nil todo:t author:nil date:nil title:nil ^:t tags:nil
 #+DESCRIPTION:
@@ -34,24 +33,17 @@
 % \author{Dimos Poulikakos}
 % \affiliation{Institut of Energy Technology, ETH Z{\"{u}}rich, Sonneggstrasse 3, CH-8092 Z{\"{u}}rich, Switzerland}
 \author{Chih-Jen Shih}
-\email{chih-jen.shih@chem.ethz.ch}
+\email{Correspondence should be addressed to C.-J.S. chih-jen.shih@chem.ethz.ch}
 \affiliation{Institute for Chemical and Bioengineering, ETH Z{\"{u}}rich,  Vladimir-Prelog Weg 1, CH-8093 Z{\"{u}}rich, Switzerland}
-#+END_EXPORT
-
-#+NAME: latex-abstract
-#+BEGIN_EXPORT latex
-\begin{abstract}
-\end{abstract}
 #+END_EXPORT
 
 #+LaTeX: \maketitle
 
-* Introduction
-#+BEGIN_COMMENT
-Typical strategy for creating mechanically
-responsive FETs relies on coupling of another passive component, which
-often limits sensitivity and increases power consumption .
-#+END_COMMENT
+  
+* Abstract
+  :PROPERTIES:
+  :UNNUMBERED: t
+  :END:
 Recent advances in semiconductor materials and physics have driven the
 development of field-effect transistors (FETs) for a variety of
 applications cite:Torsi_2013_rev,Ben_Sasson_2014.  Enabling mechanical
@@ -90,6 +82,11 @@ voltage. Here we refer to such device architecture as the "elastic
 IFET", which demonstrates a versatile platform that
 bridges multiple macroscopic interfacial phenomena with nanoelectronic
 responses
+
+* Main
+  :PROPERTIES:
+  :UNNUMBERED: t
+  :END:
 
 Figure [[ref:fig:main-1]] presents the device architecture of the proposed
 IFET. We consider a quantum capacitor device
@@ -357,9 +354,8 @@ given by cite:Cassie_1944,Wenzel_1936:
   \begin{aligned}
     H_{0} &= \sqrt[3]{\frac{3 V_{\mathrm{drop}}}{4 \pi}} \sqrt[3]{\frac{1}{ 
    g(\theta_{\mathrm{t}}) + g(\theta_{\mathrm{b}}) -1 }}  \left(\cos \theta_{\mathrm{t}} + \cos \theta_{\mathrm{b}}\right) \\
-    g(\theta) &= \left(\frac{1 + \cos \theta}{2} \right)^{2} \left(2 - \cos \theta}\right)
+    g(\theta) &= \left(\frac{1 + \cos \theta}{2} \right)^{2} \left(2 - \cos \theta \right)
   \end{aligned}
-
   \end{equation}
  Figure [[ref:fig:main-4]](b) shows the
   experimental and simulated elastic stress of a $\sim\ 0.1\
@@ -447,7 +443,7 @@ given by cite:Cassie_1944,Wenzel_1936:
 
   Note that since the thermal volume expansion of LM is relatively
   small (\sim 1% from 20 $^{\circ} \mathrm{C}$ to 100 $^{\circ}
-  \mathrm{C}), the temperature-induced change of contact area and
+  \mathrm{C}$), the temperature-induced change of contact area and
   capillary length can be ignored. We tested the gated-tuned
   $J$_{\mathrm{DS}}$ with the temperature ranging from 20 $^{\circ}
   \mathrm{C}$ to 100 $^{\circ} \mathrm{C}$, as shown in Figure
@@ -477,8 +473,6 @@ given by cite:Cassie_1944,Wenzel_1936:
   caused by the pinning of graphene's Fermi level by surface-bound
   traps cite:Meric_2008.
 
-
-* Conclusions
 
 In this paper, we introduce a new electronic platform -- the
 IFET as an extension to conventional field effect
@@ -514,9 +508,53 @@ multifunctional and inexpensive electronics.
 
 
 
+* Methods
+  :PROPERTIES:
+  :UNNUMBERED: t
+  :END:
+  Detailed descriptions of methods and characterization methods can be seen in the Supporting Information.
+
+* Acknowledgements
+  :PROPERTIES:
+  :UNNUMBERED: t
+  :END:
+  T.T., N.A., R.S., and C.-J.S. thank the ETH starup
+  funding. T.T. thank Dr. Tobias Keplinger and Wang Yaru for
+  assistance with Raman microscopy.
+*************** TODO Complete the acknoledgements
+*************** END
+
+
+* Competing Interests
+  :PROPERTIES:
+  :UNNUMBERED: t
+  :END:
+
+  The authors declare that they have no competing financial interests.
+
+* Author contributions
+  :PROPERTIES:
+  :UNNUMBERED: t
+  :END:
+  T.T. and C.-J. S. conceived the concept, designed the experiments
+  and co-write the manuscript. T.T. and C.S.S. carried out the ESEM
+  measurements. T.T., N.A. and R.S. fabricated and characterized the
+  morphology and dynamic wetting properties of the F_{16}CuPc/Gr
+  samples. Y.-T. L. and Y.-C. C. measured the GIXD
+  spectroscopy. T.T. fabriacted and tested the interfacial
+  transistors. T.T. and M.V. designed the experiments using EGaIn. All
+  authors contributed to the discussion of the results and to the
+  revision of the manuscript.
+
+
+
 * References
+  :PROPERTIES:
+  :UNNUMBERED: t
+  :END:
 
 
+[[bibliographystyle:naturemag]]
 [[bibliography:ref.bib]]
 
 #+CAPTION: The concept of an elastic interfacial transistor. (a) Multiscale phenomena in the interfacial transistor: at the macroscopic scale, the superhydrophobicity is induced by fluorene-rich semiconducting nanowires; the nanowires (NWs) is led by the unique molecular templating on two dimensional electron gas (2DEG); the energy level alignment at the semiconductor-2DEG interface further enables field effect modulation of interfacial electronic properties. (b) Schematic drawing of an interfacial transistor, composed of (i) liquid metal droplet as drain terminal, from which the elasticity can be induced; (ii) semiconducting nanowires which provide electronic transport and superhydrophobicity; (iii) a 2DEG as source terminal, of which the transport phenomana can be tuned by field effect. (c) Mechanism of the elastic sensing using liquid metal droplet. Droplet strain in the vertical direction causes elastic stress of the droplet. The contact radius of the droplet increases, and in turn changes the current. Superhydrophobicity of the semiconducting NWs enables repeatable droplet shape deformation.

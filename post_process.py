@@ -41,7 +41,7 @@ def tex_process(tex_file):
         i = 0
         while i < len(contents):
             line = contents[i]
-            if (re.search("\\\\section{Abstract}", line) is not None):
+            if (re.search("\\\\section(\*?){Abstract}", line) is not None):
                 j = i + 1
                 while True:
                     if re.search("\\\\section", contents[j]) is not None:  # Another section

@@ -1,9 +1,8 @@
 #+LATEX_CLASS: revtex4-1
 #+LATEX_CLASS_OPTIONS: [prb, onecolumn, linenumbers, hyperref, superscriptaddress, preprint, amsmath, amssymb, noshowpacs]
+#+LATEX_HEADER: \usepackage{times}
 #+LATEX_HEADER: \usepackage{graphicx}
 #+LATEX_HEADER: \usepackage{float}
-#+LATEX_HEADER: \usepackage{xcolor}
-#+LATEX_HEADER: \usepackage{hyperref}
 #+LATEX_HEADER: \usepackage{placeins}
 #+LATEX_HEADER: \renewcommand{\thepage}{S\arabic{page}}
 #+LATEX_HEADER: \renewcommand{\theequation}{S\arabic{equation}}
@@ -33,7 +32,7 @@
 \affiliation{Department of Chemical and Biomolecular Engineering, University of California, Berkeley, CA 94720, USA}
 % \affiliation{Institute for Chemical and Bioengineering, ETH Z{\"{u}}rich,  Vladimir-Prelog Weg 1, CH-8093 Z{\"{u}}rich, Switzerland}
 \author{Yen-Ting Lee}
-\affiliation{Department of Chemical Engineering, National Taiwan University of Science and Technology, Taipei 10607, Taiwan.}
+e\affiliation{Department of Chemical Engineering, National Taiwan University of Science and Technology, Taipei 10607, Taiwan.}
 \affiliation{National Synchrotron Radiation Research Center, Hsinchu 30076, Taiwan.}
 \author{Yu-Cheng Chiu}
 \affiliation{Department of Chemical Engineering, National Taiwan University of Science and Technology, Taipei 10607, Taiwan.}
@@ -48,6 +47,8 @@
 
 
 #+LaTeX: \maketitle
+#+LaTeX: \setcounter{tocdepth}{1}
+#+LaTeX: \tableofcontents
 
 * Methods
 
@@ -65,6 +66,19 @@ Sigma-Aldrich), Chlorobenzene (99%, Sigma-Aldrich) .
 # *************** TODO Complete the material list
 # *************** END
 
+** Characterizations
+   SEM images were taken by Zeiss ULTRA plus with 2 kV beam voltage
+   and 20 \(\mathrm{\mu}\)m aperture. Confocal Raman spectroscopy was
+   measured by Renishaw inVia^{\textrm{TM}} confocal microscope using
+   532 nm laser and 1800 mm^{-1} grating. AFM mapping were measured by
+   a Asylum Cyber ES AFM. Sessile droplet contact angles were measured
+   by a MCA-3 Microscopic Contact Angle Meter (Kyowa Interface
+   Science, co. ltd.). ESEM measurements were carried out in a FEI
+   Quanta 600 ESEM equipped with a gaseous back scattered electron
+   detector. Electric properties of the interfacial transistor were
+   measured by an Agilent B1500A Semiconductor Device Parameter
+   Analyzer. Stress and thermal characterizations see the following
+   subsections.
 ** CVD synthesis of graphene
 
 The Cu foil was cut into pieces of 2.5 cm $\times$ 3.5 cm, cleaned in 1M
@@ -174,31 +188,28 @@ source terminals were connected using micropositioners (Linkam UK). A
 home-made Ag-coated Cu cantilever with a plate (fabricated by mechanical
 stamping) at the head were used as the drain electrode. The plate was
 adjusted parallel to the SiO{2} wafer. A LM droplet with volume ~0.1
-$\mu \mathrm{L}$ was dispenced and attached to the bottom side of the
+$\mu \mathrm{L}$ was dispensed and attached to the bottom side of the
 plate. The droplet was monitored using a Mitutoyo 2X long working
-distance lens, and caredfully contacted with the surface of the
+distance lens, and carefully contacted with the surface of the
 surface of F_{16}CuPc. Electronic measurements were performed using an
 Agilent 1500B semiconductor analyzer. 
 
-The sudden change of electric field when applying the potential across
-F_{16}CuPc-LM interface may cause undesired breakdown of the
-F_{16}CuPc NWs.
-*************** TODO Ref to SI figure
-*************** END
-
- In tests involving gate modulation, the potentials were first added
+We observe that the sudden change of electric field when applying the
+potential across F_{16}CuPc-LM interface may cause undesired breakdown
+of the F_{16}CuPc NWs (Figure [[ref:fig:electric-breakdown]]). Therefore,
+in tests involving gate modulation, the potentials were first added
 onto the terminals without the LM droplet contacting F_{16}CuPc NWs.
 $V_{\mathrm{D}}$ was maintained until the droplet was in contact with
 F_{16}CuPc NWs and a valid current between the drain-source was
 established.
 
-For pressure tests, the LM droplet was pressed against the F_{16}CuPc
+For stress tests, the LM droplet was pressed against the F_{16}CuPc
 NWs surface using a manual pneumatic valve. The moving distance of the
 droplet was controlled within 200 $\mu \mathrm{m}$ to avoid mechanical
 deformation of F_{16}CuPc NWs
 
 For thermal response tests, the probing block was replaced by a LT-600
-heating unit (Linkam UK). The temperature was ramped between 20
+heating unit (Linkam UK). The temperature was switched between 20
 $^{\circ} \mathrm{C}$ and 100 $^{\circ} \mathrm{C}$ at 30 $^{\circ}
 \mathrm{C} \cdot \mathrm{min}^{-1}$. The cooling is controlled by a
 LN95 liquid nitrogen flowmeter (Linkam UK).
@@ -206,159 +217,163 @@ LN95 liquid nitrogen flowmeter (Linkam UK).
 
 * Nanoscale characterizations
 
+** Thickness characterizations on F_{16}CuPc/Gr and F_{16}CuPc/SiO_{2} surfaces
+ At the same F_{16}CuPc deposition rate, the thickness of
+ F_{16}CuPc/SiO_{2} thin film and the height of F_{16}CuPc/Gr NWs
+ differ a lot, due to the distinct morphologies between these two kinds
+ of films. Here we use the deviation of QCM frequency $\Delta
+ \nu_{\mathrm{QCM}}$ as the unified charaterization of the amount of
+ deposited F_{16}CuPc. The nomial thickness of F_{16}CuPc (thin-film or
+ NWs) samples, $t_{F_{16}}$, were examined using cross-sectional SEM imaged in both cases
+ (Figure [[ref:fig:sem-side-gr]] and [[ref:fig:sem-side-sio2]]). We measured
+ the thickness of the SiO_{2} shown in the image $\hat{t}_{SiO_{2}}$
+ for each image, and calibrated the thickness using the measured film
+ thickness $\hat{t}_{F_{16}}$ using:
+ \begin{equation}
+ \label{eq:2}
+ t_{F_{16}} = \frac{285\ \mathrm{nm}}{\hat{t}_{SiO_{2}}} \hat{t}_{F_{16}}
+ \end{equation}
 
-At the same F_{16}CuPc deposition rate, the thickness of
-F_{16}CuPc/SiO_{2} thin film and the height of F_{16}CuPc/Gr NWs
-differ a lot, due to the distinct morphologies between these two kinds
-of films. Here we use the deviation of QCM frequency $\Delta
-\nu_{\mathrm{QCM}}$ as the unified charaterization of the amount of
-deposited F_{16}CuPc. The nomial thickness of F_{16}CuPc (thin-film or
-NWs) samples, $t_{F_{16}}$, were examined using cross-sectional SEM imaged in both cases
-(Figure [[ref:fig:sem-side-gr]] and [[ref:fig:sem-side-sio2]]). We measured
-the thickness of the SiO_{2} shown in the image $\hat{t}_{SiO_{2}}$
-for each image, and calibrated the thickness using the measured film
-thickness $\hat{t}_{F_{16}}$ using:
-\begin{equation}
-\label{eq:2}
-t_{F_{16}} = \frac{285\ \mathrm{nm}}{\hat{t}_{SiO_{2}}} \hat{t}_{F_{16}}
-\end{equation}
+ The relation between $t_{F_{16}}$ as a function of $\Delta
+ \nu_{\mathrm{QCM}}$ is calculated using linear regression in Figure
+ [[ref:fig:thickness-f-relation]]. It can be seen that for the same amount
+ of F_{16}CuPc deposited, the film thickness (NW height) on graphene is
+ roughly 5 times that on the SiO_{2} surface. The
+ $t_{\mathrm{F_{16}}}-\Delta \nu_{\mathrm{QCM}}$ relation is used for the
+ determination of film thickness in further cases.
+
+** Further details about film morphology
+
+ The morphologies of the F_{16}CuPc/Gr and F_{16}CuPc/SiO_{2} samples
+ as a function of film thickness from the top-view SEM images can be
+ seen in Figure [[ref:fig:sem-gr-top]] and [[ref:fig:sem-sio2-top]],
+ respectively. With film thickness increasing, the solid fraction of
+ the F_{16}CuPc/Gr increases and saturates after 200 nm, while the
+ roughness of F_{16}CuPc/SiO_{2} continuously increases, as small
+ portion of NW growth can be found also on F_{16}CuPc/SiO_{2} films
+ thicker than 100 nm. The distinction between the morphologies of
+ F_{16}CuPc/Gr and F_{16}CuPc/SiO_{2} samples at same amount of
+ deposition can also be validated using atomic force microscope (AFM)
+ meaasured by an Asylum Cyber ES AFM, as shown in Figure
+ [[ref:fig:afm-both]]. Note that due to the limited space between the NWs
+ (tens of nm), the AFM tip is incapable of probing heigher NWs (height
+ > 50 nm), while SEM shows reliable morphology.
+
+** XRD analysis of F_{16}CuPc films
+ In addition to the GIXD data, we also performed 1D X-ray
+ diffractometry (XRD) with sample F_{16}CuPc, F_{16}CuPc/Gr and
+ F_{16}CuPc/SiO_{2} samples (Figure [[ref:fig:XRD]]). The strong $(002)$
+ peak persists in both powder and F_{16}CuPc/SiO_{2} samples,
+ corresponding to the edge-on phase. On the other hand, the $( \bar{1}
+ 22)$ peak, which corresponds to the face-on orientation, can only been
+ in the F_{16}CuPc/Gr. We note that more peaks can be seen in GIXD at
+ higher $q$ values than in XRD for F_{16}CuPc/Gr, possibly due to
+ higher X-ray intensity used in GIXD measurement. We further use the
+ Debye-Scherrer equation cite:Patterson_1939.
+ \begin{equation}
+ \label{eq:4}
+ L = \frac{K \lambda}{B(\theta) \cos \theta}
+ \end{equation}
+ where $L$ is the size of crystalline domain, $K$ is the structure
+ factor which we taken as unity, and $B(\theta)$ is the peak broadening
+ at $2\Theta$ position. We analyzed the $(002)$ peak of powder and
+ F_{16}CuPc/SiO_{2} samples, in comparison to the $(\bar{1}22)$ peak of
+ F_{16}CuPc/Gr sample (Table [[ref:tbl:Scherrer-eqn]]). The crystalline
+ domain in powder and edge-on F_{16}CuPc/SiO_{2} samples are similar
+ (about 50 nm), and much larger than that of F_{16}CuPc/Gr (about 9
+ nm). The broadening of the $(\bar{1}22)$ peak also clearly indicates
+ the existence of NW, since the width of NWs are even smaller than the
+ crystalline domain size of thin-film samples.
+
+** Room temperature growth of F_{16}CuPc on other substrates
+ Due to the versatility of graphene transfer, the F_{16}CuPc/Gr NWs can
+ be grown at room temperature on arbitrary substrates. We validated our
+ hypothesis by transferring graphene onto both copper and wood samples
+ (/Picea abies/, tangential cut) and deposited F_{16}CuPc using the
+ same conditions in our device fabrication (Figure
+ [[ref:fig:transfer-arbitrary-subst]]). Superhydrophobicity is clearly
+ discovered on the graphene-covered samples, outperforming the
+ reference samples without transferred graphene.
+
+ The NW formation on the F_{16}CuPc/Gr surface also poses challenge
+ towards device fabrication. The metal deposited onto the NWs do not
+ form continuous film (Figure [[ref:fig:deposition-Al]]). As a result
+ conventional VFET, with the drain electrode made by a continuous metal
+ film on the semiconductor cite:Shih2015Partially , cannot be
+ constructed by simply depositing metal on F_{16}CuPc/Gr
+ NWs. Therefore, using LM or conductive liquid droplet as the D
+ terminal, comes naturally as an alternative approach to construct the
+ interfacial field effect transistor.
 
 
-The relation between $t_{F_{16}}$ as a function of $\Delta
-\nu_{\mathrm{QCM}}$ is calculated using linear regression in Figure
-[[ref:fig:thickness-f-relation]]. It can be seen that for the same amount
-of F_{16}CuPc deposited, the film thickness (NW height) on graphene is
-roughly 5 times that on the SiO_{2} surface. The
-$t_{\mathrm{F_{16}}-\Delta \nu_{\mathrm{QCM}}$ relation is used for the
-determination of film thickness in further cases.
+** Modeling dynamic wetting on F_{16}CuPc structures
 
-The morphologies of the F_{16}CuPc/Gr and F_{16}CuPc/SiO_{2} samples
-as a function of film thickness from the top-view SEM images can be
-seen in Figure [[ref:fig:sem-gr-top]] and [[ref:fig:sem-sio2-top]],
-respectively. With film thickness increasing, the solid fraction of
-the F_{16}CuPc/Gr increases and saturates after 200 nm, while the
-roughness of F_{16}CuPc/SiO_{2} continuously increases, as small
-portion of NW growth can be found also on F_{16}CuPc/SiO_{2} films
-thicker than 100 nm. The distinction between the morphologies of
-F_{16}CuPc/Gr and F_{16}CuPc/SiO_{2} samples at same amount of
-deposition can also be validated using atomic force microscope (AFM)
-meaasured by an Asylum Cyber ES AFM, as shown in Figure
-[[ref:fig:afm-both]]. Note that due to the limited space between the NWs
-(tens of nm), the AFM tip is incapable of probing heigher NWs (height
-> 50 nm), while SEM shows reliable morphology.
+   In addition to the analysis of wetting states by static contact
+   angles in the main text, here we provide more evidence of the
+   Cassie-Baxter and Wenzel wetting states in F_{16}CuPc/Gr and
+   F_{16}CuPc/SiO_{2} structures, respectively. In Figure 2(e) of main
+   text, we observe that the dynamic contact angle hysteresis $\Delta
+   \theta^{*}_{\mathrm{dyn}}$, defined as $\theta^{*}_{\mathrm{adv}} -
+   \theta^{*}_{\mathrm{rec}}$, increases as a function of film
+   thickness in F_{16}CuPc/SiO_{2} sample, while slightly decreases and
+   saturates in F_{16}CuPc/Gr samples. Qualitatively, this is in good
+   agreement with the observation on pillar-like hydrophobic surfaces
+   cite:Yeh_2008: within the Wenzel state, $\Delta
+   \theta^{*}_{\mathrm{dyn}}$ becomes greater when roughness of surface
+   $r_{\mathrm{W}}$ increases. In our case the Wenzel-state
+   F_{16}CuPc/SiO_{2} surface shows clearly an increase of surface
+   roughness (Figure [[ref:fig:sem-sio2-top]]). On the other hand, within
+   the CB state, $\Delta \theta^{*}_{\mathrm{dyn}}$ becomes smaller
+   with decreasing solid volume $f$. We observed increased
+   $\theta_{\mathrm{adv}}^{*}$ and $\theta_{\mathrm{rec}}^{*}$, with
+   slightly decreased $\theta_{\mathrm{dyn}}^{*}$, possibly due to the
+   saturation of $f$ at increased NW height (Figure
+   [[ref:fig:sem-gr-top]]).
 
-In addition to the GIXD data, we also performed 1D X-ray
-diffractometry (XRD) with sample F_{16}CuPc, F_{16}CuPc/Gr and
-F_{16}CuPc/SiO_{2} samples (Figure [[ref:fig:XRD]]). The strong $(002)$
-peak persists in both powder and F_{16}CuPc/SiO_{2} samples,
-corresponding to the edge-on phase. On the other hand, the $( \bar{1}
-22)$ peak, which corresponds to the face-on orientation, can only been
-in the F_{16}CuPc/Gr. We note that more peaks can be seen in GIXD at
-higher $q$ values than in XRD for F_{16}CuPc/Gr, possibly due to
-higher X-ray intensity used in GIXD measurement. We further use the
-Debye-Scherrer equation cite:Patterson_1939.
-\begin{equation}
-\label{eq:4}
-L = \frac{K \lambda}{B(\theta) \cos \theta}
-\end{equation}
-where $L$ is the size of crystalline domain, $K$ is the structure
-factor which we taken as unity, and $B(\theta)$ is the peak broadening
-at $2\Theta$ position. We analyzed the $(002)$ peak of powder and
-F_{16}CuPc/SiO_{2} samples, in comparison to the $(\bar{1}22)$ peak of
-F_{16}CuPc/Gr sample (Table [[ref:tbl:Scherrer-eqn]]). The crystalline
-domain in powder and edge-on F_{16}CuPc/SiO_{2} samples are similar
-(about 50 nm), and much larger than that of F_{16}CuPc/Gr (about 9
-nm). The broadening of the $(\bar{1}22)$ peak also clearly indicates
-the existence of NW, since the width of NWs are even smaller than the
-crystalline domain size of thin-film samples.
+   To get a unified understanding of the wetting phenomenon on these
+   surface, we propose a model to describe both the static and dynamic
+   wetting properties in CB and Wenzel model. Despite the complex
+   nature of wetting hysteresis on a real surface cite:McHale_2004,
+   some theories ascribe the wetting hysteresis to the existence of
+   surface defects cite:Joanny_1984. Under the assumption that surface
+   defects are diluted, the apparent dynamic contact angles on a
+   surface within CB state are similar to the static angle
+   cite:Patankar_2010_CBW_hys:
 
-Due to the versatility of graphene transfer, the F_{16}CuPc/Gr NWs can
-be grown at room temperature on arbitrary substrates. We validated our
-hypothesis by transferring graphene onto both copper and wood samples
-(/Picea abies/, tangential cut) and deposited F_{16}CuPc using the
-same conditions in our device fabrication (Figure
-[[ref:fig:transfer-arbitrary-subst]]). Superhydrophobicity is clearly
-discovered on the graphene-covered samples, outperforming the
-reference samples without transferred graphene.
-
-The NW formation on the F_{16}CuPc/Gr surface also poses challenge
-towards device fabrication. The metal deposited onto the NWs do not
-form continuous film (Figure [[ref:fig:deposition-Al]]). As a result
-conventional VFET, with the drain electrode made by a continuous metal
-film on the semiconductor cite:Shih2015Partially , cannot be
-constructed by simply depositing metal on F_{16}CuPc/Gr
-NWs. Therefore, using LM or conductive liquid droplet as the D
-terminal, comes naturally as an alternative approach to construct the
-interfacial field effect transistor.
-
-
-* Modeling dynamic wetting on F_{16}CuPc structures
-  In addition to the analysis of wetting states by static contact
-  angles in the main text, here we provide more evidence of the
-  Cassie-Baxter and Wenzel wetting states in F_{16}CuPc/Gr and
-  F_{16}CuPc/SiO_{2} structures, respectively. In Figure 2(e) of main
-  text, we observe that the dynamic contact angle hysteresis $\Delta
-  \theta^{*}_{\mathrm{dyn}}$, defined as $\theta^{*}_{\mathrm{adv}} -
-  \theta^{*}_{\mathrm{rec}}$, increases as a function of film
-  thickness in F_{16}CuPc/SiO_{2} sample, while slightly decreases and
-  saturates in F_{16}CuPc/Gr samples. Qualitatively, this is in good
-  agreement with the observation on pillar-like hydrophobic surfaces
-  cite:Yeh_2008: within the Wenzel state, $\Delta
-  \theta^{*}_{\mathrm{dyn}}$ becomes greater when roughness of surface
-  $r_{\mathrm{W}}$ increases. In our case the Wenzel-state
-  F_{16}CuPc/SiO_{2} surface shows clearly an increase of surface
-  roughness (Figure [[ref:fig:sem-sio2-top]]). On the other hand, within
-  the CB state, $\Delta \theta^{*}_{\mathrm{dyn}}$ becomes smaller
-  with decreasing solid volume $f$. We observed increased
-  $\theta_{\mathrm{adv}}^{*}$ and $\theta_{\mathrm{rec}}^{*}$, with
-  slightly decreased $\theta_{\mathrm{dyn}}^{*}$, possibly due to the
-  saturation of $f$ at increased NW height (Figure
-  [[ref:fig:sem-gr-top]]).
-
-  To get a unified understanding of the wetting phenomenon on these
-  surface, we propse a model to describe both the static and dynamic
-  wetting properties in CB and Wenzel model. Despite the complex
-  nature of wetting hysteresis on a real surface cite:McHale_2004,
-  some theories ascribe the wetting hysteresis to the existence of
-  surface defects cite:Joanny_1984. Under the assumption that surface
-  defects are diluted, the apparent dynamic contact angles on a
-  surface within CB state are similar to the static angle
-  cite:Patankar_2010_CBW_hys:
-
-  \begin{eqnarray}
-  \label{eq:theta-A-CB}
-	\theta_{\mathrm{adv, CB}}^{*} &= r_{\mathrm{CB}} f \cos \theta_{\mathrm{A}} + f- 1  & \\
-  \label{eq:theta-A-W}
-	\theta_{\mathrm{rec, CB}}^{*} &= r_{\mathrm{CB}} f \cos \theta_{\mathrm{R}} + f- 1  &
-  \end{eqnarray}
+   \begin{eqnarray}
+   \label{eq:theta-A-CB}
+	 \theta_{\mathrm{adv, CB}}^{*} &= r_{\mathrm{CB}} f \cos \theta_{\mathrm{A}} + f- 1  & \\
+   \label{eq:theta-rec-CB}
+	 \theta_{\mathrm{rec, CB}}^{*} &= r_{\mathrm{CB}} f \cos \theta_{\mathrm{R}} + f- 1  &
+   \end{eqnarray}
   
-  where $\theta_{\mathrm{A}}$ and $\theta_{\mathrm{R}}$ are the
-  advancing and receding angles on an ideally planar surface (but with
-  defects). Similarly for a Wenzel surface we have:
+   where $\theta_{\mathrm{A}}$ and $\theta_{\mathrm{R}}$ are the
+   advancing and receding angles on an ideally planar surface (but with
+   defects). Similarly for a Wenzel surface we have:
 
-  \begin{eqnarray}
-  \label{eq:theta-A-W}
-	\theta_{\mathrm{adv, W}}^{*} &= r_{\mathrm{W}}} \cos \theta_{\mathrm{A}}& \\
-  \label{eq:theta-A-W}
-	\theta_{\mathrm{rec, W}}^{*} &= r_{\mathrm{W}} \cos \theta_{\mathrm{R}}&
-  \end{eqnarray}
+   \begin{eqnarray}
+   \label{eq:theta-A-W}
+	 \theta_{\mathrm{adv, W}}^{*} &= r_{\mathrm{W}} \cos \theta_{\mathrm{A}}& \\
+   \label{eq:theta-rec-W}
+	 \theta_{\mathrm{rec, W}}^{*} &= r_{\mathrm{W}} \cos \theta_{\mathrm{R}}&
+   \end{eqnarray}
 
-  We then use the above model to simulate the dynamic contact angles
-  we observe experimentally in main text Figure 2(e). In addition to
-  the assumption $r_{\mathrm{W}} \approx r_{\mathrm{CB}}$ in the main
-  text, we also assume that $\theta_{\mathrm{A}}$,
-  $\theta_{\mathrm{R}}$ and $\theta_{\mathrm{Y}}$, are the same for
-  both systems (chemically identical material). Further we use a
-  linear equation to model the evolution of $r$, such that $r = k_{1}
-  \nu_{\mathrm{QCM}}$. Since the solid fraction almost saturates
-  w.r.t. NW height, for the F_{16}CuPc/Gr system we use an exponential
-  decay function to model the evolution of $f$, such that $f = 1 -
-  (1 - f_{\infty})\exp(-k_{2} \nu_{\mathrm{QCM}})$, where $f_{\infty}$
-  is the saturated value for the solid fraction at sufficient NW
-  height. We performed least-square fitting of the thickness-dependent
-  wetting angles in both cases, and the best fitting results give us
-  $\theta_{\mathrm{A}}=107 ^{\circ}$, $\theta_{\mathrm{R}}=78
-  ^{\circ}$ and $\theta_{\mathrm{Y}}=94 ^{\circ}$.
+   We then use the above model to simulate the dynamic contact angles
+   we observe experimentally in main text Figure 2(e). In addition to
+   the assumption $r_{\mathrm{W}} \approx r_{\mathrm{CB}}$ in the main
+   text, we also assume that $\theta_{\mathrm{A}}$,
+   $\theta_{\mathrm{R}}$ and $\theta_{\mathrm{Y}}$, are the same for
+   both systems (chemically identical material). Further we use a
+   linear equation to model the evolution of $r$, such that $r = k_{1}
+   \nu_{\mathrm{QCM}}$. Since the solid fraction almost saturates
+   w.r.t. NW height, for the F_{16}CuPc/Gr system we use an exponential
+   decay function to model the evolution of $f$, such that $f = 1 -
+   (1 - f_{\infty})\exp(-k_{2} \nu_{\mathrm{QCM}})$, where $f_{\infty}$
+   is the saturated value for the solid fraction at sufficient NW
+   height. We performed least-square fitting of the thickness-dependent
+   wetting angles in both cases, and the best fitting results give us
+   $\theta_{\mathrm{A}}=107 ^{\circ}$, $\theta_{\mathrm{R}}=78
+   ^{\circ}$ and $\theta_{\mathrm{Y}}=94 ^{\circ}$.
 
 
 
@@ -368,107 +383,111 @@ interfacial field effect transistor.
 
 * Electronic properties
 
-  The quality of graphene in the interfacial FET is characterized by
-  its transport curve. We deposited the D and S terminals on
-  graphene/OTS/SiO_{2}, with a channel width $W_{\mathrm{ch}} $of 20 $\mathrm{\mu} m$,
-  and a channel length $L_{\mathrm{ch}}$ of 400 $\mathrm{\mu} m$. By applying a
-  $V_{\mathrm{D}}$ of 0.1 V, and sweeping $V_{\mathrm{G}}$ from -100 V
-  to 100 V, we measured the sheet resistance $\rho$ of the graphene
-  sheet, which is defined as:
+** Characterization of graphene
+   The single layer graphene was confirmed by both the optical
+   microscope and Raman spectroscopy (Figure [[ref:fig:gr-quality]]), with
+   intensity of 2D peak (2690 cm^{-1}) higher than the G peak (1590
+   cm^{-1}). The surface of graphene is smooth and with a root mean
+   squared (RMS) roughness of 0.54 nm. The quality of graphene in the
+   interfacial FET is characterized by its transport curve. We
+   deposited the D and S terminals on graphene/OTS/SiO_{2}, with a
+   channel width $W_{\mathrm{ch}}$ of 20 \(\mathrm{\mu}\)m, and a
+   channel length $L_{\mathrm{ch}}$ of 400 \(\mathrm{\mu}\)m. By
+   applying a $V_{\mathrm{D}}$ of 0.1 V, and sweeping $V_{\mathrm{G}}$
+   from -100 V to 100 V, we measured the sheet resistance $\rho$ of
+   the graphene sheet, which is defined as:
 
-  \begin{equation}
-  \label{eq:6}
-  \rho = \frac{I_{\mathrm{DS}}}{V_{\mathrm{D}}} \frac{L_{\mathrm{ch}}}{W_{\mathrm{ch}}}
-  \end{equation}
+   \begin{equation}
+   \label{eq:6}
+   \rho = \frac{I_{\mathrm{DS}}}{V_{\mathrm{D}}} \frac{L_{\mathrm{ch}}}{W_{\mathrm{ch}}}
+   \end{equation}
   
-  the sheet resistance of Gr/OTS/SiO_{2} and F_{16}/Gr/OTS/SiO_{2} in
-  glovebox environment is shown in Figure
-  [[ref:fig:graphene-property]](a). Before and after deposition of
-  F_{16}CuPc, the on/off ratio of $\rho$ remains at 10 times and
-  almost symmetric around the CNP point, indicating good quality of
-  the graphene film on OTS-treated surface. Depositing F_{16}CuPc
-  slightly p-doped the graphene sheet, shifting the $V_{\mathrm{CNP}}$
-  from near 0 V to 18 V (corresponding to a doping density of $\sim 5
-  \times 10^{12}\ e \cdot \mathrm{cm}^{-2}$). Putting the device in
-  air gradually shifts the $V_{\mathrm{CNP}}$ of graphene (Figure
-  [[ref:fig:graphene-property]](b)), and increases the sweeping hysteresis
-  between the forward and backward $V_{\mathrm{G}}$ sweeps. The slight
-  p-doping of graphene is probably due to the traps at the Gr/SiO_{2}
-  surface. 
-*************** TODO Cite??
-*************** END
-  The p-doping of graphene in air seems to be saturated after 8 hours,
-  with the $V_{\mathrm{CNP}}$ shifted to ~60 V. Due to the existence
-  of OTS, the surface trap density is reduced, which results in a
-  stable performance of the graphene device even in air.
-*************** TODO Rephrase this?
-*************** END
+   the sheet resistance of Gr/OTS/SiO_{2} and F_{16}/Gr/OTS/SiO_{2} in
+   glovebox environment is shown in Figure
+   [[ref:fig:graphene-property]](a). Before and after deposition of
+   F_{16}CuPc, the on/off ratio of $\rho$ remains at 10 times and
+   almost symmetric around the CNP point, indicating good quality of
+   the graphene film on OTS-treated surface. Depositing F_{16}CuPc
+   slightly p-doped the graphene sheet, shifting the
+   $V_{\mathrm{CNP}}$ from near 0 V to 18 V (corresponding to a doping
+   density of $\sim 5 \times 10^{12}\ e \cdot
+   \mathrm{cm}^{-2}$). Putting the device in air gradually shifts the
+   $V_{\mathrm{CNP}}$ of graphene (Figure
+   [[ref:fig:graphene-property]](b)), and increases the sweeping
+   hysteresis between the forward and backward $V_{\mathrm{G}}$
+   sweeps. The slight p-doping of graphene is probably due to the
+   traps at the Gr/SiO_{2} surface cite:Dean_2010.  The p-doping of
+   graphene in air seems to be saturated after 8 hours, with the
+   $V_{\mathrm{CNP}}$ shifted to ~60 V. Due to the existence of OTS,
+   the surface trap density is reduced, which results in a stable
+   performance of the graphene device even in air.
 
-  We also note the performance limit of our interfacial FET due to the
-  instability of F_{16}CuPc NWs. Two possible cases are the wetting
-  transition on the F_{16}CuPc NWs (Figure
-  [[ref:fig:nw-wetting-transition]]) and electric breakdown (Figure
-  [[ref:fig:electric-breakdown]]). The wetting transition from
-  Cassie-Baxter mode to Wenzel mode occurs on defect sites on the
-  F_{16}CuPc/NW surface. Compared with the defect-free NW surface
-  (Figure [[ref:fig:nw-wetting-transition]](a)) where the contact angle
-  hysteresis of LM droplet is small, the receding angle of the LM
-  droplet on a defect site dramatically decreases, forming a liquid
-  "neck" which pins the droplet to the surface (Figure
-  [[ref:fig:nw-wetting-transition]](b)). The wetting transition on NW
-  surface hinders the free elastic motion of LM droplet on the NW
-  surface. Another type of failure is caused by the electric breakdown
-  of the NWs. Figure [[ref:fig:electric-breakdown]] shows different images
-  of a typical breakdown region on the NW/Gr film. Near the edge of
-  the breakdown site, exfoliation of graphene and morphology change of
-  NWs are observed, indicating that large current density passes
-  through the edge. Far from the breakdown site, the morphology of NWs
-  remains unchanged. To avoid the failure of NWs in the interfacial
-  transistors, cycles of elastic pressing of LM droplet is performed
-  on the NW surface with a pressure less than 250 Pa to rule out the
-  wetting transition on the test site. Furthermore, when testing the
-  interfacial FET, we always apply the $V_{\mathrm{D}}$ potential on
-  LM droplet before contacting the NWs and start the desired
-  measurements, to avoid sudden passing of large current through the
-  NWs.
+** Performance limit of interfacial transistors
+   We also note the performance limit of our interfacial FET due to the
+   instability of F_{16}CuPc NWs. Two possible cases are the wetting
+   transition on the F_{16}CuPc NWs (Figure
+   [[ref:fig:nw-wetting-transition]]) and electric breakdown (Figure
+   [[ref:fig:electric-breakdown]]). The wetting transition from
+   Cassie-Baxter mode to Wenzel mode occurs on defect sites on the
+   F_{16}CuPc/NW surface. Compared with the defect-free NW surface
+   (Figure [[ref:fig:nw-wetting-transition]](a)) where the contact angle
+   hysteresis of LM droplet is small, the receding angle of the LM
+   droplet on a defect site dramatically decreases, forming a liquid
+   "neck" which pins the droplet to the surface (Figure
+   [[ref:fig:nw-wetting-transition]](b)). The wetting transition on NW
+   surface hinders the free elastic motion of LM droplet on the NW
+   surface. Another type of failure is caused by the electric breakdown
+   of the NWs. Figure [[ref:fig:electric-breakdown]] shows different images
+   of a typical breakdown region on the NW/Gr film. Near the edge of
+   the breakdown site, exfoliation of graphene and morphology change of
+   NWs are observed, indicating that large current density passes
+   through the edge. Far from the breakdown site, the morphology of NWs
+   remains unchanged. To avoid the failure of NWs in the interfacial
+   transistors, cycles of elastic pressing of LM droplet is performed
+   on the NW surface with a pressure less than 250 Pa to rule out the
+   wetting transition on the test site. Furthermore, when testing the
+   interfacial FET, we always apply the $V_{\mathrm{D}}$ potential on
+   LM droplet before contacting the NWs and start the desired
+   measurements, to avoid sudden passing of large current through the
+   NWs.
 
+   During our tests the thickness of the F_{16}CuPc layer also affects
+   the performance of the interfacial FET. Figure
+   [[ref:fig:IFET-performance-thickness]] shows the different
+   $I_{\mathrm{DS}}-V_{\mathrm{G}}$ curves under various
+   $V_{\mathrm{D}}$ between an interfacial FET with 100 nm NWs (a), and
+   with 200 nm NWs (b). In thinner IFET layers the current density is
+   also higher due to reduced film resistance. However the interfacial
+   FET with 100 nm NWs shows apparent graphene-like
+   $I_{\mathrm{DS}}-V_{\mathrm{G}}$ behavior at $V_{\mathrm{D}}>2.0$ V,
+   dramatically reducing the current on/off ratio. In transistors with
+   a thicker F_{16}CuPc film, the graphene-like behavior is rarely to
+   be observed. As a trade-off between the current density and steady
+   performance, we choose the optimal NW height as 300 nm in our
+   interfacial transistors shown in main text.
 
-  During our tests the thickness of the F_{16}CuPc layer also affects
-  the performance of the interfacial FET. Figure
-  [[ref:fig:IFET-performance-thickness]] shows the different
-  $I_{\mathrm{DS}}-V_{\mathrm{G}}$ curves under various
-  $V_{\mathrm{D}}$ between an interfacial FET with 100 nm NWs (a), and
-  with 200 nm NWs (b). In thinner IFET layers the current density is
-  also higher due to reduced film resistance. However the interfacial
-  FET with 100 nm NWs shows apparent graphene-like
-  $I_{\mathrm{DS}}-V_{\mathrm{G}}$ behavior at $V_{\mathrm{D}}>2.0$ V,
-  dramatically reducing the current on/off ratio. In transistors with
-  a thicker F_{16}CuPc film, the graphene-like behavior is rarely to
-  be observed. As a trade-off between the current density and steady
-  performance, we choose the optimal NW height as 300 nm in our
-  interfacial transistors shown in main text.
-
-  In addition to Hg, we also tested the performance of EGaIn as liquid
-  metal in our interfacial transistor. As shown in Figure
-  [[ref:fig:EGaIn-FET]], FET using EGaIn as the drain material also
-  exhibits good current on/off modulation and elastic pressure
-  sensing, owing to the reversible wetting on the hydrophobic
-  NWs. However compared with Hg-based device, EGaIn system has several
-  critical limitations: (i) It is very challenging to dispense a
-  free-standing \(\mu \mathrm{L}\)-scale EGaIn droplet on NW surface
-  due to the huge difference between the non-wetting NW surface and
-  nearly full-wetting glass capillary. As a result it is tedious to
-  further attach the EGaIn droplet to the metallic cantilever. (ii)
-  surface oxide on the EGaIn droplet accumulates with time, which
-  increases the contact resistance and rheological behavior
-  cite:Dickey_2008. Despite the technical challenges listed above, we
-  believe by proper engineering of the capillary and cantilever
-  surfaces, it is possible to achieve a interfacial FET with
-  reversible performance based EGaIn droplet.
+** IFET using EGaIn as LM droplet
+   In addition to Hg, we also tested the performance of EGaIn as liquid
+   metal in our interfacial transistor. As shown in Figure
+   [[ref:fig:EGaIn-FET]], FET using EGaIn as the drain material also
+   exhibits good current on/off modulation and elastic pressure
+   sensing, owing to the reversible wetting on the hydrophobic
+   NWs. However compared with Hg-based device, EGaIn system has several
+   critical limitations: (i) It is very challenging to dispense a
+   free-standing \(\mu \mathrm{L}\)-scale EGaIn droplet on NW surface
+   due to the huge difference between the non-wetting NW surface and
+   nearly full-wetting glass capillary. As a result it is tedious to
+   further attach the EGaIn droplet to the metallic cantilever. (ii)
+   surface oxide on the EGaIn droplet accumulates with time, which
+   increases the contact resistance and rheological behavior
+   cite:Dickey_2008. Despite the technical challenges listed above, we
+   believe by proper engineering of the capillary and cantilever
+   surfaces, it is possible to achieve a interfacial FET with
+   reversible performance based EGaIn droplet.
 
 
 
-* Analytical calculation of droplet tension between parallel plates
+* Analytical model for stress-strain relation
 
 As stated in the main text, the capillary pressure at the boundary of a droplet which is sit
 between two parallel plates can be modeled by the Young-Laplace
@@ -614,7 +633,7 @@ Note that $R_{1}$ and $R_{2}$ are not independent variables, and
  
  \begin{equation}
  \label{eq:asym-R2}
- R_{2} &= -{\displaystyle \frac{H}{\cos \theta_{\mathrm{t}} + \cos \theta_{\mathrm{b}}}}
+ R_{2} = -{\displaystyle \frac{H}{\cos \theta_{\mathrm{t}} + \cos \theta_{\mathrm{b}}}}
  \end{equation}
 
  The top and bottom
@@ -691,6 +710,7 @@ Note that $R_{1}$ and $R_{2}$ are not independent variables, and
 #+CAPTION: Characterization of single layer graphene transferred onto SiO_{2} substrate. (a) Atomic force microscopy (AFM) morphology of transferred graphene, showing a small rooted mean squared (RMS) roughness of 0.54 nm. (b) Optical images of transferred single layer graphene on SiO_{2} wafer. Very minor multilayer islands with diameter less than 2.5 $\mu \mathrm{m}$ indicates uniform single layer property. (c) Raman spectrum of single layer graphene. The high ratio between the 2D and G peaks indicates single layer graphene, with suppressed defects shown by the G' peak.
 #+ATTR_LATEX: :width 0.95\linewidth
 #+ATTR_LATEX: :placement [H]
+#+NAME: fig:gr-quality
 [[file:img/SI-single-layer.pdf]]
 
 #+CAPTION: Schematic illustration of the deposition process of F_{16}CuPc on graphene and SiO_{2} substrates.
@@ -834,8 +854,22 @@ Note that $R_{1}$ and $R_{2}$ are not independent variables, and
 [[file:img/SI-droplet-model.pdf]]
 
 
+#+CAPTION: Experimental and simulated current amplification ratio of $I_{\mathrm{DS}}$ as a function of strain $\sigma$ using a LM droplet of \sim 0.1 \(\mathrm{\mu}\)L. $V_{\mathrm{G}}$ is set to 0 V (open circuit) and $V_{\mathrm{DS}}$ is 1 V. The model assumes the current increase is mainly contributed by the increase of contact area.
+#+NAME: fig-SI-current-ratio
+#+ATTR_LATEX: :width 0.5\linewidth
+[[file:img/SI-current-ratio-strain.pdf]]
+
+
+#+CAPTION: Stress-strain relation of the compressed LM droplet from the analytical model given different values of $V_{\mathrm{drop}}$. The top and bottom contact angles are set to the experimental values, respectively.
+#+ATTR_LATEX: :width 0.5\linewidth
+[[file:img/SI-stress-strain-analytical.pdf]]
+
+#+CAPTION: Other analysis from the analytical droplet model. (a) Contour plot of the elastic modulus $E$ as function of top and bottom contact angles. (b) Expansion of bottom contact radius as function of strain $\sigma$. The expansion ratio is shown to be independent of the droplet volume.
+#+ATTR_LATEX: :width 0.75\linewidth
+[[file:img/SI-other-analytical.pdf]]
+
 \FloatBarrier
   
-* References
-
+# * References
+[[bibliographystyle:naturemag]]
 [[bibliography:ref.bib]]
