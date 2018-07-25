@@ -26,6 +26,9 @@ $(IMG_PATH):
 post-process: post_process.py
 	python post_process.py
 
+convert-pdf: convert.py
+	python convert.py	#manually run
+
 pandoc-to-word:
 	pandoc --from=latex --to=docx $(TEX_FILE) -o $(DOCX_NAME) \
 		--reference-doc=$(DOCX_REF) \

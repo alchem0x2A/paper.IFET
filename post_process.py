@@ -29,6 +29,7 @@ def tex_process(tex_file):
     contents = []
     with open(tex_file, "r") as fo:
         contents = fo.readlines()
+        # Modify the title and date
         for i, line in enumerate(contents):
             if re.search("\\\\begin{document}", line) is not None:
                 break               # find the main document
@@ -36,6 +37,23 @@ def tex_process(tex_file):
                or (re.search("date\\{\\}", line) is not None) \
                or (re.search("minted", line) is not None):
                 contents[i] = "%" + line
+        # Modify abstract
+        i = 0
+        while i < len(contents):
+            line = contents[i]
+            if (re.search("\\\\section{Abstract}", line) is not None):
+                j = i + 1
+                while True:
+                    if re.search("\\\\section", contents[j]) is not None:  # Another section
+                        print(contents[i], contents[j])
+                        contents[i + 1] += "\\begin{boldabstract}\n"
+                        contents[j - 1] += "\\end{boldabstract}\n\n"
+                        break
+                    else:
+                        j += 1
+                break
+            else:
+                i += 1
 
     with open(tex_file, "w") as fw:
         fw.writelines(contents)
@@ -47,7 +65,7 @@ def convert_pdf(infile, outdir="./img"):
     outfile = os.path.join(outdir, base_name)
     program = "gs"
     params = ["-sDEVICE=pdfwrite", "-dCompatibilityLevel=1.4",
-              "-dPDFSETTINGS=/ebook", "-dNOPAUSE",
+              "-dPDFSETTINGS=/prepress", "-dNOPAUSE",
               "-dQUIET", "-dBATCH"]
     io = ["-sOutputFile={}".format(outfile), infile]
     
@@ -75,12 +93,12 @@ if __name__ == "__main__":
         print(TColors.OKBLUE + "Converted TeX file: {}".format(ifile) + TColors.ENDC)
 
     # PDF Process 
-    for ifile in glob.glob(os.path.join(RAW_PATH, "*.pdf")):
-        if img_path is None:
-            file_list.append((ifile))
-        else:
-            file_list.append((ifile, img_path))
-    N_cores = multiprocessing.cpu_count()
-    # multicore
-    with Pool(N_cores) as p:
-        p.map(convert_pdf, file_list)
+    # for ifile in glob.glob(os.path.join(RAW_PATH, "*.pdf")):
+    #     if img_path is None:
+    #         file_list.append((ifile))
+    #     else:
+    #         file_list.append((ifile, img_path))
+    # N_cores = multiprocessing.cpu_count()
+    # # multicore
+    # with Pool(N_cores) as p:
+    #     p.map(convert_pdf, file_list)
