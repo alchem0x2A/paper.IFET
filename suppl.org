@@ -32,7 +32,7 @@
 \affiliation{Department of Chemical and Biomolecular Engineering, University of California, Berkeley, CA 94720, USA}
 % \affiliation{Institute for Chemical and Bioengineering, ETH Z{\"{u}}rich,  Vladimir-Prelog Weg 1, CH-8093 Z{\"{u}}rich, Switzerland}
 \author{Yen-Ting Lee}
-e\affiliation{Department of Chemical Engineering, National Taiwan University of Science and Technology, Taipei 10607, Taiwan.}
+\affiliation{Department of Chemical Engineering, National Taiwan University of Science and Technology, Taipei 10607, Taiwan.}
 \affiliation{National Synchrotron Radiation Research Center, Hsinchu 30076, Taiwan.}
 \author{Yu-Cheng Chiu}
 \affiliation{Department of Chemical Engineering, National Taiwan University of Science and Technology, Taipei 10607, Taiwan.}
@@ -257,7 +257,7 @@ LN95 liquid nitrogen flowmeter (Linkam UK).
  meaasured by an Asylum Cyber ES AFM, as shown in Figure
  [[ref:fig:afm-both]]. Note that due to the limited space between the NWs
  (tens of nm), the AFM tip is incapable of probing heigher NWs (height
- > 50 nm), while SEM shows reliable morphology.
+ \gt{}50 nm), while SEM shows reliable morphology.
 
 ** XRD analysis of F_{16}CuPc films
  In addition to the GIXD data, we also performed 1D X-ray
@@ -315,12 +315,12 @@ LN95 liquid nitrogen flowmeter (Linkam UK).
    text, we observe that the dynamic contact angle hysteresis $\Delta
    \theta^{*}_{\mathrm{dyn}}$, defined as $\theta^{*}_{\mathrm{adv}} -
    \theta^{*}_{\mathrm{rec}}$, increases as a function of film
-   thickness in F_{16}CuPc/SiO_{2} sample, while slightly decreases and
-   saturates in F_{16}CuPc/Gr samples. Qualitatively, this is in good
-   agreement with the observation on pillar-like hydrophobic surfaces
-   cite:Yeh_2008: within the Wenzel state, $\Delta
-   \theta^{*}_{\mathrm{dyn}}$ becomes greater when roughness of surface
-   $r_{\mathrm{W}}$ increases. In our case the Wenzel-state
+   thickness in F_{16}CuPc/SiO_{2} sample, while slightly decreases
+   and saturates in F_{16}CuPc/Gr samples. Qualitatively, this is in
+   good agreement with the observation on pillar-like hydrophobic
+   surfaces cite:Yeh_2008_CBW_hys, within the Wenzel state, $\Delta
+   \theta^{*}_{\mathrm{dyn}}$ becomes greater when roughness of
+   surface $r_{\mathrm{W}}$ increases. In our case the Wenzel-state
    F_{16}CuPc/SiO_{2} surface shows clearly an increase of surface
    roughness (Figure [[ref:fig:sem-sio2-top]]). On the other hand, within
    the CB state, $\Delta \theta^{*}_{\mathrm{dyn}}$ becomes smaller
@@ -418,7 +418,7 @@ LN95 liquid nitrogen flowmeter (Linkam UK).
    sweeps. The slight p-doping of graphene is probably due to the
    traps at the Gr/SiO_{2} surface cite:Dean_2010.  The p-doping of
    graphene in air seems to be saturated after 8 hours, with the
-   $V_{\mathrm{CNP}}$ shifted to ~60 V. Due to the existence of OTS,
+   $V_{\mathrm{CNP}}$ shifted to \sim{}60 V. Due to the existence of OTS,
    the surface trap density is reduced, which results in a stable
    performance of the graphene device even in air.
 
@@ -714,7 +714,7 @@ Note that $R_{1}$ and $R_{2}$ are not independent variables, and
 [[file:img/SI-single-layer.pdf]]
 
 #+CAPTION: Schematic illustration of the deposition process of F_{16}CuPc on graphene and SiO_{2} substrates.
-#+ATTR_LATEX: :width 0.5\linewidth
+#+ATTR_LATEX: :width 0.45\linewidth
 #+ATTR_LATEX: :placement [H]
 [[file:img/Si-illustration-deposition.pdf]]
 
@@ -737,7 +737,7 @@ Note that $R_{1}$ and $R_{2}$ are not independent variables, and
 [[file:img/SI-thickness-f-relation.pdf]]
 
 
-#+CAPTION: Top SEM images of F_{16}CuPc on graphene on SiO_{2} wafer with different values of film thickness.
+#+CAPTION: Top SEM images of F_{16}CuPc on graphene on SiO_{2} wafer with different values of NW height.
 #+ATTR_LATEX: :width 0.8\linewidth 
 #+ATTR_LATEX: :placement [H]
 #+NAME: fig:sem-gr-top
@@ -777,7 +777,7 @@ Note that $R_{1}$ and $R_{2}$ are not independent variables, and
 |----------------------+------------+------------+------------|
 
 
-#+CAPTION: Confocal Raman spectroscopy of F_{16}CuPc/Gr and F_{16}CuPc/SiO_{2} samples using 532 nm laser. The Davydov multiplets at 1315 cm^{-1} and 1380 cm^{-1} indicates different orientation of F_{16}CuPc molecules. The ratio between the intensities of the two peaks are used to construct the Raman map in the main text.
+#+CAPTION: Confocal Raman spectroscopy of F_{16}CuPc/Gr and F_{16}CuPc/SiO_{2} samples using 532 nm laser. The Davydov multiplets at 1315 cm^{-1} and 1380 cm^{-1} indicates different orientation of F_{16}CuPc molecules. The ratio between the intensities of the two peaks are used to construct the Raman map in the main text. The intensity of graphene G peak is very weak compared with the strong scattering of F_{16}CuPc and not visible in the spectra.
 #+NAME: fig:SI-Raman
 #+ATTR_LATEX: :placement [H]
 #+ATTR_LATEX: :width 0.95\linewidth
@@ -785,17 +785,17 @@ Note that $R_{1}$ and $R_{2}$ are not independent variables, and
 
 
 
-#+CAPTION: SEM images of Al (50 nm) deposited on (a) F_{16}CuPc/Gr and (b) F_{16}CuPc/SiO2 surfaces. 
+#+CAPTION: SEM images of Al (50 nm) deposited on (a) F_{16}CuPc/Gr and (b) F_{16}CuPc/SiO2 surfaces. The metal deposited on F_{16}CuPc NWs does not form continuous film, and cannot be used to build VFET.
 #+ATTR_LATEX: :width 0.8\linewidth
 #+NAME: fig:deposition-Al
 [[file:img/SI_compasion_Al_depo.pdf]]
 
 #+CAPTION: Sliding angles $\theta_{\mathrm{sl}}^{*}$ of EGaIn on different surfaces. A sliding angle $> 90 ^{\circ}$ means the droplets almost permanantly adheres to the surface.
 #+NAME: tbl:sliding
-#+ATTR_LATEX: :placement [H]
+#+ATTR_LATEX: :placement [h]
 |---------------------------+------------------|
 | <l25>                     |            <r16> |
-| Sample                    | $\theta_{\mathrm{sl}}^{*}$) |
+| Sample                    | $\theta_{\mathrm{sl}}^{*}$  |
 |---------------------------+------------------|
 | SiO_{2}                   |    $>90^{\circ}$ |
 | Gr/SiO_{2}                |    $>90^{\circ}$ |
@@ -810,7 +810,7 @@ Note that $R_{1}$ and $R_{2}$ are not independent variables, and
 [[file:img/SI-other-materials.pdf]]
 
 #+CAPTION: Characterization of pure graphene-based field effect transistor. (a) Change of the CNP point ($V_{\mathrm{CNP}}$) before and after deposition of F_{16}CuPc in glovebox.  (b) Forward and backward scan of a graphene transistor on OTS-treated SiO_{2} in air. (c) Drift of $V_{\mathrm{CNP}}$ of a graphene transistor on OTS-treated SiO_{2} in air over 8 hours.
-#+ATTR_LATEX: :width 0.9\linewidth
+#+ATTR_LATEX: :width \linewidth
 #+NAME: fig:graphene-property
 [[file:img/SI-gr-transistor.pdf]]
 
@@ -819,12 +819,12 @@ Note that $R_{1}$ and $R_{2}$ are not independent variables, and
 #+NAME: fig:IFET-performance-thickness
 [[file:img/SI-thinner-transistor.pdf]]
 
-#+CAPTION: Breakdown of F_{16}CuPc NWs. (a) Detaching process of LM droplet from normal  F_{16}CuPc NWs. No adhesion is observed. (b) Detaching process of LM droplet from brokendown  F_{16}CuPc NWs. A "neck" of LM adhered to the surface can be observed. (c) Micro-nanoscale examination of  F_{16}CuPc NW breakdown. i: optical image and ii: low magnification SEM image of the spot where breakdown took place. iii-vi zoomed-in SEM images of different locations near the breakdown spot. Exfoliation of graphene could be seen around the edge of the spot, as well as merging of  F_{16}CuPc NWs.
+#+CAPTION: Wetting transition on the NW film. (a) Optical images during the detaching process of a cantilever-bound LM droplet from the NW surface. The droplet freely leaves the surface due to small contact hysteresis in the CB state. (b) The same detaching process on a defected NW surface. A "neck" connecting the LM droplet and the surface can be observed, with a low receding angle. Wetting transition from the CB state to the Wenzel state is accounted for the phenomenon seen in the defected NW surface cite:Yeh_2008_CBW_hys.
 #+ATTR_LATEX: :width 0.8\linewidth
 #+NAME: fig:nw-wetting-transition
 [[file:img/SI-NW-transition.pdf]]
 
-
+#+CAPTION: Electric breakdown of NW/Gr structure. (a) optical image and (b) SEM image of the defect region. (c)-(f) SEM images of different sites corresponding with red rectangles in (b). Inside the defect region, exfoliation of graphene sheet and thining of NW is observed. The NW structure at the edge of the defect region shows great deformation. The breakdown is ascribed to the large current density passes through the edge of the LM/NW contact area. 
 #+NAME: fig:electric-breakdown
 #+ATTR_LATEX: :width 0.8\linewidth
 [[file:img/SI-electric-breakdown.pdf]]
@@ -836,8 +836,17 @@ Note that $R_{1}$ and $R_{2}$ are not independent variables, and
 #+NAME: fig:EGaIn-FET
 [[file:img/SI-EGaIn.pdf]]
 
+#+CAPTION: (a) Schematic energy diagrams of the F_{16}CuPc/Gr interface, at different $V_{\mathrm{D}}$ and $V_{\mathrm{G}}$ voltages. The Schottky barrier modulation by $V_{\mathrm{G}}$ is responsible for the tunable $J_{\mathrm{DS}}$ current density under reverse drain bias. On the other side, the $J_{\mathrm{DS}}$ current density is dominated by the contact resistence at the NW/D interface, when $V_{\mathrm{G}}$ modulation is ineffective. (b) $J_{\mathrm{DS}}-V_{\mathrm{D}}$ curves of the IFET at different $V_{\mathrm{G}}$ levels. $V_{\mathrm{G}}$ can only modulate the current density at reverse bias (\(V_{\mathrm{D}} > 0\)).
+#+ATTR_LATEX: :width \linewidth :placement [H]
+#+NAME: fig:IdVd
+[[file:img/SI-schottky-IdVd.pdf]]
 
-#+CAPTION: Morphology change of F_{16}CuPc NWs upon heating. No obvious change of morphology was observed under 200 $^{\circ} \mathrm{C}$, while the NWs became thicker and straighter above 250 $^{\circ} \mathrm{C}$, indicating phase transition.
+#+CAPTION: Principle of the thermal-induced current modulation of the IFET, explained by the thermionic emission theory. The current gain is higher for a higher Schottky barrier.
+#+ATTR_LATEX: :width 0.5\linewidth :placement [H]
+#+NAME: fig:SB-scheme
+[[file:img/SI-scheme-Schottkey-barrier.pdf]]
+
+#+CAPTION: Morphology change of F_{16}CuPc NWs upon heating. No obvious change of morphology was observed under 200 $^{\circ} \mathrm{C}$, while the NWs became thicker and straighter above 250 $^{\circ} \mathrm{C}$, indicating phase transition. Below 150 $^{\circ} \mathrm{C}$ no morphology change is observed.
 #+ATTR_LATEX: :width 0.8\linewidth
 #+NAME: fig-NW-heating
 [[file:img/SI-morphology-NW-T.pdf]]
@@ -850,7 +859,7 @@ Note that $R_{1}$ and $R_{2}$ are not independent variables, and
 
 #+CAPTION: Analytical model of droplet geometry between two horizontal parallel plates, the droplets have a convex shape in both cases. (a) symmetrical case, the volume of droplet is described by a function $f(R_{1}, R_{2}, \delta, \theta)$ as a function of principle radii $R_{1}$ and $R_{2}$, the helf height of the droplet $\delta$ and contact angle $\theta$. (b) asymmetrical case where top and bottom contact angles $\theta_{\mathrm{t}}$ and $\theta_{\mathrm{b}}$ are different. The volume of droplet is given by: $V = [f(R_{1}, R_{2}, \delta_{\mathrm{t}}, \theta_{\mathrm{t}}) + f(R_{1}, R_{2}, \delta_{\mathrm{b}}, \theta_{\mathrm{b}})]/2$.
 #+NAME: fig-SI-drop-model
-#+ATTR_LATEX: :width 0.8\linewidth
+#+ATTR_LATEX: :width \linewidth
 [[file:img/SI-droplet-model.pdf]]
 
 

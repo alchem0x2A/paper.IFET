@@ -5,6 +5,8 @@ BIB_FILE = ./ref.bib
 CSL_FILE = ./utils/aps.csl
 DOCX_NAME = ./build/paper.docx
 TEX_FILE = ./paper.tex
+NAT_TEX_FILE = ./paper_nature_format.tex
+ZIP_FILE = ./paper_tex_submission.zip
 SUPPL_TEX_FILE = ./suppl.tex
 PDF_M = paper.pdf
 PDF_CHANG = paper_change.pdf
@@ -13,7 +15,7 @@ VERBOSE = --verbose
 LATEXMKFLAGS = -f -pdf -quiet
 LATEXMKFLAGS += -pdflatex="pdflatex -interaction=nonstopmode"
 
-all: build post-process pandoc-to-word latex-to-pdf SI-latex-to-pdf
+all: build post-process pandoc-to-word latex-to-pdf SI-latex-to-pdf nature-style
 
 build: | $(BUILD_PATH) $(IMG_PATH)
 
@@ -45,6 +47,11 @@ SI-latex-to-pdf: $(SUPPL_TEX_FILE) $(BIB_FILE)
 	latexmk $(LATEXMKFLAGS) $<
 	mv $(PDF_SI) $(BUILD_PATH)
 	latexmk -c
+nature-style: $(TEX_FILE)
+	python merge_bbl.py $(TEX_FILE)
+	zip -r $(ZIP_FILE) $(TEX_FILE) $(IMG_PATH)
+	zip -r videos.zip ./videos
+	mv $(ZIP_FILE) videos.zip $(BUILD_PATH)
 
 clean:
 	latexmk -C
