@@ -24,6 +24,7 @@
 \affiliation{Institute for Chemical and Bioengineering, ETH Z{\"{u}}rich,  Vladimir-Prelog Weg 1, CH-8093 Z{\"{u}}rich, Switzerland}
 \author{Chander Shekhar Sharma}
 \affiliation{Institut of Energy Technology, ETH Z{\"{u}}rich, Sonneggstrasse 3, CH-8092 Z{\"{u}}rich, Switzerland}
+\affiliation{Department of Mechanical Engineering, Indian Institute of Technology Ropar, Rupnagar, Punjab 140001, India}
 \author{Navanshu Ahuja}
 \affiliation{Institute for Chemical and Bioengineering, ETH Z{\"{u}}rich,  Vladimir-Prelog Weg 1, CH-8093 Z{\"{u}}rich, Switzerland}
 \author{Matija Varga}
@@ -57,7 +58,7 @@ Copper foil (Cu, 20 $\mu \mathrm{m}$ thickness, 99.999%, Alfa Aesar),
 F_{16}CuPc (99%, sublimed, TCI Chemical), Hydrochloric acid (37%,
 Sigma-Aldrich), Nitric acid (65%, Sigma-Aldrich), Methane (99.9%,
 PanGas Schweiz), Hydrogen (99.9%, PanGas Schweiz), SiO_{2}/Si^{++}
-wafer (285 nm thermal oxide, Si-Mat -Silicon Materials e.K.), Aluminum
+wafer (300 nm thermal oxide, Si-Mat -Silicon Materials e.K.), Aluminum
 pellets (99.99%, Sigma Aldrich), Poly methylmethacrylate (PMMA, 950
 kDa, 4% solution in anisole, MicroChem), Iron chloride (FeCl_{3}, 99%,
 Sigma-Aldrich), Isopropanol (IPA, 99%, Thommen-Furler AG), Acetone
@@ -231,7 +232,7 @@ LN95 liquid nitrogen flowmeter (Linkam UK).
  thickness $\hat{t}_{F_{16}}$ using:
  \begin{equation}
  \label{eq:2}
- t_{F_{16}} = \frac{285\ \mathrm{nm}}{\hat{t}_{SiO_{2}}} \hat{t}_{F_{16}}
+ t_{F_{16}} = \frac{300\ \mathrm{nm}}{\hat{t}_{SiO_{2}}} \hat{t}_{F_{16}}
  \end{equation}
 
  The relation between $t_{F_{16}}$ as a function of $\Delta
@@ -484,6 +485,41 @@ LN95 liquid nitrogen flowmeter (Linkam UK).
    believe by proper engineering of the capillary and cantilever
    surfaces, it is possible to achieve a interfacial FET with
    reversible performance based EGaIn droplet.
+
+
+** Temperature dependency of $J_{\mathrm{DS}}$
+   From the thermionic emission theory, the current density flowing
+  through the interface can be described by the thermionic emission
+  equation cite:Sze2006Mosfets:
+
+  \begin{equation}
+  \label{eq:4}
+  J_{\mathrm{DS}} = A^{**} T^{2} \exp(- \frac{e \Phi_{\mathrm{SB}}}{kT}) 
+		  \left[ \exp(\frac{e V_{\mathrm{D}}}{kT}) - 1\right]
+  \end{equation}
+  where $T$ is the temperature, $A^{**}$ is the reduced effective
+  Richardson constant, $e$ is the unit charge and $k$ is the Boltzmann
+  constant. At same $V_{\mathrm{D}}$ and $\Phi_{\mathrm{SB}}$, the
+  $J_{\mathrm{DS}}$ is solely controlled by $T$. At the same Schottky
+  barrier height, $J_{\mathrm{DS}}$ increases with the rise of
+  temperature, due to the dominance of $T^{2}$ in Eq. [[ref:eq:4]].
+  Within the reverse bias regime, where Schottky barrier dominates the
+  current, the higher $\Phi_{\mathrm{SB}}$ is, the greater
+  $J_{\mathrm{DS}}$ can be tuned by temperature. A schematic
+  illustration of the thermionic effect can be seen in Figure
+  [[ref:fig:SB-scheme]].
+
+** Theoretical predictions of $\Phi_{\mathrm{SB}}$ tuning.
+
+   The theoretical tuning range of $\Phi_{\mathrm{SB}}$ at the Gr/NW
+  interface is carried following the procedures in Ref
+  citenum:Tian_2016. The gate voltage when graphene is at the CNP,
+  $V_{\mathrm{CNP}}$, is taken from graphene conductivity tests as 18
+  V. The $\Phi_{\mathrm{SB}}$ value at graphene's CNP is calculated as
+  0.32 V cite:Ren_2011_F16Gr_Elevel. The theoretical analysis gives a
+  tuning range up to 0.59 V. The discrepancy between our experimental
+  data and theoretical value may be explained by the pinning of
+  graphene's Fermi level by surface-bound traps cite:Meric_2008.
 
 
 
