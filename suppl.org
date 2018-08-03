@@ -7,6 +7,7 @@
 #+LATEX_HEADER: \renewcommand{\thepage}{S\arabic{page}}
 #+LATEX_HEADER: \renewcommand{\theequation}{S\arabic{equation}}
 #+LATEX_HEADER: \renewcommand{\thefigure}{S\arabic{figure}}
+#+LATEX_HEADER: \renewcommand{\thetable}{S\arabic{table}}
 #+LATEX_HEADER: \renewcommand{\bibnumfmt}[1]{S#1}
 #+LATEX_HEADER: \renewcommand{\citenumfont}[1]{S#1}
 
@@ -15,6 +16,18 @@
 
 #+OPTIONS: tex:t toc:nil todo:t author:nil date:nil title:nil ^:t tags:nil
 #+DESCRIPTION:
+
+#+NAME: latex-change-caption
+#+BEGIN_EXPORT latex
+\renewcommand{\figurename}{Figure}
+\renewcommand{\tablename}{Table}
+\makeatletter
+\renewcommand\Dated@name{}
+% \renewcommand*{\fnum@figure}{{\normalfont\bfseries \figurename~\thefigure}}
+% \renewcommand*{\@caption@fignum@sep}{\textbf{ \textbar }}
+\makeatother
+#+END_EXPORT
+
 
 #+NAME: latex-author-list
 #+BEGIN_EXPORT latex
@@ -73,7 +86,7 @@ Sigma-Aldrich), Chlorobenzene (99%, Sigma-Aldrich) .
    measured by Renishaw inVia^{\textrm{TM}} confocal microscope using
    532 nm laser and 1800 mm^{-1} grating. AFM mapping were measured by
    a Asylum Cyber ES AFM. Sessile droplet contact angles were measured
-   by a MCA-3 Microscopic Contact Angle Meter (Kyowa Interface
+   by a MCA-3 Microscopic Contact Angle Goniometer (Kyowa Interface
    Science, co. ltd.). ESEM measurements were carried out in a FEI
    Quanta 600 ESEM equipped with a gaseous back scattered electron
    detector. Electric properties of the interfacial transistor were
@@ -88,7 +101,7 @@ argon flow. The Cu foil was placed into a quartz boat which was
 cleaned by oxygen plasma in advance. The quartz boat was then loaded
 into a quartz tube with diameter of 2.5 inch. The quart tube was
 mounted onto a home-made CVD system. The quartz boat was placed in the
-center of the heating zone and kept at 30~35 cm from the position of
+center of the heating zone and kept at 30\sim{}35 cm from the position of
 the pump valve. The tube was purged and refilled with H_{2} 3 times
 and subsequently heated up to 1000 $^\circ \mathrm{C}$ with a ramp
 rate of 20 $^{\circ}\mathrm{C} \cdot \mathrm{min}^{-1}$. The copper
@@ -135,34 +148,33 @@ textured materials like wood.
 
 The desired substrate was mounted onto a glass of 3 cm $\times$ 3 cm
 and loaded into a mBraun high vacuum thermal evaporation system. The
-surface to be deposited was placed facing the crucible. 3~10 mg of
-F_{16}CuPc powder was added into a quartz crucible and placed into the
-heating zone. The evaporation system was then purged under 10^{-6}
-mBar. F_{16}CuPc was deposited at 300 ~ 360 $^{\circ}\mathrm{C}$ with
-a deposition rate of 0.2 ~ 0.8 \AA/s indicated by the quartz crystal
-microabalance (QCM). Since the thickness of F_{16}CuPc film on
+surface to be deposited was placed facing the crucible. 3\sim{}10 mg
+of F_{16}CuPc powder was added into a quartz crucible and placed into
+the heating zone. The evaporation system was then purged under 10^{-6}
+mBar. F_{16}CuPc was deposited at 300\sim{}360 $^{\circ}\mathrm{C}$
+with a deposition rate of 0.2\sim{}0.8 \AA/s indicated by the quartz
+crystal microabalance (QCM). Since the thickness of F_{16}CuPc film on
 different substrates differs a lot, the change of QCM oscillation
-frequency $\Delta \nu_{\mathrm{QCM}}$ during the deposition process was
-used as the measurement of amount of F_{16}CuPc deposited. $\Delta
+frequency $\Delta \nu_{\mathrm{QCM}}$ during the deposition process
+was used as the measurement of amount of F_{16}CuPc deposited. $\Delta
 \nu_{\mathrm{QCM}}$ is related to the change of mass $\Delta m$ by the
 Sauerbrey equation cite:Sauerbrey_1959:
-# *************** TODO cite
-# *************** END
+
 
 \begin{equation}
 \label{eq:1}
-\Delta \nu_{\mathrm{QCM}} = -\frac{2 f_{0}^{2}}{A \sqrt{\rho_{\mathrm{Q}} \mu_{\mathrm{Q}}}} \Delta m
+\Delta \nu_{\mathrm{QCM}} = -\frac{2 \nu_{0}^{2}}{A \sqrt{\rho_{\mathrm{Q}} \mu_{\mathrm{Q}}}} \Delta m
 \end{equation}
 where the parameters $A$, $\rho_{\mathrm{Q}}$ and $\mu_{\mathrm{Q}}$
 are quartz-related properties. Since $\Delta \nu_{\mathrm{QCM}}$ is very
-small compared with the resonance frequency $f_{0}$, we can assume
-$f_{0}$ as constant. Therefore $\Delta \nu_{\mathrm{QCM}}$ is
+small compared with the resonance frequency $\nu_{0}$, we can assume
+$\nu_{0}$ as constant. Therefore $\Delta \nu_{\mathrm{QCM}}$ is
 proportional to the mass change, which is directly related to the
 amount of F_{16}CuPc deposited.
 
-** Fabrication of F_{16}CuPc/Gr interfacial transistor
+** Fabrication of F_{16}CuPc NW interfacial transistor
 
-A 4-inch SiO2/Si wafer was cut to 2 cm $\times$ 2 cm pieces and subsequently
+A 4-inch SiO_{2}/Si wafer was cut to 2 cm $\times$ 2 cm pieces and subsequently
 cleaned by sonication in DI water, acetone, IPA. The wafer slices were dried
 and further cleaned in 400 W O_{2} plasma for 10 min. The wafers were
 immersed in 20 mL solution of 0.1 mM OTS in dry chlorobenzene for 2
@@ -172,7 +184,7 @@ nitrogen atmosphere at 200 $^{\circ}\mathrm{C}$ for 5 min. Graphene
 using the steps described in [[ref:sec:gr-transfer]].
 
 Source electrodes (100 nm Al) were deposited onto graphene using
-shadow masks at deposition rate of 1~3 \AA/s. F_{16}CuPc were further
+shadow masks at deposition rate of 1\sim{}3 \AA/s. F_{16}CuPc were further
 deposited by changing the mask onto graphene. The thickness of
 F_{16}CuPc were controlled by $\Delta \nu_{\mathrm{QCM}}$ and checked by
 SEM. After the deposition, all F_{16}CuPc deposited outside the
@@ -183,17 +195,18 @@ the drain electrode.
 
 ** Measurements involving the elastic liquid metal interfacial transistor
 
-The F_{16}CuPc/Gr interfacial transistors were mounted onto an
-insulating probing block of a modified MCA-3 surface tensiometer. The gate and
-source terminals were connected using micropositioners (Linkam UK). A
-home-made Ag-coated Cu cantilever with a plate (fabricated by mechanical
-stamping) at the head were used as the drain electrode. The plate was
-adjusted parallel to the SiO{2} wafer. A LM droplet with volume ~0.1
-$\mu \mathrm{L}$ was dispensed and attached to the bottom side of the
-plate. The droplet was monitored using a Mitutoyo 2X long working
-distance lens, and carefully contacted with the surface of the
-surface of F_{16}CuPc. Electronic measurements were performed using an
-Agilent 1500B semiconductor analyzer. 
+The F_{16}CuPc NW interfacial transistors were mounted onto an
+insulating probing block of a modified MCA-3 surface tensiometer. The
+gate and source terminals were connected using micropositioners
+(Linkam UK). A home-made Ag-coated Cu cantilever with a plate
+(fabricated by mechanical stamping) at the head were used as the drain
+electrode. The plate was adjusted parallel to the SiO_{2} wafer. A LM
+droplet with volume \sim{}0.1 $\mu \mathrm{L}$ was dispensed and
+attached to the bottom side of the plate. The droplet was monitored
+using a Mitutoyo 2X long working distance lens, and carefully
+contacted with the surface of the surface of F_{16}CuPc. Electronic
+measurements were performed using an Agilent 1500B semiconductor
+analyzer.
 
 We observe that the sudden change of electric field when applying the
 potential across F_{16}CuPc-LM interface may cause undesired breakdown
@@ -215,12 +228,30 @@ $^{\circ} \mathrm{C}$ and 100 $^{\circ} \mathrm{C}$ at 30 $^{\circ}
 \mathrm{C} \cdot \mathrm{min}^{-1}$. The cooling is controlled by a
 LN95 liquid nitrogen flowmeter (Linkam UK).
 
+** FEM Analysis
+   The FEM analysis for the stress of LM droplets under strain were
+   carried out using COMSOL Multiphysics^{@} 5.3a. The geometry for
+   each droplet was constructed using the real droplet shape in the
+   optical images taken by the CAG. The spatial distribution of
+   Laplace pressure was calculated using built-in curvature
+   components. The value of FEM stress was calculated by the
+   difference between average Laplace pressure on the droplet surface
+   $\bar{p}$ before and after applying the stress. The average Laplace
+   pressure is calculated by:
+
+   \begin{equation}
+   \label{eq:7}
+   \bar{p} = {\displaystyle \frac{\int_{\mathrm{\Omega}} p \mathrm{d} \Omega}{\int_{\mathrm{\Omega}} \mathrm{d} \Omega}}
+   \end{equation}
+
+   where $\Omega$ is the surface of the droplet (excluding the contact
+   surface with the top and bottom planes).
 
 * Nanoscale characterizations
 
-** Thickness characterizations on F_{16}CuPc/Gr and F_{16}CuPc/SiO_{2} surfaces
+** Thickness characterizations on F_{16}CuPc NW and F_{16}CuPc/SiO_{2} surfaces
  At the same F_{16}CuPc deposition rate, the thickness of
- F_{16}CuPc/SiO_{2} thin film and the height of F_{16}CuPc/Gr NWs
+ F_{16}CuPc/SiO_{2} thin film and the height of F_{16}CuPc  NWs
  differ a lot, due to the distinct morphologies between these two kinds
  of films. Here we use the deviation of QCM frequency $\Delta
  \nu_{\mathrm{QCM}}$ as the unified charaterization of the amount of
@@ -245,15 +276,15 @@ LN95 liquid nitrogen flowmeter (Linkam UK).
 
 ** Further details about film morphology
 
- The morphologies of the F_{16}CuPc/Gr and F_{16}CuPc/SiO_{2} samples
+ The morphologies of the F_{16}CuPc NW and F_{16}CuPc/SiO_{2} samples
  as a function of film thickness from the top-view SEM images can be
  seen in Figure [[ref:fig:sem-gr-top]] and [[ref:fig:sem-sio2-top]],
  respectively. With film thickness increasing, the solid fraction of
- the F_{16}CuPc/Gr increases and saturates after 200 nm, while the
+ the F_{16}CuPc NW increases and saturates after 200 nm, while the
  roughness of F_{16}CuPc/SiO_{2} continuously increases, as small
  portion of NW growth can be found also on F_{16}CuPc/SiO_{2} films
  thicker than 100 nm. The distinction between the morphologies of
- F_{16}CuPc/Gr and F_{16}CuPc/SiO_{2} samples at same amount of
+ F_{16}CuPc NW and F_{16}CuPc/SiO_{2} samples at same amount of
  deposition can also be validated using atomic force microscope (AFM)
  meaasured by an Asylum Cyber ES AFM, as shown in Figure
  [[ref:fig:afm-both]]. Note that due to the limited space between the NWs
@@ -262,13 +293,13 @@ LN95 liquid nitrogen flowmeter (Linkam UK).
 
 ** XRD analysis of F_{16}CuPc films
  In addition to the GIXD data, we also performed 1D X-ray
- diffractometry (XRD) with sample F_{16}CuPc, F_{16}CuPc/Gr and
+ diffractometry (XRD) with sample F_{16}CuPc, F_{16}CuPc NW and
  F_{16}CuPc/SiO_{2} samples (Figure [[ref:fig:XRD]]). The strong $(002)$
  peak persists in both powder and F_{16}CuPc/SiO_{2} samples,
  corresponding to the edge-on phase. On the other hand, the $( \bar{1}
  22)$ peak, which corresponds to the face-on orientation, can only been
- in the F_{16}CuPc/Gr. We note that more peaks can be seen in GIXD at
- higher $q$ values than in XRD for F_{16}CuPc/Gr, possibly due to
+ in the F_{16}CuPc NW. We note that more peaks can be seen in GIXD at
+ higher $q$ values than in XRD for F_{16}CuPc NW, possibly due to
  higher X-ray intensity used in GIXD measurement. We further use the
  Debye-Scherrer equation cite:Patterson_1939.
  \begin{equation}
@@ -279,29 +310,29 @@ LN95 liquid nitrogen flowmeter (Linkam UK).
  factor which we taken as unity, and $B(\theta)$ is the peak broadening
  at $2\Theta$ position. We analyzed the $(002)$ peak of powder and
  F_{16}CuPc/SiO_{2} samples, in comparison to the $(\bar{1}22)$ peak of
- F_{16}CuPc/Gr sample (Table [[ref:tbl:Scherrer-eqn]]). The crystalline
+ F_{16}CuPc NW sample (Table [[ref:tbl:Scherrer-eqn]]). The crystalline
  domain in powder and edge-on F_{16}CuPc/SiO_{2} samples are similar
- (about 50 nm), and much larger than that of F_{16}CuPc/Gr (about 9
+ (about 50 nm), and much larger than that of F_{16}CuPc NW (about 9
  nm). The broadening of the $(\bar{1}22)$ peak also clearly indicates
  the existence of NW, since the width of NWs are even smaller than the
  crystalline domain size of thin-film samples.
 
 ** Room temperature growth of F_{16}CuPc on other substrates
- Due to the versatility of graphene transfer, the F_{16}CuPc/Gr NWs can
- be grown at room temperature on arbitrary substrates. We validated our
- hypothesis by transferring graphene onto both copper and wood samples
- (/Picea abies/, tangential cut) and deposited F_{16}CuPc using the
- same conditions in our device fabrication (Figure
+ Due to the versatility of graphene transfer, the F_{16}CuPc NWs can
+ be grown at room temperature on arbitrary substrates. We validated
+ our hypothesis by transferring graphene onto both copper and wood
+ samples (/Picea abies/, tangential cut) and deposited F_{16}CuPc
+ using the same conditions in our device fabrication (Figure
  [[ref:fig:transfer-arbitrary-subst]]). Superhydrophobicity is clearly
  discovered on the graphene-covered samples, outperforming the
  reference samples without transferred graphene.
 
- The NW formation on the F_{16}CuPc/Gr surface also poses challenge
+ The NW formation on the F_{16}CuPc NW surface also poses challenge
  towards device fabrication. The metal deposited onto the NWs do not
  form continuous film (Figure [[ref:fig:deposition-Al]]). As a result
  conventional VFET, with the drain electrode made by a continuous metal
  film on the semiconductor cite:Shih2015Partially , cannot be
- constructed by simply depositing metal on F_{16}CuPc/Gr
+ constructed by simply depositing metal on F_{16}CuPc NW
  NWs. Therefore, using LM or conductive liquid droplet as the D
  terminal, comes naturally as an alternative approach to construct the
  interfacial field effect transistor.
@@ -311,13 +342,13 @@ LN95 liquid nitrogen flowmeter (Linkam UK).
 
    In addition to the analysis of wetting states by static contact
    angles in the main text, here we provide more evidence of the
-   Cassie-Baxter and Wenzel wetting states in F_{16}CuPc/Gr and
+   Cassie-Baxter and Wenzel wetting states in F_{16}CuPc NW and
    F_{16}CuPc/SiO_{2} structures, respectively. In Figure 2(e) of main
    text, we observe that the dynamic contact angle hysteresis $\Delta
    \theta^{*}_{\mathrm{dyn}}$, defined as $\theta^{*}_{\mathrm{adv}} -
    \theta^{*}_{\mathrm{rec}}$, increases as a function of film
    thickness in F_{16}CuPc/SiO_{2} sample, while slightly decreases
-   and saturates in F_{16}CuPc/Gr samples. Qualitatively, this is in
+   and saturates in F_{16}CuPc NW samples. Qualitatively, this is in
    good agreement with the observation on pillar-like hydrophobic
    surfaces cite:Yeh_2008_CBW_hys, within the Wenzel state, $\Delta
    \theta^{*}_{\mathrm{dyn}}$ becomes greater when roughness of
@@ -367,7 +398,7 @@ LN95 liquid nitrogen flowmeter (Linkam UK).
    both systems (chemically identical material). Further we use a
    linear equation to model the evolution of $r$, such that $r = k_{1}
    \nu_{\mathrm{QCM}}$. Since the solid fraction almost saturates
-   w.r.t. NW height, for the F_{16}CuPc/Gr system we use an exponential
+   w.r.t. NW height, for the F_{16}CuPc NW system we use an exponential
    decay function to model the evolution of $f$, such that $f = 1 -
    (1 - f_{\infty})\exp(-k_{2} \nu_{\mathrm{QCM}})$, where $f_{\infty}$
    is the saturated value for the solid fraction at sufficient NW
@@ -813,7 +844,7 @@ Note that $R_{1}$ and $R_{2}$ are not independent variables, and
 |----------------------+------------+------------+------------|
 
 
-#+CAPTION: Confocal Raman spectroscopy of F_{16}CuPc/Gr and F_{16}CuPc/SiO_{2} samples using 532 nm laser. The Davydov multiplets at 1315 cm^{-1} and 1380 cm^{-1} indicates different orientation of F_{16}CuPc molecules. The ratio between the intensities of the two peaks are used to construct the Raman map in the main text. The intensity of graphene G peak is very weak compared with the strong scattering of F_{16}CuPc and not visible in the spectra.
+#+CAPTION: Confocal Raman spectroscopy of F_{16}CuPc NW and F_{16}CuPc/SiO_{2} samples using 532 nm laser. The Davydov multiplets at 1315 cm^{-1} and 1380 cm^{-1} indicates different orientation of F_{16}CuPc molecules. The ratio between the intensities of the two peaks are used to construct the Raman map in the main text. The intensity of graphene G peak is very weak compared with the strong scattering of F_{16}CuPc and not visible in the spectra.
 #+NAME: fig:SI-Raman
 #+ATTR_LATEX: :placement [H]
 #+ATTR_LATEX: :width 0.95\linewidth
@@ -821,7 +852,7 @@ Note that $R_{1}$ and $R_{2}$ are not independent variables, and
 
 
 
-#+CAPTION: SEM images of Al (50 nm) deposited on (a) F_{16}CuPc/Gr and (b) F_{16}CuPc/SiO2 surfaces. The metal deposited on F_{16}CuPc NWs does not form continuous film, and cannot be used to build VFET.
+#+CAPTION: SEM images of Al (50 nm) deposited on (a) F_{16}CuPc NW and (b) F_{16}CuPc/SiO_{2} surfaces. The metal deposited on F_{16}CuPc NWs does not form continuous film, and cannot be used to build VFET.
 #+ATTR_LATEX: :width 0.8\linewidth
 #+NAME: fig:deposition-Al
 [[file:img/SI_compasion_Al_depo.pdf]]
@@ -867,12 +898,12 @@ Note that $R_{1}$ and $R_{2}$ are not independent variables, and
 
 
 
-#+CAPTION: Characterizations of graphene-F_{16}CuPc transistor using EGaIn as elastic liquid metal.
+#+CAPTION: Characterizations of graphene-F_{16}CuPc transistor using EGaIn as elastic liquid metal. (a) $I_{\mathrm{DS}}-V_{\mathrm{G}}$ relation. (b) $I_{\mathrm{DS}}-V_{\mathrm{D}}$ relation at various strain levels. (c) $I_{\mathrm{DS}}$ modulation using EGaIn droplet, compressed by the microcapillary.
 #+ATTR_LATEX: :width 0.95\linewidth
 #+NAME: fig:EGaIn-FET
 [[file:img/SI-EGaIn.pdf]]
 
-#+CAPTION: (a) Schematic energy diagrams of the F_{16}CuPc/Gr interface, at different $V_{\mathrm{D}}$ and $V_{\mathrm{G}}$ voltages. The Schottky barrier modulation by $V_{\mathrm{G}}$ is responsible for the tunable $J_{\mathrm{DS}}$ current density under reverse drain bias. On the other side, the $J_{\mathrm{DS}}$ current density is dominated by the contact resistence at the NW/D interface, when $V_{\mathrm{G}}$ modulation is ineffective. (b) $J_{\mathrm{DS}}-V_{\mathrm{D}}$ curves of the IFET at different $V_{\mathrm{G}}$ levels. $V_{\mathrm{G}}$ can only modulate the current density at reverse bias (\(V_{\mathrm{D}} > 0\)).
+#+CAPTION: (a) Schematic energy diagrams of the F_{16}CuPc NW interface, at different $V_{\mathrm{D}}$ and $V_{\mathrm{G}}$ voltages. The Schottky barrier modulation by $V_{\mathrm{G}}$ is responsible for the tunable $J_{\mathrm{DS}}$ current density under reverse drain bias. On the other side, the $J_{\mathrm{DS}}$ current density is dominated by the contact resistence at the NW/D interface, when $V_{\mathrm{G}}$ modulation is ineffective. (b) $J_{\mathrm{DS}}-V_{\mathrm{D}}$ curves of the IFET at different $V_{\mathrm{G}}$ levels. $V_{\mathrm{G}}$ can only modulate the current density at reverse bias (\(V_{\mathrm{D}} > 0\)).
 #+ATTR_LATEX: :width \linewidth :placement [H]
 #+NAME: fig:IdVd
 [[file:img/SI-schottky-IdVd.pdf]]
@@ -893,7 +924,7 @@ Note that $R_{1}$ and $R_{2}$ are not independent variables, and
 #+NAME: fig:T-measurement
 [[file:img/SI-T-fig.pdf]]
 
-#+CAPTION: Analytical model of droplet geometry between two horizontal parallel plates, the droplets have a convex shape in both cases. (a) symmetrical case, the volume of droplet is described by a function $f(R_{1}, R_{2}, \delta, \theta)$ as a function of principle radii $R_{1}$ and $R_{2}$, the helf height of the droplet $\delta$ and contact angle $\theta$. (b) asymmetrical case where top and bottom contact angles $\theta_{\mathrm{t}}$ and $\theta_{\mathrm{b}}$ are different. The volume of droplet is given by: $V = [f(R_{1}, R_{2}, \delta_{\mathrm{t}}, \theta_{\mathrm{t}}) + f(R_{1}, R_{2}, \delta_{\mathrm{b}}, \theta_{\mathrm{b}})]/2$.
+#+CAPTION: Analytical model of droplet geometry between two horizontal parallel plates, the droplets have a convex shape in both cases. (a) Symmetrical case, the volume of droplet is described by a function $v(R_{1},  \delta, \theta)$ as a function of principle radii $R_{1}$ and $R_{2}$, the helf height of the droplet $\delta$ and contact angle $\theta$. (b) Asymmetrical case where top and bottom contact angles $\theta_{\mathrm{t}}$ and $\theta_{\mathrm{b}}$ are different. The volume of droplet is given by: $V_{\mathrm{drop}} = [v(R_{1},  \delta_{\mathrm{t}}, \theta_{\mathrm{t}}) + v(R_{1},  \delta_{\mathrm{b}}, \theta_{\mathrm{b}})]/2$. (c) The limiting case when $H=H_{0}$. The geometry of the droplet is a sphere segment which the volume is given by Eq. [[ref:eq:9]].
 #+NAME: fig-SI-drop-model
 #+ATTR_LATEX: :width \linewidth
 [[file:img/SI-droplet-model.pdf]]
@@ -905,14 +936,24 @@ Note that $R_{1}$ and $R_{2}$ are not independent variables, and
 [[file:img/SI-current-ratio-strain.pdf]]
 
 
-#+CAPTION: Stress-strain relation of the compressed LM droplet from the analytical model given different values of $V_{\mathrm{drop}}$. The top and bottom contact angles are set to the experimental values, respectively.
+#+CAPTION: Stress-strain relation of the compressed LM droplet from the analytical model given different values of $V_{\mathrm{drop}}$. The top and bottom contact angles are set to the experimental values (\(\theta_{\mathrm{t}}^{*}\)=149 \(^{\circ}\) and \(\theta_{\mathrm{b}}^{*}\)=159 \(^{\circ}\)).
 #+ATTR_LATEX: :width 0.5\linewidth
 [[file:img/SI-stress-strain-analytical.pdf]]
 
-#+CAPTION: Other analysis from the analytical droplet model. (a) Contour plot of the elastic modulus $E$ as function of top and bottom contact angles. (b) Expansion of bottom contact radius as function of strain $\sigma$. The expansion ratio is shown to be independent of the droplet volume.
+#+CAPTION: Other analysis from the analytical droplet model. (a) Contour plot of the elastic modulus $E$ as function of top and bottom contact angles of a droplet with \(V_{\mathrm{drop}}\)=0.1 \(\mathrm{\mu}\)L. (b) Expansion of bottom contact radius as function of strain $\sigma$. The expansion ratio is shown to be independent of the droplet volume.
 #+ATTR_LATEX: :width 0.75\linewidth
 [[file:img/SI-other-analytical.pdf]]
 
+
+#+NAME: tbl-ana-fem
+#+CAPTION: $\varepsilon$ calculated Analytical and FEM methods, from Fig. 4d in main text. The index starts from left to right for the droplets in Fig. 4d.
+|-------------------------------+---+-------+-------+-------|
+| Index                         | 1 |     2 |     3 |     4 |
+|-------------------------------+---+-------+-------+-------|
+| $\sigma$                      | 0 | 0.051 | 0.073 | 0.134 |
+| Analytical $\varepsilon$ (Pa) | 0 |  42.9 |  71.1 | 132.1 |
+| FEM $\varepsilon$        (Pa) | 0 |  39.0 |  67.3 | 120.1 |
+|-------------------------------+---+-------+-------+-------|
 \FloatBarrier
   
 # * References

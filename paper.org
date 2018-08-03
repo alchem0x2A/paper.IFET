@@ -4,8 +4,6 @@
 #+LATEX_HEADER: \usepackage{float}
 #+LATEX_HEADER: \usepackage{times}
 #+LATEX_HEADER: \newenvironment{boldabstract}{\setlength{\parindent}{0in}\setlength{\parskip}{0in}\bfseries}{\par\vspace{-6pt}}
-#+LATEX_HEADER: \renewcommand*{\fnum@figure}{{\smallfont\bfseries \figurename~\thefigure}}
-#+LATEX_HEADER: \renewcommand*{\@caption@fignum@sep}{\textbf{ \vline }}}
 
 #+OPTIONS: tex:t toc:nil todo:t author:nil date:nil title:nil ^:t tags:nil
 #+DESCRIPTION:
@@ -16,6 +14,7 @@
 \makeatletter
 \renewcommand*{\fnum@figure}{{\normalfont\bfseries \figurename~\thefigure}}
 \renewcommand*{\@caption@fignum@sep}{\textbf{ \textbar }}
+\renewcommand\Dated@name{}      %no date
 \makeatother
 #+END_EXPORT
 
@@ -181,7 +180,7 @@ cm^{-1}, I(1380)/I(1315), on the F_{16}CuPc film deposited on a sheet of
 SiO_{2}-supported graphene with a break. The NW region, with a higher
 I(1380)/I(1315) ratio, is clearly identified.
 
-We examined the wettability of the two F_{16}CuPc samples (Fig.s
+We examined the wettability of the two F_{16}CuPc samples (Fig.
 [[ref:fig:main-2]]d-[[ref:fig:main-2]]g). The apparent static contact
 angles (\(\theta_{\mathrm{s}}^{*}\)) of water were independently
 determined by (i) contact angle goniometer (CAG) and (ii) condensation
@@ -218,7 +217,7 @@ models:
  by the Wenzel and CB models, respectively, allowing us to determine
  \(\theta_{\mathrm{adv}}\)=107\(^{\circ}\),
  \(\theta_{\mathrm{rec}}\)=78\(^{\circ}\),
- \(\theta_{\mathrm{s}}\)=94\(^{\circ}\), and $f=0.093$ (for 300 nm
+ \(\theta_{\mathrm{s}}\)=94\(^{\circ}\), and /f/ =0.093 (for 300 nm
  NW). We point out that the graphene-induced molecular orientation
  effects have eventually led to the transition between Wenzel and CB
  surface states, which to our knowledge has never been demonstrated in
@@ -259,7 +258,7 @@ models:
  traps cite:Wang_2011.  The lateral graphene FET has an on/off current
  ratio of \sim{}10 and a field-effect mobility (\(\mu_{\mathrm{FE}}\))
  of \sim2000 cm^{2}V^{-1}s^{-1} at room temperature, with the charge
- neutrality point (CNP) at the gate voltage of \sim0 V (Fig.
+ neutrality point (CNP) at the gate voltage of \sim0 V (Supplementary Fig.
  S14). Subsequently, a layer of \sim300 nm-high F_{16}CuPc NWs were
  deposited on graphene, followed by placing a cantilever-attached LM
  droplet on top as the D electrode (details see Supplementary
@@ -272,7 +271,7 @@ models:
  estimated to be $J_{\mathrm{DS}}/f$. The carrier density in
  F_{16}CuPc molecules adjacent to the NW/graphene interface is
  modulated by the partially penetrated field effect through monolayer
- graphene cite:Tian_2016,Shih2015Partially, modulating the Schottcky
+ graphene cite:Tian_2016,Shih2015Partially, modulating the Schottky
  barrier height at the interface cite:Yang2012Barristor. The face-on
  orientation of the F_{16}CuPc molecules not only facilitates carrier
  transport along the NWs, but also aligns the work functions of
@@ -368,14 +367,14 @@ models:
   preparation process. For each droplet height, we determined the
   experimental $\varepsilon$ by extracting the principal radii from
   the CAG image, with the height controlled by a stage
-  micromanipulator. Fig. [[ref:eq:4]]b compares the experimental and
+  micromanipulator. Fig. [[ref:fig:main-4]]b compares the experimental and
   calculated elastic stress of a 0.1 \(\mathrm{\mu}\)L droplet as a
   function of strain, showing excellent agreement. We notice that
   within the strain range considered here (up to 13.5%), the
   $\varepsilon - \sigma$ profile is nearly linear, following the
   Hooke’s law. We determine the effective elastic modulus to be 820
   Pa, which is, to our knowledge, smaller than any solid materials
-  including the state-of-the-art ultrasoft elastomers
+  including the state-of-the-art ultra soft elastomers
   cite:Miriyev_2017,Jang_2015. Using our model, we further calculate
   $E$ versus $V_{\mathrm{drop}}$ (Fig. [[ref:fig:main-4]]b inset), predicting an
   adjustable elastic modulus by simply controlling the droplet
@@ -387,25 +386,26 @@ models:
   different $\varepsilon$ values. The current $I_{\mathrm{DS}}$ from
   drain to source increases with $\varepsilon$, with the on/off
   current ratio unaffected by the elastic stress. The elastic response
-  at \(V_{\mathrm{G}}\)= 0 V shows a sensitivity, , where and are
-  after and before stress, of 0.036 Pa (Fig. S24), together with the
-  detection limit of down below 10 Pa, comparable to the most
-  sensitive resistive pressure sensor, with a considerably lower
-  driving voltage cite:Pang_2012,Pan_2014. Following the design
-  concept stated earlier, we point out that the major mechanism
-  responsible for the current response is an increased contact area
-  $\Delta A$ upon stress $\varepsilon$, and the change of capillary
-  length $\Delta l$ (see Fig. [[ref:fig:main-1]]b) is negligible within
-  the stress range considered. Indeed, we model the contact radii at
-  the top and bottom interfaces, $r_{\mathrm{t}}$ and
-  $r_{\mathrm{b}}$, as a function of $\sigma$ (details see
-  Supplementary Information), which can describe the current response
-  reasonably well (Fig. S24). The above analysis is further endorsed
-  by the finite element method (FEM) simulations (Fig.
-  [[ref:fig:main-4]]d).  We further demonstrate the reversibility of
-  current response by repeatedly applying and releasing a compressive
-  stress of 204.2\(\pm\)12.3 Pa to our IFET device
-  (Fig. [[ref:fig:main-4]]e).
+  at \(V_{\mathrm{G}}\)= 0 V shows a sensitivity, \(\eta =
+  (I/I_{0} - 1) / \sigma\) , where \(I_{0}\) and \(I\) are
+  \(I_{\mathrm{DS}}\) before and after stress, of 0.036 Pa\(^{-1}\)
+  (Supplementary Fig. S24), together with the detection limit of down
+  below 10 Pa, comparable to the most sensitive resistive pressure
+  sensor, with a considerably lower driving voltage
+  cite:Pang_2012,Pan_2014. Following the design concept stated
+  earlier, we point out that the major mechanism responsible for the
+  current response is an increased contact area $\Delta A$ upon stress
+  $\varepsilon$, and the change of capillary length $\Delta l$ (see
+  Fig. [[ref:fig:main-1]]b) is negligible within the stress range
+  considered. Indeed, we model the contact radii at the top and bottom
+  interfaces, $r_{\mathrm{t}}$ and $r_{\mathrm{b}}$, as a function of
+  $\sigma$ (details see Supplementary Information), which can describe
+  the current response reasonably well (Supplementary Fig. S24). The
+  above analysis is further endorsed by the finite element method
+  (FEM) simulations (Fig.  [[ref:fig:main-4]]d, Supplementary Table S3).
+  We further demonstrate the reversibility of current response by
+  repeatedly applying and releasing a compressive stress of
+  204.2\(\pm\)12.3 Pa to our IFET device (Fig. [[ref:fig:main-4]]e).
 
   Finally, we discuss the transport properties of the NW/Gr
   interface. As illustrated earlier, since the carrier density at the
@@ -449,7 +449,7 @@ In this work, we establish a new concept to reliably incorporate
 mechanical durability and responsiveness in transistors by engineering
 the interfacial properties between semiconductor and liquid
 metal. Using the superhydrophobic semiconductor NWs in an IFET, we
-systematically analyze the origin of its ultrasoft elasticity that is
+systematically analyze the origin of its ultra soft elasticity that is
 driven by the minimization of interfacial tension upon compressive
 stress. We believe that the fundamental understanding and rational
 design strategy presented here can be utilized for a wide range of
@@ -488,8 +488,8 @@ ultrasensitive and stimuli-responsive nanoelectronics.
   :PROPERTIES:
   :UNNUMBERED: t
   :END:
-  T.T., N.A., R.S., and C.J.S. are grateful for the starup funding
-  from ETH Z\"{u}rich. T.T. acknowledges Dr. Tobias Keplinger for
+  T.T., N.A., R.S., and C.J.S. are grateful for the startup funding
+  from ETH Z\uuml{}rich. T.T. acknowledges Dr. Tobias Keplinger for
   technical support of Raman microscopy.
 *************** TODO Complete the acknowledgments
 *************** END
@@ -506,13 +506,15 @@ ultrasensitive and stimuli-responsive nanoelectronics.
   :PROPERTIES:
   :UNNUMBERED: t
   :END:
-  T.T. and C.-J. S. conceived the concept, designed the experiments
-  and co-wrote the manuscript. T.T. and C.S.S. carried out the ESEM
+  T.T. and C.J.S. conceived the concept and designed the
+  experiments. T.T. and C.S.S. carried out the ESEM
   measurements. T.T., N.A. and R.S. fabricated and characterized the
-  morphology and dynamic wetting properties of the F_{16}CuPc/Gr
-  samples. Y.-T. L. and Y.-C. C. measured the GIXD
-  spectroscopy. T.T. fabricated and tested the interfacial
-  transistors. T.T. and M.V. designed the experiments using EGaIn. All
+  morphology and dynamic wetting properties of the F_{16}CuPc
+  samples. Y.-T. L. and Y.-C. C. measured the GIXD spectroscopy of
+  F_{16}CuPc samples. T.T. fabricated and tested the interfacial
+  transistors. T.T. and M.V. designed the experiments using
+  EGaIn. T.T. and C.J.S. developed the model for the stress-strain
+  relation of droplets. T.T. and C.J.S. wrote the manuscript. All
   authors contributed to the discussion of the results and to the
   revision of the manuscript.
 
