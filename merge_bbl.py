@@ -34,11 +34,11 @@ def tex_process(tex_file):
     
     bbl_file = file_base + ".bbl"
     bbl_content = None
-    with open(bbl_file, "r") as fo:
+    with open(bbl_file, "r", encoding="utf-8") as fo:
         bbl_content = fo.read()
         
     contents = []
-    with open(tex_file, "r") as fo:
+    with open(tex_file, "r", encoding="utf-8") as fo:
         contents = fo.readlines()
         # Modify the title and date
         for i, line in enumerate(contents):
@@ -48,7 +48,7 @@ def tex_process(tex_file):
                 contents[i] = "%" + line + bbl_content
                 break
     out_file = file_base + "_nature_format.tex"
-    with open(out_file, "w") as fw:
+    with open(out_file, "w", encoding="utf-8") as fw:
         fw.writelines(contents)
 
 

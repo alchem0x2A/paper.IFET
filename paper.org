@@ -158,7 +158,7 @@ samples. The F_{16}CuPc/SiO_{2} sample has an intense peak along the
 $q_{\mathrm{z}}$ axis, labeled as $\alpha$ (/d/-spacing = 1.470
 nm). It corresponds to the (002) plane in the F_{16}CuPc single
 crystal cite:Yang_2009_F16_PTCDA that is perpendicular to the
-substrate normal vector, suggesting a dominant “edge-on” orientation
+substrate normal vector, suggesting a dominant "edge-on" orientation
 (Fig. [[ref:fig:main-2]]b bottom left). It is also endorsed by the
 position of the (\(\bar{1}\)22) plane peak near the $q_{\mathrm{xy}}$
 axis (\(\beta\)) cite:Yoon_2010_crystal_F16, with a /d/-spacing of
@@ -168,7 +168,7 @@ $\gamma$) (Fig. [[ref:fig:main-2]]b right), with its wave vector rotated
 by $\sim 76^{\circ}$ with respect to the $q_{\mathrm{z}}$ axis and a
 /d/-spacing of 1.440 nm, slightly smaller than that in the edge-on
 orientation. Together with the (\(\bar{1}\)22) peak located at the
-$q_{\mathrm{z}}$ axis, we point out the emergence of the “face-on”
+$q_{\mathrm{z}}$ axis, we point out the emergence of the "face-on"
 orientation (Fig. [[ref:fig:main-2]]b bottom right) in the NWs. The
 orientations revealed by GIXD patterns are in consistent with X-ray
 diffraction (XRD) experiments (details see Supplementary Section S2.3,
@@ -341,7 +341,7 @@ allowing us to determine \(\theta_{\mathrm{adv}}\)=107\(^{\circ}\),
  heights before and after stress, respectively. The compressive stress
  varies with height, following $\varepsilon = p(H) - p(H_{0})$. Note
  that here the liquid phase itself is nearly incompressible, and the
- “elasticity” is originated from a thermodynamic driving force
+ "elasticity" is originated from a thermodynamic driving force
  counteracting the increase of interfacial tension upon mechanical
  stress, conceptually different from the deformation of a bulk
  material. We formulate the principal radii as a function of droplet
