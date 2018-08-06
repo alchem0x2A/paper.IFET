@@ -200,7 +200,7 @@ the drain electrode.
 The F_{16}CuPc NW interfacial transistors were mounted onto an
 insulating probing block of a modified MCA-3 surface tensiometer. The
 gate and source terminals were connected using micropositioners
-(Linkam UK). A home-made Ag-coated Cu cantilever with a plate
+(Linkam UK). A custom-made Ag-coated Cu cantilever with a plate
 (fabricated by mechanical stamping) at the head were used as the drain
 electrode. The plate was adjusted parallel to the SiO_{2} wafer. A LM
 droplet with volume \sim{}0.1 $\mu \mathrm{L}$ was dispensed and
@@ -340,7 +340,7 @@ LN95 liquid nitrogen flowmeter (Linkam UK).
  interfacial field effect transistor.
 
 
-* Modeling dynamic wetting on F_{16}CuPc structures
+* Modeling dynamic wetting on F_{16}C\MakeLowercase{u}P\MakeLowercase{c} structures
    It has been long known that the static contact angles at Wenzel and
    CB states can be described as cite:Wenzel_1936:Cassie_1944,
    
@@ -419,151 +419,6 @@ LN95 liquid nitrogen flowmeter (Linkam UK).
    sufficient NW height. The fitted values for the parameters using
    least-square fitting of the thickness-dependent wetting angles in
    both cases is shown in Table [[ref:tbl:fitted]].
-
-
-
-
-
-
-
-* Electronic properties
-
-** Characterization of graphene
-   The single layer graphene was confirmed by both the optical
-   microscope and Raman spectroscopy (Figure [[ref:fig:gr-quality]]), with
-   intensity of 2D peak (2690 cm^{-1}) higher than the G peak (1590
-   cm^{-1}). The surface of graphene is smooth and with a root mean
-   squared (RMS) roughness of 0.54 nm. The quality of graphene in the
-   interfacial FET is characterized by its transport curve. We
-   deposited the D and S terminals on graphene/OTS/SiO_{2}, with a
-   channel width $W_{\mathrm{ch}}$ of 20 \(\mathrm{\mu}\)m, and a
-   channel length $L_{\mathrm{ch}}$ of 400 \(\mathrm{\mu}\)m. By
-   applying a $V_{\mathrm{D}}$ of 0.1 V, and sweeping $V_{\mathrm{G}}$
-   from -100 V to 100 V, we measured the sheet resistance $\rho$ of
-   the graphene sheet, which is defined as:
-
-   \begin{equation}
-   \label{eq:6}
-   \rho = \frac{I_{\mathrm{DS}}}{V_{\mathrm{D}}} \frac{L_{\mathrm{ch}}}{W_{\mathrm{ch}}}
-   \end{equation}
-  
-   the sheet resistance of Gr/OTS/SiO_{2} and F_{16}/Gr/OTS/SiO_{2} in
-   glovebox environment is shown in Figure
-   [[ref:fig:graphene-property]](a). Before and after deposition of
-   F_{16}CuPc, the on/off ratio of $\rho$ remains at 10 times and
-   almost symmetric around the CNP point, indicating good quality of
-   the graphene film on OTS-treated surface. Depositing F_{16}CuPc
-   slightly p-doped the graphene sheet, shifting the
-   $V_{\mathrm{CNP}}$ from near 0 V to 18 V (corresponding to a doping
-   density of $\sim 5 \times 10^{12}\ e \cdot
-   \mathrm{cm}^{-2}$). Putting the device in air gradually shifts the
-   $V_{\mathrm{CNP}}$ of graphene (Figure
-   [[ref:fig:graphene-property]](b)), and increases the sweeping
-   hysteresis between the forward and backward $V_{\mathrm{G}}$
-   sweeps. The slight p-doping of graphene is probably due to the
-   traps at the Gr/SiO_{2} surface cite:Dean_2010.  The p-doping of
-   graphene in air seems to be saturated after 8 hours, with the
-   $V_{\mathrm{CNP}}$ shifted to \sim{}60 V. Due to the existence of OTS,
-   the surface trap density is reduced, which results in a stable
-   performance of the graphene device even in air.
-
-** Performance limit of interfacial transistors
-   We also note the performance limit of our interfacial FET due to the
-   instability of F_{16}CuPc NWs. Two possible cases are the wetting
-   transition on the F_{16}CuPc NWs (Figure
-   [[ref:fig:nw-wetting-transition]]) and electric breakdown (Figure
-   [[ref:fig:electric-breakdown]]). The wetting transition from
-   Cassie-Baxter mode to Wenzel mode occurs on defect sites on the
-   F_{16}CuPc/NW surface. Compared with the defect-free NW surface
-   (Figure [[ref:fig:nw-wetting-transition]](a)) where the contact angle
-   hysteresis of LM droplet is small, the receding angle of the LM
-   droplet on a defect site dramatically decreases, forming a liquid
-   "neck" which pins the droplet to the surface (Figure
-   [[ref:fig:nw-wetting-transition]](b)). The wetting transition on NW
-   surface hinders the free elastic motion of LM droplet on the NW
-   surface. Another type of failure is caused by the electric breakdown
-   of the NWs. Figure [[ref:fig:electric-breakdown]] shows different images
-   of a typical breakdown region on the NW/Gr film. Near the edge of
-   the breakdown site, exfoliation of graphene and morphology change of
-   NWs are observed, indicating that large current density passes
-   through the edge. Far from the breakdown site, the morphology of NWs
-   remains unchanged. To avoid the failure of NWs in the interfacial
-   transistors, cycles of elastic pressing of LM droplet is performed
-   on the NW surface with a pressure less than 250 Pa to rule out the
-   wetting transition on the test site. Furthermore, when testing the
-   interfacial FET, we always apply the $V_{\mathrm{D}}$ potential on
-   LM droplet before contacting the NWs and start the desired
-   measurements, to avoid sudden passing of large current through the
-   NWs.
-
-   During our tests the thickness of the F_{16}CuPc layer also affects
-   the performance of the interfacial FET. Figure
-   [[ref:fig:IFET-performance-thickness]] shows the different
-   $I_{\mathrm{DS}}-V_{\mathrm{G}}$ curves under various
-   $V_{\mathrm{D}}$ between an interfacial FET with 100 nm NWs (a), and
-   with 200 nm NWs (b). In thinner IFET layers the current density is
-   also higher due to reduced film resistance. However the interfacial
-   FET with 100 nm NWs shows apparent graphene-like
-   $I_{\mathrm{DS}}-V_{\mathrm{G}}$ behavior at $V_{\mathrm{D}}>2.0$ V,
-   dramatically reducing the current on/off ratio. In transistors with
-   a thicker F_{16}CuPc film, the graphene-like behavior is rarely to
-   be observed. As a trade-off between the current density and steady
-   performance, we choose the optimal NW height as 300 nm in our
-   interfacial transistors shown in main text.
-
-** IFET using EGaIn as LM droplet
-   In addition to Hg, we also tested the performance of EGaIn as liquid
-   metal in our interfacial transistor. As shown in Figure
-   [[ref:fig:EGaIn-FET]], FET using EGaIn as the drain material also
-   exhibits good current on/off modulation and elastic pressure
-   sensing, owing to the reversible wetting on the hydrophobic
-   NWs. However compared with Hg-based device, EGaIn system has several
-   critical limitations: (i) It is very challenging to dispense a
-   free-standing \(\mu \mathrm{L}\)-scale EGaIn droplet on NW surface
-   due to the huge difference between the non-wetting NW surface and
-   nearly full-wetting glass capillary. As a result it is tedious to
-   further attach the EGaIn droplet to the metallic cantilever. (ii)
-   surface oxide on the EGaIn droplet accumulates with time, which
-   increases the contact resistance and rheological behavior
-   cite:Dickey_2008. Despite the technical challenges listed above, we
-   believe by proper engineering of the capillary and cantilever
-   surfaces, it is possible to achieve a interfacial FET with
-   reversible performance based EGaIn droplet.
-
-
-** Temperature dependency of $J_{\mathrm{DS}}$
-   From the thermionic emission theory, the current density flowing
-  through the interface can be described by the thermionic emission
-  equation cite:Sze2006Mosfets:
-
-  \begin{equation}
-  \label{eq:4}
-  J_{\mathrm{DS}} = A^{**} T^{2} \exp(- \frac{e \Phi_{\mathrm{SB}}}{kT}) 
-		  \left[ \exp(\frac{e V_{\mathrm{D}}}{kT}) - 1\right]
-  \end{equation}
-  where $T$ is the temperature, $A^{**}$ is the reduced effective
-  Richardson constant, $e$ is the unit charge and $k$ is the Boltzmann
-  constant. At same $V_{\mathrm{D}}$ and $\Phi_{\mathrm{SB}}$, the
-  $J_{\mathrm{DS}}$ is solely controlled by $T$. At the same Schottky
-  barrier height, $J_{\mathrm{DS}}$ increases with the rise of
-  temperature, due to the dominance of $T^{2}$ in Eq. [[ref:eq:4]].
-  Within the reverse bias regime, where Schottky barrier dominates the
-  current, the higher $\Phi_{\mathrm{SB}}$ is, the greater
-  $J_{\mathrm{DS}}$ can be tuned by temperature. A schematic
-  illustration of the thermionic effect can be seen in Figure
-  [[ref:fig:SB-scheme]].
-
-** Theoretical predictions of $\Phi_{\mathrm{SB}}$ tuning.
-
-   The theoretical tuning range of $\Phi_{\mathrm{SB}}$ at the Gr/NW
-  interface is carried following the procedures in Ref
-  citenum:Tian_2016. The gate voltage when graphene is at the CNP,
-  $V_{\mathrm{CNP}}$, is taken from graphene conductivity tests as 18
-  V. The $\Phi_{\mathrm{SB}}$ value at graphene's CNP is calculated as
-  0.32 V cite:Ren_2011_F16Gr_Elevel. The theoretical analysis gives a
-  tuning range up to 0.59 V. The discrepancy between our experimental
-  data and theoretical value may be explained by the pinning of
-  graphene's Fermi level by surface-bound traps cite:Meric_2008.
 
 
 
@@ -776,6 +631,151 @@ Note that $R_{1}$ and $R_{2}$ are not independent variables, and
 
 
  \FloatBarrier
+
+
+
+
+
+
+
+* Electronic properties
+
+** Characterization of graphene
+   The single layer graphene was confirmed by both the optical
+   microscope and Raman spectroscopy (Figure [[ref:fig:gr-quality]]), with
+   intensity of 2D peak (2690 cm^{-1}) higher than the G peak (1590
+   cm^{-1}). The surface of graphene is smooth and with a root mean
+   squared (RMS) roughness of 0.54 nm. The quality of graphene in the
+   interfacial FET is characterized by its transport curve. We
+   deposited the D and S terminals on graphene/OTS/SiO_{2}, with a
+   channel width $W_{\mathrm{ch}}$ of 20 \(\mathrm{\mu}\)m, and a
+   channel length $L_{\mathrm{ch}}$ of 400 \(\mathrm{\mu}\)m. By
+   applying a $V_{\mathrm{D}}$ of 0.1 V, and sweeping $V_{\mathrm{G}}$
+   from -100 V to 100 V, we measured the sheet resistance $\rho$ of
+   the graphene sheet, which is defined as:
+
+   \begin{equation}
+   \label{eq:6}
+   \rho = \frac{I_{\mathrm{DS}}}{V_{\mathrm{D}}} \frac{L_{\mathrm{ch}}}{W_{\mathrm{ch}}}
+   \end{equation}
+  
+   the sheet resistance of Gr/OTS/SiO_{2} and F_{16}/Gr/OTS/SiO_{2} in
+   glovebox environment is shown in Figure
+   [[ref:fig:graphene-property]](a). Before and after deposition of
+   F_{16}CuPc, the on/off ratio of $\rho$ remains at 10 times and
+   almost symmetric around the CNP point, indicating good quality of
+   the graphene film on OTS-treated surface. Depositing F_{16}CuPc
+   slightly p-doped the graphene sheet, shifting the
+   $V_{\mathrm{CNP}}$ from near 0 V to 18 V (corresponding to a doping
+   density of $\sim 5 \times 10^{12}\ e \cdot
+   \mathrm{cm}^{-2}$). Putting the device in air gradually shifts the
+   $V_{\mathrm{CNP}}$ of graphene (Figure
+   [[ref:fig:graphene-property]](b)), and increases the sweeping
+   hysteresis between the forward and backward $V_{\mathrm{G}}$
+   sweeps. The slight p-doping of graphene is probably due to the
+   traps at the Gr/SiO_{2} surface cite:Dean_2010.  The p-doping of
+   graphene in air seems to be saturated after 8 hours, with the
+   $V_{\mathrm{CNP}}$ shifted to \sim{}60 V. Due to the existence of OTS,
+   the surface trap density is reduced, which results in a stable
+   performance of the graphene device even in air.
+
+** Performance limit of interfacial transistors
+   We also note the performance limit of our interfacial FET due to the
+   instability of F_{16}CuPc NWs. Two possible cases are the wetting
+   transition on the F_{16}CuPc NWs (Figure
+   [[ref:fig:nw-wetting-transition]]) and electric breakdown (Figure
+   [[ref:fig:electric-breakdown]]). The wetting transition from
+   Cassie-Baxter mode to Wenzel mode occurs on defect sites on the
+   F_{16}CuPc/NW surface. Compared with the defect-free NW surface
+   (Figure [[ref:fig:nw-wetting-transition]](a)) where the contact angle
+   hysteresis of LM droplet is small, the receding angle of the LM
+   droplet on a defect site dramatically decreases, forming a liquid
+   "neck" which pins the droplet to the surface (Figure
+   [[ref:fig:nw-wetting-transition]](b)). The wetting transition on NW
+   surface hinders the free elastic motion of LM droplet on the NW
+   surface. Another type of failure is caused by the electric breakdown
+   of the NWs. Figure [[ref:fig:electric-breakdown]] shows different images
+   of a typical breakdown region on the NW/Gr film. Near the edge of
+   the breakdown site, exfoliation of graphene and morphology change of
+   NWs are observed, indicating that large current density passes
+   through the edge. Far from the breakdown site, the morphology of NWs
+   remains unchanged. To avoid the failure of NWs in the interfacial
+   transistors, cycles of elastic pressing of LM droplet is performed
+   on the NW surface with a pressure less than 250 Pa to rule out the
+   wetting transition on the test site. Furthermore, when testing the
+   interfacial FET, we always apply the $V_{\mathrm{D}}$ potential on
+   LM droplet before contacting the NWs and start the desired
+   measurements, to avoid sudden passing of large current through the
+   NWs.
+
+   During our tests the thickness of the F_{16}CuPc layer also affects
+   the performance of the interfacial FET. Figure
+   [[ref:fig:IFET-performance-thickness]] shows the different
+   $I_{\mathrm{DS}}-V_{\mathrm{G}}$ curves under various
+   $V_{\mathrm{D}}$ between an interfacial FET with 100 nm NWs (a), and
+   with 200 nm NWs (b). In thinner IFET layers the current density is
+   also higher due to reduced film resistance. However the interfacial
+   FET with 100 nm NWs shows apparent graphene-like
+   $I_{\mathrm{DS}}-V_{\mathrm{G}}$ behavior at $V_{\mathrm{D}}>2.0$ V,
+   dramatically reducing the current on/off ratio. In transistors with
+   a thicker F_{16}CuPc film, the graphene-like behavior is rarely to
+   be observed. As a trade-off between the current density and steady
+   performance, we choose the optimal NW height as 300 nm in our
+   interfacial transistors shown in main text.
+
+** IFET using EGaIn as LM droplet
+   In addition to Hg, we also tested the performance of EGaIn as liquid
+   metal in our interfacial transistor. As shown in Figure
+   [[ref:fig:EGaIn-FET]], FET using EGaIn as the drain material also
+   exhibits good current on/off modulation and elastic pressure
+   sensing, owing to the reversible wetting on the hydrophobic
+   NWs. However compared with Hg-based device, EGaIn system has several
+   critical limitations: (i) It is very challenging to dispense a
+   free-standing \(\mu \mathrm{L}\)-scale EGaIn droplet on NW surface
+   due to the huge difference between the non-wetting NW surface and
+   nearly full-wetting glass capillary. As a result it is tedious to
+   further attach the EGaIn droplet to the metallic cantilever. (ii)
+   surface oxide on the EGaIn droplet accumulates with time, which
+   increases the contact resistance and rheological behavior
+   cite:Dickey_2008. Despite the technical challenges listed above, we
+   believe by proper engineering of the capillary and cantilever
+   surfaces, it is possible to achieve a interfacial FET with
+   reversible performance based EGaIn droplet.
+
+
+** Temperature dependency of $J_{\mathrm{DS}}$
+   From the thermionic emission theory, the current density flowing
+  through the interface can be described by the thermionic emission
+  equation cite:Sze2006Mosfets:
+
+  \begin{equation}
+  \label{eq:4}
+  J_{\mathrm{DS}} = A^{**} T^{2} \exp(- \frac{e \Phi_{\mathrm{SB}}}{kT}) 
+		  \left[ \exp(\frac{e V_{\mathrm{D}}}{kT}) - 1\right]
+  \end{equation}
+  where $T$ is the temperature, $A^{**}$ is the reduced effective
+  Richardson constant, $e$ is the unit charge and $k$ is the Boltzmann
+  constant. At same $V_{\mathrm{D}}$ and $\Phi_{\mathrm{SB}}$, the
+  $J_{\mathrm{DS}}$ is solely controlled by $T$. At the same Schottky
+  barrier height, $J_{\mathrm{DS}}$ increases with the rise of
+  temperature, due to the dominance of $T^{2}$ in Eq. [[ref:eq:4]].
+  Within the reverse bias regime, where Schottky barrier dominates the
+  current, the higher $\Phi_{\mathrm{SB}}$ is, the greater
+  $J_{\mathrm{DS}}$ can be tuned by temperature. A schematic
+  illustration of the thermionic effect can be seen in Figure
+  [[ref:fig:SB-scheme]].
+
+** Theoretical predictions of $\Phi_{\mathrm{SB}}$ tuning.
+
+   The theoretical tuning range of $\Phi_{\mathrm{SB}}$ at the Gr/NW
+  interface is carried following the procedures in Ref
+  citenum:Tian_2016. The gate voltage when graphene is at the CNP,
+  $V_{\mathrm{CNP}}$, is taken from graphene conductivity tests as 18
+  V. The $\Phi_{\mathrm{SB}}$ value at graphene's CNP is calculated as
+  0.32 V cite:Ren_2011_F16Gr_Elevel. The theoretical analysis gives a
+  tuning range up to 0.59 V. The discrepancy between our experimental
+  data and theoretical value may be explained by the pinning of
+  graphene's Fermi level by surface-bound traps cite:Meric_2008.
 
 * Figures and Tables
 

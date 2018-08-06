@@ -27,7 +27,7 @@ class TColors:
 # Delete the leading date and title
 def tex_process(tex_file):
     contents = []
-    with open(tex_file, "r") as fo:
+    with open(tex_file, "r", encoding="utf-8") as fo:
         contents = fo.readlines()
         # Modify the title and date
         for i, line in enumerate(contents):
@@ -55,7 +55,7 @@ def tex_process(tex_file):
             else:
                 i += 1
 
-    with open(tex_file, "w") as fw:
+    with open(tex_file, "w", encoding="utf-8") as fw:
         fw.writelines(contents)
 
 # Convert the pdfs
