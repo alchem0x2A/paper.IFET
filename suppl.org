@@ -5,9 +5,12 @@
 #+LATEX_HEADER: \usepackage{float}
 #+LATEX_HEADER: \usepackage{placeins}
 #+LATEX_HEADER: \renewcommand{\thepage}{S\arabic{page}}
+#+LATEX_HEADER: \renewcommand{\thesection}{S\arabic{section}}
+#+LATEX_HEADER: \renewcommand{\thesubsection}{\thesection.\arabic{subsection}}
 #+LATEX_HEADER: \renewcommand{\theequation}{S\arabic{equation}}
 #+LATEX_HEADER: \renewcommand{\thefigure}{S\arabic{figure}}
 #+LATEX_HEADER: \renewcommand{\thetable}{S\arabic{table}}
+
 #+LATEX_HEADER: \renewcommand{\bibnumfmt}[1]{S#1}
 #+LATEX_HEADER: \renewcommand{\citenumfont}[1]{S#1}
 
@@ -32,14 +35,17 @@
 #+NAME: latex-author-list
 #+BEGIN_EXPORT latex
 % The author list
-\title{Supporting Information for: \\ An elastic interfacial transistor enabled by superhydrophobicity}
+\title{An elastic interfacial transistor enabled by superhydrophobicity}
 \author{Tian Tian}
 \affiliation{Institute for Chemical and Bioengineering, ETH Z{\"{u}}rich,  Vladimir-Prelog Weg 1, CH-8093 Z{\"{u}}rich, Switzerland}
 \author{Chander Shekhar Sharma}
-\affiliation{Institut of Energy Technology, ETH Z{\"{u}}rich, Sonneggstrasse 3, CH-8092 Z{\"{u}}rich, Switzerland}
-\affiliation{Department of Mechanical Engineering, Indian Institute of Technology Ropar, Rupnagar, Punjab 140001, India}
+\altaffiliation{Present address: Department of Mechanical Engineering, Indian Institute of Technology Ropar, Rupnagar, Punjab 140001, India}
+\affiliation{Laboratory of Thermodynamics in Emerging Technologies, Department of Mechanical and Process Engineering, ETH Z{\"{u}}rich, Sonneggstrasse 3, CH-8092 Z{\"{u}}rich, Switzerland}
+% \affiliation{Department of Mechanical Engineering, Indian Institute of Technology Ropar, Rupnagar, Punjab 140001, India}
 \author{Navanshu Ahuja}
 \affiliation{Institute for Chemical and Bioengineering, ETH Z{\"{u}}rich,  Vladimir-Prelog Weg 1, CH-8093 Z{\"{u}}rich, Switzerland}
+
+
 \author{Matija Varga}
 \affiliation{Electronics Laboratory, ETH Z{\"{u}}rich,  Gloriastrasse 35,  CH-8092 Z{\"{u}}rich, Switzerland}
 \author{Raja Selvakumar}
@@ -50,12 +56,8 @@
 \affiliation{National Synchrotron Radiation Research Center, Hsinchu 30076, Taiwan.}
 \author{Yu-Cheng Chiu}
 \affiliation{Department of Chemical Engineering, National Taiwan University of Science and Technology, Taipei 10607, Taiwan.}
-% \author{Gerhard Tr\"{o}ster}
-% \affiliation{Electronics Laboratory, ETH Z{\"{u}}rich,  Gloriastrasse 35,  CH-8092 Z{\"{u}}rich, Switzerland}
-% \author{Dimos Poulikakos}
-% \affiliation{Institut of Energy Technology, ETH Z{\"{u}}rich, Sonneggstrasse 3, CH-8092 Z{\"{u}}rich, Switzerland}
 \author{Chih-Jen Shih}
-\email{chih-jen.shih@chem.ethz.ch}
+\email{Correspondence should be addressed to C.J.S. chih-jen.shih@chem.ethz.ch}
 \affiliation{Institute for Chemical and Bioengineering, ETH Z{\"{u}}rich,  Vladimir-Prelog Weg 1, CH-8093 Z{\"{u}}rich, Switzerland}
 #+END_EXPORT
 
@@ -308,7 +310,7 @@ LN95 liquid nitrogen flowmeter (Linkam UK).
  \end{equation}
  where $L$ is the size of crystalline domain, $K$ is the structure
  factor which we taken as unity, and $B(\theta)$ is the peak broadening
- at $2\Theta$ position. We analyzed the $(002)$ peak of powder and
+ at $2\theta$ position. We analyzed the $(002)$ peak of powder and
  F_{16}CuPc/SiO_{2} samples, in comparison to the $(\bar{1}22)$ peak of
  F_{16}CuPc NW sample (Table [[ref:tbl:Scherrer-eqn]]). The crystalline
  domain in powder and edge-on F_{16}CuPc/SiO_{2} samples are similar
@@ -338,13 +340,22 @@ LN95 liquid nitrogen flowmeter (Linkam UK).
  interfacial field effect transistor.
 
 
-** Modeling dynamic wetting on F_{16}CuPc structures
-
-   In addition to the analysis of wetting states by static contact
-   angles in the main text, here we provide more evidence of the
-   Cassie-Baxter and Wenzel wetting states in F_{16}CuPc NW and
-   F_{16}CuPc/SiO_{2} structures, respectively. In Figure 2(e) of main
-   text, we observe that the dynamic contact angle hysteresis $\Delta
+* Modeling dynamic wetting on F_{16}CuPc structures
+   It has been long known that the static contact angles at Wenzel and
+   CB states can be described as cite:Wenzel_1936:Cassie_1944,
+   
+   \begin{eqnarray}
+   \label{eq:10}
+    \cos \theta_{\mathrm{s}, W}^{*} &= r_{\mathrm{W}} \cos \theta_{\mathrm{s}}   \\
+    \cos \theta_{\mathrm{s}, CB}^{*} &= r_{\mathrm{CB}} f \cos \theta_{\mathrm{s}} + f - 1   \\
+    \end{eqnarray}
+    where $\theta_{\mathrm{s}}$, $\theta_{\mathrm{s, W}}^{*}$ and
+   $\theta_{\mathrm{s, CB}}^{*}$ are the static contact angles on
+   ideal surface, at the Wenzel and CB states, respectively. Here we
+   provide more analysis of the Cassie-Baxter and Wenzel wetting
+   states in F_{16}CuPc NW and F_{16}CuPc/SiO_{2} structures using
+   dynamical contact angles. In Fig. 2e of main text, we observe
+   that the dynamic contact angle hysteresis $\Delta
    \theta^{*}_{\mathrm{dyn}}$, defined as $\theta^{*}_{\mathrm{adv}} -
    \theta^{*}_{\mathrm{rec}}$, increases as a function of film
    thickness in F_{16}CuPc/SiO_{2} sample, while slightly decreases
@@ -374,38 +385,40 @@ LN95 liquid nitrogen flowmeter (Linkam UK).
 
    \begin{eqnarray}
    \label{eq:theta-A-CB}
-	 \theta_{\mathrm{adv, CB}}^{*} &= r_{\mathrm{CB}} f \cos \theta_{\mathrm{A}} + f- 1  & \\
+	 \theta_{\mathrm{adv, CB}}^{*} &= r_{\mathrm{CB}} f \cos \theta_{\mathrm{adv}} + f- 1  & \\
    \label{eq:theta-rec-CB}
-	 \theta_{\mathrm{rec, CB}}^{*} &= r_{\mathrm{CB}} f \cos \theta_{\mathrm{R}} + f- 1  &
+	 \theta_{\mathrm{rec, CB}}^{*} &= r_{\mathrm{CB}} f \cos \theta_{\mathrm{rec}} + f- 1  &
    \end{eqnarray}
   
-   where $\theta_{\mathrm{A}}$ and $\theta_{\mathrm{R}}$ are the
+   where $\theta_{\mathrm{adv}}$ and $\theta_{\mathrm{rec}}}$ are the
    advancing and receding angles on an ideally planar surface (but with
    defects). Similarly for a Wenzel surface we have:
 
    \begin{eqnarray}
    \label{eq:theta-A-W}
-	 \theta_{\mathrm{adv, W}}^{*} &= r_{\mathrm{W}} \cos \theta_{\mathrm{A}}& \\
+	 \theta_{\mathrm{adv, W}}^{*} &= r_{\mathrm{W}} \cos \theta_{\mathrm{adv}}& \\
    \label{eq:theta-rec-W}
-	 \theta_{\mathrm{rec, W}}^{*} &= r_{\mathrm{W}} \cos \theta_{\mathrm{R}}&
+	 \theta_{\mathrm{rec, W}}^{*} &= r_{\mathrm{W}} \cos \theta_{\mathrm{rec}}&
    \end{eqnarray}
 
    We then use the above model to simulate the dynamic contact angles
-   we observe experimentally in main text Figure 2(e). In addition to
-   the assumption $r_{\mathrm{W}} \approx r_{\mathrm{CB}}$ in the main
-   text, we also assume that $\theta_{\mathrm{A}}$,
-   $\theta_{\mathrm{R}}$ and $\theta_{\mathrm{Y}}$, are the same for
-   both systems (chemically identical material). Further we use a
-   linear equation to model the evolution of $r$, such that $r = k_{1}
-   \nu_{\mathrm{QCM}}$. Since the solid fraction almost saturates
-   w.r.t. NW height, for the F_{16}CuPc NW system we use an exponential
-   decay function to model the evolution of $f$, such that $f = 1 -
-   (1 - f_{\infty})\exp(-k_{2} \nu_{\mathrm{QCM}})$, where $f_{\infty}$
-   is the saturated value for the solid fraction at sufficient NW
-   height. We performed least-square fitting of the thickness-dependent
-   wetting angles in both cases, and the best fitting results give us
-   $\theta_{\mathrm{A}}=107 ^{\circ}$, $\theta_{\mathrm{R}}=78
-   ^{\circ}$ and $\theta_{\mathrm{Y}}=94 ^{\circ}$.
+   we observe experimentally in main text Fig. 2e. In addition to the
+   assumption $r_{\mathrm{W}} \approx r_{\mathrm{CB}}$ in the main
+   text, we also assume that $\theta_{\mathrm{adv}}$,
+   $\theta_{\mathrm{rec}}$ and $\theta_{\mathrm{s}}$, are the same for
+   both systems (chemically identical material). The unified
+   expression for contact angles at Wenzel and CB states, is then
+   expresses as main text Eq. (1) and (2).
+
+   We use a linear equation to model the evolution of $r$, such that
+   $r = k_{1} \nu_{\mathrm{QCM}}$. Since the solid fraction almost
+   saturates w.r.t. NW height, for the F_{16}CuPc NW system we use an
+   exponential decay function to model the evolution of $f$, such that
+   $f = f_{\infty} + (1 - f_{\infty})\exp(-k_{2} \nu_{\mathrm{QCM}})$,
+   where $f_{\infty}$ is the saturated value for the solid fraction at
+   sufficient NW height. The fitted values for the parameters using
+   least-square fitting of the thickness-dependent wetting angles in
+   both cases is shown in Table [[ref:tbl:fitted]].
 
 
 
@@ -564,7 +577,7 @@ equation:
 p = \gamma (R_{1}^{-1} + R_{2}^{-1})
 \end{equation}
 
-where $R_{1}$ and $R_{2}$ are the two principle radii of the
+where $R_{1}$ and $R_{2}$ are the two principal radii of the
 droplet. Since the size of LM droplets used in the interfacial FET are
 within the low Bond number regime (\(Bo = \Delta p g R^{2} / \gamma <
 1 \)), the effect of gravity can be ignored. Under such conditions,
@@ -726,7 +739,7 @@ Note that $R_{1}$ and $R_{2}$ are not independent variables, and
    physical meaning of $H_{0}$ is the maximal height of the droplet
    between the two plates when no external stress is applied. In this
    case the whole droplet has a shape of a sphere segment (Figure
-   [[ref:fig-SI-drop-model]](c)). Since two principle radii coincide in this
+   [[ref:fig-SI-drop-model]](c)). Since two principal radii coincide in this
    case, $R_{1}=R_{2}=R$, we have:
 
    \begin{equation}
@@ -857,6 +870,14 @@ Note that $R_{1}$ and $R_{2}$ are not independent variables, and
 #+NAME: fig:deposition-Al
 [[file:img/SI_compasion_Al_depo.pdf]]
 
+#+CAPTION: Fitted values for the dynamic contact angle model described in Section S3
+#+NAME: tbl:fitted
+|--------------+-------------------------+-------------------------+-----------------------+--------------+--------------------------+---------------------------|
+| Quantity     | $\theta_{\mathrm{adv}}$ | $\theta_{\mathrm{rec}}$ | $\theta_{\mathrm{s}}$ | $f_{\infty}$ | $k_{1}$                  | $k_{2}$                   |
+|--------------+-------------------------+-------------------------+-----------------------+--------------+--------------------------+---------------------------|
+| Fitted value | 107\(^{\circ}\)         | 78\(^{\circ}\)          | 94\(^{\circ}\)        |        0.093 | 3.89\(\times{}\)10^{-4} s | 5.10\(\times{}\)10^{-4} s |
+|--------------+-------------------------+-------------------------+-----------------------+--------------+--------------------------+---------------------------|
+
 #+CAPTION: Sliding angles $\theta_{\mathrm{sl}}^{*}$ of EGaIn on different surfaces. A sliding angle $> 90 ^{\circ}$ means the droplets almost permanantly adheres to the surface.
 #+NAME: tbl:sliding
 #+ATTR_LATEX: :placement [h]
@@ -924,7 +945,7 @@ Note that $R_{1}$ and $R_{2}$ are not independent variables, and
 #+NAME: fig:T-measurement
 [[file:img/SI-T-fig.pdf]]
 
-#+CAPTION: Analytical model of droplet geometry between two horizontal parallel plates, the droplets have a convex shape in both cases. (a) Symmetrical case, the volume of droplet is described by a function $v(R_{1},  \delta, \theta)$ as a function of principle radii $R_{1}$ and $R_{2}$, the helf height of the droplet $\delta$ and contact angle $\theta$. (b) Asymmetrical case where top and bottom contact angles $\theta_{\mathrm{t}}$ and $\theta_{\mathrm{b}}$ are different. The volume of droplet is given by: $V_{\mathrm{drop}} = [v(R_{1},  \delta_{\mathrm{t}}, \theta_{\mathrm{t}}) + v(R_{1},  \delta_{\mathrm{b}}, \theta_{\mathrm{b}})]/2$. (c) The limiting case when $H=H_{0}$. The geometry of the droplet is a sphere segment which the volume is given by Eq. [[ref:eq:9]].
+#+CAPTION: Analytical model of droplet geometry between two horizontal parallel plates, the droplets have a convex shape in both cases. (a) Symmetrical case, the volume of droplet is described by a function $v(R_{1},  \delta, \theta)$ as a function of principal radii $R_{1}$ and $R_{2}$, the helf height of the droplet $\delta$ and contact angle $\theta$. (b) Asymmetrical case where top and bottom contact angles $\theta_{\mathrm{t}}$ and $\theta_{\mathrm{b}}$ are different. The volume of droplet is given by: $V_{\mathrm{drop}} = [v(R_{1},  \delta_{\mathrm{t}}, \theta_{\mathrm{t}}) + v(R_{1},  \delta_{\mathrm{b}}, \theta_{\mathrm{b}})]/2$. (c) The limiting case when $H=H_{0}$. The geometry of the droplet is a sphere segment which the volume is given by Eq. [[ref:eq:9]].
 #+NAME: fig-SI-drop-model
 #+ATTR_LATEX: :width \linewidth
 [[file:img/SI-droplet-model.pdf]]
