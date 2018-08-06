@@ -103,7 +103,7 @@ Next, we sought to grow semiconductor NWs directly on the 2DEG,
 forming a superhydrophobic surface at the Cassie-Baxter (CB) state
 cite:Cassie_1944. A conductive sessile droplet is then placed on top
 of the NWs, acting as the D electrode, with the radius of contact,
-$R$. Accordingly, applying a compressive stress $\varepsilon$ on top
+$R$. Accordingly, applying a compressive stress $\sigma$ on top
 of the sessile leads to an horizontal displacement $\Delta x$ that
 advances the contact line, with an apparent advancing contact angle
 $\theta_{\mathrm{adv}}^{*}$ (Fig. [[ref:fig:main-1]]b left). When the
@@ -113,7 +113,7 @@ $\theta_{\mathrm{rec}}^{*}$ (Fig. [[ref:fig:main-1]]b right), enabling the
 reversibility. We hypothesized that the electrical response during the
 process results from: (i) an increase of the droplet contact area
 $\Delta A \approx 2 \pi R \Delta x$ at the macroscopic level and (ii)
-an increase of penetration length $\Delta l \approx \varepsilon
+an increase of penetration length $\Delta l \approx \sigma
 r^{2}/2\gamma_{\mathrm{L}}$ that effectively reduces the semiconductor
 channel length in the NWs (see Fig.  [[ref:fig:main-1]]b bottom), where
 $\gamma_{\mathrm{L}}$ is the surface tension of liquid and $r$ is the
@@ -329,17 +329,17 @@ allowing us to determine \(\theta_{\mathrm{adv}}\)=107\(^{\circ}\),
  $\theta_{\mathrm{b}}^{*}$, corresponding to the top and bottom
  liquid-solid interfaces, respectively. Under the assumptions of (i)
  the Bond number Bo\(\ll\)1 and (ii) the contact angles remain
- constant independent of \varepsilon, the cross-sectional boundary of
+ constant independent of \sigma, the cross-sectional boundary of
  the droplet can be described as part of a perfect circle
  cite:berthier_2012_microdroplet. Accordingly, the Laplace pressure
  $p$ of the droplet is given by: \(p = \gamma_{\mathrm{L}}
  (R_{1}^{-1} + R_{2}^{-1})\), where $R_{1}$ and $R_{2}$ are the
  principal radii of the droplet, as schematically shown in Fig.
- [[ref:fig:main-4]]a. Upon applying a compressive stress $\varepsilon$
+ [[ref:fig:main-4]]a. Upon applying a compressive stress $\sigma$
  between the plates, the droplet experiences an uniaxial strain
- $\sigma = (H_{0} - H) / H_{0}$, where $H_{0}$ and $H$ are the droplet
+ $\varepsilon = (H_{0} - H) / H_{0}$, where $H_{0}$ and $H$ are the droplet
  heights before and after stress, respectively. The compressive stress
- varies with height, following $\varepsilon = p(H) - p(H_{0})$. Note
+ varies with height, following $\sigma = p(H) - p(H_{0})$. Note
  that here the liquid phase itself is nearly incompressible, and the
  "elasticity" is originated from a thermodynamic driving force
  counteracting the increase of interfacial tension upon mechanical
@@ -347,7 +347,7 @@ allowing us to determine \(\theta_{\mathrm{adv}}\)=107\(^{\circ}\),
  material. We formulate the principal radii as a function of droplet
  height $H$ for $H < H_{0}$, namely $R_{1}(H)$ and $R_{2}(H)$
  (detailed derivations see Supplementary Section S5 and Supplementary
- Fig. S23). First, the maximum height $H_{0}$ corresponding to $\varepsilon=0$
+ Fig. S23). First, the maximum height $H_{0}$ corresponding to $\sigma=0$
  is given by:
 
   \begin{equation}
@@ -369,23 +369,23 @@ allowing us to determine \(\theta_{\mathrm{adv}}\)=107\(^{\circ}\),
   \label{eq:1}
   R_{2} = -\frac{H}{\cos \theta_{\mathrm{t}}^{*} + \cos \theta_{\mathrm{b}}^{*}}
   \end{equation}
-  By using the above equations, the compressive stress $\varepsilon$
-  as a function of $\sigma$, as well as the effective elastic modulus
-  $E = \left({\displaystyle \frac{\mathrm{d} \varepsilon}{\mathrm{d}
-  \sigma}}\right)_{H_{0}}$, can be calculated numerically. To validate
+  By using the above equations, the compressive stress $\sigma$
+  as a function of $\varepsilon$, as well as the effective elastic modulus
+  $E = \left({\displaystyle \frac{\mathrm{d} \sigma}{\mathrm{d}
+  \varepsilon}}\right)_{H_{0}}$, can be calculated numerically. To validate
   our model, an mercury droplet having an air-stable surface tension
   \(\gamma_{\mathrm{L}}\)=0.487 J\(\cdot\)m^{-2} is used. Note that
   mercury often forms alloys with commonly-used metals
   cite:Kieffer_1959, so the top contact angle
   $\theta_{\mathrm{t}}^{*}$ may vary depending on the sample
   preparation process. For each droplet height, we determined the
-  experimental $\varepsilon$ by extracting the principal radii from
+  experimental $\sigma$ by extracting the principal radii from
   the CAG images, with the height controlled by a stage
   micromanipulator. Fig. [[ref:fig:main-4]]b compares the experimental and
   calculated elastic stress of a 0.1 \(\mathrm{\mu}\)L droplet as a
   function of strain, showing excellent agreement. We notice that
   within the strain range considered here (up to 13.5%), the
-  $\varepsilon - \sigma$ profile is nearly linear, following the
+  $\sigma - \varepsilon$ profile is nearly linear, following the
   Hooke's law. We determine the effective elastic modulus to be 820
   Pa, which is, to our knowledge, softer than any solid materials
   including the state-of-the-art ultra soft elastomers
@@ -401,8 +401,8 @@ allowing us to determine \(\theta_{\mathrm{adv}}\)=107\(^{\circ}\),
 
   We next examine the current response of the IFET under mechanical
   stress. Fig. [[ref:fig:main-4]]c presents the transfer curves at
-  different $\varepsilon$ values. The current $I_{\mathrm{DS}}$ from
-  drain to source increases with $\varepsilon$, with the on/off
+  different $\sigma$ values. The current $I_{\mathrm{DS}}$ from
+  drain to source increases with $\sigma$, with the on/off
   current ratio unaffected by the elastic stress. The elastic response
   at \(V_{\mathrm{G}}\)= 0 V shows a sensitivity, \(\eta =
   (I/I_{0} - 1) / \sigma\) , where \(I_{0}\) and \(I\) are
@@ -413,11 +413,11 @@ allowing us to determine \(\theta_{\mathrm{adv}}\)=107\(^{\circ}\),
   low-power-consumption designs.  cite:Pang_2012,Pan_2014. Following
   the design concept stated earlier, we point out that the major
   mechanism responsible for the current response is an increased
-  contact area $\Delta A$ upon stress $\varepsilon$, and the change of
+  contact area $\Delta A$ upon stress $\sigma$, and the change of
   capillary length $\Delta l$ (see Fig. [[ref:fig:main-1]]b) is negligible
   within the stress range considered. Indeed, we model the contact
   radii at the top and bottom interfaces, $r_{\mathrm{t}}$ and
-  $r_{\mathrm{b}}$, as a function of $\sigma$ (details see
+  $r_{\mathrm{b}}$, as a function of $\varepsilon$ (details see
   Supplementary Section S4), which can describe the current response
   reasonably well (Supplementary Fig. S24). The above analysis is
   further endorsed by the finite element method (FEM) simulations
@@ -558,7 +558,7 @@ range of ultrasensitive and stimuli-responsive nanoelectronics.
 
 # #+CAPTION: *The concept of the interfacial field effect transistor (IFET)*. \textbf{a}, Schematic of the IFET (top) and its nanoscale structure (bottom), composed of a conductive liquid drain electrode (D), superhydrophic semiconducting NWs, a 2DEG source electrode (S) which is modulated by gate electrode (G). \textbf{b}, The elasticity of the conductive liquid at the superhydrophobic NW interface. When the height is compressed with $\Delta H$ (left), the contact radius increases by $\Delta x$ and the capillary length increases by $\Delta l$. When the external stress is released (right), the droplet returns to its original shape, enabled by the reversible motion on the hydrophobic NWs (small difference between $\theta_{\mathrm{adv}}^{*}$ and $\theta_{\mathrm{rec}}^{*}$).
 
-#+CAPTION: *Design concept of the proposed elastic interfacial transistor.* *a*, Schematic showing the device architecture at the micrometer (top) and nanometer (bottom) scales. Superhydrophobic semiconductor nanowires (NWs) are sandwiched between a conductive droplet at the CB state and a layer of 2DEG that allows partial penetration of an electrostatic field. *b*, Upon applying an compressive stress $\varepsilon$ to the droplet, a vertical displacement $\Delta H$ advances the contact line by $\Delta x$, with an apparent advancing contact angle $\theta_{\mathrm{adv}}^{*}$. When the stress is released, the contact line moves back towards its equilibrium shape, with an apparent receding contact angel of $\theta_{\mathrm{rec}}^{*}$. At the nanometer scale,  may also result in an increase of capillary length $\Delta l$ that effectively reduces the transistor channel length.
+#+CAPTION: *Design concept of the proposed elastic interfacial transistor.* *a*, Schematic showing the device architecture at the micrometer (top) and nanometer (bottom) scales. Superhydrophobic semiconductor nanowires (NWs) are sandwiched between a conductive droplet at the CB state and a layer of 2DEG that allows partial penetration of an electrostatic field. *b*, Upon applying an compressive stress $\sigma$ to the droplet, a vertical displacement $\Delta H$ advances the contact line by $\Delta x$, with an apparent advancing contact angle $\theta_{\mathrm{adv}}^{*}$. When the stress is released, the contact line moves back towards its equilibrium shape, with an apparent receding contact angel of $\theta_{\mathrm{rec}}^{*}$. At the nanometer scale,  may also result in an increase of capillary length $\Delta l$ that effectively reduces the transistor channel length.
 #+ATTR_LATEX: :width 0.95\linewidth
 #+NAME: fig:main-1
 [[file:img/scheme-1.pdf]]
@@ -579,7 +579,7 @@ range of ultrasensitive and stimuli-responsive nanoelectronics.
 
 
 # #+CAPTION: *Responsive elastic sensing using LM-based IFET*. \textbf{a}, Principle of the elastic stress-strain response of the LM droplet, showing the change of principal radii $R_{1}$ and $R_{2}$ upon stress. \textbf{b}, The stress-strain response of a \sim 0.1 \(\mathrm{\mu}\)L LM droplet from both experimental data and analytical model. Inset: elastic modulus as function of droplet volume, $V_{\mathrm{drop}}$ from the model. \textbf{c}, $I_{\mathrm{DS}}-V_{\mathrm{G}}$ curves of the IFET at various external stress levels. Insets: optical images of the LM under external stress (scale bars: 500 \(\mathrm{\mu}\)m.). \textbf{c}, Stress of the LM droplet calculated from both analytical model and FEM analysis, showing good agreement between the two methods. Scale bar: 200 \(\mathrm{\mu}\)m. \textbf{e} Increase of $I_{\mathrm{DS}}$ as function of time in a cycle compressing test of the IFET with average stress of 204.2\(\pm\)12.3 Pa, showing good reversibility. Scale bars: 100 \(\mathrm{\mu}\)m.
-#+CAPTION: *Elastic response of the proposed IFET*. *a*, Schematics of a droplet sandwiched between two plates before (top) and after (bottom) of a compressive stress, resulting a change of the principal radii, $R_{1}$ and $R_{2}$. *b*, Compressive stress $\varepsilon$ as a function of strain $\sigma$ for a 0.1 \mu{}L mercury CB droplet obtained from experiments (dots) and our hydrostatic model (curve). Inset: model-predicted elastic modulus $E$ as a function of the droplet volume $V_{\mathrm{drop}}$. *c*, Transfer curves under various compressive stress values. Insets: CAG images of the LM droplet under various external stress levels (scale bars: 500 \mu{}m.) *d*, Comparison of CAG-captured (top) and finite-element simulated (bottom) droplet shape and stress values (Supplementary Table S3) under different degrees of compression. Scale bar: 200 \mu{}m. *e*, Real-time monitoring of $I_{\mathrm{DS}}$ by repeatedly applying and releasing a compressive stress. 
+#+CAPTION: *Elastic response of the proposed IFET*. *a*, Schematics of a droplet sandwiched between two plates before (top) and after (bottom) of a compressive stress, resulting a change of the principal radii, $R_{1}$ and $R_{2}$. *b*, Compressive stress $\sigma$ as a function of strain $\varepsilon$ for a 0.1 \mu{}L mercury CB droplet obtained from experiments (dots) and our hydrostatic model (curve). Inset: model-predicted elastic modulus $E$ as a function of the droplet volume $V_{\mathrm{drop}}$. *c*, Transfer curves under various compressive stress values. Insets: CAG images of the LM droplet under various external stress levels (scale bars: 500 \mu{}m.) *d*, Comparison of CAG-captured (top) and finite-element simulated (bottom) droplet shape and stress values (Supplementary Table S3) under different degrees of compression. Scale bar: 200 \mu{}m. *e*, Real-time monitoring of $I_{\mathrm{DS}}$ by repeatedly applying and releasing a compressive stress. 
 #+ATTR_LATEX: :width 0.75\linewidth
 #+NAME: fig:main-4
 [[file:img/scheme-4.pdf]]

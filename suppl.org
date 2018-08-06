@@ -866,7 +866,7 @@ Note that $R_{1}$ and $R_{2}$ are not independent variables, and
 
 
 #+CAPTION: SEM images of Al (50 nm) deposited on (a) F_{16}CuPc NW and (b) F_{16}CuPc/SiO_{2} surfaces. The metal deposited on F_{16}CuPc NWs does not form continuous film, and cannot be used to build VFET.
-#+ATTR_LATEX: :width 0.8\linewidth
+#+ATTR_LATEX: :width 0.8\linewidth :placement [H]
 #+NAME: fig:deposition-Al
 [[file:img/SI_compasion_Al_depo.pdf]]
 
@@ -878,7 +878,7 @@ Note that $R_{1}$ and $R_{2}$ are not independent variables, and
 | Fitted value | 107\(^{\circ}\)         | 78\(^{\circ}\)          | 94\(^{\circ}\)        |        0.093 | 3.89\(\times{}\)10^{-4} s | 5.10\(\times{}\)10^{-4} s |
 |--------------+-------------------------+-------------------------+-----------------------+--------------+--------------------------+---------------------------|
 
-#+CAPTION: Sliding angles $\theta_{\mathrm{sl}}^{*}$ of EGaIn on different surfaces. A sliding angle $> 90 ^{\circ}$ means the droplets almost permanantly adheres to the surface.
+#+CAPTION: Sliding angles $\theta_{\mathrm{sl}}^{*}$ of EGaIn on different surfaces. A sliding angle $> 90 ^{\circ}$ means the droplets almost permanantly adhere to the surface.
 #+NAME: tbl:sliding
 #+ATTR_LATEX: :placement [h]
 |---------------------------+------------------|
@@ -893,22 +893,22 @@ Note that $R_{1}$ and $R_{2}$ are not independent variables, and
 
 
 #+CAPTION: F_{16}CuPc nanostructures on other materials. (a) F_{16}CuPc deposited on Cu and Cu with CVD-grown graphene. (b) F_{16}CuPc deposited on wood slice and graphene-covered wood slice.
-#+ATTR_LATEX: :width 0.8\linewidth
+#+ATTR_LATEX: :width 0.8\linewidth :placement [H]
 #+NAME: fig:transfer-arbitrary-subst
 [[file:img/SI-other-materials.pdf]]
 
 #+CAPTION: Characterization of pure graphene-based field effect transistor. (a) Change of the CNP point ($V_{\mathrm{CNP}}$) before and after deposition of F_{16}CuPc in glovebox.  (b) Forward and backward scan of a graphene transistor on OTS-treated SiO_{2} in air. (c) Drift of $V_{\mathrm{CNP}}$ of a graphene transistor on OTS-treated SiO_{2} in air over 8 hours.
-#+ATTR_LATEX: :width \linewidth
+#+ATTR_LATEX: :width \linewidth :placement [H]
 #+NAME: fig:graphene-property
 [[file:img/SI-gr-transistor.pdf]]
 
 #+CAPTION: $J_{\mathrm{DS}}-V_{\mathrm{G}}$ characterization of graphene-F_{16}CuPc VFET with thinner film thicknesses: (a) 100 nm and (b) 200 nm. In the case of 100 nm F_{16}CuPc, the $J_{\mathrm{DS}}$ is greatly influenced by the current density in graphene and the device brokedown at higher current densities. 
-#+ATTR_LATEX: :width 0.9\linewidth
+#+ATTR_LATEX: :width 0.9\linewidth :placement [H]
 #+NAME: fig:IFET-performance-thickness
 [[file:img/SI-thinner-transistor.pdf]]
 
 #+CAPTION: Wetting transition on the NW film. (a) Optical images during the detaching process of a cantilever-bound LM droplet from the NW surface. The droplet freely leaves the surface due to small contact hysteresis in the CB state. (b) The same detaching process on a defected NW surface. A "neck" connecting the LM droplet and the surface can be observed, with a low receding angle. Wetting transition from the CB state to the Wenzel state is accounted for the phenomenon seen in the defected NW surface cite:Yeh_2008_CBW_hys.
-#+ATTR_LATEX: :width 0.8\linewidth
+#+ATTR_LATEX: :width 0.8\linewidth :placement [H]
 #+NAME: fig:nw-wetting-transition
 [[file:img/SI-NW-transition.pdf]]
 
@@ -920,7 +920,7 @@ Note that $R_{1}$ and $R_{2}$ are not independent variables, and
 
 
 #+CAPTION: Characterizations of graphene-F_{16}CuPc transistor using EGaIn as elastic liquid metal. (a) $I_{\mathrm{DS}}-V_{\mathrm{G}}$ relation. (b) $I_{\mathrm{DS}}-V_{\mathrm{D}}$ relation at various strain levels. (c) $I_{\mathrm{DS}}$ modulation using EGaIn droplet, compressed by the microcapillary.
-#+ATTR_LATEX: :width 0.95\linewidth
+#+ATTR_LATEX: :width 0.95\linewidth :placement [H]
 #+NAME: fig:EGaIn-FET
 [[file:img/SI-EGaIn.pdf]]
 
@@ -929,52 +929,56 @@ Note that $R_{1}$ and $R_{2}$ are not independent variables, and
 #+NAME: fig:IdVd
 [[file:img/SI-schottky-IdVd.pdf]]
 
+#+CAPTION: Analytical model of droplet geometry between two horizontal parallel plates, the droplets have a convex shape in both cases. (a) Symmetrical case, the volume of droplet is described by a function $v(R_{1},  \delta, \theta)$ as a function of principal radii $R_{1}$ and $R_{2}$, the helf height of the droplet $\delta$ and contact angle $\theta$. (b) Asymmetrical case where top and bottom contact angles $\theta_{\mathrm{t}}$ and $\theta_{\mathrm{b}}$ are different. The volume of droplet is given by: $V_{\mathrm{drop}} = [v(R_{1},  \delta_{\mathrm{t}}, \theta_{\mathrm{t}}) + v(R_{1},  \delta_{\mathrm{b}}, \theta_{\mathrm{b}})]/2$. (c) The limiting case when $H=H_{0}$. The geometry of the droplet is a sphere segment which the volume is given by Eq. [[ref:eq:9]].
+#+NAME: fig-SI-drop-model
+#+ATTR_LATEX: :width \linewidth :placement [H]
+[[file:img/SI-droplet-model.pdf]]
+
+
+#+CAPTION: Experimental and simulated current amplification ratio of $I_{\mathrm{DS}}$ as a function of strain $\varepsilon$ using a LM droplet of \sim 0.1 \(\mathrm{\mu}\)L. $V_{\mathrm{G}}$ is set to 0 V (open circuit) and $V_{\mathrm{DS}}$ is 1 V. The model assumes the current increase is mainly contributed by the increase of contact area.
+#+NAME: fig-SI-current-ratio
+#+ATTR_LATEX: :width 0.5\linewidth :placement [H]
+[[file:img/SI-current-ratio-strain.pdf]]
+
+
+#+CAPTION: Stress-strain relation of the compressed LM droplet from the analytical model given different values of $V_{\mathrm{drop}}$. The top and bottom contact angles are set to the experimental values (\(\theta_{\mathrm{t}}^{*}\)=149 \(^{\circ}\) and \(\theta_{\mathrm{b}}^{*}\)=159 \(^{\circ}\)).
+#+ATTR_LATEX: :width 0.5\linewidth :placement [H]
+[[file:img/SI-stress-strain-analytical.pdf]]
+
+#+CAPTION: Other analysis from the analytical droplet model. (a) Contour plot of the elastic modulus $E$ as function of top and bottom contact angles of a droplet with \(V_{\mathrm{drop}}\)=0.1 \(\mathrm{\mu}\)L. (b) Expansion of bottom contact radius as function of strain $\varepsilon$. The expansion ratio is shown to be independent of the droplet volume.
+#+ATTR_LATEX: :width 0.75\linewidth :placement [H]
+[[file:img/SI-other-analytical.pdf]]
+
+
+#+NAME: tbl-ana-fem
+#+CAPTION: $\sigma$ calculated from analytical and FEM methods, from Fig. 4d in main text. The index starts from left to right for the droplets in Fig. 4d.
+|-------------------------------+---+-------+-------+-------|
+| Index                         | 1 |     2 |     3 |     4 |
+|-------------------------------+---+-------+-------+-------|
+| $\varepsilon$                 | 0 | 0.051 | 0.073 | 0.134 |
+| Analytical $\sigma$ (Pa)      | 0 |  42.9 |  71.1 | 132.1 |
+| FEM $\sigma$        (Pa)      | 0 |  39.0 |  67.3 | 120.1 |
+|-------------------------------+---+-------+-------+-------|
+
+
+
+#+CAPTION: Morphology change of F_{16}CuPc NWs upon heating. No obvious change of morphology was observed under 200 $^{\circ} \mathrm{C}$, while the NWs became thicker and straighter above 250 $^{\circ} \mathrm{C}$, indicating phase transition. Below 150 $^{\circ} \mathrm{C}$ no morphology change is observed.
+#+ATTR_LATEX: :width 0.8\linewidth :placement [H]
+#+NAME: fig-NW-heating
+[[file:img/SI-morphology-NW-T.pdf]]
+
 #+CAPTION: Principle of the thermal-induced current modulation of the IFET, explained by the thermionic emission theory. The current gain is higher for a higher Schottky barrier.
 #+ATTR_LATEX: :width 0.5\linewidth :placement [H]
 #+NAME: fig:SB-scheme
 [[file:img/SI-scheme-Schottkey-barrier.pdf]]
 
-#+CAPTION: Morphology change of F_{16}CuPc NWs upon heating. No obvious change of morphology was observed under 200 $^{\circ} \mathrm{C}$, while the NWs became thicker and straighter above 250 $^{\circ} \mathrm{C}$, indicating phase transition. Below 150 $^{\circ} \mathrm{C}$ no morphology change is observed.
-#+ATTR_LATEX: :width 0.8\linewidth
-#+NAME: fig-NW-heating
-[[file:img/SI-morphology-NW-T.pdf]]
-
 
 #+CAPTION: Additional temperature-dependent characterizations of the graphene-F_{16}CuPc transistor. (a) Ration between the drain-source current at certain $T$ and $T=20\ ^{\circ} \mathrm{C}$ during various heating-cooling cycles between 20 $^{\circ} \mathrm{C}$ and 60 $^{\circ} \mathrm{C}$. $V_{\mathrm{G}}$ was kept 0 V during the process. (b) Theoretical gain in the drain-source current compared with $T=20\ ^{\circ} \mathrm{C}$ as a function of $T$ with different Schottky barrier height.
-#+ATTR_LATEX: :width 0.95\linewidth
+#+ATTR_LATEX: :width 0.95\linewidth :placement [H]
 #+NAME: fig:T-measurement
 [[file:img/SI-T-fig.pdf]]
 
-#+CAPTION: Analytical model of droplet geometry between two horizontal parallel plates, the droplets have a convex shape in both cases. (a) Symmetrical case, the volume of droplet is described by a function $v(R_{1},  \delta, \theta)$ as a function of principal radii $R_{1}$ and $R_{2}$, the helf height of the droplet $\delta$ and contact angle $\theta$. (b) Asymmetrical case where top and bottom contact angles $\theta_{\mathrm{t}}$ and $\theta_{\mathrm{b}}$ are different. The volume of droplet is given by: $V_{\mathrm{drop}} = [v(R_{1},  \delta_{\mathrm{t}}, \theta_{\mathrm{t}}) + v(R_{1},  \delta_{\mathrm{b}}, \theta_{\mathrm{b}})]/2$. (c) The limiting case when $H=H_{0}$. The geometry of the droplet is a sphere segment which the volume is given by Eq. [[ref:eq:9]].
-#+NAME: fig-SI-drop-model
-#+ATTR_LATEX: :width \linewidth
-[[file:img/SI-droplet-model.pdf]]
 
-
-#+CAPTION: Experimental and simulated current amplification ratio of $I_{\mathrm{DS}}$ as a function of strain $\sigma$ using a LM droplet of \sim 0.1 \(\mathrm{\mu}\)L. $V_{\mathrm{G}}$ is set to 0 V (open circuit) and $V_{\mathrm{DS}}$ is 1 V. The model assumes the current increase is mainly contributed by the increase of contact area.
-#+NAME: fig-SI-current-ratio
-#+ATTR_LATEX: :width 0.5\linewidth
-[[file:img/SI-current-ratio-strain.pdf]]
-
-
-#+CAPTION: Stress-strain relation of the compressed LM droplet from the analytical model given different values of $V_{\mathrm{drop}}$. The top and bottom contact angles are set to the experimental values (\(\theta_{\mathrm{t}}^{*}\)=149 \(^{\circ}\) and \(\theta_{\mathrm{b}}^{*}\)=159 \(^{\circ}\)).
-#+ATTR_LATEX: :width 0.5\linewidth
-[[file:img/SI-stress-strain-analytical.pdf]]
-
-#+CAPTION: Other analysis from the analytical droplet model. (a) Contour plot of the elastic modulus $E$ as function of top and bottom contact angles of a droplet with \(V_{\mathrm{drop}}\)=0.1 \(\mathrm{\mu}\)L. (b) Expansion of bottom contact radius as function of strain $\sigma$. The expansion ratio is shown to be independent of the droplet volume.
-#+ATTR_LATEX: :width 0.75\linewidth
-[[file:img/SI-other-analytical.pdf]]
-
-
-#+NAME: tbl-ana-fem
-#+CAPTION: $\varepsilon$ calculated Analytical and FEM methods, from Fig. 4d in main text. The index starts from left to right for the droplets in Fig. 4d.
-|-------------------------------+---+-------+-------+-------|
-| Index                         | 1 |     2 |     3 |     4 |
-|-------------------------------+---+-------+-------+-------|
-| $\sigma$                      | 0 | 0.051 | 0.073 | 0.134 |
-| Analytical $\varepsilon$ (Pa) | 0 |  42.9 |  71.1 | 132.1 |
-| FEM $\varepsilon$        (Pa) | 0 |  39.0 |  67.3 | 120.1 |
-|-------------------------------+---+-------+-------+-------|
 \FloatBarrier
   
 # * References
