@@ -70,7 +70,7 @@ cite:OConnor_2011_strain_P3HT.  Here we present a conceptually
 different approach, referring to the interfacial field-effect transistor (IFET), in which the mechanical responsiveness is controlled by the wettability of a semiconductor surface.  We design an IFET made by superhydrophobic semiconductor nanowires
 (NWs) sandwiched between a layer of two-dimensional electron gas
 (2DEG) and a conductive Cassie-Baxter (CB) sessile droplet. Following
-the hydrostatic deformation of the CB droplet upon a mechanical stress,
+the hydrostatic deformation of the CB droplet upon mechanical stress,
 we report an extremely small elastic modulus of 820 pascal vertical to
 the substrate plane, or \sim{}100 times softer than Ecoflex rubbers,
 enabling an excellent stress detection limit down to \lt{}10
@@ -509,7 +509,7 @@ range of ultrasensitive and stimuli-responsive nanoelectronics.
   technical support of Raman microscopy. C.S.S. acknowledges funding
   from Commission for Technology and Innovation (CTI) under the Swiss
   Competence Centers for Energy Research-Efficiency of Industrial
-  Processes (SCCER-EIP) program (grant no. KTI.2014.0148) and Ms. Asel
+  Processes (SCCER-EIP) program (grant no. KTI.2014.0148) Ms. Asel
   Maria Aguilar Sanchez from the Institute for Building Materials, ETH
   Zurich for her support of ESEM measurements.
 
@@ -572,7 +572,7 @@ range of ultrasensitive and stimuli-responsive nanoelectronics.
 
 
 # #+CAPTION: *Responsive elastic sensing using LM-based IFET*. \textbf{a}, Principle of the elastic stress-strain response of the LM droplet, showing the change of principal radii $R_{1}$ and $R_{2}$ upon stress. \textbf{b}, The stress-strain response of a \sim 0.1 \(\mathrm{\mu}\)L LM droplet from both experimental data and analytical model. Inset: elastic modulus as function of droplet volume, $V_{\mathrm{drop}}$ from the model. \textbf{c}, $I_{\mathrm{DS}}-V_{\mathrm{G}}$ curves of the IFET at various external stress levels. Insets: optical images of the LM under external stress (scale bars: 500 \(\mathrm{\mu}\)m.). \textbf{c}, Stress of the LM droplet calculated from both analytical model and FEM analysis, showing good agreement between the two methods. Scale bar: 200 \(\mathrm{\mu}\)m. \textbf{e} Increase of $I_{\mathrm{DS}}$ as function of time in a cycle compressing test of the IFET with average stress of 204.2\(\pm\)12.3 Pa, showing good reversibility. Scale bars: 100 \(\mathrm{\mu}\)m.
-#+CAPTION: *Elastic response of the proposed IFET*. *a*, Schematics of a droplet sandwiched between two plates before (top) and after (bottom) of a compressive stress, resulting a change of the principal radii, $R_{1}$ and $R_{2}$. *b*, Compressive stress $\sigma$ as a function of strain $\varepsilon$ for a 0.1 \mu{}L mercury CB droplet obtained from experiments (dots) and our hydrostatic model (curve). Inset: model-predicted elastic modulus $E$ as a function of the droplet volume $V_{\mathrm{drop}}$. *c*, Transfer curves under various compressive stress values. Insets: CAG images of the LM droplet under various external stress levels (scale bars: 500 \mu{}m.) *d*, Comparison of CAG-captured (top) and finite-element simulated (bottom) droplet shape and stress values (Supplementary Table S3) under different degrees of compression. Scale bar: 200 \mu{}m. *e*, Real-time monitoring of $I_{\mathrm{DS}}$ by repeatedly applying and releasing a compressive stress. 
+#+CAPTION: *Elastic response of the proposed IFET*. *a*, Schematics of a droplet sandwiched between two plates before (top) and after (bottom) of a compressive stress, resulting a change of the principal radii, $R_{1}$ and $R_{2}$. *b*, Compressive stress $\sigma$ as a function of strain $\varepsilon$ for a 0.1 \mu{}L mercury CB droplet obtained from experiments (dots) and our hydrostatic model (curve). Inset: model-predicted elastic modulus $E$ as a function of the droplet volume $V_{\mathrm{drop}}$. *c*, Transfer curves under various compressive stress values. Insets: CAG images of the LM droplet under various external stress levels (scale bars: 500 \mu{}m.) *d*, Comparison of CAG-captured (top) and finite-element simulated (bottom) droplet shape and stress values (Supplementary Table S4) under different degrees of compression. Scale bar: 200 \mu{}m. *e*, Real-time monitoring of $I_{\mathrm{DS}}$ by repeatedly applying and releasing a compressive stress. 
 #+ATTR_LATEX: :width 0.75\linewidth
 #+NAME: fig:main-4
 [[file:img/scheme-4.pdf]]

@@ -35,7 +35,7 @@
 #+NAME: latex-author-list
 #+BEGIN_EXPORT latex
 % The author list
-\title{An elastic interfacial transistor enabled by superhydrophobicity}
+\title{Supplementary Information for: \\An elastic interfacial transistor enabled by superhydrophobicity}
 \author{Tian Tian}
 \affiliation{Institute for Chemical and Bioengineering, ETH Z{\"{u}}rich,  Vladimir-Prelog Weg 1, CH-8093 Z{\"{u}}rich, Switzerland}
 \author{Chander Shekhar Sharma}
