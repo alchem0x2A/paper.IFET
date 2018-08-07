@@ -1,5 +1,5 @@
 #+LATEX_CLASS: revtex4-1
-#+LATEX_CLASS_OPTIONS: [prb, onecolumn, linenumbers, hyperref, superscriptaddress, preprint, amsmath, amssymb, noshowpacs]
+#+LATEX_CLASS_OPTIONS: [prb, onecolumn, hyperref, superscriptaddress, preprint, amsmath, amssymb, noshowpacs]
 #+LATEX_HEADER: \usepackage{times}
 #+LATEX_HEADER: \usepackage{graphicx}
 #+LATEX_HEADER: \usepackage{float}
@@ -28,6 +28,9 @@
 \renewcommand\Dated@name{}
 \renewcommand*{\fnum@figure}{{\normalfont\bfseries \figurename~\thefigure}}
 \renewcommand*{\@caption@fignum@sep}{\textbf{ \textbar }}
+% disable subsections in TOC
+\def\l@subsection#1#2{}
+\def\l@subsubsection#1#2{}
 \makeatother
 #+END_EXPORT
 
@@ -49,8 +52,8 @@
 \author{Matija Varga}
 \affiliation{Electronics Laboratory, ETH Z{\"{u}}rich,  Gloriastrasse 35,  CH-8092 Z{\"{u}}rich, Switzerland}
 \author{Raja Selvakumar}
-\affiliation{Department of Chemical and Biomolecular Engineering, University of California, Berkeley, CA 94720, USA}
-% \affiliation{Institute for Chemical and Bioengineering, ETH Z{\"{u}}rich,  Vladimir-Prelog Weg 1, CH-8093 Z{\"{u}}rich, Switzerland}
+\altaffiliation{Department of Chemical and Biomolecular Engineering, University of California, Berkeley, CA 94720, USA}
+\affiliation{Institute for Chemical and Bioengineering, ETH Z{\"{u}}rich,  Vladimir-Prelog Weg 1, CH-8093 Z{\"{u}}rich, Switzerland}
 \author{Yen-Ting Lee}
 \affiliation{Department of Chemical Engineering, National Taiwan University of Science and Technology, Taipei 10607, Taiwan.}
 \affiliation{National Synchrotron Radiation Research Center, Hsinchu 30076, Taiwan.}
@@ -63,7 +66,6 @@
 
 
 #+LaTeX: \maketitle
-#+LaTeX: \setcounter{tocdepth}{1}
 #+LaTeX: \tableofcontents
 
 * Methods
@@ -94,7 +96,13 @@ Sigma-Aldrich), Chlorobenzene (99%, Sigma-Aldrich) .
    detector. Electric properties of the interfacial transistor were
    measured by an Agilent B1500A Semiconductor Device Parameter
    Analyzer. Stress and thermal characterizations see the following
-   subsections.
+   subsections. Grazing incidence X-ray diffraction (GIXD) patterns
+   were measured on beamline BL13A at the National Synchrotron
+   Radiation Research Center (NSRRC), Taiwan. A monochromatic beam of
+   \lambda = 1.0205 \AA was used, and the incident angle was
+   0.12\(^{\circ}\). X-ray Diffraction (XRD) spectra were measured by
+   a Bruker D8 Power Diffractometer with a Cu K_{\alpha} beam of
+   1.5406 \AA wavelength.
 ** CVD synthesis of graphene
 
 The Cu foil was cut into pieces of 2.5 cm $\times$ 3.5 cm, cleaned in 1M
@@ -872,6 +880,7 @@ Note that $R_{1}$ and $R_{2}$ are not independent variables, and
 
 #+CAPTION: Fitted values for the dynamic contact angle model described in Section S3
 #+NAME: tbl:fitted
+#+ATTR_LATEX: :placement [H]
 |--------------+-------------------------+-------------------------+-----------------------+--------------+--------------------------+---------------------------|
 | Quantity     | $\theta_{\mathrm{adv}}$ | $\theta_{\mathrm{rec}}$ | $\theta_{\mathrm{s}}$ | $f_{\infty}$ | $k_{1}$                  | $k_{2}$                   |
 |--------------+-------------------------+-------------------------+-----------------------+--------------+--------------------------+---------------------------|
@@ -880,7 +889,7 @@ Note that $R_{1}$ and $R_{2}$ are not independent variables, and
 
 #+CAPTION: Sliding angles $\theta_{\mathrm{sl}}^{*}$ of EGaIn on different surfaces. A sliding angle $> 90 ^{\circ}$ means the droplets almost permanantly adhere to the surface.
 #+NAME: tbl:sliding
-#+ATTR_LATEX: :placement [h]
+#+ATTR_LATEX: :placement [H]
 |---------------------------+------------------|
 | <l25>                     |            <r16> |
 | Sample                    | $\theta_{\mathrm{sl}}^{*}$  |
@@ -913,8 +922,8 @@ Note that $R_{1}$ and $R_{2}$ are not independent variables, and
 [[file:img/SI-NW-transition.pdf]]
 
 #+CAPTION: Electric breakdown of NW/Gr structure. *a*, optical image and *b*,  SEM image of the defect region. *c-f*, SEM images of different sites corresponding with red rectangles in *b*, . Inside the defect region, exfoliation of graphene sheet and thining of NW is observed. The NW structure at the edge of the defect region shows great deformation. The breakdown is ascribed to the large current density passes through the edge of the LM/NW contact area. 
-#+NAME: fig:electric-breakdown
-#+ATTR_LATEX: :width 0.8\linewidth
+#+NAME: fig:electric-breakdown 
+#+ATTR_LATEX: :width 0.8\linewidth :placement [H]
 [[file:img/SI-electric-breakdown.pdf]]
 
 
@@ -929,7 +938,7 @@ Note that $R_{1}$ and $R_{2}$ are not independent variables, and
 #+NAME: fig:IdVd
 [[file:img/SI-schottky-IdVd.pdf]]
 
-#+CAPTION: Analytical model of droplet geometry between two horizontal parallel plates, the droplets have a convex shape in both cases. *a*, Symmetrical case, the volume of droplet is described by a function $v(R_{1},  \delta, \theta)$ as a function of principal radii $R_{1}$ and $R_{2}$, the helf height of the droplet $\delta$ and contact angle $\theta$. *b*,  Asymmetrical case where top and bottom contact angles $\theta_{\mathrm{t}}$ and $\theta_{\mathrm{b}}$ are different. The volume of droplet is given by: $V_{\mathrm{drop}} = [v(R_{1},  \delta_{\mathrm{t}}, \theta_{\mathrm{t}}) + v(R_{1},  \delta_{\mathrm{b}}, \theta_{\mathrm{b}})]/2$. *c*, The limiting case when $H=H_{0}$. The geometry of the droplet is a sphere segment which the volume is given by Eq. [[ref:eq:9]].
+#+CAPTION: Analytical model of droplet geometry between two horizontal parallel plates, the droplets have a convex shape in both cases. *a*, Symmetrical case, the volume of droplet is described by a function $v(R_{1},  \delta, \theta)$ as a function of principal radii $R_{1}$ and $R_{2}$, the half height of the droplet $\delta$ and contact angle $\theta$. *b*,  Asymmetrical case where top and bottom contact angles $\theta_{\mathrm{t}}$ and $\theta_{\mathrm{b}}$ are different. The volume of droplet is given by: $V_{\mathrm{drop}} = [v(R_{1},  \delta_{\mathrm{t}}, \theta_{\mathrm{t}}) + v(R_{1},  \delta_{\mathrm{b}}, \theta_{\mathrm{b}})]/2$. *c*, The limiting case when $H=H_{0}$. The geometry of the droplet is a sphere segment which the volume is given by Eq. [[ref:eq:9]].
 #+NAME: fig-SI-drop-model
 #+ATTR_LATEX: :width \linewidth :placement [H]
 [[file:img/SI-droplet-model.pdf]]
@@ -951,6 +960,7 @@ Note that $R_{1}$ and $R_{2}$ are not independent variables, and
 
 
 #+NAME: tbl-ana-fem
+#+ATTR_LATEX: :placement [H]
 #+CAPTION: $\sigma$ calculated from analytical and FEM methods, from Fig. 4d in main text. The index starts from left to right for the droplets in Fig. 4d.
 |-------------------------------+---+-------+-------+-------|
 | Index                         | 1 |     2 |     3 |     4 |
@@ -982,5 +992,15 @@ Note that $R_{1}$ and $R_{2}$ are not independent variables, and
 \FloatBarrier
   
 # * References
+
+* Supplementary Movies
+
+1) *Movie S1* | *Real time video corresponding to Fig. 3d in main text*. *a*, Real time images of the LED amplifier circuit modulated by the IFET. 10 on/off cycles are shown. *b*,  $I_{\mathrm{tot}}$ as a function of $I_{\mathrm{G}}$ during 10 on/off cycles. *c* The source-gate current $I_{\mathrm{SG}}$ as a function of $I_{\mathrm{G}}$ during 10 on/off cycles, showing no leak from source to gate.
+2) *Movie S2* | *Real time video showing tuning of LED by applying stress to the LM droplet*. *a*, Real time images of the LED amplifier circuit modulated by applying/removing stress on the LM droplet. *b*, Images of the LM droplet upon compressing/releasing taken by the CAG. *c*, $I_{\mathrm{tot}}$ as a function of time corresponding to *a* and *b*.
+3) *Movie S3* | *Real time video corresponding to Fig. 4e in main
+   text*. *a*, Shape of the LM droplet taken by CAG during the
+   compressing/releasing cycles. *b* $I_{\mathrm{DS}}$ as a function
+   of time during the compressing/releasing cycles of the LM droplet.
+
 [[bibliographystyle:naturemag]]
 [[bibliography:ref.bib]]

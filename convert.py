@@ -62,8 +62,8 @@ def convert_pdf(infile, outdir="./img"):
     base_name = os.path.basename(infile)
     outfile = os.path.join(outdir, base_name)
     program = "gs"
-    params = ["-sDEVICE=pdfwrite", "-dCompatibilityLevel=1.4",
-              "-dPDFSETTINGS=/prepress", "-dNOPAUSE",
+    params = ["-sDEVICE=pdfwrite", "-dCompatibilityLevel=1.5",
+              "-dPDFSETTINGS=/default", "-dNOPAUSE",
               "-dQUIET", "-dBATCH"]
     io = ["-sOutputFile={}".format(outfile), infile]
     
