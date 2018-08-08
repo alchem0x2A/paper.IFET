@@ -35,7 +35,7 @@
 \author{Matija Varga}
 \affiliation{Electronics Laboratory, ETH Z{\"{u}}rich,  Gloriastrasse 35,  CH-8092 Z{\"{u}}rich, Switzerland}
 \author{Raja Selvakumar}
-\altaffiliation{Department of Chemical and Biomolecular Engineering, University of California, Berkeley, CA 94720, USA}
+\altaffiliation{Present address: Department of Chemical and Biomolecular Engineering, University of California, Berkeley, CA 94720, USA}
 \affiliation{Institute for Chemical and Bioengineering, ETH Z{\"{u}}rich,  Vladimir-Prelog Weg 1, CH-8093 Z{\"{u}}rich, Switzerland}
 \author{Yen-Ting Lee}
 \affiliation{Department of Chemical Engineering, National Taiwan University of Science and Technology, Taipei 10607, Taiwan.}
@@ -67,11 +67,14 @@ of a soft material to return to its original shape when the deforming
 stress is released, requires an entropic force acting within the
 material, fundamentally impeding carrier transport
 cite:OConnor_2011_strain_P3HT.  Here we present a conceptually
-different approach, referring to the interfacial field-effect transistor (IFET), in which the mechanical responsiveness is controlled by the wettability of a semiconductor surface.  We design an IFET made by superhydrophobic semiconductor nanowires
-(NWs) sandwiched between a layer of two-dimensional electron gas
-(2DEG) and a conductive Cassie-Baxter (CB) sessile droplet. Following
-the hydrostatic deformation of the CB droplet upon mechanical stress,
-we report an extremely small elastic modulus of 820 pascals vertical to
+different approach, referring to the interfacial field-effect
+transistor (IFET), in which the mechanical responsiveness is
+controlled by the wettability of a semiconductor surface.  We design
+an IFET made by superhydrophobic semiconductor nanowires (NWs)
+sandwiched between a layer of two-dimensional electron gas (2DEG) and
+a conductive Cassie-Baxter (CB) sessile droplet. Following the
+hydrostatic deformation of the CB droplet upon mechanical stress, we
+report an extremely small elastic modulus of 820 pascals vertical to
 the substrate plane, or \sim{}100 times softer than Ecoflex rubbers,
 enabling an excellent stress detection limit down to \lt{}10
 pascals. The IFET exhibits an on/off current ratio exceeding
@@ -248,7 +251,7 @@ models, given by (details see Supplementary Section S3):
  touching/removing the droplet from the two surfaces. We found that
  the EGaIn droplet can be easily detached from the F_{16}CuPc NW
  surface, compared to that stuck to the F_{16}CuPc/SiO_{2}
- surface. The observations was further corroborated by their apparent
+ surface. The observation was further corroborated by their apparent
  sliding angles $\theta_{\mathrm{sl}}^{*}$, equivalent to the degree
  of contact angle hysteresis, of 56.1\(\pm\)13.2\(^{\circ}\) and
  14.6\(\pm\)2.6\(^{\circ}\) on F_{16}CuPc/SiO_{2} and F_{16}CuPc NW
@@ -276,7 +279,7 @@ models, given by (details see Supplementary Section S3):
  $V_{\mathrm{G}}$). Note that since the NWs are only partially wetted,
  the actual current density passing through individual NWs is
  estimated to be $J_{\mathrm{DS}}/f$. The carrier density in the
- F_{16}CuPc molecules adjacent to the NW/graphene interface is
+ F_{16}CuPc molecules adjacent to the NW/Gr interface is
  modulated by the partially penetrated field effect through monolayer
  graphene cite:Tian_2016,Shih2015Partially, modulating the Schottky
  barrier height at the interface cite:Yang2012Barristor. The face-on
@@ -368,7 +371,7 @@ models, given by (details see Supplementary Section S3):
   as a function of $\varepsilon$, as well as the effective elastic modulus
   $E = \left({\displaystyle \frac{\mathrm{d} \sigma}{\mathrm{d}
   \varepsilon}}\right)_{H_{0}}$, can be calculated numerically. To validate
-  our model, an mercury droplet having an air-stable surface tension
+  our model, a mercury droplet having an air-stable surface tension
   \(\gamma_{\mathrm{L}}\)=0.487 J\(\cdot\)m^{-2} is used. Note that
   mercury often forms alloys with commonly-used metals
   cite:Kieffer_1959, so the top contact angle
@@ -563,7 +566,7 @@ range of ultrasensitive and stimuli-responsive nanoelectronics.
 
 # #+CAPTION: *Molecular orientation-induced superhydrophobicity of F_{16}CuPc*. \textbf{a},  Top-view (left) and cross-sectional (right) SEM images showing the morphology difference between F_{16}CuPc/SiO_{2} (green) and F_{16}CuPc NWs (cyan). Scale bars: 200 nm. \textbf{b}, GIXD spectra of F_{16}CuPc/SiO_{2} (left) and F_{16}CuPc NW (right) and corresponding 3D schematics of F_{16}CuPc orientation. The 4 major peaks (\alpha-\delta) were labeled in both the spectra and the corresponding diffraction planes. \textbf{c}, SEM (top) and Raman (bottom) images of F_{16}CuPc deposited onto a graphene sheet with a break, showing close relation between F_{16}CuPc morphology and orientation. Scale bar: 2 \(\mathrm{\mu}\)m. \textbf{d}, Water contact angles (large: ESEM, inset: sessile droplet) on F_{16}CuPc/SiO_{2} (top) and F_{16}CuPc NW (bottom). Scale bars: 20 \(\mathrm{\mu}\)m. \textbf{e} Experimental and simulated dynamic water contact angles on  F_{16}CuPc/SiO_{2} (top) and  F_{16}CuPc NW (bottom) as functions of film thickness (NW height), showing the existence of Wenzel and CB states, respectively. \textbf{f}, Static contact angle of Hg droplet on F_{16}CuPc/SiO_{2} (top) and F_{16}CuPc NW (bottom). \textbf{g}, Touching-removing cycles on F_{16}CuPc/SiO_{2} (top) and F_{16}CuPc NW (bottom) using EGaIn, showing negligible adhesion of EGaIn on the NW surface compared with sticking on F_{16}CuPc/SiO_{2} Scale bar for \textbf{f} and \textbf{g}: 500 \(\mathrm{\mu}\)m..
 #+CAPTION: *Molecular orientation-induced superhydrophobicity in NWs*. *a*, Top-view (left) and cross-sectional (right) SEM micrographs showing the morphologies of F_{16}CuPc/SiO_{2} (green) and F_{16}CuPc NWs (cyan). Scale bar: 200 nm. *b*, GIXD patterns and molecular orientation schematics of F_{16}CuPc/SiO_{2} (left) and F_{16}CuPc NWs (right), showing dominant edge-on (while circles) and face-on (black circles) orientations, respectively. The four representative planes (\alpha to \delta) are labeled accordingly. *c*, SEM micrograph (top) and Raman mapping image (bottom) of F_{16}CuPc molecules deposited onto a graphene sheet with a break, clearly identifying the NW region. Scale bar: 2 \mu{}m. *d*, Images of water sessile droplets sitting on F_{16}CuPc/SiO_{2} (top) and F_{16}CuPc NWs (bottom) taken from the ESEM and CAG (inset) techniques. *e* CAG-determined water $\theta_{\mathrm{adv}}^{*}$, $\theta_{\mathrm{rec}}^{*}$, and $\theta_{\mathrm{s}}^{*}$ values (dots) with respect to the film thickness (NW height) for the F_{16}CuPc/SiO_{2} (top) and F_{16}CuPc NW (bottom) samples, which are nicely described by the Wenzel and CB models (solid curves), respectively. *f*, Mercury sessile droplets sitting on F_{16}CuPc/SiO_{2} (top) and F_{16}CuPc NWs (bottom), showing $\theta_{\mathrm{s}}^{*}$ values of 147.7\(\pm\)2.5\(^{\circ}\)  and 157.1\(\pm\)3.8\(^{\circ}\), respectively. Scale bar: 500 \mu{}m. *g*, Touching (left) - removing (right) of a suspended EGaIn droplet from F_{16}CuPc/SiO_{2} (top) and F_{16}CuPc NWs (bottom) surfaces, showing non-stick characteristics of EGaIn to the NWs.
-#+ATTR_LATEX: :width 0.95\linewidth
+#+ATTR_LATEX: :width 0.9\linewidth
 #+NAME: fig:main-2
 [[file:img/scheme-2.pdf]]
 
@@ -583,7 +586,7 @@ range of ultrasensitive and stimuli-responsive nanoelectronics.
 
 
 # #+CAPTION: *Thermal-current response of the IFET*. \textbf{a},  $J_{\mathrm{DS}}$ as a function of $V_{\mathrm{G}}$ at various temperature levels. \textbf{b}, Fitting of the gain of current ($I(T) / I(T=20\ ^{\circ} \mathrm{C})$) using the thermionic emission model. \textbf{c}, Schottky barrier heights extracted from the experimental temperature-dependent current gain data of the IFET from \textbf{c}, compared with the theoretical values. The gate voltage at graphene's charge neutral point, $V_{\mathrm{CNP}}$ is indicated by the vertical broken line.
-#+CAPTION: *Electron transport characteristics at the NW/graphene interface*. *a*, $J_{\mathrm{DS}}$ as a function of $V_{\mathrm{G}}$ at various temperatures, showing the thermoionic emission effect. *b*, Experimentally-obtained (dots) and calculated (dashed curves) current gains, $G(T)$ , as a function of temperature $T$, suggesting that the thermoionic emission model can describe the interfacial current well. *c*, Extracted Schottky barrier height $\Phi_{\mathrm{SB}}$ (blue dots) as a function $V_{\mathrm{G}}$. The dashed curve corresponds to our theoretical prediction using the elementary electronic properties of graphene, suggesting a degree of Fermi level pinning at the interface. 
+#+CAPTION: *Electron transport characteristics at the NW/Gr interface*. *a*, $J_{\mathrm{DS}}$ as a function of $V_{\mathrm{G}}$ at various temperatures, showing the thermoionic emission effect. *b*, Experimentally-obtained (dots) and calculated (dashed curves) current gains, $G(T)$ , as a function of temperature $T$, suggesting that the thermoionic emission model can describe the interfacial current well. *c*, Extracted Schottky barrier height $\Phi_{\mathrm{SB}}$ (blue dots) as a function $V_{\mathrm{G}}$. The dashed curve corresponds to our theoretical prediction using the elementary electronic properties of graphene, suggesting a degree of Fermi level pinning at the NW/Gr interface. 
 #+ATTR_LATEX: :width 0.95\linewidth
 #+NAME: fig:main-5
 [[file:img/scheme-5.pdf]]
