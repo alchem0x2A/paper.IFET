@@ -732,23 +732,26 @@ Note that $R_{1}$ and $R_{2}$ are not independent variables, and
    interfacial transistors shown in main text.
 
 ** IFET using EGaIn as LM droplet
-   In addition to Hg, we also tested the performance of EGaIn as liquid
-   metal in our interfacial transistor. As shown in Fig.
+   In addition to Hg, we also tested the performance of EGaIn as
+   liquid metal in our interfacial transistor, since EGaIn is know to
+   be less toxic and environmental-friendly than mercury
+   cite:Dickey_2008. Recent research have shown the potential of using
+   EGaIn in motion-responsive electronics cite:Varga_2017. As shown in Fig.
    [[ref:fig:EGaIn-FET]], FET using EGaIn as the drain material also
    exhibits good current on/off modulation and elastic pressure
    sensing, owing to the reversible wetting on the hydrophobic
-   NWs. However compared with Hg-based device, EGaIn system has several
-   critical limitations: (i) It is very challenging to dispense a
-   free-standing \(\mu \mathrm{L}\)-scale EGaIn droplet on NW surface
-   due to the huge difference between the non-wetting NW surface and
-   nearly full-wetting glass capillary. As a result it is tedious to
-   further attach the EGaIn droplet to the metallic cantilever. (ii)
-   surface oxide on the EGaIn droplet accumulates with time, which
-   increases the contact resistance and rheological behavior
-   cite:Dickey_2008. Despite the technical challenges listed above, we
-   believe by proper engineering of the capillary and cantilever
-   surfaces, it is possible to achieve a interfacial FET with
-   reversible performance based EGaIn droplet.
+   NWs. However compared with Hg-based device, EGaIn system has
+   several critical limitations: (i) It is very challenging to
+   dispense a free-standing \(\mu \mathrm{L}\)-scale EGaIn droplet on
+   NW surface due to the huge difference between the non-wetting NW
+   surface and nearly full-wetting glass capillary. As a result it is
+   tedious to further attach the EGaIn droplet to the metallic
+   cantilever. (ii) surface oxide on the EGaIn droplet accumulates
+   with time, which increases the contact resistance and rheological
+   behavior cite:Dickey_2008. Despite the technical challenges listed
+   above, we believe by proper engineering of the capillary and
+   cantilever surfaces, it is possible to achieve a interfacial FET
+   with reversible performance based EGaIn droplet.
 
 
 ** Temperature dependency of $J_{\mathrm{DS}}$

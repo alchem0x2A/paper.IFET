@@ -107,7 +107,7 @@ forming a superhydrophobic surface at the Cassie-Baxter (CB) state
 cite:Cassie_1944. A conductive sessile droplet is then placed on top
 of the NWs, acting as the D electrode, with the radius of contact,
 $R$. Accordingly, applying a compressive stress $\sigma$ on top
-of the sessile leads to an horizontal displacement $\Delta x$ that
+of the sessile leads to a horizontal displacement $\Delta x$ that
 advances the contact line, with an apparent advancing contact angle
 $\theta_{\mathrm{adv}}^{*}$ (Fig. [[ref:fig:main-1]]b left). When the
 stress is released, the contact line moves back towards its
@@ -275,14 +275,17 @@ models, given by (details see Supplementary Section S3):
  Section S1).  The current density $J_{\mathrm{DS}}$ from the LM (D)
  to graphene (S) in the IFET was then quantified by normalizing the
  drain current by the contact area of the sessile droplet with the NW
- layer, as a function of drain and gate voltages ($V_{\mathrm{D}}$ and
- $V_{\mathrm{G}}$). Note that since the NWs are only partially wetted,
- the actual current density passing through individual NWs is
- estimated to be $J_{\mathrm{DS}}/f$. The carrier density in the
- F_{16}CuPc molecules adjacent to the NW/Gr interface is
- modulated by the partially penetrated field effect through monolayer
- graphene cite:Tian_2016,Shih2015Partially, modulating the Schottky
- barrier height at the interface cite:Yang2012Barristor. The face-on
+ layer, such that $J_{\mathrm{DS}} = {\displaystyle
+ \frac{I_{\mathrm{DS}}}{\pi R^{2}}}$, where $R$ is determined from the
+ CAG image (Fig. [[ref:fig:main-3]]a inset), as a function of drain and
+ gate voltages ($V_{\mathrm{D}}$ and $V_{\mathrm{G}}$). Note that
+ since the NWs are only partially wetted, the actual current density
+ passing through individual NWs is estimated to be
+ $J_{\mathrm{DS}}/f$. The carrier density in the F_{16}CuPc molecules
+ adjacent to the NW/Gr interface is modulated by the partially
+ penetrated field effect through monolayer graphene
+ cite:Tian_2016,Shih2015Partially, modulating the Schottky barrier
+ height at the interface cite:Yang2012Barristor. The face-on
  orientation of the F_{16}CuPc molecules not only facilitates carrier
  transport along the NWs, but also aligns the work functions of
  graphene and F_{16}CuPc at the interface
@@ -311,14 +314,14 @@ models, given by (details see Supplementary Section S3):
  device functionalities sharing with typical FETs. We demonstrate a
  circuit composed by an IFET, a green light-emitting diode (LED), and
  a bipolar junction transistor (BJT) amplifier (circuit schematic see
- Fig. [[ref:fig:main-3]]d left), with the contact angle monitored by a CAG
- (Fig. [[ref:fig:main-3]]d middle). Through continuous forward-reverse
- scan of $V_{\mathrm{G}}$, the total current $I_{\mathrm{tot}}$ that
- passes through the circuit, is modulated by \sim250 folds and
- switches the LED on and off, showing a high current stability and
- reproducibility (Fig.  [[ref:fig:main-3]]d right). The circuit design
- maximized the LED response to compressive stress as well
- (Supplementary Movies S1 and S2), as will be discussed later.
+ Fig. [[ref:fig:main-3]]d left), with the contact angle monitored by a
+ CAG (Fig. [[ref:fig:main-3]]d middle). Through continuous
+ forward-reverse scan of $V_{\mathrm{G}}$, the total current
+ $I_{\mathrm{tot}}$ that passes through the circuit, is modulated by
+ \sim250 folds and switches the LED on and off, showing a high current
+ stability and reproducibility (Fig.  [[ref:fig:main-3]]d right). The
+ circuit design maximized the LED response to compressive stress as
+ well (Supplementary Movies S1 and S2), as will be discussed later.
 
  The reversible mechanical response of a CB droplet is the key
  principle behind the IFET. To model the elastic response for a CB
