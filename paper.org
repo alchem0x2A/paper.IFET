@@ -277,7 +277,7 @@ models, given by (details see Supplementary Section S3):
  drain current by the contact area of the sessile droplet with the NW
  layer, such that $J_{\mathrm{DS}} = {\displaystyle
  \frac{I_{\mathrm{DS}}}{\pi R^{2}}}$, where $R$ is determined from the
- CAG image (Fig. [[ref:fig:main-3]]a inset), as a function of drain and
+ CAG optical micrograph of the LM droplet (Fig. [[ref:fig:main-3]]a inset), as a function of drain and
  gate voltages ($V_{\mathrm{D}}$ and $V_{\mathrm{G}}$). Note that
  since the NWs are only partially wetted, the actual current density
  passing through individual NWs is estimated to be
