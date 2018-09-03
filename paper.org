@@ -1,52 +1,58 @@
-#+LATEX_CLASS: revtex4-1
-#+LATEX_CLASS_OPTIONS: [prb, onecolumn, linenumbers, hyperref, superscriptaddress, preprint, amsmath, amssymb, noshowpacs]
+#+LATEX_CLASS: article
+#+LATEX_CLASS_OPTIONS: [12pt]
 #+LATEX_HEADER: \usepackage{graphicx}
 #+LATEX_HEADER: \usepackage{float}
 #+LATEX_HEADER: \usepackage{times}
-#+LATEX_HEADER: \newenvironment{boldabstract}{\setlength{\parindent}{0in}\setlength{\parskip}{0in}\bfseries}{\par\vspace{-6pt}}
+#+LATEX_HEADER: \usepackage{scicite}
 
 #+OPTIONS: tex:t toc:nil todo:t author:nil date:nil title:nil ^:t tags:nil
 #+DESCRIPTION:
 
-#+NAME: latex-change-caption
+#+NAME: latex-format
 #+BEGIN_EXPORT latex
-\renewcommand{\figurename}{Figure}
-\makeatletter
-\renewcommand*{\fnum@figure}{{\normalfont\bfseries \figurename~\thefigure}}
-\renewcommand*{\@caption@fignum@sep}{\textbf{ \textbar }}
-\renewcommand\Dated@name{}      %no date
-\makeatother
+\topmargin 0.0cm
+\oddsidemargin 0.2cm
+\textwidth 16cm 
+\textheight 21cm
+\footskip 1.0cm
+\newenvironment{sciabstract}{%
+\begin{quote} \bf}
+{\end{quote}}
+\renewcommand\refname{References and Notes}
 #+END_EXPORT
 
 #+NAME: latex-author-list
 #+BEGIN_EXPORT latex
 % The author list
-\title{An elastic interfacial transistor enabled by superhydrophobicity}
-\author{Tian Tian}
-\affiliation{Institute for Chemical and Bioengineering, ETH Z{\"{u}}rich,  Vladimir-Prelog Weg 1, CH-8093 Z{\"{u}}rich, Switzerland}
-\author{Chander Shekhar Sharma}
-\altaffiliation{Present address: Department of Mechanical Engineering, Indian Institute of Technology Ropar, Rupnagar, Punjab 140001, India}
-\affiliation{Laboratory of Thermodynamics in Emerging Technologies, Department of Mechanical and Process Engineering, ETH Z{\"{u}}rich, Sonneggstrasse 3, CH-8092 Z{\"{u}}rich, Switzerland}
-% \affiliation{Department of Mechanical Engineering, Indian Institute of Technology Ropar, Rupnagar, Punjab 140001, India}
-\author{Navanshu Ahuja}
-\affiliation{Institute for Chemical and Bioengineering, ETH Z{\"{u}}rich,  Vladimir-Prelog Weg 1, CH-8093 Z{\"{u}}rich, Switzerland}
+\title{An elastic interfacial transistor enabled by
+  superhydrophobicity}
 
-
-\author{Matija Varga}
-\affiliation{Electronics Laboratory, ETH Z{\"{u}}rich,  Gloriastrasse 35,  CH-8092 Z{\"{u}}rich, Switzerland}
-\author{Raja Selvakumar}
-\altaffiliation{Present address: Department of Chemical and Biomolecular Engineering, University of California, Berkeley, CA 94720, USA}
-\affiliation{Institute for Chemical and Bioengineering, ETH Z{\"{u}}rich,  Vladimir-Prelog Weg 1, CH-8093 Z{\"{u}}rich, Switzerland}
-\author{Yen-Ting Lee}
-\affiliation{Department of Chemical Engineering, National Taiwan University of Science and Technology, Taipei 10607, Taiwan.}
-\affiliation{National Synchrotron Radiation Research Center, Hsinchu 30076, Taiwan.}
-\author{Yu-Cheng Chiu}
-\affiliation{Department of Chemical Engineering, National Taiwan University of Science and Technology, Taipei 10607, Taiwan.}
-\author{Chih-Jen Shih}
-\email{Correspondence should be addressed to C.J.S. chih-jen.shih@chem.ethz.ch}
-\affiliation{Institute for Chemical and Bioengineering, ETH Z{\"{u}}rich,  Vladimir-Prelog Weg 1, CH-8093 Z{\"{u}}rich, Switzerland}
+\author {Tian Tian,$^{1}$ Chander Shekhar Sharma,$^{2,\dagger}$
+  Navanshu Ahuja,$^{1}$ \\ Matija Varga,$^{3}$ Raja
+  Selvakumar,$^{1,\ddagger}$ Yen-Ting Lee,$^{4,5}$ \\Yu-Cheng
+  Chiu,$^{4}$ Chih-Jen Shih,$^{1,*}$\\
+  \\
+  \normalsize{$^{1}$Institute for Chemical and Bioengineering, ETH
+    Z{\"{u}}rich,}\\
+  \normalsize{CH-8093 Z{\"{u}}rich, Switzerland}\\
+  \normalsize{$^{2}$Laboratory of Thermodynamics in Emerging
+    Technologies, ETH Z{\"{u}}rich,}\\
+  \normalsize{ CH-8092
+    Z{\"{u}}rich, Switzerland}\\
+  \normalsize{$^{3}$Electronics Laboratory, ETH Z{\"{u}}rich, CH-8092 Z{\"{u}}rich, Switzerland.}\\
+  \normalsize{$^{4}$Department of Chemical Engineering, }\\
+  \normalsize{National Taiwan University of Science and Technology, Taipei 10607, Taiwan.}\\
+  \normalsize{$^{5}$National Synchrotron Radiation Research Center, Hsinchu 30076, Taiwan.}\\
+  \normalsize{$^{\dagger}$Present address: Department of Mechanical Engineering,}\\
+  \normalsize{Indian Institute of Technology Ropar, Rupnagar, Punjab 140001, India.}\\
+  \normalsize{$^{\ddagger}$Present address: Department of Chemical and Biomolecular Engineering, }\\
+  \normalsize{University of California, Berkeley, CA 94720, USA}\\
+  \\
+  \normalsize{$^{*}$To whom correspondence should be addressed; E-mail: chih-jen.shih@chem.ethz.ch}\\
+}
 #+END_EXPORT
 
+#+LaTeX: \baselineskip24pt
 #+LaTeX: \maketitle
 
   
