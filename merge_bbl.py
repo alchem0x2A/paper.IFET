@@ -6,6 +6,7 @@ import subprocess
 import multiprocessing
 from multiprocessing import Pool
 import warnings
+import re
 
 
 
@@ -32,24 +33,37 @@ def tex_process(tex_file):
     if ext not in (".tex", ".latex", ".xelatex", "xetex"):
         raise NameError("File is not a tex file!")
     
-    bbl_file = file_base + ".bbl"
+    bbl_file = file_base + ".bbl.bak"
     bbl_content = None
     with open(bbl_file, "r", encoding="utf-8") as fo:
         bbl_content = fo.read()
+    pattern = re.compile("emph\{(\d+)\}([\s,]+)")
+    # for i, line in enumerate(bbl_content):
+        # res = re.findall(pattern, line)
+        # if (len(res) > 0) and ("," not in res[1]):
+    new_content = re.sub(pattern,
+                         "emph{\\1}, ",
+                         bbl_content)
         
     contents = []
     with open(tex_file, "r", encoding="utf-8") as fo:
         contents = fo.readlines()
         # Modify the title and date
         for i, line in enumerate(contents):
-            if re.search("\\\\bibliographystyle", line) is not None:
+            if "thebiblio" in line:
+                print("Not converted!")
+                return False         # already converted?
+            if re.search("\\\\bibliographystyle\{\w+\}", line) is not None:
                 contents[i] = "%" + line
-            if (re.search("\\\\bibliography", line) is not None):
-                contents[i] = "%" + line + bbl_content
-                break
-    out_file = file_base + "_nature_format.tex"
+            if re.search("\\\\bibliography\{\w+\}", line) is not None:
+                contents[i] = "%" + line + new_content
+        
+        # contents[i] = contents[i] + new_content
+    # out_file = file_base + "_adv_mate.tex"
+    out_file = tex_file
     with open(out_file, "w", encoding="utf-8") as fw:
         fw.writelines(contents)
+    print("Converted!")
 
 
 if __name__ == "__main__":

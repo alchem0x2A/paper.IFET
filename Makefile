@@ -15,7 +15,7 @@ VERBOSE = --verbose
 LATEXMKFLAGS = -f -pdf -quiet
 LATEXMKFLAGS += -pdflatex="pdflatex -interaction=nonstopmode"
 
-all: build post-process pandoc-to-word latex-to-pdf SI-latex-to-pdf nature-style
+all: build post-process pandoc-to-word latex-to-pdf SI-latex-to-pdf archive
 
 build: | $(BUILD_PATH) $(IMG_PATH)
 
@@ -25,8 +25,10 @@ $(BUILD_PATH):
 $(IMG_PATH):
 	mkdir -p $@
 
-post-process: post_process.py
+post-process: post_process.py $(TEX_FILE)
 	python post_process.py
+
+
 
 convert-pdf: convert.py
 	python convert.py	#manually run
@@ -39,16 +41,19 @@ pandoc-to-word:
 		$(VERBOSE)
 
 latex-to-pdf: $(TEX_FILE) $(BIB_FILE)
-	latexmk $(LATEXMKFLAGS) $<
+	python merge_bbl.py $(TEX_FILE)
+	rm -f paper.bbl		#delete the babel
+	pdflatex -interaction=nonstopmode $(TEX_FILE)
+	pdflatex -interaction=nonstopmode $(TEX_FILE)
 	mv $(PDF_M) $(BUILD_PATH)
 	latexmk -c
+
 
 SI-latex-to-pdf: $(SUPPL_TEX_FILE) $(BIB_FILE)
 	latexmk $(LATEXMKFLAGS) $<
 	mv $(PDF_SI) $(BUILD_PATH)
 	latexmk -c
-nature-style: $(TEX_FILE)
-	python merge_bbl.py $(TEX_FILE)
+archive: 
 	zip -r $(ZIP_FILE) $(TEX_FILE) $(IMG_PATH)
 	zip -r videos.zip ./videos
 	mv $(ZIP_FILE) videos.zip $(BUILD_PATH)
