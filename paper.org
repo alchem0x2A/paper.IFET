@@ -22,7 +22,7 @@
 #+LATEX_HEADER: \affiliation{Institute for Chemical and Bioengineering, ETH Z{\"{u}}rich,  Vladimir-Prelog Weg 1, CH-8093 Z{\"{u}}rich, Switzerland}
 #+LATEX_HEADER: \author{Yen-Ting Lee}
 #+LATEX_HEADER: \affiliation{Department of Chemical Engineering, National Taiwan University of Science and Technology, Taipei 10607, Taiwan.}
-#+LATEX_HEADER: \affiliation{National Synchrotron Radiation Research Center, Hsinchu 30076, Taiwan.}
+#+LATEX_HEADER: \alsoaffiliation{National Synchrotron Radiation Research Center, Hsinchu 30076, Taiwan.}
 #+LATEX_HEADER: \author{Yu-Cheng Chiu}
 #+LATEX_HEADER: \affiliation{Department of Chemical Engineering, National Taiwan University of Science and Technology, Taipei 10607, Taiwan.}
 #+LATEX_HEADER: \author{Chih-Jen Shih}
