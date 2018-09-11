@@ -33,27 +33,26 @@ def tex_process(tex_file):
         for i, line in enumerate(contents):
             if re.search("\\\\begin{document}", line) is not None:
                 break               # find the main document
-            if (re.search("title\\{\\}", line) is not None) \
-               or (re.search("date\\{\\}", line) is not None) \
+            if (re.search("date\\{\\}", line) is not None) \
                or (re.search("minted", line) is not None):
                 contents[i] = "%" + line
         # Modify abstract
-        i = 0
-        while i < len(contents):
-            line = contents[i]
-            if (re.search("\\\\section(\*?){Abstract}", line) is not None):
-                j = i + 1
-                while True:
-                    if re.search("\\\\section", contents[j]) is not None:  # Another section
-                        print(contents[i], contents[j])
-                        contents[i + 1] += "\\begin{boldabstract}\n"
-                        contents[j - 1] += "\\end{boldabstract}\n\n"
-                        break
-                    else:
-                        j += 1
-                break
-            else:
-                i += 1
+        # i = 0
+        # while i < len(contents):
+        #     line = contents[i]
+        #     if (re.search("\\\\section(\*?){Abstract}", line) is not None):
+        #         j = i + 1
+        #         while True:
+        #             if re.search("\\\\section", contents[j]) is not None:  # Another section
+        #                 print(contents[i], contents[j])
+        #                 contents[i + 1] += "\\begin{boldabstract}\n"
+        #                 contents[j - 1] += "\\end{boldabstract}\n\n"
+        #                 break
+        #             else:
+        #                 j += 1
+        #         break
+        #     else:
+        #         i += 1
 
     with open(tex_file, "w", encoding="utf-8") as fw:
         fw.writelines(contents)

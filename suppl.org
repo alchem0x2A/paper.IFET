@@ -1,72 +1,41 @@
-#+LATEX_CLASS: revtex4-1
-#+LATEX_CLASS_OPTIONS: [prb, onecolumn, hyperref, superscriptaddress, preprint, amsmath, amssymb, noshowpacs]
-#+LATEX_HEADER: \usepackage{times}
+#+LATEX_CLASS: achemso
+#+LATEX_CLASS_OPTIONS: [manuscript=suppinfo,email=true,hyperref=true]
 #+LATEX_HEADER: \usepackage{graphicx}
+#+LATEX_HEADER: \usepackage{amsmath}
 #+LATEX_HEADER: \usepackage{float}
-#+LATEX_HEADER: \usepackage{placeins}
-#+LATEX_HEADER: \renewcommand{\thepage}{S\arabic{page}}
-#+LATEX_HEADER: \renewcommand{\thesection}{S\arabic{section}}
-#+LATEX_HEADER: \renewcommand{\thesubsection}{\thesection.\arabic{subsection}}
-#+LATEX_HEADER: \renewcommand{\theequation}{S\arabic{equation}}
-#+LATEX_HEADER: \renewcommand{\thefigure}{S\arabic{figure}}
-#+LATEX_HEADER: \renewcommand{\thetable}{S\arabic{table}}
+# #+LATEX_HEADER: \usepackage{times}
 
-#+LATEX_HEADER: \renewcommand{\bibnumfmt}[1]{S#1}
-#+LATEX_HEADER: \renewcommand{\citenumfont}[1]{S#1}
+#+OPTIONS: tex:t toc:nil todo:t author:nil date:nil title:nil ^:t tags:nil
+#+DESCRIPTION:
+#+TITLE: An elastic interfacial transistor enabled by superhydrophobicity
+#+LATEX_HEADER: \author{Tian Tian}
+#+LATEX_HEADER: \affiliation{Institute for Chemical and Bioengineering, ETH Z{\"{u}}rich,  Vladimir-Prelog Weg 1, CH-8093 Z{\"{u}}rich, Switzerland}
+#+LATEX_HEADER: \author{Chander Shekhar Sharma}
+#+LATEX_HEADER: \altaffiliation{Present address: Department of Mechanical Engineering, Indian Institute of Technology Ropar, Rupnagar, Punjab 140001, India}
+#+LATEX_HEADER: \affiliation{Laboratory of Thermodynamics in Emerging Technologies, Department of Mechanical and Process Engineering, ETH Z{\"{u}}rich, Sonneggstrasse 3, CH-8092 Z{\"{u}}rich, Switzerland}
+#+LATEX_HEADER: \author{Navanshu Ahuja}
+#+LATEX_HEADER: \affiliation{Institute for Chemical and Bioengineering, ETH Z{\"{u}}rich,  Vladimir-Prelog Weg 1, CH-8093 Z{\"{u}}rich, Switzerland}
+#+LATEX_HEADER: \author{Matija Varga}
+#+LATEX_HEADER: \affiliation{Electronics Laboratory, ETH Z{\"{u}}rich,  Gloriastrasse 35,  CH-8092 Z{\"{u}}rich, Switzerland}
+#+LATEX_HEADER: \author{Raja Selvakumar}
+#+LATEX_HEADER: \altaffiliation{Present address: Department of Chemical and Biomolecular Engineering, University of California, Berkeley, CA 94720, USA}
+#+LATEX_HEADER: \affiliation{Institute for Chemical and Bioengineering, ETH Z{\"{u}}rich,  Vladimir-Prelog Weg 1, CH-8093 Z{\"{u}}rich, Switzerland}
+#+LATEX_HEADER: \author{Yen-Ting Lee}
+#+LATEX_HEADER: \affiliation{Department of Chemical Engineering, National Taiwan University of Science and Technology, Taipei 10607, Taiwan.}
+#+LATEX_HEADER: \affiliation{National Synchrotron Radiation Research Center, Hsinchu 30076, Taiwan.}
+#+LATEX_HEADER: \author{Yu-Cheng Chiu}
+#+LATEX_HEADER: \affiliation{Department of Chemical Engineering, National Taiwan University of Science and Technology, Taipei 10607, Taiwan.}
+#+LATEX_HEADER: \author{Chih-Jen Shih}
+#+LATEX_HEADER:\email{chih-jen.shih@chem.ethz.ch}
+#+LATEX_HEADER: \affiliation{Institute for Chemical and Bioengineering, ETH Z{\"{u}}rich,  Vladimir-Prelog Weg 1, CH-8093 Z{\"{u}}rich, Switzerland}
 
+#+LATEX_HEADER: \keywords{Interfacial field-effect transistor, two-dimensional materials, liquid metal, stress sensing, wetting, semiconductor nanowires, wetting, multiscale phenomena}
+
+#+LATEX_HEADER: \SectionNumbersOn
 
 
 
 #+OPTIONS: tex:t toc:nil todo:t author:nil date:nil title:nil ^:t tags:nil
-#+DESCRIPTION:
-
-#+NAME: latex-change-caption
-#+BEGIN_EXPORT latex
-\renewcommand{\figurename}{Figure}
-\renewcommand{\tablename}{Table}
-\makeatletter
-\renewcommand\Dated@name{}
-\renewcommand*{\fnum@figure}{{\normalfont\bfseries \figurename~\thefigure}}
-\renewcommand*{\@caption@fignum@sep}{\textbf{ \textbar }}
-% disable subsections in TOC
-\def\l@subsection#1#2{}
-\def\l@subsubsection#1#2{}
-\makeatother
-#+END_EXPORT
-
-
-#+NAME: latex-author-list
-#+BEGIN_EXPORT latex
-% The author list
-\title{Supplementary Information for: \\An elastic interfacial transistor enabled by superhydrophobicity}
-\author{Tian Tian}
-\affiliation{Institute for Chemical and Bioengineering, ETH Z{\"{u}}rich,  Vladimir-Prelog Weg 1, CH-8093 Z{\"{u}}rich, Switzerland}
-\author{Chander Shekhar Sharma}
-\altaffiliation{Present address: Department of Mechanical Engineering, Indian Institute of Technology Ropar, Rupnagar, Punjab 140001, India}
-\affiliation{Laboratory of Thermodynamics in Emerging Technologies, Department of Mechanical and Process Engineering, ETH Z{\"{u}}rich, Sonneggstrasse 3, CH-8092 Z{\"{u}}rich, Switzerland}
-% \affiliation{Department of Mechanical Engineering, Indian Institute of Technology Ropar, Rupnagar, Punjab 140001, India}
-\author{Navanshu Ahuja}
-\affiliation{Institute for Chemical and Bioengineering, ETH Z{\"{u}}rich,  Vladimir-Prelog Weg 1, CH-8093 Z{\"{u}}rich, Switzerland}
-
-
-\author{Matija Varga}
-\affiliation{Electronics Laboratory, ETH Z{\"{u}}rich,  Gloriastrasse 35,  CH-8092 Z{\"{u}}rich, Switzerland}
-\author{Raja Selvakumar}
-\altaffiliation{Present address: Department of Chemical and Biomolecular Engineering, University of California, Berkeley, CA 94720, USA}
-\affiliation{Institute for Chemical and Bioengineering, ETH Z{\"{u}}rich,  Vladimir-Prelog Weg 1, CH-8093 Z{\"{u}}rich, Switzerland}
-\author{Yen-Ting Lee}
-\affiliation{Department of Chemical Engineering, National Taiwan University of Science and Technology, Taipei 10607, Taiwan.}
-\affiliation{National Synchrotron Radiation Research Center, Hsinchu 30076, Taiwan.}
-\author{Yu-Cheng Chiu}
-\affiliation{Department of Chemical Engineering, National Taiwan University of Science and Technology, Taipei 10607, Taiwan.}
-\author{Chih-Jen Shih}
-\email{Correspondence should be addressed to C.J.S. chih-jen.shih@chem.ethz.ch}
-\affiliation{Institute for Chemical and Bioengineering, ETH Z{\"{u}}rich,  Vladimir-Prelog Weg 1, CH-8093 Z{\"{u}}rich, Switzerland}
-#+END_EXPORT
-
-
-#+LaTeX: \maketitle
-#+LaTeX: \tableofcontents
 
 * Methods
 
@@ -348,7 +317,7 @@ LN95 liquid nitrogen flowmeter (Linkam UK).
  interfacial field effect transistor.
 
 
-* Modeling dynamic wetting on F_{16}C\MakeLowercase{u}P\MakeLowercase{c} structures
+* Modeling dynamic wetting on F_{16}CuPc structures
    It has been long known that the static contact angles at Wenzel and
    CB states can be described as cite:Wenzel_1936,Cassie_1944,
    
@@ -631,18 +600,6 @@ Note that $R_{1}$ and $R_{2}$ are not independent variables, and
    \right]^{-1}}  \left(\cos \theta_{\mathrm{t}} + \cos \theta_{\mathrm{b}}\right)
    \end{aligned}
    \end{equation}
-
-
-
- 
-
-
-
- \FloatBarrier
-
-
-
-
 
 
 
@@ -992,7 +949,6 @@ Note that $R_{1}$ and $R_{2}$ are not independent variables, and
 [[file:img/SI-T-fig.pdf]]
 
 
-\FloatBarrier
   
 # * References
 
@@ -1005,5 +961,5 @@ Note that $R_{1}$ and $R_{2}$ are not independent variables, and
    compressing/releasing cycles. *b* $I_{\mathrm{DS}}$ as a function
    of time during the compressing/releasing cycles of the LM droplet.
 
-[[bibliographystyle:naturemag]]
+# [[bibliographystyle:naturemag]]
 [[bibliography:ref.bib]]
