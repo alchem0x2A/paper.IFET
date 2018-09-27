@@ -67,7 +67,7 @@
   conductive Cassie-Baxter (CB) sessile droplet. Following the
   hydrostatic deformation of the CB droplet upon mechanical stress, we
   report an extremely small elastic modulus of 820 pascals vertical to
-  the substrate plane, or ∼100 times softer than Ecoflex rubbers,
+  the substrate plane, or $\sim{}$100 times softer than Ecoflex rubbers,
   enabling an excellent stress detection limit down to \textless{}10
   pascals and a stress sensitivity of 36 kPa$^{-1}$. The IFET exhibits
   an on/off current ratio exceeding $3\times{}10^{4}$, as the carrier
@@ -86,6 +86,7 @@
   \vfill
 \end{tocentry}
 #+END_EXPORT
+
 * Abstract                                                           :ignore:
   :PROPERTIES:
   :UNNUMBERED: t
