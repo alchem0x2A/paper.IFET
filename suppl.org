@@ -866,6 +866,11 @@ Note that $R_{1}$ and $R_{2}$ are not independent variables, and
 #+NAME: fig:transfer-arbitrary-subst
 [[file:img/SI-other-materials.pdf]]
 
+#+CAPTION: Control experiment concerning the influence of stress on the crystalline structure of NWs. *a*, SEM images of the F_{16}CuPc NWs before (left) and after (right) applying the stress. Scale bars: 500 nm. No apparent change of morphology is observed. *b* XRD spectra of the NWs before and after the stress. The orientation remains face-on as seen from the (\(\bar{1}22\)) peak.
+#+ATTR_LATEX: :width 0.95\linewidth :placement [H]
+#+NAME: fig:control
+[[file:img/SI-morphology-p.pdf]]
+
 #+CAPTION: Characterization of pure graphene-based field effect transistor. *a*, Change of the CNP point ($V_{\mathrm{CNP}}$) before and after deposition of F_{16}CuPc in glovebox.  *b*,  Forward and backward scan of a graphene transistor on OTS-treated SiO_{2} in air. *c*, Drift of $V_{\mathrm{CNP}}$ of a graphene transistor on OTS-treated SiO_{2} in air over 8 hours.
 #+ATTR_LATEX: :width \linewidth :placement [H]
 #+NAME: fig:graphene-property
@@ -909,6 +914,10 @@ Note that $R_{1}$ and $R_{2}$ are not independent variables, and
 #+ATTR_LATEX: :width 0.5\linewidth :placement [H]
 [[file:img/SI-current-ratio-strain.pdf]]
 
+#+CAPTION: Time-dependent $I/I_0$ data under various stress levels. The stress is applied in steps from 0 to \sim{}120 Pa. The drain-source current gradually increases with external stress, in good agreement with Figure [[ref:fig-SI-current-ratio]]
+#+NAME: fig-SI-p-t
+#+ATTR_LATEX: :width 0.5 \linewidth :placement [H]
+file:img/SI-p-t.pdf
 
 #+CAPTION: Stress-strain relation of the compressed LM droplet from the analytical model given different values of $V_{\mathrm{drop}}$. The top and bottom contact angles are set to the experimental values (\(\theta_{\mathrm{t}}^{*}\)=149 \(^{\circ}\) and \(\theta_{\mathrm{b}}^{*}\)=159 \(^{\circ}\)).
 #+ATTR_LATEX: :width 0.5\linewidth :placement [H]

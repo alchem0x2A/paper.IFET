@@ -395,7 +395,7 @@ models, given by (details see Supplementary Section S3):
  middle). Through continuous forward-reverse scan of $V_{\mathrm{G}}$,
  the total current $I_{\mathrm{tot}}$ that passes through the circuit,
  is modulated by \sim250 folds and switches the LED on and off,
- showing a high current stability and reproducibility (Figure
+ showing a high current stability and reproduciblity (Figure
  [[ref:fig:main-3]]d right). The circuit design maximized the LED response
  to compressive stress as well (Supplementary Movies S1 and S2), as
  will be discussed later.
