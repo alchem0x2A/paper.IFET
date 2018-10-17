@@ -6,6 +6,7 @@ import subprocess
 import multiprocessing
 from multiprocessing import Pool
 import warnings
+from merge_bbl import merge_bbl
 
 
 
@@ -90,7 +91,7 @@ if __name__ == "__main__":
     for ifile in glob.glob("*.tex"):
         tex_process(ifile)
         print(TColors.OKBLUE + "Converted TeX file: {}".format(ifile) + TColors.ENDC)
-
+    merge_bbl("paper.tex")
     # PDF Process 
     # for ifile in glob.glob(os.path.join(RAW_PATH, "*.pdf")):
     #     if img_path is None:

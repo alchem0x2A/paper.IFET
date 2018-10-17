@@ -25,14 +25,14 @@ class TColors:
 # tex_tmp = "tmp.tex"
 
 # Replace the ref with bbl
-def tex_process(tex_file):
+def merge_bbl(tex_file):
     if tex_file is None:
         return False
     file_base, ext = os.path.splitext(tex_file)
     if ext not in (".tex", ".latex", ".xelatex", "xetex"):
         raise NameError("File is not a tex file!")
     
-    bbl_file = file_base + ".bbl"
+    bbl_file = file_base + ".bbl.bak"
     bbl_content = None
     with open(bbl_file, "r", encoding="utf-8") as fo:
         bbl_content = fo.read()
@@ -47,7 +47,7 @@ def tex_process(tex_file):
             if (re.search("\\\\bibliography", line) is not None):
                 contents[i] = "%" + line + bbl_content
                 break
-    out_file = file_base + "_nature_format.tex"
+    out_file = file_base + ".tex"
     with open(out_file, "w", encoding="utf-8") as fw:
         fw.writelines(contents)
 
