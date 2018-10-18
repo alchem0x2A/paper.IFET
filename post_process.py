@@ -91,7 +91,7 @@ if __name__ == "__main__":
     for ifile in ["paper.tex", "suppl.tex"]:
         tex_process(ifile)
         print(TColors.OKBLUE + "Converted TeX file: {}".format(ifile) + TColors.ENDC)
-    merge_bbl("paper.tex")
+    # merge_bbl("paper.tex")
     # PDF Process 
     # for ifile in glob.glob(os.path.join(RAW_PATH, "*.pdf")):
     #     if img_path is None:

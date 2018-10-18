@@ -222,7 +222,7 @@ perpendicular to the substrate, through the intermolecular $\pi-\pi$
 interactions. The substrate-induced orientation transition also
 results in the angle-dependent scattering of the Davydov multiplets
 that alters the Raman characteristics cite:Cerdeira_2013_RamanF16
-(details see Figure S11, Supporting Information). Figure
+(details see Supporting Information Figure S11). Figure
 [[ref:fig:main-2]]c presents the scanning electron microscopy (SEM)
 micrograph and Raman map giving the intensity ratio of the peak at
 1380 cm^{-1} to that at 1315 cm^{-1}, I(1380)/I(1315), on the
@@ -268,34 +268,7 @@ models, given by (details see Supplementary Section S3):
  determine \(\theta_{\mathrm{adv}}\)=107\(^{\circ}\),
  \(\theta_{\mathrm{rec}}\)=78\(^{\circ}\),
  \(\theta_{\mathrm{s}}\)=94\(^{\circ}\), and /f/ =0.093 (for 300 nm
- NWs) (details see Table S2, Supporting Information).  Although some discrepancy
- can be seen between the experimental and model data, the simple CB
- and Wenzel models still nicely capture the distinct wetting behaviors
- on the two F_{16}CuPc morphologies. We point out that the
- graphene-induced molecular orientation effects have eventually led to
- the transition between Wenzel and CB states, which to our knowledge
- has never been demonstrated in molecular solids.
-
- We next illustrate the wettability of conductive sessile droplets,
- specifically the liquid metals (LMs) at room temperature on the
- F_{16}CuPc samples. It is noteworthy that the key challenge hindering
- the development of LM-based devices is the undesirable adhesion of LM
- to the device surface, in particular with the eutectic gallium indium
- (EGaIn), in which the formation of gallium oxide layer effectively
- reduces the interfacial tension
- cite:Dickey_2008,Doudrick_2014_oxide. Mercury sessile droplets
- sitting on the F_{16}CuPc/SiO_{2} and F_{16}CuPc NW surfaces show
- $\theta_{\mathrm{s}}^{*}$ values of 147.7\(\pm\)2.5\(^{\circ}\) and
- 157.1\(\pm\)3.8\(^{\circ}\), respectively(Figure [[ref:fig:main-2]]f).
- Regarding the EGaIn sessile droplets, although the
- $\theta_{\mathrm{s}}^{*}$ values of fresh droplets are close on both
- surfaces, interestingly, the adhesive property is significantly
- different, as revealed in Figure [[ref:fig:main-2]]g. We suspended an EGaIn
- droplet using a microcapillary, followed by repeatedly
- touching/removing the droplet from the two surfaces. We found that
- the EGaIn droplet can be easily detached from the F_{16}CuPc NW
- surface (Figure [[ref:fig:main-2]]g right), compared to that stuck to the F_{16}CuPc/SiO_{2} 
- surface Although some discrepancy
+ NWs) (details see Supporting Information Table S2).  Although some discrepancy
  can be seen between the experimental and model data, the simple CB
  and Wenzel models still nicely capture the distinct wetting behaviors
  on the two F_{16}CuPc morphologies. We point out that the
@@ -321,15 +294,15 @@ models, given by (details see Supplementary Section S3):
  EGaIn droplet using a microcapillary, followed by repeatedly
  touching/removing the droplet from the two surfaces. We found that
  the EGaIn droplet can be easily detached from the F_{16}CuPc NW
- surface (Figure [[ref:fig:main-2]]g left). The observation was further
- corroborated by their apparent sliding angles
- $\theta_{\mathrm{sl}}^{*}$, equivalent to the degree of contact angle
- hysteresis, of 56.1\(\pm\)13.2\(^{\circ}\) and
- 14.6\(\pm\)2.6\(^{\circ}\) on F_{16}CuPc/SiO_{2} and F_{16}CuPc NW
- samples, respectively (details see Supplementary Table
- S3). Accordingly, the excellent CB characteristics of LM sessile
- droplets on the semiconducting NWs form a solid basis for the
- proposed elastic IFET.
+ surface (Figure [[ref:fig:main-2]]g right), compared to that stuck to the
+ F_{16}CuPc/SiO_{2} surface (Figure [[ref:fig:main-2]]g left). The observation was further corroborated
+ by their apparent sliding angles $\theta_{\mathrm{sl}}^{*}$,
+ equivalent to the degree of contact angle hysteresis, of
+ 56.1\(\pm\)13.2\(^{\circ}\) and 14.6\(\pm\)2.6\(^{\circ}\) on
+ F_{16}CuPc/SiO_{2} and F_{16}CuPc NW samples, respectively (details
+ see Supplementary Table S3). Accordingly, the excellent CB
+ characteristics of LM sessile droplets on the semiconducting NWs form
+ a solid basis for the proposed elastic IFET.
 
  Figure [[ref:fig:main-3]]a presents the schematic of the proposed elastic
  IFET. A sheet of monolayer graphene grown by chemical vapor
@@ -339,11 +312,10 @@ models, given by (details see Supplementary Section S3):
  traps cite:Wang_2011.  The lateral graphene FET has an on/off current
  ratio of \sim{}10 and a field-effect mobility (\(\mu_{\mathrm{FE}}\))
  of \sim2000 cm^{2}V^{-1}s^{-1} at room temperature, with the charge
- neutrality point (CNP) at the gate voltage of \sim0 V (Figure S14,
- Supporting Information). Subsequently, a layer of \sim300 nm-high
+ neutrality point (CNP) at the gate voltage of \sim0 V (Supporting Information Figure S15). Subsequently, a layer of \sim{}300 nm-high
  F_{16}CuPc NWs was deposited on graphene, followed by placing a
  cantilever-attached LM droplet on top as the D electrode (details see
- Section S1, Supporting Information).  The current density
+ Supporting Information Section S1).  The current density
  $J_{\mathrm{DS}}$ from the LM (D) to graphene (S) in the IFET was
  then quantified by normalizing the drain current by the contact area
  of the sessile droplet with the NW layer, such that $J_{\mathrm{DS}}
@@ -365,7 +337,7 @@ models, given by (details see Supplementary Section S3):
  compared with large work function mismatch between edge-on F_{16}CuPc
  and graphene cite:Mao_2010_F16_level_orien,Ren_2011_F16Gr_Elevel. At
  zero strain corresponding to the droplet height at $H_{0}$ determined
- analytically (see eq [[ref:eq:H0]], as will be discussed later), the
+ analytically (see Equation [[ref:eq:H0]], as will be discussed later), the
  transfer curve for a representative IFET at \(V_{\mathrm{D}}\)= 1 V
  demonstrates an on/off current ratio of 3.9\(\times\)10^{4} (Figure
  [[ref:fig:main-3]]b), in line with the state-of-the-art vertical
@@ -386,7 +358,7 @@ models, given by (details see Supplementary Section S3):
  IFET, and further efforts will be made to improve the repeatability
  of such devices. More discussions about the transport mechanisms,
  together with the band diagrams, are stated in Section S4, Figures
- S12, S15-S19 in the Supporting Information. Three-terminal operation
+ S12, S16-S20 in the Supporting Information. Three-terminal operation
  of the IFET offers integrated device functionalities sharing with
  typical FETs. We demonstrate a circuit composed by an IFET, a green
  light-emitting diode (LED), and a bipolar junction transistor (BJT)
@@ -397,7 +369,7 @@ models, given by (details see Supplementary Section S3):
  is modulated by \sim250 folds and switches the LED on and off,
  showing a high current stability and reproducibility (Figure
  [[ref:fig:main-3]]d right). The circuit design maximized the LED response
- to compressive stress as well (Movies S1 and S2, Supporting Information), as
+ to compressive stress as well (Supporting Information Movies S1 and S2), as
  will be discussed later.
 
  The reversible mechanical response of a CB droplet is the key
@@ -424,7 +396,7 @@ models, given by (details see Supplementary Section S3):
  different from the deformation of a bulk material. We formulate the
  principal radii as a function of droplet height $H$ for $H < H_{0}$,
  namely $R_{1}(H)$ and $R_{2}(H)$ (detailed derivations see Section S4
- and Figure S20 in the Supporting Information). First, the maximum
+ and Figure S21 in the Supporting Information). First, the maximum
  height $H_{0}$ corresponding to $\sigma=0$ is given by:
 
   \begin{equation}
@@ -439,7 +411,7 @@ models, given by (details see Supplementary Section S3):
   where $V_{\mathrm{drop}}$ is the the droplet volume following
   $V_{\mathrm{drop}} = w(R_{1}, H, \theta_{\mathrm{t}}^{*},
   \theta_{\mathrm{b}}^{*})$, in which $w$ is an implicit function of
-  $R_{1}$ (see Section S5, Supporting Information) that can be solved
+  $R_{1}$ (see Supporting Information Section S5) that can be solved
   numerically for a given $H$. On the other hand, the second principal
   radius is geometrically given by:
   \begin{equation}
@@ -471,11 +443,11 @@ models, given by (details see Supplementary Section S3):
   materials including the state-of-the-art ultrasoft elastomers
   cite:Miriyev_2017,Jang_2015. Using our model, we further calculate
   $E$ versus $V_{\mathrm{drop}}$ (Figure [[ref:fig:main-4]]b inset,
-  Figure S22, Supporting Information), predicting an adjustable elastic modulus
+  and Supporting Information Figure S24), predicting an adjustable elastic modulus
   by simply controlling the droplet volume. Unsurprisingly, a smaller
   droplet tends to be stiffer due to an intrinsically large Laplace
   pressure. Another degree of freedom for tunning the elastic modulus
-  is the bottom contact angle (Figure S23, Supporting Information); in other
+  is the bottom contact angle (Supporting Information Figure S24); in other
   words, through controlling the wettability of a semiconductor
   surface, one may design an IFET with a desirable mechanical
   responsiveness.
@@ -487,7 +459,7 @@ models, given by (details see Supplementary Section S3):
   the elastic stress. The elastic response at \(V_{\mathrm{G}}\)= 0 V
   shows a sensitivity, \(\eta = (I/I_{0} - 1) / \sigma\) , where
   \(I_{0}\) and \(I\) are \(I_{\mathrm{DS}}\) before and after stress,
-  of 36 kPa\(^{-1}\) (Figure S21, Supporting Information), together
+  of 36 kPa\(^{-1}\) (Supporting Information Figure S22), together
   with the detection limit of down to \lt{}10 Pa, comparable to the
   most sensitive resistive pressure sensor
   cite:Mannsfeld_2010,Pang_2012,Pan_2014,Zang_2015, with a
@@ -499,14 +471,16 @@ models, given by (details see Supplementary Section S3):
   is negligible within the stress range considered. Indeed, we model
   the contact radii at the top and bottom interfaces, $r_{\mathrm{t}}$
   and $r_{\mathrm{b}}$, as a function of $\varepsilon$ (details see
-  Section S4, Supporting Information), which can describe the current response
-  reasonably well (Figure S21, Supporting Information). The above
-  analysis is further endorsed by the finite element method (FEM)
-  simulations (Figure [[ref:fig:main-4]]d and Table S4, Supporting
-  Information).  We further demonstrate the reversibility of current
-  response by repeatedly applying and releasing a compressive stress
-  of 204.2\(\pm\)12.3 Pa to our IFET device (Figure [[ref:fig:main-4]]e and Movie S3, Supporting Information). It is also noteworthy that the EGaIn
-  sessile droplets function equally well on the NWs (Figure S18, Supporting Information), in spite of their sticky oxide surface.
+  Supporting Information Section S4), which can describe the current
+  response reasonably well (Supporting Information Figures S22 and
+  S23). The above analysis is further endorsed by the finite element
+  method (FEM) simulations (Figure [[ref:fig:main-4]]d and Supporting Information Table S4).  We further demonstrate the reversibility
+  of current response by repeatedly applying and releasing a
+  compressive stress of 204.2\(\pm\)12.3 Pa to our IFET device (Figure
+  [[ref:fig:main-4]]e and Supporting Information Movie S3). It is also
+  noteworthy that the EGaIn sessile droplets function equally well on
+  the NWs (Supporting Information Figure S19), in spite of their
+  sticky oxide surface.
   
   Finally, we discuss the transport properties of the NW/Gr
   interface. As illustrated earlier, since the carrier density at the
@@ -535,8 +509,7 @@ models, given by (details see Supplementary Section S3):
   $\Phi_{\mathrm{SB}}$ is comparable to that of the Si/graphene
   heterojunction cite:Yang2012Barristor, but considerably lower than
   our theoretical prediction using the elementary electronic
-  properties of graphene (Figure [[ref:fig:main-5]]c and Section S4,
-  Supporting Information). A degree of Fermi level pinning due to the
+  properties of graphene (Figure [[ref:fig:main-5]]c and Supporting Information Section S4). A degree of Fermi level pinning due to the
   surface-bound traps cite:Meric_2008 may explain the observation.
 
  
@@ -628,7 +601,8 @@ range of ultrasensitive and stimuli-responsive nanoelectronics.
   :UNNUMBERED: t
   :END:
 
-[[bibliography:ref.bib]]
+# [[bibliography:ref.bib]]
+\input{paper.bbl.bak}
 
 \newpage{}
 

@@ -14,7 +14,7 @@ PDF_SI = suppl.pdf
 VERBOSE = --verbose
 LATEXMKFLAGS = -f -pdf -quiet
 LATEXMKFLAGS += -pdflatex="pdflatex -interactive=nonstopmode"
-DIFF_FLAGS= --exclude-textcmd="section,subsection,bibitem" --config="PICTUREENV=(?:figure|section|DIFnomarkup)[*]*" --graphics-markup=0 --disable-citation-markup
+DIFF_FLAGS= --exclude-textcmd="section,subsection,bibitem" --config="PICTUREENV=(?:figure|section|DIFnomarkup|mcitethebibliography)[*]*" --graphics-markup=0 --disable-citation-markup
 
 all: build post-process latex-to-pdf SI-latex-to-pdf diff
 
