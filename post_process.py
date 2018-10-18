@@ -88,7 +88,7 @@ if __name__ == "__main__":
         img_path = None
     file_list = []
     # TeX process
-    for ifile in glob.glob("*.tex"):
+    for ifile in ["paper.tex", "suppl.tex"]:
         tex_process(ifile)
         print(TColors.OKBLUE + "Converted TeX file: {}".format(ifile) + TColors.ENDC)
     merge_bbl("paper.tex")

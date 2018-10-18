@@ -13,9 +13,10 @@ PDF_CHANG = paper_change.pdf
 PDF_SI = suppl.pdf
 VERBOSE = --verbose
 LATEXMKFLAGS = -f -pdf -quiet
-LATEXMKFLAGS += -pdflatex="pdflatex -interaction=nonstopmode"
+LATEXMKFLAGS += -pdflatex="pdflatex -interactive=nonstopmode"
+DIFF_FLAGS= --exclude-textcmd="section,subsection,bibitem" --config="PICTUREENV=(?:figure|section|DIFnomarkup)[*]*" --graphics-markup=0 --disable-citation-markup
 
-all: build post-process pandoc-to-word latex-to-pdf SI-latex-to-pdf nature-style
+all: build post-process latex-to-pdf SI-latex-to-pdf diff
 
 build: | $(BUILD_PATH) $(IMG_PATH)
 
@@ -47,6 +48,11 @@ SI-latex-to-pdf: $(SUPPL_TEX_FILE) $(BIB_FILE)
 	latexmk $(LATEXMKFLAGS) $<
 	mv $(PDF_SI) $(BUILD_PATH)
 	latexmk -c
+
+diff:
+	latexdiff $(DIFF_FLAGS) paper_old.tex paper.tex > paper_change.tex
+	latexmk $(LATEXMKFLAGS) paper_change.tex 
+
 nature-style: $(TEX_FILE)
 	python merge_bbl.py $(TEX_FILE)
 	zip -r $(ZIP_FILE) $(TEX_FILE) $(IMG_PATH)

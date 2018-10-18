@@ -3,7 +3,7 @@
 #+LATEX_HEADER: \usepackage{graphicx}
 #+LATEX_HEADER: \usepackage{amsmath}
 #+LATEX_HEADER: \usepackage{float}
-# #+LATEX_HEADER: \usepackage{times}
+#+LATEX_HEADER: \usepackage{times}
 
 #+OPTIONS: tex:t toc:nil todo:t author:nil date:nil title:nil ^:t tags:nil
 #+DESCRIPTION:
