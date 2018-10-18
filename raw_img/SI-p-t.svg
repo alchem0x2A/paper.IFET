@@ -10,9 +10,9 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="158.504mm"
-   height="104.95591mm"
-   viewBox="0 0 158.504 104.95591"
+   width="172.97226mm"
+   height="114.53629mm"
+   viewBox="0 0 172.97226 114.53629"
    version="1.1"
    id="svg8"
    inkscape:version="0.92.3 (cdafc079a9, 2018-06-25)"
@@ -74,36 +74,45 @@
   </style>
     <path
        id="C0_0_f7673ce5e1"
-       d="M 0 1  C 0.265203 1 0.51958 0.894634 0.707107 0.707107  C 0.894634 0.51958 1 0.265203 1 0  C 1 -0.265203 0.894634 -0.51958 0.707107 -0.707107  C 0.51958 -0.894634 0.265203 -1 0 -1  C -0.265203 -1 -0.51958 -0.894634 -0.707107 -0.707107  C -0.894634 -0.51958 -1 -0.265203 -1 0  C -1 0.265203 -0.894634 0.51958 -0.707107 0.707107  C -0.51958 0.894634 -0.265203 1 0 1  z " />
+       d="M 0,1 C 0.265203,1 0.51958,0.894634 0.707107,0.707107 0.894634,0.51958 1,0.265203 1,0 1,-0.265203 0.894634,-0.51958 0.707107,-0.707107 0.51958,-0.894634 0.265203,-1 0,-1 -0.265203,-1 -0.51958,-0.894634 -0.707107,-0.707107 -0.894634,-0.51958 -1,-0.265203 -1,0 -1,0.265203 -0.894634,0.51958 -0.707107,0.707107 -0.51958,0.894634 -0.265203,1 0,1 Z"
+       inkscape:connector-curvature="0"
+       style="stroke-linecap:butt;stroke-linejoin:round" />
     <path
-       style="stroke:#000000;stroke-width:0.85;"
+       style="stroke:#000000;stroke-width:0.85000002;stroke-linecap:butt;stroke-linejoin:round"
        id="mf46e0787d2"
-       d="M 0 0  L 0 3.5  " />
+       d="M 0,0 V 3.5"
+       inkscape:connector-curvature="0" />
     <path
-       style="stroke:#000000;stroke-width:0.85;"
+       style="stroke:#000000;stroke-width:0.85000002;stroke-linecap:butt;stroke-linejoin:round"
        id="m6cf542663e"
-       d="M 0 0  L -3.5 0  " />
+       d="M 0,0 H -3.5"
+       inkscape:connector-curvature="0" />
     <path
-       style="stroke:#000000;stroke-width:0.85;"
+       style="stroke:#000000;stroke-width:0.85000002;stroke-linecap:butt;stroke-linejoin:round"
        id="m10f216d733"
-       d="M 0 0  L 3.5 0  " />
+       d="M 0,0 H 3.5"
+       inkscape:connector-curvature="0" />
     <clipPath
-       id="pc98b5d985d">
+       id="pc98b5d985d"
+       style="stroke-linecap:butt;stroke-linejoin:round">
       <rect
          id="rect3351"
          y="10.7"
-         x="33.170703"
-         width="122.212675"
-         height="90.85" />
+         x="33.170704"
+         width="122.21268"
+         height="90.849998"
+         style="stroke-linecap:butt;stroke-linejoin:round" />
     </clipPath>
     <clipPath
-       id="pd8f71116c7">
+       id="pd8f71116c7"
+       style="stroke-linecap:butt;stroke-linejoin:round">
       <rect
          id="rect3354"
-         y="28.87"
+         y="28.870001"
          x="163.02167"
-         width="2.7255"
-         height="54.51" />
+         width="2.7255001"
+         height="54.509998"
+         style="stroke-linecap:butt;stroke-linejoin:round" />
     </clipPath>
   </defs>
   <sodipodi:namedview
@@ -113,11 +122,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2.7617187"
-     inkscape:cx="272.14551"
-     inkscape:cy="131.54132"
+     inkscape:zoom="0.69042969"
+     inkscape:cx="427.03801"
+     inkscape:cy="289.55934"
      inkscape:document-units="mm"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="layer2"
      showgrid="false"
      inkscape:lockguides="false"
      fit-margin-top="0"
@@ -145,7 +154,7 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(210.98404,-58.279331)">
+     transform="translate(211.77094,-55.574263)">
     <g
        transform="matrix(0.8376004,0,0,0.8376004,-211.77094,55.574263)"
        id="line2d_9"
@@ -162,7 +171,7 @@
      inkscape:groupmode="layer"
      id="layer2"
      inkscape:label="Layer 2"
-     transform="scale(0.76753934)"
+     transform="matrix(0.76753934,0,0,0.76753934,0.78690413,2.7050684)"
      style="stroke-linecap:butt;stroke-linejoin:round">
     <g
        id="figure_1"
