@@ -4,6 +4,8 @@
 #+LATEX_HEADER: \usepackage{amsmath}
 #+LATEX_HEADER: \usepackage{float}
 #+LATEX_HEADER: \usepackage{times}
+#+LATEX_HEADER: \usepackage{lineno}
+
 
 #+OPTIONS: tex:t toc:nil todo:t author:nil date:nil title:nil ^:t tags:nil
 #+DESCRIPTION:
@@ -86,6 +88,8 @@
 %   \vfill
 % \end{tocentry}
 #+END_EXPORT
+
+\linenumbers
 
 * Abstract                                                           :ignore:
   :PROPERTIES:
@@ -613,7 +617,7 @@ range of ultrasensitive and stimuli-responsive nanoelectronics.
 #+CAPTION: Design concept of the proposed elastic interfacial transistor. (a), Schematic showing the device architecture at the micrometer (top) and nanometer (bottom) scales. Superhydrophobic semiconductor nanowires (NWs) are sandwiched between a conductive droplet at the CB state and a layer of 2DEG that allows partial penetration of an electrostatic field. (b), Upon applying an compressive stress $\sigma$ to the droplet, a vertical displacement $\Delta H$ advances the contact line by $\Delta x$, with an apparent advancing contact angle $\theta_{\mathrm{adv}}^{*}$. When the stress is released, the contact line moves back towards its equilibrium shape, with an apparent receding contact angel of $\theta_{\mathrm{rec}}^{*}$. At the nanometer scale,  may also result in an increase of penetration length $\Delta l$ that effectively reduces the transistor channel length.
 #+ATTR_LATEX: :width 0.95\linewidth
 #+NAME: fig:main-1
-[[file:raw_img/scheme-1.pdf]]
+[[file:img/scheme-1.pdf]]
 
 
 # #+CAPTION: *Molecular orientation-induced superhydrophobicity of F_{16}CuPc*. \textbf{a},  Top-view (left) and cross-sectional (right) SEM images showing the morphology difference between F_{16}CuPc/SiO_{2} (green) and F_{16}CuPc NWs (cyan). Scale bars: 200 nm. \textbf{b}, GIXD spectra of F_{16}CuPc/SiO_{2} (left) and F_{16}CuPc NW (right) and corresponding 3D schematics of F_{16}CuPc orientation. The 4 major peaks (\alpha-\delta) were labeled in both the spectra and the corresponding diffraction planes. \textbf{c}, SEM (top) and Raman (bottom) images of F_{16}CuPc deposited onto a graphene sheet with a break, showing close relation between F_{16}CuPc morphology and orientation. Scale bar: 2 \(\mathrm{\mu}\)m. \textbf{d}, Water contact angles (large: ESEM, inset: sessile droplet) on F_{16}CuPc/SiO_{2} (top) and F_{16}CuPc NW (bottom). Scale bars: 20 \(\mathrm{\mu}\)m. \textbf{e} Experimental and simulated dynamic water contact angles on  F_{16}CuPc/SiO_{2} (top) and  F_{16}CuPc NW (bottom) as functions of film thickness (NW height), showing the existence of Wenzel and CB states, respectively. \textbf{f}, Static contact angle of Hg droplet on F_{16}CuPc/SiO_{2} (top) and F_{16}CuPc NW (bottom). \textbf{g}, Touching-removing cycles on F_{16}CuPc/SiO_{2} (top) and F_{16}CuPc NW (bottom) using EGaIn, showing negligible adhesion of EGaIn on the NW surface compared with sticking on F_{16}CuPc/SiO_{2} Scale bar for \textbf{f} and \textbf{g}: 500 \(\mathrm{\mu}\)m..

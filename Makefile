@@ -16,7 +16,7 @@ LATEXMKFLAGS = -f -pdf -quiet
 LATEXMKFLAGS += -pdflatex="pdflatex -interactive=nonstopmode"
 DIFF_FLAGS= --exclude-textcmd="section,subsection,bibitem" --config="PICTUREENV=(?:figure|section|DIFnomarkup|mcitethebibliography)[*]*" --graphics-markup=0 --disable-citation-markup
 
-all: build post-process latex-to-pdf SI-latex-to-pdf diff
+all: build post-process latex-to-pdf SI-latex-to-pdf diff archive
 
 build: | $(BUILD_PATH) $(IMG_PATH)
 
@@ -41,23 +41,23 @@ pandoc-to-word:
 
 latex-to-pdf: $(TEX_FILE) $(BIB_FILE)
 	latexmk $(LATEXMKFLAGS) $<
-	mv $(PDF_M) $(BUILD_PATH)
 	latexmk -c
 
 SI-latex-to-pdf: $(SUPPL_TEX_FILE) $(BIB_FILE)
 	latexmk $(LATEXMKFLAGS) $<
-	mv $(PDF_SI) $(BUILD_PATH)
 	latexmk -c
 
 diff:
 	latexdiff $(DIFF_FLAGS) paper_old.tex paper.tex > paper_change.tex
 	latexmk $(LATEXMKFLAGS) paper_change.tex 
 
-nature-style: $(TEX_FILE)
-	python merge_bbl.py $(TEX_FILE)
-	zip -r $(ZIP_FILE) $(TEX_FILE) $(IMG_PATH)
-	zip -r videos.zip ./videos
-	mv $(ZIP_FILE) videos.zip $(BUILD_PATH)
+archive: 
+	rm -rf $(BUILD_PATH)/*
+	mkdir -p $(BUILD_PATH)/img
+	cp $(IMG_PATH)/scheme*.pdf $(BUILD_PATH)/img/
+	cp $(PDF_M) $(PDF_SI) $(TEX_FILE) paper_change.pdf $(BUILD_PATH)
+	cp $(IMG_PATH)/TOC.pdf paper.bbl.bak $(BUILD_PATH)
+	cp -r ./videos $(BUILD_PATH)
 
 clean:
 	latexmk -C
